@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palworld 1.0 Endgame — Material Ledger</title>
+<meta name="description" content="What you cannot buy from merchants in Palworld 1.0, what a base Pal can produce for you, and the party composition to farm the rest.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Palworld <span>Endgame</span> Ledger</h1>
+      <span class="ver">1.0.3 &middot; Lv80 &middot; solo, default settings</span>
+      <p class="lede">What gold cannot buy you, what a base Pal will make while you sleep, and what you have to go and take yourself.</p>
+    </div>
+    <nav class="site">
+      <a href="index.html" class="on">Material ledger</a>
+      <a href="merchants.html">What merchants sell</a>
+      <a href="base-production.html">Base production</a>
+      <a href="world-farming.html">World farming &amp; party comps</a>
+      <a href="endgame-demand.html">What it is all for</a>
+      <a href="sources.html">Sources &amp; confidence</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="answer">
+    <h2>The one-line answer</h2>
+    <p class="big">At Lv80, gold buys you <em>consumables, ammo, meds, bait, ranch commodities, skill fruits, hat schematics and live Pals</em> — and nothing else. Every ore, every ingot, every alloy, every ancient material, every World Tree resource and every raid drop is <em>farm-only</em>.</p>
+  </div>
+
+  <div class="strip">
+    <div class="cell"><div class="n" data-stat="total">—</div><div class="l">materials tracked</div></div>
+    <div class="cell"><div class="n" data-stat="cannot">—</div><div class="l">no vendor at any price</div></div>
+    <div class="cell"><div class="n" data-stat="auto">—</div><div class="l">fully automatable at base</div></div>
+    <div class="cell"><div class="n" data-stat="leave">—</div><div class="l">need you to leave the base</div></div>
+  </div>
+
+  <div class="callout">
+    <span class="tag">Read this before you trust a number</span>
+    <p>Most Palworld guides on the open web are from the <strong>0.1.x early-access era (January 2024)</strong> and are simply wrong for 1.0 — recipes, tiers, prices and the entire work-suitability system changed. Everything here is tagged 1.0, but the underlying shop tables come from a datamine snapshot taken at <strong>build 24088745 (July 2026)</strong>, and patches 1.0.2 and 1.0.3 landed after it. Treat exact gold figures as roughly one patch stale, and spot-check anything price-sensitive in game.</p>
+  </div>
+
+  <h2 id="ledger">The ledger</h2>
+  <p class="sub">Every endgame-relevant material, and the three questions that matter: can I buy it, can a base Pal make it, and if not — what do I take with me?</p>
+
+  <div class="filters">
+    <button data-filter="all" class="on">All</button>
+    <button data-filter="cannot-buy">Cannot buy</button>
+    <button data-filter="base-ok">Base-automatable</button>
+    <button data-filter="must-leave">Must go out</button>
+    <button data-filter="ore">Ores &amp; nodes</button>
+    <button data-filter="ranch">Ranch</button>
+    <button data-filter="craft">Craft chains</button>
+    <button data-filter="ancient">Ancient tier</button>
+    <button data-filter="new-10">New in 1.0</button>
+    <input id="ledger-search" type="search" placeholder="Search materials…" aria-label="Search materials">
+  </div>
+  <p class="count" id="ledger-count"></p>
+
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Buy?</th>
+          <th>Vendor situation</th>
+          <th>Base?</th>
+          <th>How to automate it</th>
+          <th>Where it really comes from</th>
+          <th>What to take with you</th>
+          <th>Conf.</th>
+        </tr>
+      </thead>
+      <tbody id="ledger-body"></tbody>
+    </table>
+  </div>
+
+  <h2>How to read the two verdict columns</h2>
+  <div class="cards">
+    <div class="card">
+      <h4><span class="pill no">Cannot buy</span></h4>
+      <p>No vendor row exists in any 1.0 shop table, for any currency. Gold is useless here.</p>
+    </div>
+    <div class="card">
+      <h4><span class="pill poor">Poor value</span></h4>
+      <p>Purchasable, but a base Pal or a short farming route beats it so heavily that buying is a convenience tax.</p>
+    </div>
+    <div class="card">
+      <h4><span class="pill rotate">Rotating</span></h4>
+      <p>Only appears in randomised or rotating stock. Real, but not a supply line you can plan around.</p>
+    </div>
+    <div class="card">
+      <h4><span class="pill yes">Automatable</span></h4>
+      <p>A correctly-built base produces this indefinitely with no player input — ranch, node site, or craft chain.</p>
+    </div>
+    <div class="card">
+      <h4><span class="pill partial">Partial</span></h4>
+      <p>The base gives you a trickle (usually via the Expedition Station or a fishing pond). Going out is much faster.</p>
+    </div>
+    <div class="card">
+      <h4><span class="pill no">Go out</span></h4>
+      <p>No base setup produces this. Pack a party and travel. See <a href="world-farming.html">world farming</a>.</p>
+    </div>
+  </div>
+
+  <h2>If you only change three things this week</h2>
+  <ol class="slots">
+    <li><span class="n">Stop hand-farming Polymer and Carbon Fiber.</span><span class="d">Both are <strong>craft-only</strong> and both chains are fully automatable. Polymer is 2 HQ Pal Oil + 1 Sulfur — a Dumud ranch plus a sulfur base closes the loop permanently. Carbon Fiber is 5 Charcoal + 1 Flame Organ, and Flame Organ comes off a Flambelle ranch.</span></li>
+    <li><span class="n">Build the Expedition Station properly.</span><span class="d">It is the single highest-leverage non-combat faucet in 1.0 — it guarantees bulk quantities of nearly every unbuyable material. Send <strong>10&times; the listed firepower</strong>, and remember that <strong>condensation stars are multiplicative</strong> (4 stars = 25&times;), so a four-star Lamball beats a zero-star Jormuntide Ignis.</span></li>
+    <li><span class="n">Do the Bounty Officer loop before you do anything else.</span><span class="d">Bounty Tokens are a gold <strong>faucet</strong> (1 token &rarr; ~2,000g), the cheapest stat-fruit route in the game (25 per fruit), and the only source of the seven work-and-base implants at 15 each. Wanted NPCs respawn roughly hourly.</span></li>
+  </ol>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    Palworld 1.0.3 &middot; compiled September 2026 &middot; solo world, default settings.
+    Confidence ratings and every source are listed on the <a href="sources.html">sources page</a> —
+    where a claim is shaky, it says so.
+  </div>
+</footer>
+
+<script src="data/materials.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

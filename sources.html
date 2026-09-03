@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources &amp; Confidence — Palworld 1.0 Endgame</title>
+<meta name="description" content="Where every claim in this guide came from, how much to trust it, and what could not be verified.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Sources &amp; <span>Confidence</span></h1>
+      <span class="ver">compiled 3 Sep 2026</span>
+      <p class="lede">What this guide is built on, and exactly where it is shaky.</p>
+    </div>
+    <nav class="site">
+      <a href="index.html">Material ledger</a>
+      <a href="merchants.html">What merchants sell</a>
+      <a href="base-production.html">Base production</a>
+      <a href="world-farming.html">World farming &amp; party comps</a>
+      <a href="endgame-demand.html">What it is all for</a>
+      <a href="sources.html" class="on">Sources &amp; confidence</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <h2>Version context</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Fact</th><th>Detail</th><th>Conf.</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">1.0 full release</td><td class="detail"><strong>10 July 2026</strong> — exited Early Access, +72 new Pals, World Tree region, level cap 80</td><td class="conf">High</td></tr>
+      <tr><td class="mat">Current live patch</td><td class="detail"><strong>v1.0.3, 12 August 2026</strong> (console build 1.101.283)</td><td class="conf">High</td></tr>
+      <tr><td class="mat">Tides of Terraria</td><td class="detail">Was <strong>v0.6.0, 25 June 2025</strong>, during Early Access — <em>not</em> a 1.0-era update. Its content (fishing, Moon Lord raid, small isles) was folded into 1.0.</td><td class="conf">High</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="callout warn">
+    <span class="tag">The single biggest risk in this guide</span>
+    <p>Most Palworld content on the open web is from the <strong>0.1.x early-access era (January 2024)</strong>. Recipes, tiers, prices and the entire work-suitability system changed at 1.0. Several sites serve <strong>stale early-access data under a 2026 date stamp</strong> — I hit at least one that listed Lifmunk, Digtoise, Tanzee and Foxparks as the best base Pals on a page dated after the 1.0 launch. Where two sources conflicted, I preferred the one that named 1.0-specific Pals, structures or patch numbers.</p>
+  </div>
+
+  <h2>How the merchant data was established</h2>
+  <p>The vendor tables are the strongest part of this guide. They come from two datamine-driven sites — <a href="https://www.palworld.tools/merchants">palworld.tools</a> (stamped <em>"Palworld 1.0, build 24088745, updated 13 July 2026"</em>) and <a href="https://www.palmods.gg/guides/items">palmods.gg</a> (<em>"1,891 normalized 1.0 item records"</em>). They independently reference the <strong>same internal shop table IDs</strong> (<code>Wander_Shop_1</code>, <code>Desert_Shop_1</code>, <code>Volcano_Shop_1</code>, <code>Caravan_Shop_1..25</code>), which is strong mutual corroboration that both are reading real game files rather than paraphrasing each other.</p>
+  <p>Critically, palmods prints an explicit negative string — <em>"Not recorded — No vendor listing in the current shop tables"</em> — per item. That is what makes the <strong>"cannot be bought"</strong> verdicts trustworthy rather than an argument from silence.</p>
+  <p><strong>The caveat:</strong> that snapshot is 1.0.0/1.0.1-era. Patches 1.0.2 and 1.0.3 landed afterwards, and 1.0.3 explicitly rebalanced Holy Water sources and Aquatic Construction Kit costs. Nothing in the patch notes suggests shop stock was rewritten, but <strong>treat exact gold figures as roughly one patch stale.</strong></p>
+
+  <h2>Confidence ledger</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Claim class</th><th>Conf.</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Which items have <strong>no vendor row</strong></td><td><span class="pill yes">High</span></td><td class="detail">Two independent datamine sites on the same shop tables; explicit per-item negative string</td></tr>
+      <tr><td class="mat">Existence and currency of all 12 vendor archetypes</td><td><span class="pill yes">High</span></td><td class="detail">Corroborated across palworld.tools, pindrop, KeenGamer, Game8, wiki.gg</td></tr>
+      <tr><td class="mat">Ranch Pal drop tables</td><td><span class="pill yes">High</span></td><td class="detail">Full 29-Pal table with rank-1 and rank-5 quantities and weighted-roll percentages</td></tr>
+      <tr><td class="mat">Work suitability 1–10 rework</td><td><span class="pill yes">High</span></td><td class="detail">Multiple 1.0 sources agree on the scale, the 48-Pal max rank, and the 12 handbooks</td></tr>
+      <tr><td class="mat">Best base Pals per job</td><td><span class="pill yes">High</span></td><td class="detail">Game8 1.0 tier list, updated 30 July 2026, with explicit level numbers</td></tr>
+      <tr><td class="mat">Drop-booster Pal list</td><td><span class="pill yes">High</span></td><td class="detail">Game8, updated 17 August 2026, explicitly 1.0</td></tr>
+      <tr><td class="mat">Drop-booster <strong>stacking</strong></td><td><span class="pill partial">Medium</span></td><td class="detail">Reported by Game8 and echoed elsewhere, but it contradicts the in-game tooltip and I found no controlled test</td></tr>
+      <tr><td class="mat">Exact gold prices</td><td><span class="pill partial">Med-High</span></td><td class="detail">Datamine snapshot predates two patches</td></tr>
+      <tr><td class="mat">Expedition firepower and rewards</td><td><span class="pill partial">Medium</span></td><td class="detail">Single detailed source for the full route table</td></tr>
+      <tr><td class="mat">Map coordinates</td><td><span class="pill partial">Medium</span></td><td class="detail">Guides disagree on sign conventions — the same spot appears as both <code>-76, 488</code> and <code>74, -486</code></td></tr>
+      <tr><td class="mat">Oil Rig drop rates (~1%, ~0.057%)</td><td><span class="pill partial">Med-High</span></td><td class="detail">Community-tested figures, not datamined</td></tr>
+      <tr><td class="mat">Caravan refresh mechanics</td><td><span class="pill partial">Medium</span></td><td class="detail">Described consistently but no source cites the underlying timer</td></tr>
+      <tr><td class="mat">Vagrant trader spawn percentages</td><td><span class="pill no">Low-Med</span></td><td class="detail">Single source, no corroboration</td></tr>
+      <tr><td class="mat">Player stat allocation at Lv80</td><td><span class="pill no">Not covered</span></td><td class="detail">Every spread I found was early-access era; omitted rather than guessed</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Two things worth correcting if you have read them elsewhere</h2>
+  <ul>
+    <li><strong>"Genetic Research Module"</strong> — no item by that name appears in 1.0 data. The implant system uses <code>Implant: &lt;passive&gt;</code> items (15 Bounty Tokens or 50 Battle Tickets) plus the <strong>Pal Reverser</strong>. If you have seen the term, it is probably a misremembered name.</li>
+    <li><strong>"Mysterious Mushroom"</strong> — likewise not found in 1.0 data. Only plain <strong>Mushroom</strong> and <strong>Cavern Mushroom</strong> exist, both from a Shroomer ranch.</li>
+    <li><strong>Paldium at 20g</strong> — that is an early-access price. It is <strong>70g</strong> in 1.0.</li>
+  </ul>
+
+  <h2>Sources could not reach</h2>
+  <ul>
+    <li><code>palworld.fandom.com</code> returned HTTP 402.</li>
+    <li><code>palworld.wiki.gg/wiki/Version_History</code> 404'd — and wiki.gg's Wandering Merchant page self-reports as covering only through <strong>v0.3.4.0</strong> despite a July 2026 edit date. <strong>Do not trust wiki.gg merchant pages for 1.0.</strong></li>
+    <li><code>old.reddit.com</code> was blocked from the research environment, so there is no direct player-thread corroboration in this build of the guide. Your own bookmarked Reddit threads are worth reading alongside it.</li>
+    <li><code>palpedia.com/guides/merchants</code> 404'd.</li>
+  </ul>
+
+  <h2>Primary sources used</h2>
+  <ul>
+    <li><a href="https://www.palworld.tools/merchants">palworld.tools — merchant shop tables</a> (datamine, build 24088745)</li>
+    <li><a href="https://www.palmods.gg/guides/items">palmods.gg — per-item vendor, drop and recipe data</a> (datamine, 1.0)</li>
+    <li><a href="https://www.palmods.gg/guides/whats-new/work-suitability">palmods.gg — 1.0 work suitability rework</a></li>
+    <li><a href="https://game8.co/games/Palworld/archives/440432">Game8 — Best Base Pals Tier List 1.0</a> (30 Jul 2026)</li>
+    <li><a href="https://game8.co/games/Palworld/archives/444038">Game8 — All Drop Rate Boosting Partner Skills</a> (17 Aug 2026)</li>
+    <li><a href="https://game8.co/games/Palworld/archives/440197">Game8 — Ancient Technology Points</a></li>
+    <li><a href="https://pindrop.gg/palworld/ranch">pindrop.gg — All 29 Ranch Pals, drops by rank</a></li>
+    <li><a href="https://pindrop.gg/palworld/npc">pindrop.gg — merchant NPC map</a></li>
+    <li><a href="https://www.keengamer.com/articles/guides/best-expedition-pals-in-palworld-1-0-element-quotas-and-core-farming/">KeenGamer — Best Expedition Pals in 1.0</a></li>
+    <li><a href="https://www.keengamer.com/articles/guides/palworld-1-0-legendary-schematics-guide-best-farm-and-drop-rates/">KeenGamer — Legendary Schematics, farm and drop rates</a></li>
+    <li><a href="https://www.keengamer.com/articles/guides/palworld-1-0-all-merchant-locations-guide/">KeenGamer — All Merchant Locations</a> (21 Jul 2026)</li>
+    <li><a href="https://www.keengamer.com/articles/guides/palworld-1-0-chromite-location-and-farming-guide/">KeenGamer — Chromite farming</a></li>
+    <li><a href="https://gamingbolt.com/palworld-1-0-guide-where-and-how-to-farm-the-2-new-ores-soralite-and-paloxite">GamingBolt — Soralite &amp; Paloxite farming</a></li>
+    <li><a href="https://game8.co/games/Palworld/archives/614998">Game8 — patch 1.0.3 notes</a></li>
+    <li><a href="https://supercraft.host/wiki/palworld/bounty_tokens/">supercraft.host — Bounty Tokens</a></li>
+    <li><a href="https://www.bisecthosting.com/blog/palworld-ultra-raids-guide-exclusive-rewards-ultra-slabs-loot-table-drop-chances">BisectHosting — Ultra Raids</a></li>
+  </ul>
+
+  <p>The full raw merchant research write-up, with per-vendor tables and inline citations, is in <code>research/01-merchants-vendors.md</code> in this repository.</p>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">Compiled 3 September 2026 against Palworld 1.0.3. Where this guide is uncertain, it says so — trust the confidence column.</div>
+</footer>
+
+</body>
+</html>

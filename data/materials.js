@@ -1,0 +1,376 @@
+/* Palworld 1.0 (patch 1.0.3) — Endgame material ledger
+ *
+ * buy.status:   no     = no vendor row exists in any 1.0 shop table
+ *               poor   = purchasable, but farming is strictly better
+ *               rotate = only from rotating/random stock — not a supply line
+ *               yes    = genuinely worth buying
+ *
+ * base.status:  yes     = fully automatable at base (ranch / node / craft chain)
+ *               partial = base gives a trickle; world farming is much faster
+ *               no      = you must leave the base
+ */
+const MATERIALS = [
+
+  /* ---------- ANCIENT / RAID TIER ---------- */
+  {
+    name: "Ancient Civilization Parts",
+    tags: ["ancient", "cannot-buy", "must-leave"],
+    buy: { status: "no", detail: "No vendor row, any currency." },
+    base: { status: "partial", detail: "Expedition Station only — AFK, but it is not a production chain." },
+    world: "Expeditions (World Tree / Sky / Dark Island: 8–11 guaranteed). Alpha bosses: 7–9, 100% drop.",
+    party: "Not a field-party material. Optimise the <em>Expedition Station</em> instead: send 10&times; the listed firepower.",
+    conf: "High"
+  },
+  {
+    name: "Ancient Civilization Core",
+    tags: ["ancient", "cannot-buy", "must-leave", "raid"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "partial", detail: "Expedition Station; the Ancient Relic Recycler converts World Tree Relics 1–5." },
+    world: "Raid drops (Ultra raids = 10 guaranteed). Expeditions: Astral Frost 1, Sunreach Isle 3–4, Forbidden Area 6–9. World Tree chests.",
+    party: "A raid comp, not a farming comp. Expeditions are the reliable faucet.",
+    conf: "High"
+  },
+  {
+    name: "Ancient Technology Points (ATP)",
+    tags: ["ancient", "cannot-buy", "currency", "finite"],
+    buy: { status: "no", detail: "<strong>No vendor accepts or sells ATP.</strong> Spent only in the Technology tree." },
+    base: { status: "no", detail: "Not producible." },
+    world: "Tower bosses, Alpha bosses, and one-time consumables. <strong>Each source pays out once.</strong>",
+    party: "N/A — a checklist, not a farm. Gates Wing Pack (9), Ancient Hatchery (8), Soralite Quarry (7), Triple Jump Boots (6).",
+    conf: "High"
+  },
+
+  /* ---------- 1.0 NEW ORES ---------- */
+  {
+    name: "Soralite <span class=\"new\">1.0</span>",
+    tags: ["ore", "cannot-buy", "must-leave", "new-10"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "partial", detail: "Soralite Quarry structure (Tech, 7 ATP). Throughput is slow — verify against your own numbers." },
+    world: "<strong>Sunreach Islands only.</strong> Best cluster: <code>-300, -1400</code> (5 nodes, east of the Farcry Marsh fast-travel point). Jetragon 100%. Pierdon Cryst 100%.",
+    party: "Requires the <strong>Plasma Multicutter</strong> (Tech 54) to mine at all. Bring a flying mount and weight carriers — no drop-rate Pal affects mining nodes.",
+    conf: "High"
+  },
+  {
+    name: "Paloxite <span class=\"new\">1.0</span>",
+    tags: ["ore", "cannot-buy", "must-leave", "new-10"],
+    buy: { status: "no", detail: "No vendor row. The rarest mining resource in 1.0." },
+    base: { status: "no", detail: "Cannot be node-farmed at a base — World Tree region only." },
+    world: "<strong>World Tree region exclusively.</strong> Routes: <code>-1560, 1510</code> (Dusty Ravine FT) &middot; <code>-1710, 1535</code> (Remnant Riverside, 3 nodes) &middot; <code>-1800, 1465</code> (Gilded Metropolis Ruins, 3 nodes).",
+    party: "<strong>You must drink World Tree Holy Water to mine it</strong> — it neutralises the dematerialising aura, and the buff lasts only ~30 seconds. Carry a large stack. Plasma Multicutter required.",
+    conf: "High"
+  },
+  {
+    name: "World Tree Holy Water <span class=\"new\">1.0</span>",
+    tags: ["cannot-buy", "new-10", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Large Fishing Pond</strong> (Tech 69) passively yields it between sessions — added/buffed in patch 1.0.3." },
+    world: "World Tree fishing: <strong>43–71 per catch</strong>. Expedition World Tree (Hard): 32–38. Alpha bosses 20–30, 100%.",
+    party: "Advanced Fishing Rod + Alluring Bait at World Tree Grand Master spots. Weight is no longer a problem — 1.0.3 cut it from 1.0 to 0.1.",
+    conf: "High"
+  },
+  {
+    name: "Chromite",
+    tags: ["ore", "cannot-buy", "must-leave"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "no", detail: "Buried deposits — base Pals will not mine them." },
+    world: "Feybreak Island. Best spot: the cave at <code>-912, -1318</code> — 4 deposits and <strong>no Alpha kill required</strong>. Dark Island Supply 30–40. Expedition Dark Island 30–50. Silvegis 2–3, 100%.",
+    party: "<strong>Bring Smokie</strong> — its partner skill reveals buried deposits, replacing the Metal Detector and freeing your accessory slot.",
+    conf: "High"
+  },
+
+  /* ---------- CLASSIC ORES / NODES ---------- */
+  {
+    name: "Ore",
+    tags: ["ore", "base-ok"],
+    buy: { status: "poor", detail: "Wandering Merchant 100g — <strong>stock capped at 20</strong>. A rounding error at Pal Metal Ingot scale (4 Ore each)." },
+    base: { status: "yes", detail: "Dedicated mining base. Best miner: <strong>Aegidron</strong> (Mining Lv8, World Tree ~Lv79). Add an Ore Mining Site II plus the <em>Pickaxe and Helmet</em> structure (Tech 30)." },
+    world: "Ore+Coal base spot <code>188, -37</code> / <code>189, -38</code> (Verdant Brook). Ore+Sulfur field <code>-345, -205</code> (Bamboo Groves).",
+    party: "<strong>Digtoise</strong> — the Drill Crusher partner skill raises ore mining efficiency by <strong>800–2000%</strong> (skill Lv1&rarr;5). Nothing else is close for hand-mining.",
+    conf: "High"
+  },
+  {
+    name: "Coal",
+    tags: ["ore", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "Node base. <code>188, -37</code> (ore+coal, raid-defensible) or <code>-36, -379</code> (coal+sulfur, next to a fast-travel point)." },
+    world: "Expedition Desert: 20–40 guaranteed. Blazamut / Blazamut Ryu: 10 each, 100%.",
+    party: "Digtoise for hand-mining. Otherwise let the base do it — coal is a pure automation material.",
+    conf: "High"
+  },
+  {
+    name: "Sulfur",
+    tags: ["ore", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row. Gates all gunpowder, all ammo, and Polymer." },
+    base: { status: "yes", detail: "Sulfur node base: the volcano peak behind the Tower of the Brothers of the Eternal Pyre <code>-594, -525</code> (fast-travel point nearby), or <code>-36, -379</code>, or <code>-252, -462</code>." },
+    world: "Expedition Volcano: 20–40 guaranteed. Pierdon: 4–5, 100%.",
+    party: "Base-automate it. If hand-mining, Digtoise plus heat-resistant armour for the volcano routes.",
+    conf: "High"
+  },
+  {
+    name: "Pure Quartz",
+    tags: ["ore", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "Astral Mountain <code>-212, 249</code> — 9+ nodes inside one base radius. The best quartz base in the game." },
+    world: "Expedition Snow: 20–40. Pierdon Cryst: 4–5, 100%.",
+    party: "Digtoise plus cold-resistant armour. It feeds Pal Metal Ingot and Soralite Ingot, so build the base rather than hand-farming.",
+    conf: "High"
+  },
+  {
+    name: "Paldium Fragment",
+    tags: ["base-ok"],
+    buy: { status: "yes", detail: "Wandering Merchant <strong>70g, uncapped</strong> — a legitimate gold sink at Lv80. Old 0.1.x guides quoting 20g are wrong for 1.0." },
+    base: { status: "yes", detail: "Blue nodes at most base sites; also via the Crusher." },
+    world: "Freely respawning nodes everywhere. Rarely the bottleneck.",
+    party: "None needed. Buy it if you are gold-rich and time-poor.",
+    conf: "High"
+  },
+
+  /* ---------- CRAFT-ONLY, BASE AUTOMATABLE ---------- */
+  {
+    name: "Ingot",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row. Feeds 272 recipes." },
+    base: { status: "yes", detail: "<strong>Craft only: 2 Ore.</strong> Furnace plus a Kindling Pal. Fully automatable." },
+    world: "Bushi / Bushi Noct drop 2–3 at 100% — irrelevant next to a furnace line.",
+    party: "None. This is a base problem, not a field problem.",
+    conf: "High"
+  },
+  {
+    name: "Refined Ingot",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft only: 2 Ore + 2 Coal.</strong> Build the ore+coal base at <code>188, -37</code> and this line never stops." },
+    world: "—",
+    party: "None.",
+    conf: "High"
+  },
+  {
+    name: "Pal Metal Ingot",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft only: 4 Ore + 1 Pure Quartz + 2 Paldium.</strong> 50,000 work — needs a serious Kindling and Handiwork roster." },
+    world: "—",
+    party: "None. Kindling: Renjishi (Lv8) or Jormuntide Ignis (Lv7).",
+    conf: "High"
+  },
+  {
+    name: "Soralite Ingot <span class=\"new\">1.0</span>",
+    tags: ["craft", "cannot-buy", "base-ok", "new-10"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft only: 2 Soralite + 2 Pure Quartz.</strong> Ancient Furnace, Tech 66 (3 ATP). <strong>700,000 work.</strong> Feeds 59 recipes including AI Cores and Ancient Armor." },
+    world: "—",
+    party: "None at base — but the Soralite input is a Sunreach Isles field trip. See the Soralite row.",
+    conf: "High"
+  },
+  {
+    name: "Paloxite Ingot <span class=\"new\">1.0</span>",
+    tags: ["craft", "cannot-buy", "base-ok", "new-10"],
+    buy: { status: "no", detail: "No vendor row. The top-tier alloy." },
+    base: { status: "yes", detail: "<strong>Craft only: 1 Soralite + 2 Paloxite + 1 World Tree Holy Water.</strong> Tech 74 (4 ATP). <strong>1,000,000 work</strong> — the single biggest craft in the game. 22 recipes: Beam Launcher, Plasma Rifle, Ancient Armor, saddles." },
+    world: "—",
+    party: "None at base — but every input is a World Tree or Sunreach field trip.",
+    conf: "High"
+  },
+  {
+    name: "Carbon Fiber",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft only: 5 Charcoal + 1 Flame Organ</strong> (Tech 35). Charcoal from wood; Flame Organ from a Flambelle / Rooby / Kelpsea Ignis ranch. <strong>100% automatable.</strong>" },
+    world: "Shadowbeak drops 2–3 at 100% (World Tree, Lv80).",
+    party: "None. Build the ranch instead.",
+    conf: "High"
+  },
+  {
+    name: "Polymer",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft only: 2 HQ Pal Oil + 1 Sulfur</strong> (Tech 33). A Dumud ranch plus a sulfur base makes this <strong>fully automatable</strong>." },
+    world: "Fire Cult enemies drop it at roughly 20%.",
+    party: "None. This is the classic material people farm by hand for no reason.",
+    conf: "High"
+  },
+  {
+    name: "Cement",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft: 20 Stone + 1 Bone + 1 Aquatic Pal Fluids &rarr; 10 Cement.</strong> Bone from a Cawgnito/Sootseer ranch, Fluids from a Kelpsea ranch. A closed loop." },
+    world: "Salvage from junk piles.",
+    party: "None.",
+    conf: "High"
+  },
+
+  /* ---------- RANCH MATERIALS ---------- */
+  {
+    name: "Honey",
+    tags: ["ranch", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "<strong>No vendor row</strong> — and Honey gates every Cake recipe, so it gates breeding." },
+    base: { status: "yes", detail: "<strong>Beegarde ranch</strong> — 1 at rank 1, 1–5 at rank 5. Effectively mandatory for a breeding base." },
+    world: "Elizabee 5 (100%). Warsect 3–4.",
+    party: "None. Put four condensed Beegarde on a ranch and forget about it.",
+    conf: "High"
+  },
+  {
+    name: "High Quality Pal Oil",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "poor", detail: "300g at six vendors — poor value when Polymer eats 2 per craft." },
+    base: { status: "yes", detail: "<strong>Dumud ranch.</strong> Dumud Gild rolls 80% HQ Pal Oil / 20% Gold Coin — a dual-purpose ranch slot." },
+    world: "Mammorest ~7.5 per kill. Expedition Desert (Hard) 10–20 guaranteed.",
+    party: "If you are killing Mammorest, bring <strong>Blazehowl</strong> — Grass Pals drop 40–80% more items.",
+    conf: "High"
+  },
+  {
+    name: "Venom Gland",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "poor", detail: "300g, uncapped, six vendors." },
+    base: { status: "yes", detail: "<strong>Caprity Noct</strong> or <strong>Depresso</strong> ranch, 1–5 at rank 5." },
+    world: "Menasting ~7.5 per kill.",
+    party: "Ranch it. If you insist on farming Menasting, stack the matching-element drop booster.",
+    conf: "High"
+  },
+  {
+    name: "Leather",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "poor", detail: "200g at settlement vendors — a convenience tax at Lv80." },
+    base: { status: "yes", detail: "<strong>Surfent ranch.</strong>" },
+    world: "Common drop from most beast Pals.",
+    party: "None.",
+    conf: "High"
+  },
+  {
+    name: "Wool",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "poor", detail: "200g." },
+    base: { status: "yes", detail: "<strong>Cremis</strong> or <strong>Melpaca</strong> (2 &rarr; 2–6, the best rate) beats Lamball (1 &rarr; 1–5)." },
+    world: "—",
+    party: "None.",
+    conf: "High"
+  },
+  {
+    name: "High Quality Cloth",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Sibelyx Primo</strong> (1–2 &rarr; 1–6) or Sibelyx (1 &rarr; 1–5). <strong>Drops finished cloth — skips the 10-Wool conversion entirely.</strong>" },
+    world: "—",
+    party: "None. One of the highest-value ranch slots in the game.",
+    conf: "High"
+  },
+  {
+    name: "Milk",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "poor", detail: "200g." },
+    base: { status: "yes", detail: "<strong>Mozzarina ranch</strong> (1–2 &rarr; 2–6). A Cake input." },
+    world: "—",
+    party: "None.",
+    conf: "High"
+  },
+  {
+    name: "Egg",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "poor", detail: "200g." },
+    base: { status: "yes", detail: "<strong>Chikipi ranch</strong> (1–2 &rarr; 2–6). A Cake input." },
+    world: "—",
+    party: "None.",
+    conf: "High"
+  },
+  {
+    name: "Bone",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "poor", detail: "200g." },
+    base: { status: "yes", detail: "<strong>Cawgnito</strong> or <strong>Sootseer</strong> ranch. Needed for Cement." },
+    world: "Skeletal Pals and dungeon drops.",
+    party: "None.",
+    conf: "High"
+  },
+  {
+    name: "Flame / Electric / Ice Organ",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "poor", detail: "300g each. Relevant because Carbon Fiber needs Flame Organ." },
+    base: { status: "yes", detail: "<strong>Flame:</strong> Flambelle, Rooby, Kelpsea Ignis. <strong>Electric:</strong> Sparkit. <strong>Ice:</strong> Foxcicle, Mau Cryst." },
+    world: "Bulk drops from any Pal of the matching element.",
+    party: "The matching-element drop booster if you are killing (e.g. Menasting for Electric).",
+    conf: "High"
+  },
+  {
+    name: "Aquatic Pal Fluids",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "poor", detail: "300g at the Wandering Merchant." },
+    base: { status: "yes", detail: "<strong>Kelpsea ranch.</strong> A Cement input." },
+    world: "—",
+    party: "None.",
+    conf: "High"
+  },
+  {
+    name: "Mushroom / Cavern Mushroom",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "rotate", detail: "Mushroom 300g from <strong>Caravan Merchant 14 only</strong> — one of 25 rotating lists. Not a supply line." },
+    base: { status: "yes", detail: "<strong>Shroomer ranch</strong> — 66.7% Mushroom / 33.3% Cavern Mushroom. The only reliable source." },
+    world: "Cave gathering.",
+    party: "None.",
+    conf: "Medium"
+  },
+  {
+    name: "Gold Coin",
+    tags: ["ranch", "currency", "base-ok"],
+    buy: { status: "no", detail: "It <em>is</em> the currency." },
+    base: { status: "yes", detail: "<strong>Mau ranch</strong> (10 &rarr; 10–50). Dumud Gild rolls 20% Gold Coin (100 &rarr; 100–500)." },
+    world: "<strong>The Bounty Officer converts 1 Successful Bounty Token into ~2,000 gold.</strong> Bounties are a gold <em>faucet</em>, not a sink.",
+    party: "Bounty hunting beats selling loot if you are gold-starved.",
+    conf: "High"
+  },
+  {
+    name: "Seeds (Wheat / Tomato / Lettuce / Carrot / Onion / Potato)",
+    tags: ["ranch", "base-ok"],
+    buy: { status: "yes", detail: "Berry 10g, Wheat 20g, Lettuce 40g at settlement vendors. Cheap — just buy the starter stock." },
+    base: { status: "yes", detail: "<strong>Vaelet ranch</strong> rolls all six seed types (weighted random). Plantations are self-sustaining once seeded." },
+    world: "Drop from the matching Grass Pals.",
+    party: "None. A plantation needs Planting &rarr; Watering &rarr; Gathering &rarr; Transporting Pals in rotation.",
+    conf: "High"
+  },
+
+  /* ---------- DROP-ONLY / CURRENCY ---------- */
+  {
+    name: "Legendary Schematics",
+    tags: ["cannot-buy", "must-leave", "finite"],
+    buy: { status: "poor", detail: "<strong>Only 6 of ~121 are buyable:</strong> 3 from the Arena (Battle Tickets, 600–1,500) and 2 from the Medal Merchant (Lily's Spear 600 / Enhanced 840 Dog Coin). The rest are drop-only." },
+    base: { status: "no", detail: "Not producible — but the <strong>Drafting Table merges 5 lower-tier schematics into 1 of the next tier</strong>." },
+    world: "<strong>Lv60 Oil Rig near Fabre Island</strong> — treat it as a <em>chest</em> farm, not a boss kill. The Greater Chest holds the Legendary Flamethrower, Grenade Launcher, Guided Missile Launcher, Gatling Gun and SMG. ~1% per chest is roughly 80 runs for a specific blueprint; the 5:1 merge cuts that to about 32.",
+    party: "<strong>Oil rigs do not drop legendary armour.</strong> Armour comes from Sakurajima-style dungeons at ~0.057% and from Alpha bosses.",
+    conf: "Medium-High"
+  },
+  {
+    name: "Successful Bounty Token",
+    tags: ["cannot-buy", "must-leave", "currency"],
+    buy: { status: "no", detail: "A currency, not merchandise." },
+    base: { status: "no", detail: "Not producible." },
+    world: "Defeat or capture wanted-criminal NPCs. Targets respawn roughly hourly. 1 token early, up to 5 for Ram at Lv59.",
+    party: "Buys the <strong>work and base implants</strong> (Artisan, Musclehead, Motivational Leader, Stronghold Strategist, Vanguard, Burly Body, Wellness Watcher) at 15 each, and stat fruit at 25 — the cheapest stat-fruit route in the game.",
+    conf: "High"
+  },
+  {
+    name: "Dog Coin",
+    tags: ["cannot-buy", "must-leave", "currency"],
+    buy: { status: "no", detail: "A currency." },
+    base: { status: "partial", detail: "Foot of the World Tree expeditions return Dog Coin." },
+    world: "Drops from <strong>Mimog</strong>.",
+    party: "Buys all 12 <strong>Applied Handbooks</strong> (300 each, a permanent +1 work suitability), plus Accessory Boxes, elixirs and stat fruit.",
+    conf: "High"
+  },
+  {
+    name: "Battle Ticket",
+    tags: ["cannot-buy", "must-leave", "currency"],
+    buy: { status: "no", detail: "A currency." },
+    base: { status: "no", detail: "Not producible." },
+    world: "Arena rewards only. The Arena sits at <code>631, 16</code>.",
+    party: "Buys the <strong>combat and mobility implants</strong> (Infinite Stamina, Runner, Ace Swimmer, Serenity, Noble, Reload Master, Healing Coach) at 50 each. <strong>No overlap with the Bounty Officer list</strong> — you need both currencies for a full passive toolkit.",
+    conf: "Medium-High"
+  },
+  {
+    name: "Pal Souls / Giant Pal Souls",
+    tags: ["cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "Expedition Station — Foot of the World Tree routes return Giant Pal Souls. The Pal Condenser converts duplicates." },
+    world: "Dungeon chests and Alpha drops.",
+    party: "<strong>Nitemary</strong> has a partner skill that specifically boosts Pal Soul drops.",
+    conf: "Medium"
+  }
+];
