@@ -372,5 +372,61 @@ const MATERIALS = [
     world: "Dungeon chests and Alpha drops.",
     party: "<strong>Nitemary</strong> has a partner skill that specifically boosts Pal Soul drops.",
     conf: "Medium"
+  },
+
+  /* ---------- THE AI CORE CHAIN (the real endgame bottleneck) ---------- */
+  {
+    name: "Hexolite Quartz",
+    tags: ["ore", "cannot-buy", "must-leave"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "no", detail: "Feybreak Island only — not a base-node resource." },
+    world: "<strong>Feybreak Island, south-west of Mount Obsidian.</strong> Densest cluster at <code>-1062, -1426</code> — three large clusters together, with an NPC standing between them as a landmark. Rainbow-coloured jagged nodes on beaches and grassland.",
+    party: "Template B (mining). Same island as Chromite — <strong>run both on one trip</strong> and bring Smokie for the buried Chromite.",
+    conf: "High"
+  },
+  {
+    name: "Cryogenic Coolant",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft: 1 Aquatic Pal Fluids + 1 Ice Organ</strong> (Tech 31). Kelpsea ranch + Foxcicle/Mau Cryst ranch. <strong>Both inputs are ranch items — fully automatable.</strong>" },
+    world: "—",
+    party: "None. Two ranch slots solve this permanently.",
+    conf: "High"
+  },
+  {
+    name: "Corrosive Solvent",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft: 1 Venom Gland + 1 Sulfur</strong> (Tech 37, any workbench). Caprity Noct ranch + sulfur node base. <strong>Fully automatable.</strong>" },
+    world: "—",
+    party: "None.",
+    conf: "High"
+  },
+  {
+    name: "Bio Battery",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row. Consumed 50 at a time by endgame weapons and 1 per ammo craft." },
+    base: { status: "yes", detail: "<strong>Craft: 1 Electric Organ + 1 Refined Ingot + 1 Carbon Fiber</strong> (Tech 44, Production Assembly Line). Sparkit ranch + ore/coal base + Flambelle ranch. <strong>Fully automatable — build this line early.</strong>" },
+    world: "—",
+    party: "None.",
+    conf: "High"
+  },
+  {
+    name: "Thermal Core",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "partial", detail: "<strong>Craft: 4 Flame Organ + 8 Coal + 2 Corrosive Solvent + 2 Hexolite</strong> (Tech 59). Everything automates except Hexolite, which is a Feybreak field trip." },
+    world: "<strong>Aegidron drops 1–2 at 100% per kill</strong> — and Aegidron is also the best Mining Pal in the game, so you are farming it anyway.",
+    party: "Kill Aegidron in the World Tree region while you are there for Paloxite. Two birds.",
+    conf: "High"
+  },
+  {
+    name: "AI Core",
+    tags: ["craft", "cannot-buy", "ancient"],
+    buy: { status: "no", detail: "No vendor row. <strong>The real endgame bottleneck</strong> — every Lv67+ weapon needs 3–10." },
+    base: { status: "partial", detail: "<strong>Craft: 5 Computer + 10 Soralite Ingot + 2 Thermal Core + 1 Ancient Civilization Core</strong> (Tech 67, Advanced Workshop)." },
+    world: "You are not just paying this recipe — you are paying the whole chain beneath it. Ancient Civilization Cores come from raids and expeditions; Soralite from Sunreach; Hexolite from Feybreak.",
+    party: "See the <a href=\"endgame-demand.html\">worked example</a> — 10 AI Cores for one Beam Launcher costs 40 Hexolite, 160 Coal and 10 Ancient Civilization Cores before you touch the weapon recipe itself.",
+    conf: "High"
   }
 ];

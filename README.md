@@ -12,19 +12,21 @@ A level-80 endgame reference for **Palworld 1.0.3** (solo world, default setting
 
 | Page | What it covers |
 |---|---|
-| `index.html` | The material ledger — 39 materials, filterable, with a buy/base/world verdict for each |
+| `index.html` | The material ledger — 45 materials, filterable, with a buy/base/world verdict for each |
 | `merchants.html` | All 12 vendor archetypes, locations, stock lists, and the four currencies |
 | `base-production.html` | The 1.0 work-suitability rework, all 29 ranch Pals, craft chains, node-base coordinates |
 | `world-farming.html` | Drop-rate mechanics, stacking, party templates, per-material routes, expeditions |
-| `endgame-demand.html` | What consumes your materials — verified recipes, ATP costs, 1.0.3 changes |
+| `endgame-demand.html` | What consumes your materials — every Lv67-80 weapon and ammo recipe, the armour ladder, the AI Core chain, cakes, spheres, Ultra raid loot, the Lv80 stat spread |
 | `sources.html` | Every source, a confidence ledger, and an honest list of what is unverified |
 
 ## The headline answers
 
 - At Lv80, **gold buys consumables, ammo, meds, bait, ranch commodities, skill fruits, hat schematics and live Pals — nothing else.** Every ore, ingot, alloy, ancient material, World Tree resource and raid drop is farm-only.
 - **Most things that look unfarmable are actually craft-only and fully automatable** — Polymer, Carbon Fiber and Cement all have no vendor row but close into self-sustaining base loops.
-- **Only three materials genuinely require field trips:** Chromite (buried, Feybreak), Soralite (Sunreach Isles) and Paloxite (World Tree, and you must drink Holy Water to mine it).
+- **Only four raw materials genuinely require field trips:** Chromite (buried, Feybreak), Hexolite Quartz (Feybreak — do both on one trip), Soralite (Sunreach Isles) and Paloxite (World Tree, and you must drink Holy Water to mine it).
 - **Drop-rate partner skills only affect items from defeated Pals.** They do nothing for mining nodes — so the "best farming party" depends entirely on which of the two farming games you are playing.
+- **Your real endgame bottleneck is the AI Core**, not Paloxite. Every Lv67+ weapon needs 3–10, and each sits on six tiers of intermediates — the bottom three of which are ranch-fed and fully automatable, so start them early.
+- **The Plasma Rifle is 4× more ammo-efficient than the Beam Launcher** — 0.15 vs 0.6 Paloxite Ingot per round.
 - **Different Pals with the same drop-boost effect stack**, despite the in-game tooltip saying otherwise.
 
 ## A warning about Palworld sources

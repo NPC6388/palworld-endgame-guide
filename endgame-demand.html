@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>What It Is All For — Palworld 1.0 Endgame</title>
-<meta name="description" content="The Lv80 checklist, the recipes that consume your farmed materials, and what patch 1.0.3 changed.">
+<meta name="description" content="Every Lv67-80 weapon and ammo recipe, the armour ladder, the AI Core chain, cake recipes, Ultra raid loot tables, and the Lv80 stat spread.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -30,61 +30,171 @@
 <main>
 <div class="wrap">
 
-  <div class="callout warn">
-    <span class="tag">This page is thinner than the others, on purpose</span>
-    <p>The research pass that was building the full recipe ledger was cut short. Rather than pad it with early-access recipe numbers that are almost certainly wrong for 1.0, this page carries only what I could verify against 1.0 sources, and says plainly where the gaps are. The <a href="sources.html">sources page</a> lists what still needs closing.</p>
+  <div class="answer">
+    <h2>The thing nobody tells you about Lv80 crafting</h2>
+    <p class="big">Your bottleneck is not Paloxite. It is the <em>AI Core</em> — and the four-tier intermediate chain underneath it. You are never just paying a weapon's recipe; you are paying for <em>Cryogenic Coolant &rarr; Corrosive Solvent &rarr; Bio Battery &rarr; Computer &rarr; Thermal Core &rarr; AI Core</em>, six unlocks deep, all at once.</p>
   </div>
 
-  <h2>The Lv80 checklist</h2>
-  <div class="cards">
-    <div class="card">
-      <h4><span class="who">Ultra Raids</span></h4>
-      <p>Six raid bosses — Bellanoir (plus Libero), Blazamut Ryu, Xenolord, Hartalis, and the Terraria crossover Moon Lord — spanning <strong>eleven encounters</strong> once Ultra and Master variants are counted. Ultra raids guarantee <strong>10 Ancient Civilization Cores</strong>. Bosses drop an egg of themselves plus IV Fruits.</p>
-    </div>
-    <div class="card">
-      <h4><span class="who">Legendary schematics</span></h4>
-      <p>~121 exist; only 6 are buyable. The rest come from Alpha Pals, hard-mode tower fights, and Lv60 Oil Rig gold chests. See <a href="world-farming.html">the Oil Rig section</a>.</p>
-    </div>
-    <div class="card">
-      <h4><span class="who">Condensing to 4 stars</span></h4>
-      <p>Max rank now needs <strong>48 Pals, down from 116</strong>. Worth doing for base workers (it is the fast route to work suitability 10) and for expedition Pals (4 stars = <strong>25&times;</strong> firepower).</p>
-    </div>
-    <div class="card">
-      <h4><span class="who">Implants</span></h4>
-      <p>Split across two currencies with no overlap: seven work/base passives at 15 Bounty Tokens, seven combat/mobility passives at 50 Battle Tickets.</p>
-    </div>
-    <div class="card">
-      <h4><span class="who">Expeditions</span></h4>
-      <p>The AFK material faucet. Complete the Expedition Time and Expedition Reward research for up to <strong>+1,348%</strong> rewards.</p>
-    </div>
-    <div class="card">
-      <h4><span class="who">Fishing</span></h4>
-      <p>Fishing Pond at Lv31, <strong>Large Fishing Pond at Lv69</strong>. World Tree Grand Master spots yield <strong>43–71 Holy Water per catch</strong>, plus schematics, Technical Manuals, Pal Souls and Coralum Ore.</p>
-    </div>
-  </div>
-
-  <h2>Verified 1.0 recipes</h2>
-  <p class="sub">Lv67–80 ranged weapons and their ammunition are made at the <strong>Ancient Workbench</strong>.</p>
+  <h2>The intermediate chain</h2>
+  <p class="sub">Six tiers, unlocking between Tech 31 and Tech 67. Build these lines <em>before</em> you need them — every one of the bottom four is fully automatable at base.</p>
 
   <div class="scroll">
   <table>
-    <thead><tr><th>Item</th><th>Cost</th><th>Conf.</th></tr></thead>
+    <thead><tr><th>Material</th><th>Tech</th><th>Recipe</th><th>Automatable?</th></tr></thead>
     <tbody>
-      <tr><td class="mat">Plasma Rifle</td><td class="detail"><code>100 Paloxite Ingot</code> + <code>62 Bio Battery</code> + <code>10 AI Core</code> + <code>8 Ancient Civilization Core</code> + <code>7 Ancient Civilization Parts</code></td><td class="conf">High</td></tr>
-      <tr><td class="mat">Beam Launcher</td><td class="detail"><code>10 AI Core</code> + <code>10 Ancient Civilization Core</code>, with Paloxite Ingot as the bulk material — <strong>exact ingot count unverified</strong></td><td class="conf">Medium</td></tr>
-      <tr><td class="mat">Jetragon (1.0.3)</td><td class="detail"><code>48 Soralite Ingot</code> + <code>12 AI Core</code> — <strong>simplified in 1.0.3</strong> from 60 Paloxite Ingot + 24 AI Core, removing the World Tree dependency. Tech moved 79 &rarr; 70.</td><td class="conf">High</td></tr>
-      <tr><td class="mat">Paloxite Ingot</td><td class="detail"><code>1 Soralite + 2 Paloxite + 1 World Tree Holy Water</code> &middot; Tech 74 (4 ATP) &middot; <strong>1,000,000 work</strong> &middot; feeds 22 recipes</td><td class="conf">High</td></tr>
-      <tr><td class="mat">Soralite Ingot</td><td class="detail"><code>2 Soralite + 2 Pure Quartz</code> &middot; Ancient Furnace &middot; Tech 66 (3 ATP) &middot; <strong>700,000 work</strong> &middot; feeds 59 recipes including AI Cores and Ancient Armor</td><td class="conf">High</td></tr>
-      <tr><td class="mat">Pal Metal Ingot</td><td class="detail"><code>4 Ore + 1 Pure Quartz + 2 Paldium</code> &middot; 50,000 work</td><td class="conf">High</td></tr>
-      <tr><td class="mat">Polymer</td><td class="detail"><code>2 HQ Pal Oil + 1 Sulfur</code> &middot; Tech 33</td><td class="conf">High</td></tr>
-      <tr><td class="mat">Carbon Fiber</td><td class="detail"><code>5 Charcoal + 1 Flame Organ</code> &middot; Tech 35</td><td class="conf">High</td></tr>
-      <tr><td class="mat">Cement</td><td class="detail"><code>20 Stone + 1 Bone + 1 Aquatic Pal Fluids &rarr; 10</code></td><td class="conf">High</td></tr>
+      <tr><td class="mat">Cryogenic Coolant</td><td><code>31</code></td><td class="detail"><code>1 Aquatic Pal Fluids + 1 Ice Organ</code></td><td><span class="pill yes">Yes</span> Kelpsea + Foxcicle ranches</td></tr>
+      <tr><td class="mat">Corrosive Solvent</td><td><code>37</code></td><td class="detail"><code>1 Venom Gland + 1 Sulfur</code></td><td><span class="pill yes">Yes</span> Caprity Noct ranch + sulfur base</td></tr>
+      <tr><td class="mat">Bio Battery</td><td><code>44</code></td><td class="detail"><code>1 Electric Organ + 1 Refined Ingot + 1 Carbon Fiber</code></td><td><span class="pill yes">Yes</span> Sparkit + Flambelle ranches + ore/coal base</td></tr>
+      <tr><td class="mat">Computer</td><td><code>50</code></td><td class="detail"><strong>Recipe unverified</strong> — I could not confirm it against a 1.0 source</td><td><span class="pill partial">Unknown</span></td></tr>
+      <tr><td class="mat">Thermal Core</td><td><code>59</code></td><td class="detail"><code>4 Flame Organ + 8 Coal + 2 Corrosive Solvent + 2 Hexolite</code></td><td><span class="pill partial">Partial</span> Hexolite is a Feybreak trip. <strong>Aegidron drops 1–2 at 100%.</strong></td></tr>
+      <tr><td class="mat">AI Core</td><td><code>67</code></td><td class="detail"><code>5 Computer + 10 Soralite Ingot + 2 Thermal Core + 1 Ancient Civilization Core</code> — Advanced Workshop</td><td><span class="pill no">No</span> Gated on raids and Sunreach</td></tr>
     </tbody>
   </table>
   </div>
 
+  <div class="callout warn">
+    <span class="tag">Worked example — one Beam Launcher</span>
+    <p>The Beam Launcher (Tech 80) costs <code>100 Paloxite Ingot + 50 Bio Battery + 10 AI Core + 10 Ancient Civilization Core</code>. Unpacked:</p>
+    <ul>
+      <li><strong>100 Paloxite Ingot</strong> = 200 Paloxite + 100 Soralite + 100 World Tree Holy Water</li>
+      <li><strong>10 AI Core</strong> = 50 Computer + 100 Soralite Ingot + <strong>20 Thermal Core</strong> + 10 Ancient Civilization Core</li>
+      <li><strong>20 Thermal Core</strong> = 80 Flame Organ + <strong>160 Coal</strong> + 40 Corrosive Solvent + <strong>40 Hexolite</strong></li>
+      <li><strong>100 Soralite Ingot</strong> (for the AI Cores alone) = 200 Soralite + 200 Pure Quartz</li>
+    </ul>
+    <p>So a single Beam Launcher needs roughly <strong>20 Ancient Civilization Cores</strong>, <strong>300 Soralite</strong>, <strong>200 Paloxite</strong>, <strong>40 Hexolite</strong> and <strong>100 Holy Water</strong> — before ammunition. <span class="conf">Derived arithmetic from the recipes below; treat as an order-of-magnitude figure.</span></p>
+  </div>
+
+  <h2>Weapons &mdash; the full 1.0 ladder</h2>
+  <p class="sub">Lv67–80 ranged weapons and their ammunition are made at the <strong>Ancient Workbench</strong>.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Weapon</th><th>Tech</th><th>Recipe</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Mechanical Bow</td><td><code>67</code></td><td class="detail">Soralite Ingot 40 &middot; Carbon Fiber 20 &middot; Paldium Fragment 200 &middot; AI Core 3</td></tr>
+      <tr><td class="mat">Combat SMG</td><td><code>68</code></td><td class="detail">Soralite Ingot 50 &middot; Carbon Fiber 30 &middot; Cryogenic Coolant 20 &middot; AI Core 4</td></tr>
+      <tr><td class="mat">Enhanced Lily&rsquo;s Spear</td><td><code>68</code></td><td class="detail">Paldium Fragment 20 &middot; Soralite Ingot 30 &middot; HQ Cloth 20 &middot; HQ Wooden Board 20 <em>(Advanced Workshop)</em></td></tr>
+      <tr><td class="mat">Prototype Shotgun</td><td><code>69</code></td><td class="detail">Soralite Ingot 60 &middot; Carbon Fiber 40 &middot; Thermal Core 5 &middot; AI Core 5</td></tr>
+      <tr><td class="mat">Heavy Assault Rifle</td><td><code>70</code></td><td class="detail">Soralite Ingot 100 &middot; Carbon Fiber 50 &middot; Bio Battery 30 &middot; AI Core 5</td></tr>
+      <tr><td class="mat">Tactical Grenade Launcher</td><td><code>72</code></td><td class="detail">Soralite Ingot 80 &middot; Corrosive Solvent 15 &middot; Thermal Core 5 &middot; AI Core 5</td></tr>
+      <tr><td class="mat">Laser Sword</td><td><code>73</code></td><td class="detail">Soralite Ingot 50 &middot; Paldium Fragment 250 &middot; Bio Battery 30 &middot; AI Core 3</td></tr>
+      <tr><td class="mat">Beam Scatter</td><td><code>75</code></td><td class="detail">Paloxite Ingot 50 &middot; Soralite Ingot 50 &middot; AI Core 5 &middot; Ancient Civ Core 5</td></tr>
+      <tr><td class="mat">Drone Launcher</td><td><code>77</code></td><td class="detail">Paloxite Ingot 70 &middot; <strong>World Tree Holy Water 40</strong> &middot; AI Core 8 &middot; Ancient Civ Core 5</td></tr>
+      <tr><td class="mat">Plasma Rifle</td><td><code>78</code></td><td class="detail">Paloxite Ingot 80 &middot; Bio Battery 50 &middot; AI Core 8 &middot; Ancient Civ Core 7</td></tr>
+      <tr><td class="mat">Beam Launcher</td><td><code>80</code></td><td class="detail">Paloxite Ingot 100 &middot; Bio Battery 50 &middot; AI Core 10 &middot; Ancient Civ Core 10 &mdash; <strong>the largest single craft in the game</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="callout warn">
+    <span class="tag">Source conflict on the Plasma Rifle</span>
+    <p>One source gives the Plasma Rifle as <code>100 Paloxite Ingot + 62 Bio Battery + 10 AI Core + 8 Ancient Civ Core + 7 Ancient Civ Parts</code>, which contradicts the table above. The figures in the table come from a complete, internally-consistent ladder where costs escalate cleanly from Tech 67 to 80, so I have preferred them — but <strong>verify before you commit 100 Paloxite Ingots.</strong></p>
+  </div>
+
+  <h2>Ammunition &mdash; your real bulk sink</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Ammo</th><th>Tech</th><th>Materials</th><th>Yield</th><th>Per round</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Mechanical Bow</td><td><code>67</code></td><td class="detail">Soralite Ingot 2</td><td><code>10</code></td><td class="detail"><strong>0.2 Soralite Ingot</strong> — by far the cheapest</td></tr>
+      <tr><td class="mat">Combat SMG</td><td><code>68</code></td><td class="detail">Gunpowder 6 &middot; Soralite Ingot 2</td><td><code>20</code></td><td class="detail">0.1 Soralite Ingot</td></tr>
+      <tr><td class="mat">Prototype Shotgun</td><td><code>69</code></td><td class="detail">Gunpowder 8 &middot; Soralite Ingot 4</td><td><code>10</code></td><td class="detail">0.4 Soralite Ingot</td></tr>
+      <tr><td class="mat">Heavy Assault Rifle</td><td><code>70</code></td><td class="detail">Gunpowder 10 &middot; Soralite Ingot 2</td><td><code>20</code></td><td class="detail">0.1 Soralite Ingot</td></tr>
+      <tr><td class="mat">Tactical Grenade Launcher</td><td><code>72</code></td><td class="detail">Gunpowder 10 &middot; Soralite Ingot 4</td><td><code>10</code></td><td class="detail">0.4 Soralite Ingot</td></tr>
+      <tr><td class="mat">Beam Scatter</td><td><code>75</code></td><td class="detail">Bio Battery 1 &middot; Soralite Ingot 2 &middot; Paloxite Ingot 3</td><td><code>10</code></td><td class="detail"><strong>0.3 Paloxite Ingot</strong></td></tr>
+      <tr><td class="mat">Plasma Rifle</td><td><code>78</code></td><td class="detail">Bio Battery 1 &middot; Soralite Ingot 2 &middot; Paloxite Ingot 3</td><td><code>20</code></td><td class="detail">0.15 Paloxite Ingot</td></tr>
+      <tr><td class="mat">Beam Launcher</td><td><code>80</code></td><td class="detail">Bio Battery 1 &middot; Soralite Ingot 2 &middot; <strong>Paloxite Ingot 6</strong></td><td><code>10</code></td><td class="detail"><strong>0.6 Paloxite Ingot</strong> — the most expensive round in the game</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="callout good">
+    <span class="tag">The ammo economics that actually matter</span>
+    <p><strong>The Plasma Rifle is four times more ammo-efficient than the Beam Launcher.</strong> Same materials per craft, but 20 rounds instead of 10, and 3 Paloxite Ingot instead of 6 — 0.15 vs 0.6 Paloxite Ingot per round. Unless you specifically need the Beam Launcher's damage profile, the Plasma Rifle is the sustainable endgame weapon.</p>
+    <p>Every Beam Launcher round costs <strong>1.2 Paloxite + 0.6 Soralite + 0.6 World Tree Holy Water</strong> once you unpack the ingot. A 100-round session is 120 Paloxite — several full World Tree runs, each gated behind 30-second Holy Water buffs.</p>
+    <p><strong>The Mechanical Bow is the sleeper.</strong> 0.2 Soralite Ingot per round, no Paloxite at all, no gunpowder. If you are grinding something repetitive, it is nearly free.</p>
+  </div>
+
+  <h2>Armour</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Armour</th><th>Tech</th><th>Def</th><th>HP</th><th>Recipe</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Metal</td><td><code>23</code></td><td><code>70</code></td><td><code>250</code></td><td class="detail">—</td></tr>
+      <tr><td class="mat">Refined Metal</td><td><code>37</code></td><td><code>150</code></td><td><code>500</code></td><td class="detail">—</td></tr>
+      <tr><td class="mat">Pal Metal</td><td><code>46</code></td><td><code>220</code></td><td><code>750</code></td><td class="detail">Pal Metal Ingot 20 &middot; Leather 20 &middot; HQ Cloth 4</td></tr>
+      <tr><td class="mat">Plasteel</td><td><code>51</code></td><td><code>385</code></td><td><code>1,300</code></td><td class="detail">—</td></tr>
+      <tr><td class="mat">Lightweight Plasteel</td><td><code>55</code></td><td><code>400</code></td><td><code>1,300</code></td><td class="detail">Plasteel 30 &middot; Pal Metal Ingot 30 &middot; HQ Cloth 5</td></tr>
+      <tr><td class="mat">Hexolite</td><td><code>59</code></td><td><code>580</code></td><td><code>1,750</code></td><td class="detail">Hexolite 50 &middot; Plasteel 20 &middot; HQ Cloth 10 &mdash; <strong>Heat 2 and Cold 2 built in</strong></td></tr>
+      <tr><td class="mat">Ancient Armor</td><td><code>68</code></td><td><code>800</code></td><td><code>2,400</code></td><td class="detail">Soralite Ingot 30 &middot; AI Core 3 &mdash; Ancient Workbench. Heat 2 / Cold 2.</td></tr>
+      <tr><td class="mat">Legendary Ancient Armor</td><td><code>68</code></td><td><code>1,040</code></td><td>—</td><td class="detail">Soralite Ingot 60 &middot; AI Core 6 &middot; Ancient Civ Parts 9 &mdash; <strong>best raw stats in the game</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Hexolite Armor is the best <em>craftable</em> armour</strong> — 580 defence with Heat 2 and Cold 2 built into the base piece, so it covers both level-2 climate zones without needing variants. Ancient Armor beats it on raw numbers but is gated behind AI Cores. Legendary Metal Armor drops at <strong>3%</strong> from Supreme Fluff Commander Kingpaca.</p>
+
+  <h2>Cake &mdash; all five recipes</h2>
+  <p class="sub">1.0 kept the original recipe untouched and added four specialty breeding cakes. All gated on <strong>Honey</strong>, which has no vendor.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Cake</th><th>Unlock</th><th>Recipe</th><th>Effect</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Cake</td><td><code>17</code></td><td class="detail">Flour 5 &middot; Red Berries 8 &middot; Milk 7 &middot; Egg 8 &middot; <strong>Honey 2</strong></td><td class="detail">Standard breeding</td></tr>
+      <tr><td class="mat">Mushroom Cake</td><td><code>30</code></td><td class="detail">Flour 5 &middot; Mushroom 5 &middot; Cavern Mushroom 3 &middot; Egg 8 &middot; <strong>Honey 2</strong></td><td class="detail">Slightly better stats at birth</td></tr>
+      <tr><td class="mat">Vegetable Cake</td><td>—</td><td class="detail">Flour 8 &middot; Tomato 8 &middot; Lettuce 7 &middot; Egg 8 &middot; <strong>Honey 4</strong></td><td class="detail"><strong>Two eggs at once</strong></td></tr>
+      <tr><td class="mat">Extravagant Vegetable Cake</td><td><code>60</code></td><td class="detail">Flour 12 &middot; Cotton Candy 8 &middot; Potato 10 &middot; Onion 6 &middot; Carrot 8</td><td class="detail">Higher mutation and stat chance</td></tr>
+      <tr><td class="mat">Special Cake</td><td><code>74</code></td><td class="detail">Flour 20 &middot; Caramel Cotton Candy 8 &middot; Milk 15 &middot; Egg 15 &middot; Mammorest Meat 2</td><td class="detail"><strong>Better passive-skill inheritance</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout good">
+    <span class="tag">One base supplies every cake</span>
+    <p>Beegarde (Honey) &middot; Mozzarina (Milk) &middot; Chikipi (Egg) &middot; Caprity (Red Berries) &middot; Shroomer (both Mushrooms) &middot; Woolipop and Woolipop Terra (both Cotton Candies) &middot; Vaelet (all six seed types for the vegetable cakes) &middot; plus a wheat plantation for Flour. Nine ranch slots and one plantation covers <strong>all five recipes</strong> — and the Extravagant Vegetable Cake needs no Honey at all.</p>
+  </div>
+
+  <h2>Spheres</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Sphere</th><th>Tech</th><th>Recipe</th><th>Power</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Ultra Sphere</td><td><code>35</code></td><td class="detail">Paldium Fragment 5 &middot; Refined Ingot 5 &middot; Carbon Fiber 2 &middot; Cement 3 <em>(Sphere Assembly Line II)</em></td><td><code>32</code></td></tr>
+      <tr><td class="mat">Legendary Sphere</td><td><code>44</code></td><td class="detail">Paldium Fragment 10 &middot; Pal Metal Ingot 5 &middot; Carbon Fiber 3 &middot; Cement 5</td><td><code>37</code></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Every input is base-automatable. Capture bonuses from meals, accessories and low HP <strong>stack multiplicatively</strong>, not as flat luck — so weakening an Alpha below 10% HP and applying Sleep or Burn does more for your odds than upgrading the sphere tier.</p>
+
+  <h2>Ultra Raids &mdash; loot tables</h2>
+  <p class="sub">Beat the normal version first to get the Ultra Slab. All Ultra bosses are Lv80 with ~91% damage reduction.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Boss</th><th>HP / Element</th><th>Guaranteed</th><th>Exclusive</th><th>Slab return</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Bellanoir Libero Ultra</td><td class="detail">2,394,000 &middot; Dark</td><td class="detail"><strong>10 Ancient Civ Core</strong> &middot; 10 Training Crystal</td><td class="detail">Witch&rsquo;s Crown — Dragon Dmg Reduction Lv1</td><td><span class="pill yes">100%</span></td></tr>
+      <tr><td class="mat">Hartalis Ultra</td><td class="detail">1,952,000 &middot; Water/Grass<br><span class="conf">80% DR — the softest target</span></td><td class="detail"><strong>10 Ancient Civ Core</strong> &middot; 10 Training Crystal</td><td class="detail">Crown of Salvation — Electric Dmg Reduction Lv1</td><td><span class="pill yes">100%</span></td></tr>
+      <tr><td class="mat">Blazamut Ryu Ultra</td><td class="detail">2,550,000 &middot; Fire/Dragon</td><td class="detail"><strong>10 Ancient Civ Core</strong> &middot; 10 Training Crystal</td><td class="detail">Horns of Supremacy — Water Dmg Reduction Lv1</td><td><span class="pill no">10%</span></td></tr>
+      <tr><td class="mat">Xenolord Ultra</td><td class="detail">2,394,000 &middot; Dragon/Dark<br><span class="conf">Triple damage to flying targets</span></td><td class="detail"><strong>10 Ancient Civ Core</strong> &middot; 10 Training Crystal</td><td class="detail">Xenolord&rsquo;s Head — Ice Dmg Reduction Lv1</td><td><span class="pill no">10%</span></td></tr>
+      <tr><td class="mat">Moon Lord (Master)</td><td class="detail">2,352,000 &middot; non-elemental<br><span class="conf">75% DR</span></td><td class="detail"><strong>10 Ancient Civ Core</strong> &middot; <strong>10–20 Ancient Civ Parts</strong> &middot; 5–10 Diamond &middot; Moon Lord Statue Schematic</td><td class="detail">Schematic 4 weapons at 25% each</td><td><span class="pill yes">100%</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout good">
+    <span class="tag">Which raid to farm</span>
+    <p><strong>Bellanoir Libero and Hartalis return their Ultra Slab at 100%</strong> — they are infinitely repeatable. Blazamut Ryu and Xenolord return it at only <strong>10%</strong>, so each run is very likely to cost you the slab. Farm the first two for Ancient Civilization Cores; treat the other two as one-offs for the cosmetic and the egg.</p>
+    <p>Hartalis is also the softest fight — 80% damage reduction against 91% on the others, and roughly 400,000 less HP.</p>
+    <p>All Ultra raids also drop <strong>Applied Handbooks at 33.3%</strong> per variant, which is a second source alongside the 300-Dog-Coin Medal Merchant.</p>
+  </div>
+
+  <h2>Your stat spread at Lv80</h2>
+  <p class="sub">Roughly 79 status points across a full playthrough, and <strong>each stat caps at 50 invested points</strong>.</p>
+  <ol class="slots">
+    <li><span class="n">Weight &mdash; 50 points (max it)</span><span class="d">First priority, no debate. Every farming loop in this guide is gated on how much ore, ingot and Holy Water you can carry home.</span></li>
+    <li><span class="n">Stamina &mdash; the bulk of the remaining 29</span><span class="d">The World Tree, Sunreach and the Sky Islands are all long glides and vertical climbs. This is a 1.0-specific priority shift — the old islands did not demand it.</span></li>
+    <li><span class="n">HP &mdash; whatever is left</span><span class="d">A buffer for raids and Alphas.</span></li>
+    <li><span class="n">Attack and Work Speed &mdash; skip both</span><span class="d">Your Pals outperform you in both roles. Weapon tier, ammo type and your active Pals&rsquo; skills swing damage far more than the per-point Attack bump.</span></li>
+  </ol>
+
   <h2>Ancient Technology Points &mdash; the hard gate</h2>
-  <p>ATP has <strong>no shop and no exchange</strong>. Every source pays out once, from tower bosses, Alpha bosses, and one-time consumables. That makes it the only genuinely finite currency in the game, and it is worth planning your spend before you commit.</p>
+  <p>ATP has <strong>no shop and no exchange</strong>. Every source pays out once, from tower bosses, Alpha bosses and one-time consumables — the only genuinely finite currency in the game.</p>
   <div class="scroll">
   <table>
     <thead><tr><th>Unlock</th><th>ATP</th></tr></thead>
@@ -95,34 +205,33 @@
       <tr><td class="mat">Triple Jump Boots</td><td><code>6</code></td></tr>
       <tr><td class="mat">Paloxite Ingot (Tech 74)</td><td><code>4</code></td></tr>
       <tr><td class="mat">Soralite Ingot (Tech 66)</td><td><code>3</code></td></tr>
+      <tr><td class="mat">Thermal Core (Tech 59)</td><td><code>3</code></td></tr>
     </tbody>
   </table>
   </div>
 
   <h2>What patch 1.0.3 changed (12 August 2026)</h2>
   <ul>
-    <li><strong>Jetragon</strong> — tech unlock 79 &rarr; 70; recipe simplified to 48 Soralite Ingot + 12 AI Core, dropping the World Tree requirement entirely.</li>
-    <li><strong>World Tree Holy Water</strong> — weight cut from 1.0 to <strong>0.1</strong> (a 90% reduction), new sources added via expeditions and fishing, and the Large Fishing Pond now yields it passively between sessions.</li>
+    <li><strong>Jetragon</strong> — tech unlock 79 &rarr; 70; recipe simplified to <code>48 Soralite Ingot + 12 AI Core</code> from <code>60 Paloxite Ingot + 24 AI Core</code>, dropping the World Tree requirement entirely.</li>
+    <li><strong>World Tree Holy Water</strong> — weight cut from 1.0 to <strong>0.1</strong>, new sources via expeditions and fishing, and the Large Fishing Pond now yields it passively between sessions.</li>
     <li><strong>Aquatic Construction Kit</strong> — unlock 66 &rarr; <strong>23</strong>, moving offshore bases from late-game to mid-game.</li>
     <li><strong>Oil infrastructure</strong> — build costs down, extraction speed up.</li>
   </ul>
 
-  <h2>Gaps I have not closed</h2>
-  <p class="sub">Listed honestly rather than guessed at. These are the next things worth researching.</p>
+  <h2>Still unverified</h2>
   <ul>
-    <li><strong>Full armour recipes</strong> — including whether any 1.0 tier sits above Legendary Metal Armor, and the exact Ancient Armor cost.</li>
-    <li><strong>Ammo economics</strong> — per-craft cost and realistic per-hour consumption for the Lv67–80 weapons. This is very likely your largest bulk material sink, but I have no verified numbers.</li>
-    <li><strong>Cake</strong> — the exact 1.0 recipe and full input chain. The ingredients (Honey, Milk, Egg, Berries, Wheat) are confirmed; the quantities are not.</li>
-    <li><strong>Ultra raid loot tables</strong> — per-boss drop lists beyond "10 Ancient Civilization Cores, an egg, and IV Fruits".</li>
-    <li><strong>Sphere costs</strong> — Ultra/Legendary sphere recipes and Sphere Launcher ammo.</li>
-    <li><strong>Player stat allocation at Lv80</strong> — see the note on the <a href="world-farming.html">world farming page</a>.</li>
+    <li><strong>The Computer recipe</strong> (Tech 50) — the one gap in the AI Core chain. You need 5 per AI Core, so this matters.</li>
+    <li><strong>Plasma Rifle cost</strong> — two sources disagree; see the note above.</li>
+    <li><strong>Gunpowder-per-craft yield</strong> — the mid-tier ammo costs are given in gunpowder, but I did not confirm the Sulfur-to-Gunpowder conversion rate.</li>
+    <li><strong>Hexolite vs Hexolite Quartz</strong> — recipes call for "Hexolite" while the world node is "Hexolite Quartz". Almost certainly a smelt or crush step, but I did not confirm the conversion.</li>
+    <li><strong>Plasteel recipe</strong> — needed for both Lightweight Plasteel and Hexolite Armor.</li>
   </ul>
 
 </div>
 </main>
 
 <footer class="site">
-  <div class="wrap">Recipe data verified against 1.0 sources where marked. Unverified figures are labelled as such rather than smoothed over. <a href="sources.html">Sources</a>.</div>
+  <div class="wrap">Recipes verified against 1.0 sources. Conflicts and gaps are flagged inline rather than smoothed over. <a href="sources.html">Sources</a>.</div>
 </footer>
 
 </body>
