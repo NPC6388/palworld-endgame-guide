@@ -4,6 +4,41 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Weapon costs scale with rarity; Katress confirmed Neutral
+
+Three more in-game screenshots. Both remaining source conflicts resolved, and one of them was not a
+conflict at all.
+
+### The Plasma Rifle "conflict" was a missing variable
+The guide had been weighing two published recipes (80/50/8/7 and 100/62/10/8) and had picked one.
+The screenshot of the **Common** Plasma Rifle shows a third set: `68 Paloxite Ingot + 42 Bio Battery
++ 6 AI Core + 5 Ancient Civilization Core`, Attack **1,860**.
+
+All three are real. **Weapon material cost scales with the rarity of the schematic** (Common ->
+Uncommon -> Rare -> Epic -> Legendary), so 68 -> 80 -> 100 Paloxite Ingot is one ladder, not a
+contradiction.
+
+**Consequence for the whole weapons table:** every other row is a snapshot of an *unknown* rung.
+They are comparable to each other but are not the cost of the schematic in your inventory. The table
+now carries that caveat, and only the Plasma Rifle row is pinned to a known rarity.
+
+### Katress confirmed - and a trap named
+In-game tooltip: **Mystical Black Magic** - *"While in party, Neutral Pals drop 40% more items when
+defeated"*, plus a **10% chance to prevent Pal Sphere consumption** when thrown.
+
+So Game8 was right and the Holy Water guide's "Fire" label was wrong, which means **Starryon Primo
+is a Neutral Pal**. The pairing was always the trustworthy part.
+
+**The trap, now stated explicitly on the farming page:** a Pal's own element is *not* the element it
+boosts. Katress is **Dark** and boosts Neutral; Blazehowl Noct is **Fire/Dark** and also boosts
+Neutral. That mis-inference is the likely origin of the bad label. Never read the boosted element off
+the Pal's typing.
+
+Also: Katress and Blazehowl Noct are different species, so on the Alluvion Holy Water route you can
+**run both and stack** rather than choosing.
+
+---
+
 ## 2026-09-04 - In-game screenshots: Computer chain confirmed, per-job passive claim corrected
 
 Player-supplied screenshots of the crafting UI and two passive tooltips. Highest-confidence source

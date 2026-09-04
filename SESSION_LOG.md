@@ -4,6 +4,50 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - Both remaining conflicts closed; one was never a conflict
+
+Three more screenshots: the Common Plasma Rifle panel, a Blazehowl Noct name bar, and the Katress
+Paldeck entry.
+
+### The lesson worth carrying from this one
+
+The Plasma Rifle had two published recipes that disagreed. I logged it as a **source conflict**,
+picked the internally-consistent ladder, and flagged it for verification. The screenshot shows a
+**third** set of numbers - and the reason is that **weapon cost scales with schematic rarity**.
+
+There was never a conflict. There was an **unstated variable**, and neither source named its tier.
+
+That is now twice in one day: the drop-booster "contradiction" was a vocabulary problem (same species
+vs different species), and this was a missing dimension. **When two careful sources disagree on a
+number, suspect a hidden variable before suspecting an error.** I have written that into the
+correction log on the site as well.
+
+It also means the whole weapons table is softer than it looked - every row is one rung of an unknown
+ladder. That caveat is now at the top of the table rather than implied.
+
+### Katress - clean confirmation, plus a trap
+
+Tooltip: Mystical Black Magic, *"While in party, Neutral Pals drop 40% more items when defeated"*,
+plus a 10% chance to save a Pal Sphere. Game8's table was right; the Holy Water guide's "Fire" label
+was wrong; therefore **Starryon Primo is Neutral**.
+
+The likely cause of the bad label is worth recording: **Blazehowl Noct is a Fire/Dark Pal that boosts
+Neutral.** Someone read the boosted element off the Pal's own typing. The guide now says explicitly
+not to do that.
+
+Practical upside: Katress and Blazehowl Noct are different species, so the Alluvion Holy Water route
+can run both boosters stacked.
+
+### Still open
+- A few **Rainbow passive** effects unpublished (Babysitter, Lavish Hospitality, Heavily Armored).
+- The **Paloxite Reddit links** - still not on disk; that content remains guide-site sourced.
+- **Every weapon row except the Plasma Rifle** is now known to be rarity-ambiguous. If more crafting
+  screenshots turn up, pinning even a couple of rows to Common would firm the table considerably.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (cont.) - Screenshots beat every source I had
 
 User supplied four in-game screenshots: the Computer and AI Core crafting panels, and the Farmhand
