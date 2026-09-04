@@ -55,8 +55,8 @@ const MATERIALS = [
     tags: ["ore", "cannot-buy", "must-leave", "new-10"],
     buy: { status: "no", detail: "No vendor row. The rarest mining resource in 1.0." },
     base: { status: "no", detail: "Cannot be node-farmed at a base — World Tree region only." },
-    world: "<strong>World Tree region exclusively.</strong> Routes: <code>-1560, 1510</code> (Dusty Ravine FT) &middot; <code>-1710, 1535</code> (Remnant Riverside, 3 nodes) &middot; <code>-1800, 1465</code> (Gilded Metropolis Ruins, 3 nodes).",
-    party: "<strong>Nodes vanish as you approach unless you have drunk World Tree Holy Water</strong> — one bottle gives a short window to chain several nodes. Carry a large stack (weight is 0.1 since 1.0.3). A <em>Rainbow passive</em> is reported as an alternative to Holy Water <span class=\"conf\">(single source, unconfirmed)</span>. Plasma Multicutter required. Once the loop is set, Paloxite comes in stacks of hundreds per run.",
+    world: "<strong>World Tree region exclusively.</strong> Three clusters: <code>-1560, 1510</code> Dusty Ravine (3 tight nodes by the FT point — best single stop) &middot; <code>-1710, 1535</code> Remnant Riverside (3 + scattered extras on the exit paths) &middot; <code>-1800, 1465</code> Gilded City Ruins (<strong>6</strong>, two trios close enough to run as one route).",
+    party: "<strong>Crystals despawn on proximity without the Holy Water buff — and your <em>Pal’s</em> proximity triggers it too</strong>, so a Pal running ahead can wipe the node. Window is <strong>30–60s</strong>. Better: a Pal with a <strong>World Tree passive (Dimensional Leap or Hermit Sage)</strong> gives <strong>permanent</strong> protection instead. Plasma Multicutter mandatory (and doubles yield). Bring <strong>Dandilord</strong> for toxic gas and <strong>Lunaris</strong> for weight.",
     conf: "High"
   },
   {
@@ -64,8 +64,8 @@ const MATERIALS = [
     tags: ["cannot-buy", "new-10", "base-ok"],
     buy: { status: "no", detail: "No vendor row." },
     base: { status: "yes", detail: "<strong>Large Fishing Pond</strong> (Tech 69) passively yields it between sessions — added/buffed in patch 1.0.3." },
-    world: "World Tree fishing: <strong>43–71 per catch</strong>. Expedition World Tree (Hard): 32–38. Alpha bosses 20–30, 100%.",
-    party: "Advanced Fishing Rod + Alluring Bait at World Tree Grand Master spots. Weight is no longer a problem — 1.0.3 cut it from 1.0 to 0.1.",
+    world: "<strong>Alluvion Lakefront kill-loop</strong> <code>-1638, 1340</code> — reported <strong>500+ in 10–15 min</strong>. World Tree Pals Lv70+ drop 1–3 at 50% (Starryon Primo, Shaolong, Orserk, Snock Lux); Teafant Springs give 5–10 guaranteed and recharge. Also fishing 43–71/catch; Expedition World Tree (Hard) 32–38; alpha bosses 20–30 at 100%.",
+    party: "<strong>The one route where a drop-boosting party is the whole point.</strong> Match the booster to the species: Katress/Blazehowl Noct for Starryon Primo, Fenglope Lux for Shaolong, Menasting for Orserk and Snock Lux. See <a href=\"world-farming.html\">Template E</a>.",
     conf: "High"
   },
   {

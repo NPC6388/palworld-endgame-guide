@@ -4,6 +4,69 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 — Bookmarked Reddit post; Reddit is unreachable; a claim had to be withdrawn
+
+**Ask:** pull a specific bookmarked Reddit post about a drop-boosting party for farming Holy Water,
+plus bookmarked posts on farming Paloxite, and fold them into the guide.
+
+### Two environment problems worth knowing before you try this again
+
+1. **Reddit is hard-blocked from WebFetch.** `www.reddit.com` and `old.reddit.com` both return
+   "unable to fetch". Not a rate limit or a redirect — the domain is unavailable. The last session
+   recorded this as an agent-only limitation; it is not, it applies to the main session too.
+   **Workaround that worked:** search for the post's subject and find a guide site covering the same
+   farm, then attribute honestly. Do not pretend to have read the post.
+2. **The Brave `Bookmarks` file on disk lags the live browser.** It was last written **31 Aug**;
+   the session ran on **4 Sep**. Anything bookmarked in that window is not on disk. This is almost
+   certainly why the Paloxite posts the user referred to could not be found — a full-file grep for
+   `paloxite|holy water|world tree|soralite` across **all 4,099** bookmarks returned exactly one hit
+   (the Holy Water post). Worth telling the user rather than silently substituting sources.
+
+### The find that mattered
+
+The Holy Water post led to the **Alluvion Lakefront kill-loop** — and to the realisation that the
+guide had a structural hole. Every endgame route documented so far is *node mining*, where drop
+boosters do nothing. Holy Water is the one endgame material you get by **killing Pals**, so it is
+the one place the whole drop-boost party mechanic actually pays off. That is now Template E, with
+per-species booster pairings.
+
+Also corrected a real gotcha: **Paloxite nodes despawn from your *Pal's* proximity, not just yours.**
+And a Pal with a **World Tree passive (Dimensional Leap / Hermit Sage)** grants permanent protection,
+making the 30-second Holy Water scramble optional. That supersedes the "Rainbow passive" line added
+last session, which the better source explicitly contradicts.
+
+### Withdrew a headline claim
+
+The guide asserted that different Pals with the same drop-boost effect **stack** (Penking + Faleris
+Aqua = 160%), calling it "the single biggest yield lever in the game". The Holy Water guide says
+flatly that they **do not stack** and its recommended parties carry exactly one booster per species.
+Both are 1.0-era sources. The wording "multiple copies" is ambiguous enough that they might be
+describing the same rule, but I cannot resolve it and found no controlled test.
+
+**Claim withdrawn, both positions shown, marked unresolved.** Template A's second-booster slot is now
+conditional, and the element table's "Stackable?" column was renamed "Options" so it counts Pals
+rather than implying a multiplier.
+
+**Lesson worth carrying:** this is the second time in two sessions a confident headline had to be
+walked back. Both times the underlying data was fine and the *strength* of the claim was the problem.
+Single-source mechanical claims should be stated as "one source says", not as the guide's own voice.
+
+### Watch-outs for next session
+
+- **Stacking is the single highest-value open question.** A controlled test — fixed route, one
+  booster vs two of the same element, count drops — settles it and would firm up or delete several
+  party recommendations. Everything else on this page is downstream of it.
+- **Ask the user for the Paloxite Reddit links directly**, or re-check bookmarks after Brave flushes.
+  The current Paloxite content comes from a guide site, not from their bookmarks.
+- Still open from before: the **Computer** recipe; the **Plasma Rifle** cost conflict; whether
+  Ancient Furnaces have a build limit; the unverified "1,000,000 work" figure.
+- New conflicts: Teafant Spring yield (5–10 vs 30/10min); Katress + Blazehowl Noct element label
+  (Neutral vs Fire — the *pairing* with Starryon Primo is the trustworthy part).
+
+**Status: shipped.** See the commit below; site live and verified.
+
+---
+
 ## 2026-09-03 — Built the guide; two framings had to be corrected before it was right
 
 **Ask:** a Palworld endgame guide for a Lv80 solo player, in its own GitHub repo and live in a

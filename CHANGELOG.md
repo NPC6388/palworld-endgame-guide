@@ -4,6 +4,45 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 — Holy Water kill-farm, Paloxite detail, and a stacking claim walked back
+
+Prompted by a bookmarked Reddit post (`1v1v74v`, "World Tree Holy Water Farm 500+ Holy
+Water/15mins"). Reddit is unreachable from the research environment, so its substance was
+corroborated through a guide covering the same farm.
+
+### Added
+- **Template E — the Alluvion Lakefront Holy Water kill-loop** (`-1638, 1340`). Reported 500+ in
+  10–15 min. Four-stop route around the Ru Nest, Teafant Spring pickup each lap, and the
+  **per-species booster pairings**: Katress/Blazehowl Noct for Starryon Primo, Fenglope Lux for
+  Shaolong, Menasting for Orserk and Snock Lux. **This is the one route where a drop-boosting
+  party is the entire point** — everything else at endgame is node mining, where boosters do nothing.
+- **Holy Water is a kill drop, not just a fishing drop.** World Tree Pals Lv70+ drop 1–3 at 50%.
+- **Paloxite cluster detail** — node counts per cluster; Gilded City Ruins is **6 nodes**, not 3.
+
+### Corrected
+- **Paloxite despawn is triggered by your *Pal's* proximity too**, not just yours — a Pal running
+  ahead can wipe a node before you reach it. Buff window restated as **30–60 seconds**.
+- **A World Tree passive (Dimensional Leap or Hermit Sage) gives permanent Paloxite protection**,
+  replacing the 30-second scramble entirely. **This supersedes the "Rainbow passive" note** added
+  on 3 Sep, which the better source explicitly does not support.
+- **Drop-booster stacking is now marked unresolved, not asserted.** Game8 says different Pals with
+  the same effect stack (Penking + Faleris Aqua = 160%); KeenGamer says they do not stack at all.
+  Both are 1.0 sources. The previous version called stacking "the single biggest yield lever in the
+  game" — that claim is withdrawn pending a controlled test, and the Template A second-booster slot
+  is now conditional. The element table's "Stackable?" column is renamed "Options" and counts Pals
+  carrying the effect rather than implying a multiplier.
+- **Plasma Multicutter doubles yield per node**, not just "required".
+
+### Closed a gap
+- **Lunaris** carries a weight-boosting partner skill — the open "which Pals boost carry weight"
+  watch-out from the last session.
+
+### New conflicts logged
+Teafant Spring yield (5–10 per use vs 30 on a 10-min cooldown); Katress/Blazehowl Noct element
+label (Neutral per Game8, Fire per the Holy Water guide — trust the pairing, not the label).
+
+---
+
 ## 2026-09-03 — Bottleneck correction (`34fdae8`)
 
 Reader feedback ("consider that expeditions yield cores, and i have them running constantly")

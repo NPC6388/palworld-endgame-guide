@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>World Farming &amp; Party Comps — Palworld 1.0</title>
-<meta name="description" content="How drop rate actually works in Palworld 1.0, which Pals stack, and the exact party to take for each material you cannot buy or automate.">
+<meta name="description" content="How drop rate actually works in Palworld 1.0, the drop-boosting party for each target, and the exact route for every material you cannot buy or automate.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -38,7 +38,7 @@
   <div class="cards">
     <div class="card">
       <h4>Game one: <span class="who">killing Pals</span></h4>
-      <p>Drop boosters apply, they stack, and a full party can nearly double your yield. Relevant to HQ Pal Oil, Venom Gland, organs, Bones, Leather, Carbon Fiber from Shadowbeak.</p>
+      <p>Drop boosters apply and a single one is worth 40–80%. Whether a second of the same element adds anything is <strong>disputed</strong> — see below. Relevant to HQ Pal Oil, Venom Gland, organs, Bones, Leather, Holy Water, Carbon Fiber from Shadowbeak.</p>
     </div>
     <div class="card">
       <h4>Game two: <span class="who">mining nodes</span></h4>
@@ -48,20 +48,22 @@
 
   <div class="callout good">
     <span class="tag">The 1.0 buff most people missed</span>
-    <p>Many partner skills now work when a Pal is simply <strong>in your party</strong> — not only when it is out fighting beside you. That is what makes stacking five drop boosters viable at all. <span class="conf">Confidence: Medium — widely reported, not datamine-confirmed.</span></p>
+    <p>Many partner skills now work when a Pal is simply <strong>in your party</strong> — not only when it is out fighting beside you. That is what makes a booster worth a slot at all, even on a Pal you never send out. <span class="conf">Confidence: Medium — widely reported, not datamine-confirmed.</span></p>
   </div>
 
   <h2>Drop-rate boosters, by element</h2>
   <p class="sub">"While in party, [Element] Pals drop 40% / 50% / 60% / 70% / 80% more items when defeated" — scaling with partner skill level 1&rarr;5.</p>
 
   <div class="callout warn">
-    <span class="tag">The tooltip lies</span>
-    <p>The in-game description says these skills <strong>do not stack</strong>. That is only true for <em>the same</em> Pal. <strong>Different Pals with the same effect do stack with each other</strong> — Penking plus Faleris Aqua gives you a combined 160% at max skill level. This is the single biggest yield lever in the game and it is hidden behind a misleading tooltip.</p>
+    <span class="tag">Unresolved: do these stack? Sources directly contradict each other</span>
+    <p><strong>Game8</strong> says the in-game "does not stack" tooltip applies only to <em>the same</em> Pal, and that <strong>different Pals with the same effect do stack</strong> — Penking plus Faleris Aqua giving a combined 160% at max skill level.</p>
+    <p><strong>KeenGamer&rsquo;s Holy Water farming guide</strong> says flatly that the bonuses <strong>"do not stack, so carrying multiple copies provides no extra benefit"</strong> — and its recommended parties carry exactly <em>one</em> booster per target species.</p>
+    <p>The phrase "multiple copies" is ambiguous enough that both could be describing the same rule, but I cannot resolve it from sources and found no controlled test either way. <strong>This is the highest-value thing in the guide to test yourself:</strong> run a fixed route with one booster, then two of the same element, and compare drops. If they do not stack, free up those party slots for mobility and survivability.</p>
   </div>
 
   <div class="scroll">
   <table>
-    <thead><tr><th>Element</th><th>Pals</th><th>Stackable?</th><th>What it is good for</th></tr></thead>
+    <thead><tr><th>Element</th><th>Pals</th><th>Options</th><th>What it is good for</th></tr></thead>
     <tbody>
       <tr><td class="mat">Fire</td><td><strong>Penking</strong>, <strong>Faleris Aqua</strong></td><td><span class="pill yes">2&times;</span></td><td class="detail">Flame Organ in bulk &rarr; Carbon Fiber</td></tr>
       <tr><td class="mat">Neutral</td><td><strong>Blazehowl Noct</strong>, <strong>Katress</strong></td><td><span class="pill yes">2&times;</span></td><td class="detail">Leather, Bone, general commodity drops</td></tr>
@@ -76,7 +78,7 @@
     </tbody>
   </table>
   </div>
-  <p class="count">Source: Game8 drop-rate partner skill list, updated 17 August 2026. Confidence: High for the list, Medium for the stacking maths.</p>
+  <p class="count">Source: Game8 drop-rate partner skill list, updated 17 August 2026. Confidence: High for the list of Pals and effects; the "Options" column counts how many Pals carry the effect, <strong>not</strong> a confirmed stacking multiplier — see the callout above.</p>
 
   <h2>The three utility Pals that are not drop boosters</h2>
   <div class="cards">
@@ -99,7 +101,7 @@
   <h3>A. Kill-farm a material (HQ Pal Oil, organs, Venom Gland, Carbon Fiber)</h3>
   <ol class="slots">
     <li><span class="n">Drop booster, matching element</span><span class="d">e.g. Blazehowl for Mammorest (Grass).</span></li>
-    <li><span class="n">Second drop booster, same element if one exists</span><span class="d">Fire, Neutral, Electric and Dark each have two — stack them. Grass, Water, Ice, Ground and Dragon only have one.</span></li>
+    <li><span class="n">Second booster &mdash; only if stacking proves real</span><span class="d">Fire, Neutral, Electric and Dark each have two Pals with the effect. <strong>Test it before you commit the slot</strong> (see the stacking callout); if it does not stack, this slot is better spent on mobility or a healer.</span></li>
     <li><span class="n">Your damage Pal</span><span class="d">Type-advantaged against the target. Kill speed is the other half of yield per hour.</span></li>
     <li><span class="n">Flying mount</span><span class="d">Route speed between spawns, and the ability to leave when a fight goes wrong.</span></li>
     <li><span class="n">Flex</span><span class="d">A third booster of a different element if you are clearing mixed spawns, or a healer for long sessions.</span></li>
@@ -124,10 +126,51 @@
 
   <h3>D. Paloxite run &mdash; the one with a gimmick</h3>
   <ol class="slots">
-    <li><span class="n">Carry a large stack of World Tree Holy Water <em>before</em> you go</span><span class="d"><strong>Paloxite nodes vanish as you approach unless you have drunk Holy Water.</strong> One bottle buys a short window — long enough to chain several nodes if they are clustered, so speed and routing matter. 1.0.3 cut Holy Water weight from 1.0 to 0.1, so carrying hundreds is free. A <em>Rainbow passive</em> is reported as an alternative to drinking it <span class="conf">(single source, unconfirmed — worth testing)</span>.</span></li>
-    <li><span class="n">Plasma Multicutter equipped</span><span class="d">Tech 54. Lesser tools do not work on Paloxite.</span></li>
-    <li><span class="n">Flying mount + combat Pal + 3 flex</span><span class="d">World Tree is a Lv80 region. Drop boosters do nothing here.</span></li>
+    <li><span class="n">Drink Holy Water <em>before</em> you approach &mdash; and mind your Pals</span><span class="d"><strong>Paloxite crystals despawn on proximity unless you are under the Holy Water buff, and your <em>Pal&rsquo;s</em> proximity triggers it too.</strong> That is the part that catches people out: a Pal running ahead of you can wipe the node before you arrive. The window is <strong>30–60 seconds</strong>. 1.0.3 cut Holy Water weight to 0.1, so carry hundreds.</span></li>
+    <li><span class="n">Or skip the timer entirely</span><span class="d">A Pal with a <strong>World Tree passive</strong> — <strong>Dimensional Leap</strong> or <strong>Hermit Sage</strong> — gives <strong>permanent</strong> protection instead of a 30-second scramble. If you are farming Paloxite seriously, this is the single biggest quality-of-life upgrade available. <span class="conf">(This supersedes the "Rainbow passive" note in an earlier version of this guide — that appears to have been wrong.)</span></span></li>
+    <li><span class="n">Plasma Multicutter equipped</span><span class="d">Tech 54, and mandatory — a standard pickaxe will not break Paloxite at all. It also <strong>doubles your yield per node</strong> against older gathering gear.</span></li>
+    <li><span class="n">Dandilord &mdash; toxic gas immunity</span><span class="d">The World Tree region gasses you. Dandilord is also the best Planting Pal in the game, so you likely have one already.</span></li>
+    <li><span class="n">Lunaris &mdash; carry weight</span><span class="d">Weight-boosting partner skill, for extended runs. Plus a combat Pal: World Tree spawns are Lv70–80.</span></li>
   </ol>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Paloxite cluster</th><th>Coords</th><th>Nodes</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Dusty Ravine</td><td><code>-1560, 1510</code></td><td>3</td><td class="detail">Tight cluster right by the fast-travel point — the best single stop</td></tr>
+      <tr><td class="mat">Remnant Riverside</td><td><code>-1710, 1535</code></td><td>3 +</td><td class="detail">Scattered extras along the exit paths</td></tr>
+      <tr><td class="mat">Gilded City Ruins</td><td><code>-1800, 1465</code></td><td>6</td><td class="detail">Two trios, close enough to run as one passive-Pal route</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>E. Holy Water kill-farm &mdash; the drop-boost party actually matters here</h3>
+  <p class="sub">This is the one route where a drop-boosting party is the whole point: you are killing Pals, not mining nodes. Reported at <strong>500+ Holy Water in 10–15 minutes</strong>.</p>
+  <p><strong>Base route — Alluvion Lakefront, fast travel to <code>-1638, 1340</code>:</strong></p>
+  <ol class="slots">
+    <li><span class="n">Take the Teafant Spring at the landing</span><span class="d"><strong>5–10 Holy Water guaranteed</strong>, and it recharges — so it is free value every lap. <span class="conf">One source claims 30 per spring on a 10-minute cooldown; the two disagree.</span></span></li>
+    <li><span class="n">Clear the lakeside groups, then head for the Ru Nest</span><span class="d">Targets spawn in open terrain near the lake, along the pathways, and around the Ru Nest landmark.</span></li>
+    <li><span class="n">Circle both sides of the Ru Nest structure</span><span class="d">The densest grouped spawns on the route.</span></li>
+    <li><span class="n">Return along the shoreline, sweeping the remaining drops</span><span class="d">Then fast-travel out and back to reset. Ride a fast mount between packs — travel time dominates.</span></li>
+  </ol>
+  <p><strong>Who drops it:</strong> World Tree Pals at Lv70+ drop <strong>1–3 Holy Water at a 50% rate</strong> — Starryon Primo, Shaolong, Orserk and Snock Lux are the named farmable species.</p>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Route</th><th>Target species</th><th>Bring</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Alluvion Lakefront</td><td class="detail">Starryon Primo</td><td class="detail"><strong>Katress</strong> or <strong>Blazehowl Noct</strong></td></tr>
+      <tr><td class="mat">Alluvion Lakefront</td><td class="detail">Shaolong <span class="conf">(Water)</span></td><td class="detail"><strong>Fenglope Lux</strong></td></tr>
+      <tr><td class="mat">Dusty Ravine</td><td class="detail">Orserk and Snock Lux <span class="conf">(Electric)</span></td><td class="detail"><strong>Menasting</strong> or <strong>Menasting Terra</strong> — one booster covers both species</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="count">Note: the source pairs Katress / Blazehowl Noct with Starryon Primo and calls it Fire, but those two are listed as <em>Neutral</em> boosters in the element table above. One of the two labels is wrong — the <em>pairing</em> is what to trust, not the element name.</p>
+
+  <div class="callout good">
+    <span class="tag">Why this route beats fishing for Holy Water</span>
+    <p>Fishing gives more per catch (43–71), but the Alluvion loop gives <strong>500+ in 10–15 minutes</strong> including the free spring pickups, and it drops you in the same region you need for Paloxite. Run the Holy Water lap first, then spend it on the Paloxite clusters in the same trip — or skip the whole loop by getting a Dimensional Leap / Hermit Sage Pal.</p>
+  </div>
 
   <h2>Per-material routes</h2>
   <div class="scroll">
@@ -139,10 +182,10 @@
       <tr><td class="mat">Thermal Core</td><td class="detail"><strong>Aegidron drops 1–2 at 100%</strong> in the World Tree region — and it is also the best Mining Pal in the game, so catch some while you are there.</td><td class="detail">Any combat comp; pair with the Paloxite run</td></tr>
       <tr><td class="mat">Soralite <span class="new">1.0</span></td><td class="detail"><strong>The 5-stop Sunreach loop — see below.</strong> 1,200–1,600 ore in 10–12 min; 30-min respawn.</td><td class="detail">Template B + Plasma Multicutter</td></tr>
       <tr><td class="mat">Paloxite <span class="new">1.0</span></td><td class="detail"><code>-1560, 1510</code> (Dusty Ravine) &middot; <code>-1710, 1535</code> (Remnant Riverside, 3 nodes) &middot; <code>-1800, 1465</code> (Gilded Metropolis Ruins, 3 nodes)</td><td class="detail">Template D</td></tr>
-      <tr><td class="mat">World Tree Holy Water <span class="new">1.0</span></td><td class="detail"><strong>World Tree Grand Master fishing spots — 43–71 per catch.</strong> Also: Large Fishing Pond passively at base.</td><td class="detail">Advanced Fishing Rod + Alluring Bait</td></tr>
+      <tr><td class="mat">World Tree Holy Water <span class="new">1.0</span></td><td class="detail"><strong>Alluvion Lakefront kill-loop <code>-1638, 1340</code> — 500+ in 10–15 min</strong> (Template E). Also: fishing 43–71/catch; Large Fishing Pond passively at base.</td><td class="detail">Element booster matched to the target species — <strong>the one route where this matters</strong></td></tr>
       <tr><td class="mat">HQ Pal Oil</td><td class="detail">Mammorest, ~7.5 per kill</td><td class="detail">Template A with Blazehowl (Grass)</td></tr>
       <tr><td class="mat">Venom Gland</td><td class="detail">Menasting, ~7.5 per kill</td><td class="detail">Template A — or just ranch it with Caprity Noct</td></tr>
-      <tr><td class="mat">Carbon Fiber</td><td class="detail">Shadowbeak, 2–3 at 100% (World Tree, Lv80)</td><td class="detail">Template A with Elphidran + Enchanted Sword (Dark, stacks)</td></tr>
+      <tr><td class="mat">Carbon Fiber</td><td class="detail">Shadowbeak, 2–3 at 100% (World Tree, Lv80)</td><td class="detail">Template A with Elphidran or Enchanted Sword (Dark)</td></tr>
       <tr><td class="mat">Legendary weapon schematics</td><td class="detail"><strong>Lv60 Oil Rig near Fabre Island.</strong> Chest farm, not a boss kill.</td><td class="detail">See below</td></tr>
       <tr><td class="mat">Bounty Tokens</td><td class="detail">Wanted-criminal NPCs, respawn ~hourly</td><td class="detail">Any combat comp</td></tr>
       <tr><td class="mat">Ancient Civ Parts / Cores</td><td class="detail"><strong>Expeditions.</strong> Do not farm these by hand.</td><td class="detail">Expedition firepower team — see below</td></tr>
@@ -229,9 +272,9 @@
   </ol>
   <p><strong>Tool:</strong> the <strong>Plasma Multicutter</strong> (Tech 54). <strong>Ammo:</strong> for repetitive farming, the <strong>Mechanical Bow</strong> costs 0.2 Soralite Ingot per round and no Paloxite at all — see the <a href="endgame-demand.html">ammo economics</a>.</p>
 
-  <div class="callout warn">
-    <span class="tag">Gap I could not close</span>
-    <p>I could not confirm which Pals carry <strong>carry-weight partner skills</strong> in 1.0. If you find one, it belongs in every mining party above.</p>
+  <div class="callout good">
+    <span class="tag">Carry weight, answered</span>
+    <p><strong>Lunaris</strong> carries a weight-boosting partner skill — it belongs in every mining party on this page, and in the Paloxite run especially.</p>
   </div>
 
 </div>
