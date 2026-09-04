@@ -4,6 +4,48 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Passives page added; furnace ceiling corrected
+
+Three player corrections from live 1.0.3 play.
+
+### Added - `passives.html`
+A new page, linked in the nav on every page. **The headline finding: there are no per-job passives.**
+Nothing boosts Handiwork or Kindling specifically - work-speed passives apply to all twelve jobs
+equally, so the job is decided by *work suitability level* and the passives are one universal
+template. That collapses the breeding problem from twelve templates to four.
+
+- **Work stack, up to +245%:** Demon's Hand (+90%), Remarkable Craftsmanship (+75%), Artisan (+50%),
+  Work Slave (+30%). Swap Work Slave for **Insomnia** on non-nocturnal Pals for +215% and
+  round-the-clock production. **Musclehead is -50% Work Speed** and must never land on a base Pal.
+- **Combat, mount and water stacks** with exact percentages.
+- **All 7 World Tree passives** with their downsides - most are trades, not upgrades.
+  **Hermit Sage is -20% Work Speed**, so it is an endurance choice, not a throughput one.
+- **Rainbow passives** (mutated eggs), including **Ranch Master** - the closest thing to a
+  job-specific passive in the game.
+- **How to get them:** Artisan and six others are **implants at 15 Bounty Tokens**; seven more at
+  50 Battle Tickets. Do not breed for what you can buy - breed for Demon's Hand and Remarkable
+  Craftsmanship, which you cannot.
+- **Dimensional Leap and Hermit Sage both grant permanent Paloxite protection**, and Dimensional Leap
+  is also the best mount passive - so one Pal is both your fastest traversal and your Paloxite key.
+
+### Corrected
+- **Ancient Furnaces have no practical build limit.** The previous "is there a build limit?"
+  watch-out is closed. The real ceiling is that **each furnace consumes 2 of a base's worker slots**,
+  and a base holds **15 workers on default settings** - so **7 furnaces** if you dedicate a base to
+  smelting. The cap climbs +1 per base level to 30 if you raise the world setting (vanilla allows
+  50), and base slots unlock through Base Missions. Scale by adding bases.
+- **The "work" figures are demystified, not unresolved.** 50,000 / 700,000 / 1,000,000 represent how
+  long a Pal takes to produce the item. They are useful as *relative* costs and largely moot in
+  absolute terms once you run best-in-slot Pals with bred work-speed passives. Removed from the open
+  questions list.
+
+### New open question
+**Whether Work Speed raises ranch *output*** as opposed to just the animation rate. Condensation rank
+raising drop quantity is confirmed; the work-speed question is only tested in early-access-era data.
+Flagged on the passives page rather than guessed at.
+
+---
+
 ## 2026-09-04 — Stacking rule resolved
 
 Player report from live 1.0.3 play settled the conflict logged earlier the same day.

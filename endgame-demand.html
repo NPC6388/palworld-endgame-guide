@@ -20,6 +20,7 @@
       <a href="index.html">Material ledger</a>
       <a href="merchants.html">What merchants sell</a>
       <a href="base-production.html">Base production</a>
+      <a href="passives.html">Passives by role</a>
       <a href="world-farming.html">World farming &amp; party comps</a>
       <a href="endgame-demand.html" class="on">What it is all for</a>
       <a href="sources.html">Sources &amp; confidence</a>
@@ -31,14 +32,26 @@
 <div class="wrap">
 
   <div class="answer">
-    <h2>If your expeditions are already running, your bottleneck is not materials</h2>
-    <p class="big">It is <em>Ancient Furnace throughput</em>. Raw ore is cheap once the loops are set — a single Sunreach run yields more Soralite than a Beam Launcher needs. What you cannot rush is turning it into ingots: <em>two Pals maximum per furnace</em>, and the workload splits evenly between Kindling and Cooling, so one specialist covers only half of it.</p>
+    <h2>If your expeditions are already running, your ceiling is base worker slots</h2>
+    <p class="big">Raw ore is cheap once the loops are set — a single Sunreach run yields more Soralite than a Beam Launcher needs. Ancient Furnaces have <em>no practical build limit</em>, so ingot throughput is not capped by the building either. What caps it is that <em>each furnace consumes two of your base&rsquo;s worker slots</em>, and a base holds <strong>15 workers on default settings</strong>.</p>
   </div>
 
   <div class="callout good">
-    <span class="tag">The furnace constraint, precisely</span>
-    <p>The <strong>Ancient Furnace</strong> requires <strong>Kindling 6 and Cooling 6</strong> minimum, and its refinement workload is <strong>split evenly between those two suitabilities</strong>. <strong>Only two Pals can work it at once</strong> — one on the Kindling half, one on the Cooling half.</p>
-    <p>That means a Renjishi (Kindling 8) working alone does <em>nothing</em> for the Cooling half of the job. Pair it with <strong>Bastigor</strong> (Cooling 8). And since a furnace caps at two workers, the only way to scale ingot output is <strong>more Ancient Furnaces</strong>, each with its own Kindling+Cooling pair. <span class="conf">I did not confirm whether a build limit applies — worth checking before you commit the materials.</span></p>
+    <span class="tag">The furnace maths</span>
+    <p>The <strong>Ancient Furnace</strong> requires <strong>Kindling 6 and Cooling 6</strong>, and its refinement workload is <strong>split evenly between those two suitabilities</strong> — so a Renjishi (Kindling 8) working alone does <em>nothing</em> for the Cooling half. Pair it with <strong>Bastigor</strong> (Cooling 8).</p>
+    <p><strong>Two Pals per furnace, and you can build as many furnaces as you like.</strong> So the arithmetic is simply worker slots &divide; 2:</p>
+    <ul>
+      <li><strong>15 workers per base</strong> (the default world setting) = <strong>7 furnaces</strong>, if you dedicate an entire base to smelting and nothing else.</li>
+      <li>The worker cap actually climbs <strong>+1 per base level up to 30</strong>, but the default world setting holds it at 15. Raise <code>Base worker limit</code> in world settings and the full ladder applies — vanilla allows up to 50.</li>
+      <li>Base slots themselves unlock through <strong>Base Missions</strong> (Base Level cap 35), so more bases is the other axis.</li>
+    </ul>
+    <p><strong>The practical move:</strong> a dedicated smelting base. Ore and quartz arrive by hand anyway, so it does not need miners — just furnace pairs, a transporter or two, and storage.</p>
+  </div>
+
+  <div class="callout">
+    <span class="tag">On the "work" numbers in this guide</span>
+    <p>Recipes list large work values — 50,000 for a Pal Metal Ingot, 700,000 for a Soralite Ingot, 1,000,000 for a Paloxite Ingot. These represent <strong>how long a Pal takes to produce the item</strong>, and they are best read as <em>relative</em> costs: a Paloxite Ingot is ~20&times; a Pal Metal Ingot, ~1.4&times; a Soralite Ingot.</p>
+    <p>In practice the absolute numbers are close to <strong>moot</strong> if you are already using the best available Pals with bred work-speed passives — a <a href="passives.html">+245% work stack</a> and Kindling/Cooling 10 workers change the real rate far more than the base figure suggests. Use the ratios to decide what to batch, not to predict wall-clock time.</p>
   </div>
 
   <h2>The intermediate chain</h2>

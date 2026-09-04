@@ -15,6 +15,7 @@ A level-80 endgame reference for **Palworld 1.0.3** (solo world, default setting
 | `index.html` | The material ledger — 45 materials, filterable, with a buy/base/world verdict for each |
 | `merchants.html` | All 12 vendor archetypes, locations, stock lists, and the four currencies |
 | `base-production.html` | The 1.0 work-suitability rework, all 29 ranch Pals, craft chains, node-base coordinates |
+| `passives.html` | Passive stacks by role — work, combat, mount — plus World Tree and Rainbow passives and how to get them |
 | `world-farming.html` | Drop-rate mechanics, stacking, party templates, per-material routes, expeditions |
 | `endgame-demand.html` | What consumes your materials — every Lv67-80 weapon and ammo recipe, the armour ladder, the AI Core chain, cakes, spheres, Ultra raid loot, the Lv80 stat spread |
 | `sources.html` | Every source, a confidence ledger, and an honest list of what is unverified |
@@ -27,7 +28,8 @@ Project notes: [`CHANGELOG.md`](CHANGELOG.md) for what changed and when, [`SESSI
 - **Most things that look unfarmable are actually craft-only and fully automatable** — Polymer, Carbon Fiber and Cement all have no vendor row but close into self-sustaining base loops.
 - **Only four raw materials genuinely require field trips:** Chromite (buried, Feybreak), Hexolite Quartz (Feybreak — do both on one trip), Soralite (Sunreach Isles) and Paloxite (World Tree, and you must drink Holy Water to mine it).
 - **Drop-rate partner skills only affect items from defeated Pals.** They do nothing for mining nodes — so the "best farming party" depends entirely on which of the two farming games you are playing.
-- **Once expeditions are running and routes are set, raw material stops being the constraint — Ancient Furnace throughput is.** A furnace takes only two Pals and splits its workload evenly between Kindling and Cooling, so one specialist covers half the job. Pair Renjishi (Kindling 8) with Bastigor (Cooling 8), then build more furnaces.
+- **Once expeditions are running and routes are set, the ceiling is base worker slots.** Furnaces have no build limit, but each takes two Pals (Kindling *and* Cooling), and a base holds 15 workers by default — so 7 furnaces if you dedicate a base to smelting. Scale by adding bases.
+- **There are no per-job passives.** Work-speed passives apply to all twelve jobs equally, so one worker template covers every base Pal you will ever breed — up to **+245% Work Speed**.
 - **The AI Core chain is six tiers deep** (Cryogenic Coolant → Corrosive Solvent → Bio Battery → Computer → Thermal Core → AI Core), but the bottom three are ranch-fed and fully automatable — start them early.
 - **The Plasma Rifle is 4× more ammo-efficient than the Beam Launcher** — 0.15 vs 0.6 Paloxite Ingot per round.
 - **Drop-boosters stack across different species, not duplicates** — two Menasting do nothing, but Menasting + Menasting Terra stack to ~160%. A regional variant counts as a different species. Fire, Neutral, Electric and Dark each have two species and can be doubled; the other elements have one.
@@ -44,6 +46,7 @@ Most Palworld guides on the web are from the **0.1.x early-access era (January 2
 index.html               entry point — the ledger
 merchants.html
 base-production.html
+passives.html
 world-farming.html
 endgame-demand.html
 sources.html

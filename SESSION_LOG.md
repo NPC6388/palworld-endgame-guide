@@ -4,6 +4,61 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (later still) - Passives page; the furnace ceiling was the wrong ceiling
+
+**Three corrections from the user, all from live play:**
+1. No practical limit on Ancient Furnaces.
+2. The "work" figure is just how long a Pal takes to make the item - moot, because they will always
+   run the best Pals with the best breedable passives.
+3. The guide had no passives section. It should have one, broken down by what the Pal is for.
+
+### The furnace correction chains
+
+Removing the furnace build limit does **not** remove the ceiling - it moves it. Each furnace takes
+**2 Pals**, and a base holds **15 workers on default settings**, so a base fully dedicated to
+smelting tops out at **7 furnaces**. That is the real number, and it makes "a dedicated smelting
+base" the concrete advice rather than the vague "build more furnaces".
+
+Worth knowing for future sessions: the cap is **+1 per base level up to 30**, but the default world
+setting pins it at 15; raising `Base worker limit` unlocks the ladder (vanilla max 50). Base *slots*
+unlock through Base Missions, Base Level cap 35.
+
+This is the third time a headline has moved: AI Core -> furnace throughput -> base worker slots.
+Each move was correct given the new information, and each came from the user knowing the game. The
+pattern is that **I keep locating the bottleneck one layer too shallow** - I find the thing that is
+scarce in the recipe and stop, rather than asking what actually gates the player at their stage.
+
+### The passives page
+
+The genuinely useful finding, and the one that answers the user's question most directly: **there are
+no per-job passives.** Nothing boosts Handiwork or Kindling specifically. Work-speed passives apply
+to all twelve jobs equally, so the job is chosen by *work suitability level* and the passive template
+is universal. Four templates cover the whole game: worker, combat, mount, ranch.
+
+That is a better answer than the per-job table the request implied, and it is worth leading with,
+because it makes the breeding programme much smaller than people assume.
+
+Also notable: **Musclehead is -50% Work Speed** and is sold as an implant at the Bounty Officer, so
+it is easy to apply to the wrong Pal. And **Hermit Sage is -20% Work Speed** despite being a World
+Tree legendary - it is a sanity trade, not an upgrade.
+
+### Watch-outs
+
+- **New open question: does Work Speed raise ranch *output*, or only the animation rate?**
+  Condensation rank raising drop quantity is confirmed; the work-speed half is only tested in
+  early-access data. This matters because a ranch slot is a permanent investment. Flagged on the
+  page, not guessed at.
+- Several **Rainbow passive percentages are unpublished** (Ranch Master, Babysitter, Lavish
+  Hospitality, Heavily Armored). Ranch Master is the interesting one - the only explicitly
+  job-specific passive found.
+- Still open: the **Computer** recipe; the **Plasma Rifle** cost conflict; **Teafant Spring yield**
+  (5-10 vs 30/10min); the **Katress / Blazehowl Noct element label**.
+- Still worth asking for the **Paloxite Reddit links** - that content is still from a guide site.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (later) — The stacking "conflict" was a vocabulary problem
 
 **User, from live play:** *"bonuses stating they do NOT stack apply to having pals of the same
