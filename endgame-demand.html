@@ -33,7 +33,8 @@
 
   <div class="answer">
     <h2>If your expeditions are already running, your ceiling is base worker slots</h2>
-    <p class="big">Raw ore is cheap once the loops are set — a single Sunreach run yields more Soralite than a Beam Launcher needs. Ancient Furnaces have <em>no practical build limit</em>, so ingot throughput is not capped by the building either. What caps it is that <em>each furnace consumes two of your base&rsquo;s worker slots</em>, and a base holds <strong>15 workers on default settings</strong>.</p>
+    <p class="big">Raw ore is cheap once the loops are set &mdash; a single Sunreach run yields more Soralite than a Beam Launcher needs. Ancient Furnaces have <em>no practical build limit</em>, so ingot throughput is not capped by the building either. What caps it is that <em>each furnace consumes two of your base&rsquo;s worker slots</em>, and a base holds <strong>15 workers on default settings</strong>.</p>
+    <p class="big">And once the weapons are built, the only cost that keeps recurring is <a href="#ammo"><em>ammunition</em></a>.</p>
   </div>
 
   <div class="callout good">
@@ -102,6 +103,76 @@
     <p>The materials are a couple of evenings of routes. The <strong>100 Paloxite Ingots and 100 Soralite Ingots</strong> those materials become are what you will actually wait on.</p>
   </div>
 
+  <h2 id="ammo">Ammunition &mdash; the only cost that recurs</h2>
+  <p class="sub">A weapon is a one-off. Ammo is the bill you pay forever, so this is the table that decides what you actually carry.</p>
+
+  <div class="answer">
+    <h2>The dividing line is Paloxite</h2>
+    <p class="big">Every ammo type up to Tech 72 costs <em>zero Paloxite and zero Holy Water</em> &mdash; it runs entirely on Charcoal, Sulfur, Soralite and Quartz, all of which are base-automatable or a 12-minute Sunreach loop. Everything from Tech 75 up burns <em>Paloxite</em>, which means a World Tree trip and the 30-second Holy Water scramble for every magazine.</p>
+  </div>
+
+  <h3>Craft cost</h3>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Ammo</th><th>Tech</th><th>Materials</th><th>Yield</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Mechanical Bow</td><td><code>67</code></td><td class="detail">Soralite Ingot 2</td><td><code>10</code></td></tr>
+      <tr><td class="mat">Combat SMG</td><td><code>68</code></td><td class="detail">Gunpowder 6 &middot; Soralite Ingot 2</td><td><code>20</code></td></tr>
+      <tr><td class="mat">Prototype Shotgun</td><td><code>69</code></td><td class="detail">Gunpowder 8 &middot; Soralite Ingot 4</td><td><code>10</code></td></tr>
+      <tr><td class="mat">Heavy Assault Rifle</td><td><code>70</code></td><td class="detail">Gunpowder 10 &middot; Soralite Ingot 2</td><td><code>20</code></td></tr>
+      <tr><td class="mat">Tactical Grenade Launcher</td><td><code>72</code></td><td class="detail">Gunpowder 10 &middot; Soralite Ingot 4</td><td><code>10</code></td></tr>
+      <tr><td class="mat">Beam Scatter</td><td><code>75</code></td><td class="detail">Bio Battery 1 &middot; Soralite Ingot 2 &middot; Paloxite Ingot 3</td><td><code>10</code></td></tr>
+      <tr><td class="mat">Plasma Rifle</td><td><code>78</code></td><td class="detail">Bio Battery 1 &middot; Soralite Ingot 2 &middot; Paloxite Ingot 3</td><td><code>20</code></td></tr>
+      <tr><td class="mat">Beam Launcher</td><td><code>80</code></td><td class="detail">Bio Battery 1 &middot; Soralite Ingot 2 &middot; <strong>Paloxite Ingot 6</strong></td><td><code>10</code></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Unpacked to raw materials, per round</h3>
+  <p class="sub">Ingots expanded out: Soralite Ingot = 2 Soralite + 2 Pure Quartz &middot; Paloxite Ingot = 1 Soralite + 2 Paloxite + 1 Holy Water &middot; Gunpowder = 2 Charcoal + 1 Sulfur.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Ammo</th><th>Paloxite</th><th>Holy Water</th><th>Soralite</th><th>Pure Quartz</th><th>Sulfur</th><th>Charcoal</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Mechanical Bow</td><td><strong>0</strong></td><td><strong>0</strong></td><td>0.4</td><td>0.4</td><td>0</td><td>0</td></tr>
+      <tr><td class="mat">Combat SMG</td><td><strong>0</strong></td><td><strong>0</strong></td><td>0.2</td><td>0.2</td><td>0.3</td><td>0.6</td></tr>
+      <tr><td class="mat">Heavy Assault Rifle</td><td><strong>0</strong></td><td><strong>0</strong></td><td>0.2</td><td>0.2</td><td>0.5</td><td>1.0</td></tr>
+      <tr><td class="mat">Prototype Shotgun</td><td><strong>0</strong></td><td><strong>0</strong></td><td>0.8</td><td>0.8</td><td>0.8</td><td>1.6</td></tr>
+      <tr><td class="mat">Tactical Grenade Launcher</td><td><strong>0</strong></td><td><strong>0</strong></td><td>0.8</td><td>0.8</td><td>1.0</td><td>2.0</td></tr>
+      <tr><td class="mat">Plasma Rifle</td><td><strong>0.30</strong></td><td>0.15</td><td>0.35</td><td>0.2</td><td>0</td><td>0</td></tr>
+      <tr><td class="mat">Beam Scatter</td><td><strong>0.60</strong></td><td>0.3</td><td>0.7</td><td>0.4</td><td>0</td><td>0</td></tr>
+      <tr><td class="mat">Beam Launcher</td><td><strong>1.20</strong></td><td>0.6</td><td>1.0</td><td>0.4</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="count">Plus 0.05&ndash;0.1 Bio Battery per round on the three energy types. Derived arithmetic from the recipes above.</p>
+
+  <div class="callout good">
+    <span class="tag">What this means in trips</span>
+    <p>Paloxite is the only input here that costs you a <em>gated</em> field trip &mdash; World Tree only, Plasma Multicutter required, and every node behind a 30-second buff window. Take a run that nets <strong>200 Paloxite</strong>:</p>
+    <ul>
+      <li><strong>Beam Launcher</strong> &mdash; about <strong>165 rounds</strong></li>
+      <li><strong>Beam Scatter</strong> &mdash; about <strong>330 rounds</strong></li>
+      <li><strong>Plasma Rifle</strong> &mdash; about <strong>665 rounds</strong></li>
+      <li><strong>Heavy Assault Rifle, SMG, Shotgun, Grenade Launcher, Bow</strong> &mdash; <strong>unlimited</strong>. They do not touch Paloxite at all.</li>
+    </ul>
+  </div>
+
+  <div class="callout good">
+    <span class="tag">The practical loadout</span>
+    <ul>
+      <li><strong>Trash, farming routes, anything sustained &rarr; Heavy Assault Rifle or Combat SMG.</strong> 0.2 Soralite and some Charcoal and Sulfur per round, all of it automatable. Effectively free at your production level.</li>
+      <li><strong>Cheapest of all &rarr; Mechanical Bow</strong> at 0.4 Soralite per round, with no gunpowder chain and no Paloxite. One Sunreach loop is thousands of arrows.</li>
+      <li><strong>Plasma Rifle is the efficient energy weapon.</strong> Identical materials to the Beam Scatter but double the yield &mdash; <strong>half the cost per round</strong>, and a quarter of the Beam Launcher.</li>
+      <li><strong>Beam Launcher is a boss weapon, not a field weapon.</strong> At 1.2 Paloxite per round, a 100-round session is 120 Paloxite &mdash; most of a dedicated World Tree run. Bring it to raids and Alphas; do not sweep trash with it.</li>
+    </ul>
+  </div>
+
+  <div class="callout warn">
+    <span class="tag">What would sharpen this further</span>
+    <p>This table is cost per <em>round</em>. What actually matters is cost per <em>point of damage</em>, and I only have a confirmed Attack figure for one weapon (Common Plasma Rifle, 1,860). If a Beam Launcher round does four times a Plasma Rifle round's damage, its 4&times; Paloxite cost is a wash and the conclusion above changes. <strong>Attack values for the Tech 70&ndash;80 weapons are the missing piece</strong> &mdash; they would turn this from a cost table into an efficiency table.</p>
+  </div>
+
   <h2>Weapons &mdash; the full 1.0 ladder</h2>
   <p class="sub">Lv67–80 ranged weapons and their ammunition are made at the <strong>Ancient Workbench</strong>.</p>
   <div class="scroll">
@@ -123,35 +194,10 @@
   </table>
   </div>
 
-  <div class="callout good">
-    <span class="tag">Weapon costs scale with schematic rarity &mdash; read this before trusting the table</span>
-    <p>An in-game screenshot of the <strong>Common</strong> Plasma Rifle gives <code>68 Paloxite Ingot + 42 Bio Battery + 6 AI Core + 5 Ancient Civilization Core</code>, Attack <strong>1,860</strong>. That matches <em>neither</em> of the two published figures this guide had been weighing (80/50/8/7 and 100/62/10/8).</p>
-    <p>The explanation is that all three are real: <strong>a weapon&rsquo;s material cost rises with the rarity of the schematic you craft it from</strong> (Common &rarr; Uncommon &rarr; Rare &rarr; Epic &rarr; Legendary). 68 &rarr; 80 &rarr; 100 Paloxite Ingot is a rarity ladder, not a contradiction.</p>
-    <p><strong>So treat every number in the table below as one rung of unknown height.</strong> They are useful for comparing weapons against each other; they are not the cost of the specific schematic in your inventory. Only the Plasma Rifle row is pinned to a known rarity.</p>
-  </div>
-
-  <h2>Ammunition &mdash; your real bulk sink</h2>
-  <div class="scroll">
-  <table>
-    <thead><tr><th>Ammo</th><th>Tech</th><th>Materials</th><th>Yield</th><th>Per round</th></tr></thead>
-    <tbody>
-      <tr><td class="mat">Mechanical Bow</td><td><code>67</code></td><td class="detail">Soralite Ingot 2</td><td><code>10</code></td><td class="detail"><strong>0.2 Soralite Ingot</strong> — by far the cheapest</td></tr>
-      <tr><td class="mat">Combat SMG</td><td><code>68</code></td><td class="detail">Gunpowder 6 &middot; Soralite Ingot 2</td><td><code>20</code></td><td class="detail">0.1 Soralite Ingot</td></tr>
-      <tr><td class="mat">Prototype Shotgun</td><td><code>69</code></td><td class="detail">Gunpowder 8 &middot; Soralite Ingot 4</td><td><code>10</code></td><td class="detail">0.4 Soralite Ingot</td></tr>
-      <tr><td class="mat">Heavy Assault Rifle</td><td><code>70</code></td><td class="detail">Gunpowder 10 &middot; Soralite Ingot 2</td><td><code>20</code></td><td class="detail">0.1 Soralite Ingot</td></tr>
-      <tr><td class="mat">Tactical Grenade Launcher</td><td><code>72</code></td><td class="detail">Gunpowder 10 &middot; Soralite Ingot 4</td><td><code>10</code></td><td class="detail">0.4 Soralite Ingot</td></tr>
-      <tr><td class="mat">Beam Scatter</td><td><code>75</code></td><td class="detail">Bio Battery 1 &middot; Soralite Ingot 2 &middot; Paloxite Ingot 3</td><td><code>10</code></td><td class="detail"><strong>0.3 Paloxite Ingot</strong></td></tr>
-      <tr><td class="mat">Plasma Rifle</td><td><code>78</code></td><td class="detail">Bio Battery 1 &middot; Soralite Ingot 2 &middot; Paloxite Ingot 3</td><td><code>20</code></td><td class="detail">0.15 Paloxite Ingot</td></tr>
-      <tr><td class="mat">Beam Launcher</td><td><code>80</code></td><td class="detail">Bio Battery 1 &middot; Soralite Ingot 2 &middot; <strong>Paloxite Ingot 6</strong></td><td><code>10</code></td><td class="detail"><strong>0.6 Paloxite Ingot</strong> — the most expensive round in the game</td></tr>
-    </tbody>
-  </table>
-  </div>
-
-  <div class="callout good">
-    <span class="tag">The ammo economics that actually matter</span>
-    <p><strong>The Plasma Rifle is four times more ammo-efficient than the Beam Launcher.</strong> Same materials per craft, but 20 rounds instead of 10, and 3 Paloxite Ingot instead of 6 — 0.15 vs 0.6 Paloxite Ingot per round. Unless you specifically need the Beam Launcher's damage profile, the Plasma Rifle is the sustainable endgame weapon.</p>
-    <p>Every Beam Launcher round costs <strong>1.2 Paloxite + 0.6 Soralite + 0.6 World Tree Holy Water</strong> once you unpack the ingot. A 100-round session is 120 Paloxite — several full World Tree runs, each gated behind 30-second Holy Water buffs.</p>
-    <p><strong>The Mechanical Bow is the sleeper.</strong> 0.2 Soralite Ingot per round, no Paloxite at all, no gunpowder. If you are grinding something repetitive, it is nearly free.</p>
+  <div class="callout">
+    <span class="tag">These numbers are softer than they look &mdash; and it barely matters</span>
+    <p><strong>Weapon material cost scales with schematic rarity</strong> (Common &rarr; Legendary). The in-game Common Plasma Rifle is <code>68 Paloxite Ingot + 42 Bio Battery + 6 AI Core + 5 Ancient Civ Core</code>, Attack <strong>1,860</strong> &mdash; while published figures of 80/50/8/7 and 100/62/10/8 describe higher rungs of the same ladder. So every row below except the Plasma Rifle is a snapshot of an unknown rarity.</p>
+    <p><strong>In practice this is the least important table on the page.</strong> You craft each weapon once. The recurring bill is ammunition, above &mdash; and unlike weapons, ammo is unlocked by <em>technology level</em> rather than by a schematic, so its cost does not vary by rarity. <span class="conf">That last point is inference from how the two systems work, not from an in-game screenshot.</span></p>
   </div>
 
   <h2>Armour</h2>
@@ -260,7 +306,6 @@
 
   <h2>Still unverified</h2>
   <ul>
-    <li><strong>Gunpowder-per-craft yield</strong> — the mid-tier ammo costs are given in gunpowder, but I did not confirm the Sulfur-to-Gunpowder conversion rate.</li>
     <li><strong>Hexolite vs Hexolite Quartz</strong> — recipes call for "Hexolite" while the world node is "Hexolite Quartz". Almost certainly a smelt or crush step, but I did not confirm the conversion.</li>
   </ul>
 

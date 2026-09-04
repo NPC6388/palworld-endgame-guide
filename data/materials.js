@@ -421,6 +421,15 @@ const MATERIALS = [
     conf: "High"
   },
   {
+    name: "Gunpowder",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row (though finished ammo <em>is</em> buyable, 40&ndash;330g)." },
+    base: { status: "yes", detail: "<strong>Craft: 2 Charcoal + 1 Sulfur &rarr; 1</strong> (Tech 21, High Quality Workbench). Charcoal from wood, Sulfur from a node base &mdash; <strong>fully automatable</strong>, and it is what makes Tech 68&ndash;72 ammo effectively free." },
+    world: "&mdash;",
+    party: "None. Every gunpowder-based round costs you nothing scarce.",
+    conf: "High"
+  },
+  {
     name: "Circuit Board",
     tags: ["craft", "cannot-buy", "base-ok"],
     buy: { status: "no", detail: "No vendor row." },
