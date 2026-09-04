@@ -16,18 +16,18 @@ const MATERIALS = [
     name: "Ancient Civilization Parts",
     tags: ["ancient", "cannot-buy", "must-leave"],
     buy: { status: "no", detail: "No vendor row, any currency." },
-    base: { status: "partial", detail: "Expedition Station only — AFK, but it is not a production chain." },
+    base: { status: "yes", detail: "Expedition Station. <strong>One station per base, but multiple bases run simultaneously</strong> — that is how you scale it into a real production line." },
     world: "Expeditions (World Tree / Sky / Dark Island: 8–11 guaranteed). Alpha bosses: 7–9, 100% drop.",
-    party: "Not a field-party material. Optimise the <em>Expedition Station</em> instead: send 10&times; the listed firepower.",
+    party: "Not a field-party material. Optimise the <em>Expedition Station</em> instead: send 10&times; the listed firepower. If you run expeditions continuously across several bases this stops being a constraint entirely.",
     conf: "High"
   },
   {
     name: "Ancient Civilization Core",
     tags: ["ancient", "cannot-buy", "must-leave", "raid"],
     buy: { status: "no", detail: "No vendor row." },
-    base: { status: "partial", detail: "Expedition Station; the Ancient Relic Recycler converts World Tree Relics 1–5." },
+    base: { status: "yes", detail: "Expedition Station — <strong>one per base, multiple bases stack</strong>. The Ancient Relic Recycler converts World Tree Relics 1–5." },
     world: "Raid drops (Ultra raids = 10 guaranteed). Expeditions: Astral Frost 1, Sunreach Isle 3–4, Forbidden Area 6–9. World Tree chests.",
-    party: "A raid comp, not a farming comp. Expeditions are the reliable faucet.",
+    party: "<strong>If you run expeditions constantly, this is not a bottleneck</strong> — Sunreach Isle alone is ~3.5 cores/hour per station, and stations stack across bases. Raid only for the cosmetics and eggs.",
     conf: "High"
   },
   {
@@ -46,8 +46,8 @@ const MATERIALS = [
     tags: ["ore", "cannot-buy", "must-leave", "new-10"],
     buy: { status: "no", detail: "No vendor row." },
     base: { status: "partial", detail: "Soralite Quarry structure (Tech, 7 ATP). Throughput is slow — verify against your own numbers." },
-    world: "<strong>Sunreach Islands only.</strong> Best cluster: <code>-300, -1400</code> (5 nodes, east of the Farcry Marsh fast-travel point). Jetragon 100%. Pierdon Cryst 100%.",
-    party: "Requires the <strong>Plasma Multicutter</strong> (Tech 54) to mine at all. Bring a flying mount and weight carriers — no drop-rate Pal affects mining nodes.",
+    world: "<strong>Sunreach Islands only.</strong> The 5-stop loop yields <strong>1,200–1,600 raw ore in 10–12 minutes</strong> (~40 per node), and nodes respawn on a <strong>30-minute timer</strong>. See the <a href=\"world-farming.html\">full route</a>. Jetragon 100%. Pierdon Cryst 100%.",
+    party: "Requires the <strong>Plasma Multicutter</strong> (Tech 54) to mine at all. <strong>Not a bottleneck</strong> — one loop covers several endgame crafts. Travel efficiency matters more than mining speed.",
     conf: "High"
   },
   {
@@ -56,7 +56,7 @@ const MATERIALS = [
     buy: { status: "no", detail: "No vendor row. The rarest mining resource in 1.0." },
     base: { status: "no", detail: "Cannot be node-farmed at a base — World Tree region only." },
     world: "<strong>World Tree region exclusively.</strong> Routes: <code>-1560, 1510</code> (Dusty Ravine FT) &middot; <code>-1710, 1535</code> (Remnant Riverside, 3 nodes) &middot; <code>-1800, 1465</code> (Gilded Metropolis Ruins, 3 nodes).",
-    party: "<strong>You must drink World Tree Holy Water to mine it</strong> — it neutralises the dematerialising aura, and the buff lasts only ~30 seconds. Carry a large stack. Plasma Multicutter required.",
+    party: "<strong>Nodes vanish as you approach unless you have drunk World Tree Holy Water</strong> — one bottle gives a short window to chain several nodes. Carry a large stack (weight is 0.1 since 1.0.3). A <em>Rainbow passive</em> is reported as an alternative to Holy Water <span class=\"conf\">(single source, unconfirmed)</span>. Plasma Multicutter required. Once the loop is set, Paloxite comes in stacks of hundreds per run.",
     conf: "High"
   },
   {

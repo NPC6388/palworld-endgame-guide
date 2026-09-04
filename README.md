@@ -25,7 +25,8 @@ A level-80 endgame reference for **Palworld 1.0.3** (solo world, default setting
 - **Most things that look unfarmable are actually craft-only and fully automatable** — Polymer, Carbon Fiber and Cement all have no vendor row but close into self-sustaining base loops.
 - **Only four raw materials genuinely require field trips:** Chromite (buried, Feybreak), Hexolite Quartz (Feybreak — do both on one trip), Soralite (Sunreach Isles) and Paloxite (World Tree, and you must drink Holy Water to mine it).
 - **Drop-rate partner skills only affect items from defeated Pals.** They do nothing for mining nodes — so the "best farming party" depends entirely on which of the two farming games you are playing.
-- **Your real endgame bottleneck is the AI Core**, not Paloxite. Every Lv67+ weapon needs 3–10, and each sits on six tiers of intermediates — the bottom three of which are ranch-fed and fully automatable, so start them early.
+- **Once expeditions are running and routes are set, raw material stops being the constraint — Ancient Furnace throughput is.** A furnace takes only two Pals and splits its workload evenly between Kindling and Cooling, so one specialist covers half the job. Pair Renjishi (Kindling 8) with Bastigor (Cooling 8), then build more furnaces.
+- **The AI Core chain is six tiers deep** (Cryogenic Coolant → Corrosive Solvent → Bio Battery → Computer → Thermal Core → AI Core), but the bottom three are ranch-fed and fully automatable — start them early.
 - **The Plasma Rifle is 4× more ammo-efficient than the Beam Launcher** — 0.15 vs 0.6 Paloxite Ingot per round.
 - **Different Pals with the same drop-boost effect stack**, despite the in-game tooltip saying otherwise.
 
