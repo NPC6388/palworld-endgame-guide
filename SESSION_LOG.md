@@ -4,6 +4,47 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - Ranch work-speed confirmed
+
+**User:** *"work speed does increase output of ranch pals"* - live 1.0.3 play.
+
+Closes the open question flagged a few minutes earlier. I had been unable to resolve it from sources
+because all the community testing on ranch drop rates is early-access era (the bookmarked Chickipi
+egg-drop testing thread is from Jan 2024) and I could not confirm it transferred to 1.0.
+
+**Consequence:** ranch Pals are just base workers. The breeding programme collapses from four
+templates to **three** - worker, combat, mount. Condensation rank and work speed are two independent
+multipliers on the same slot, so stack both.
+
+**The compounding loop worth remembering:** breeding is gated by Cake, Cake by Honey, and Honey has
+no vendor at any price - it comes off a Beegarde ranch. So work-speed passives on ranch Pals
+accelerate the pipeline that produces work-speed passives. The four ranch slots that feed the
+endgame are Beegarde (Honey), Sibelyx Primo (HQ Cloth), Dumud (HQ Pal Oil -> Polymer) and Flambelle
+(Flame Organ -> Carbon Fiber).
+
+I also pulled the earlier "do not burn a Demon's Hand on a Beegarde before a furnace Pal" line. That
+was hedging dressed as prioritisation - once the mechanic is confirmed, the ranch slot competes on
+its merits and the Beegarde case is strong.
+
+### Standing pattern
+
+Five corrections now, all from the user's live play, all cases where published 1.0 sources were
+absent, stale or ambiguous: the expedition/core framing, the Sunreach route, the stacking rule, the
+furnace build limit and work-value meaning, and now ranch work speed. **The user is a more reliable
+source on mechanics than any guide site indexed here.** Ask before assuming a mechanic is unresolved.
+
+### Still open
+- **Computer** recipe (Tech 50) - 5 needed per AI Core.
+- **Plasma Rifle** cost conflict (80 vs 100 Paloxite Ingot).
+- **Teafant Spring yield** (5-10 per use vs 30 on a 10-min cooldown).
+- **Katress / Blazehowl Noct element label** (Neutral vs Fire; the pairing is the trustworthy part).
+- **Rainbow passive percentages** - Ranch Master especially, now that ranch output is known to scale.
+- The **Paloxite Reddit links** the user mentioned - still not on disk, content still from a guide site.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (later still) - Passives page; the furnace ceiling was the wrong ceiling
 
 **Three corrections from the user, all from live play:**

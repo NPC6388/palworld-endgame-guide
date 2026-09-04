@@ -4,6 +4,26 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Ranch work-speed question resolved
+
+Player confirmation from live 1.0.3 play: **work speed increases ranch Pal output**, not just the
+animation rate. The open question raised earlier the same day is closed.
+
+### Changed
+- **Ranch Pals take the standard worker passive stack.** The breeding programme drops from **four
+  templates to three** - worker, combat, mount - because a ranch Pal *is* a worker.
+- **Two independent multipliers per ranch slot**, and they stack: condensation rank raises drop
+  quantity per cycle (rank 1 -> rank 5 is roughly 1 -> 1-5), and work speed raises output on top.
+- Added the compounding note: **Cake gates breeding, Honey gates Cake, and Honey has no vendor** -
+  so work-speed passives on a Beegarde directly accelerate the breeding pipeline that produces your
+  work-speed passives. Same for Sibelyx Primo (HQ Cloth), Dumud (HQ Pal Oil -> Polymer) and
+  Flambelle (Flame Organ -> Carbon Fiber).
+- Removed the earlier "do not burn a Demon's Hand on a Beegarde" advice, which was based on the
+  uncertainty rather than on priority.
+- `base-production.html` now carries the same note beside the ranch table.
+
+---
+
 ## 2026-09-04 - Passives page added; furnace ceiling corrected
 
 Three player corrections from live 1.0.3 play.
