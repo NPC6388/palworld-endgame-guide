@@ -33,10 +33,10 @@
 
   <div class="answer">
     <h2>The thing to know before you start breeding</h2>
-    <p class="big">There are <em>no per-job passives</em>. Nothing boosts Handiwork specifically, or Kindling specifically. Work-speed passives apply to <em>all twelve jobs</em> equally — so one perfect-passive template covers every base worker you will ever breed, and the job is decided by <em>work suitability level</em>, not by passives.</p>
+    <p class="big">Work-<em>speed</em> passives are universal &mdash; they apply to all twelve jobs equally, so one template covers every base Pal you will ever breed. The exception is <em>Farming</em>: it is the only job with passives that raise its <em>work suitability level</em>, and it is also the only job that needs them.</p>
   </div>
 
-  <p>That makes the breeding problem much smaller than it looks. You need <strong>three templates</strong>, not twelve: a worker, a combat Pal, and a mount. <strong>Ranch Pals use the worker template</strong> — work speed raises ranch output too. Everything else is just which Pal you put the template on.</p>
+  <p>So the breeding problem is small: <strong>four templates</strong> cover the whole game &mdash; a general worker, a <strong>ranch</strong> worker, a combat Pal, and a mount. Everything else is just which Pal you stamp the template onto, because the job is decided by <strong>work suitability level</strong>, not by passives.</p>
 
   <h2>1. Base workers &mdash; the max-throughput stack</h2>
   <p class="sub">Stack up to <strong>+245% Work Speed</strong>. This is what turns an Ancient Furnace pair from slow to fast.</p>
@@ -148,7 +148,7 @@
       <tr><td class="mat">Immortality</td><td class="detail">Life Steal +5%, auto HP regen +100%, Attack +15%</td><td class="detail"><strong>No downside.</strong> Best combat passive in the game.</td></tr>
       <tr><td class="mat">Idiosyncratic</td><td class="detail">Defence +25%, auto regen +50%, Poison and Burn immunity</td><td class="detail">Raid tanking; the immunities matter more than the numbers</td></tr>
       <tr><td class="mat">Skymarcher</td><td class="detail">Mounted Jump Count +2</td><td class="detail">Traversal</td></tr>
-      <tr><td class="mat">Ranch Master</td><td class="detail">Ranch output</td><td class="detail"><strong>The closest thing to a job-specific passive.</strong> Exact figure unpublished.</td></tr>
+      <tr><td class="mat">Ranch Master</td><td class="detail"><strong>Farming&rsquo;s Work Suitability +2</strong></td><td class="detail">Rank 4. See the ranch section below &mdash; the only job-specific passives in the game.</td></tr>
       <tr><td class="mat">Babysitter</td><td class="detail">Breeding-related</td><td class="detail">Exact figure unpublished</td></tr>
       <tr><td class="mat">Lavish Hospitality</td><td class="detail">—</td><td class="detail">Exact figure unpublished</td></tr>
       <tr><td class="mat">Heavily Armored</td><td class="detail">Defence</td><td class="detail">Exact figure unpublished</td></tr>
@@ -156,22 +156,45 @@
   </table>
   </div>
 
-  <h2>6. Ranch Pals</h2>
+  <h2>6. Ranch Pals &mdash; the one job with its own passives</h2>
+  <p class="sub">Farming is the odd one out, in both directions: it has the <strong>lowest natural cap of any job</strong>, and it is the <strong>only job with passives that raise its suitability level</strong>.</p>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Passive</th><th>Effect</th><th>Rank</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Ranch Master</td><td><strong>Farming&rsquo;s Work Suitability +2</strong></td><td class="detail">Rank 4 (diamond)</td></tr>
+      <tr><td class="mat">Farmhand</td><td><strong>Farming&rsquo;s Work Suitability +1</strong></td><td class="detail">Rank 3 (gold)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="count">These are the <strong>only two passives in 1.0 that directly raise a work suitability</strong>, and both are Farming-only. Nothing equivalent exists for Handiwork, Mining, Kindling or any other job. <span class="conf">Confirmed in-game.</span></p>
+
   <div class="callout good">
-    <span class="tag">Work Speed raises ranch output &mdash; confirmed</span>
-    <p><strong>Work-speed passives increase how much a ranch Pal produces</strong>, not just how fast the animation plays. So a ranch Pal is a base worker like any other: give it the same <strong>+245% stack</strong> as your furnace Pals.</p>
-    <p>Both multipliers are real and independent, so stack them:</p>
-    <ul>
-      <li><strong>Condensation rank</strong> raises the drop <em>quantity</em> per cycle &mdash; rank 1 &rarr; rank 5 takes most ranch Pals from 1 to 1&ndash;5. See <a href="base-production.html">the ranch table</a>.</li>
-      <li><strong>Work speed</strong> raises output on top of that.</li>
-      <li><strong>Ranch Master</strong> (Rainbow) is explicitly tied to ranch output, though no source publishes its number.</li>
-    </ul>
+    <span class="tag">Why Farming and nothing else</span>
+    <p>Most jobs cap at <strong>Farming 4</strong> naturally, against <strong>8</strong> for the other suitabilities and 7 for Transporting. Farming starts four levels behind everything else, which is exactly why it gets dedicated passives and the others do not.</p>
+  </div>
+
+  <h3>Stacking a ranch Pal to the ceiling</h3>
+  <ol class="slots">
+    <li><span class="n">Natural cap &mdash; Farming 4</span><span class="d">Where every ranch Pal starts.</span></li>
+    <li><span class="n">+2 Ranch Master &rarr; 6</span><span class="d">Rank-4 passive. The single biggest jump available.</span></li>
+    <li><span class="n">+1 Farmhand &rarr; 7</span><span class="d">Rank-3 passive. Two of your four slots are now spent, which is the real cost of this build.</span></li>
+    <li><span class="n">+1 Applied Ranching Handbook &rarr; 8</span><span class="d">300 Dog Coin at the Medal Merchant. Permanent, and it follows the Pal between bases. 1.0 added this one specifically for Farming.</span></li>
+    <li><span class="n">+1 Cinnamoth work aura &rarr; 9</span><span class="d">Station a <strong>Cinnamoth</strong> at the base: its partner skill gives <strong>+1 Farming to every <em>other</em> Pal there</strong>. Does not stack with duplicates, does not benefit itself, and cannot be improved by condensation. There are 12 such aura Pals, one per job &mdash; Ribbuny does the same for Handiwork.</span></li>
+    <li><span class="n">Condensation &rarr; 10</span><span class="d">Each rank-up raises one suitability; max rank raises them all. 48 Pals to max rank.</span></li>
+  </ol>
+
+  <div class="callout good">
+    <span class="tag">The ranch template</span>
+    <p><strong>Ranch Master + Farmhand + two work-speed passives.</strong> Work speed raises ranch <em>output</em>, not just animation rate, so the last two slots want <strong>Artisan</strong> (buyable, 15 Bounty Tokens) plus <strong>Demon&rsquo;s Hand</strong>, <strong>Remarkable Craftsmanship</strong> or <strong>Work Slave</strong>.</p>
+    <p>Both multipliers are real and independent: <strong>suitability level</strong> from the two Farming passives, and <strong>output</strong> from work speed. Plus condensation rank raising drop quantity per cycle on top.</p>
   </div>
 
   <div class="callout good">
     <span class="tag">Why this compounds faster than it looks</span>
-    <p>Your breeding programme is gated by <strong>Cake</strong>, Cake is gated by <strong>Honey</strong>, and Honey has <a href="index.html">no vendor at any price</a> &mdash; it comes off a Beegarde ranch and nowhere else worth using. So work-speed passives on a Beegarde directly accelerate the breeding pipeline that produces your work-speed passives.</p>
-    <p>Same logic for <strong>Sibelyx Primo</strong> (High Quality Cloth), <strong>Dumud</strong> (HQ Pal Oil &rarr; Polymer) and <strong>Flambelle</strong> (Flame Organ &rarr; Carbon Fiber). Those four ranch slots feed most of the endgame, and every one of them scales with work speed.</p>
+    <p>Your breeding programme is gated by <strong>Cake</strong>, Cake by <strong>Honey</strong>, and Honey has <a href="index.html">no vendor at any price</a> &mdash; it comes off a Beegarde ranch and nowhere else. So a maxed Beegarde directly accelerates the pipeline that produces your passives.</p>
+    <p>Same for <strong>Sibelyx Primo</strong> (High Quality Cloth), <strong>Dumud</strong> (HQ Pal Oil &rarr; Polymer) and <strong>Flambelle</strong> (Flame Organ &rarr; Carbon Fiber). Those four ranch slots feed most of the endgame.</p>
   </div>
 
   <h2>How to actually get these onto a Pal</h2>

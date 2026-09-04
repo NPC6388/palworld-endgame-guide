@@ -49,9 +49,10 @@
   </div>
 
   <div class="callout">
-    <span class="tag">On the "work" numbers in this guide</span>
-    <p>Recipes list large work values — 50,000 for a Pal Metal Ingot, 700,000 for a Soralite Ingot, 1,000,000 for a Paloxite Ingot. These represent <strong>how long a Pal takes to produce the item</strong>, and they are best read as <em>relative</em> costs: a Paloxite Ingot is ~20&times; a Pal Metal Ingot, ~1.4&times; a Soralite Ingot.</p>
-    <p>In practice the absolute numbers are close to <strong>moot</strong> if you are already using the best available Pals with bred work-speed passives — a <a href="passives.html">+245% work stack</a> and Kindling/Cooling 10 workers change the real rate far more than the base figure suggests. Use the ratios to decide what to batch, not to predict wall-clock time.</p>
+    <span class="tag">On the "workload" numbers</span>
+    <p>Workload is <strong>how long a Pal takes to produce the item</strong>. Confirmed in-game: <strong>Computer 2,500</strong>, <strong>AI Core 50,000</strong>.</p>
+    <p>An earlier version of this page quoted 700,000 for a Soralite Ingot and 1,000,000 for a Paloxite Ingot from a datamine. <strong>Those figures cannot be right</strong> &mdash; an AI Core consumes ten Soralite Ingots and is itself only 50,000. They have been removed rather than left to mislead.</p>
+    <p>In any case the absolute numbers are close to <strong>moot</strong> once you run the best available Pals with bred work-speed passives &mdash; a <a href="passives.html">+245% work stack</a> on Kindling/Cooling 10 workers moves the real rate far more. Use workload to decide what to batch, not to predict wall-clock time.</p>
   </div>
 
   <h2>The intermediate chain</h2>
@@ -64,9 +65,11 @@
       <tr><td class="mat">Cryogenic Coolant</td><td><code>31</code></td><td class="detail"><code>1 Aquatic Pal Fluids + 1 Ice Organ</code></td><td><span class="pill yes">Yes</span> Kelpsea + Foxcicle ranches</td></tr>
       <tr><td class="mat">Corrosive Solvent</td><td><code>37</code></td><td class="detail"><code>1 Venom Gland + 1 Sulfur</code></td><td><span class="pill yes">Yes</span> Caprity Noct ranch + sulfur base</td></tr>
       <tr><td class="mat">Bio Battery</td><td><code>44</code></td><td class="detail"><code>1 Electric Organ + 1 Refined Ingot + 1 Carbon Fiber</code></td><td><span class="pill yes">Yes</span> Sparkit + Flambelle ranches + ore/coal base</td></tr>
-      <tr><td class="mat">Computer</td><td><code>50</code></td><td class="detail"><strong>Recipe unverified</strong> — I could not confirm it against a 1.0 source</td><td><span class="pill partial">Unknown</span></td></tr>
+      <tr><td class="mat">Circuit Board</td><td><code>35</code></td><td class="detail"><code>2 Pure Quartz + 1 Polymer</code></td><td><span class="pill yes">Yes</span> Quartz base + Polymer loop</td></tr>
+      <tr><td class="mat">Plasteel</td><td><code>50</code></td><td class="detail"><code>5 Crude Oil + 5 Paldium + 10 Ore</code> — <strong>Electric Furnace</strong> or Gigantic Furnace only</td><td><span class="pill yes">Yes</span> Oil extractors + ore base</td></tr>
+      <tr><td class="mat">Computer</td><td><code>50</code></td><td class="detail"><code>2 Circuit Board + 3 Plasteel + 2 Bio Battery + 2 Carbon Fiber</code> &middot; <strong>workload 2,500</strong></td><td><span class="pill yes">Yes</span> <span class="conf">confirmed in-game</span></td></tr>
       <tr><td class="mat">Thermal Core</td><td><code>59</code></td><td class="detail"><code>4 Flame Organ + 8 Coal + 2 Corrosive Solvent + 2 Hexolite</code></td><td><span class="pill partial">Partial</span> Hexolite is a Feybreak trip. <strong>Aegidron drops 1–2 at 100%.</strong></td></tr>
-      <tr><td class="mat">AI Core</td><td><code>67</code></td><td class="detail"><code>5 Computer + 10 Soralite Ingot + 2 Thermal Core + 1 Ancient Civilization Core</code> — Advanced Workshop</td><td><span class="pill no">No</span> Gated on raids and Sunreach</td></tr>
+      <tr><td class="mat">AI Core</td><td><code>67</code></td><td class="detail"><code>5 Computer + 10 Soralite Ingot + 2 Thermal Core + 1 Ancient Civilization Core</code> &middot; Advanced Workshop &middot; <strong>workload 50,000</strong> <span class="conf">confirmed in-game</span></td><td><span class="pill no">No</span> Gated on Soralite and Ancient Cores</td></tr>
     </tbody>
   </table>
   </div>
@@ -77,6 +80,9 @@
     <ul>
       <li><strong>100 Paloxite Ingot</strong> = 200 Paloxite + 100 Soralite + 100 World Tree Holy Water</li>
       <li><strong>10 AI Core</strong> = 50 Computer + 100 Soralite Ingot + <strong>20 Thermal Core</strong> + 10 Ancient Civilization Core</li>
+      <li><strong>50 Computer</strong> = 100 Circuit Board + <strong>150 Plasteel</strong> + 100 Bio Battery + 100 Carbon Fiber</li>
+      <li><strong>150 Plasteel</strong> = 750 Crude Oil + 750 Paldium + <strong>1,500 Ore</strong></li>
+      <li><strong>100 Circuit Board</strong> = 200 Pure Quartz + 100 Polymer</li>
       <li><strong>20 Thermal Core</strong> = 80 Flame Organ + <strong>160 Coal</strong> + 40 Corrosive Solvent + <strong>40 Hexolite</strong></li>
       <li><strong>100 Soralite Ingot</strong> (for the AI Cores alone) = 200 Soralite + 200 Pure Quartz</li>
     </ul>
@@ -91,7 +97,7 @@
       <li><strong>200 Paloxite</strong> — "stacks of hundreds per run" once the route is set. Roughly one trip.</li>
       <li><strong>20 Ancient Civilization Cores</strong> — Sunreach Isle expeditions return 3–4 per hour <em>per station</em>, and stations stack across bases. If you run expeditions continuously this accrues in the background and you will likely never notice it.</li>
       <li><strong>40 Hexolite</strong> — one Feybreak trip, shared with the Chromite run.</li>
-      <li><strong>160 Coal, 200 Pure Quartz, 80 Flame Organ, 50 Electric Organ</strong> — all fully automatable at base.</li>
+      <li><strong>1,500 Ore, 750 Crude Oil, 160 Coal, 400 Pure Quartz, 80 Flame Organ, 50 Electric Organ</strong> — all fully automatable at base. The <strong>1,500 Ore for Plasteel</strong> is the figure that surprises people: it is why a serious ore base still earns its keep at Lv80.</li>
     </ul>
     <p>The materials are a couple of evenings of routes. The <strong>100 Paloxite Ingots and 100 Soralite Ingots</strong> those materials become are what you will actually wait on.</p>
   </div>
@@ -252,11 +258,9 @@
 
   <h2>Still unverified</h2>
   <ul>
-    <li><strong>The Computer recipe</strong> (Tech 50) — the one gap in the AI Core chain. You need 5 per AI Core, so this matters.</li>
     <li><strong>Plasma Rifle cost</strong> — two sources disagree; see the note above.</li>
     <li><strong>Gunpowder-per-craft yield</strong> — the mid-tier ammo costs are given in gunpowder, but I did not confirm the Sulfur-to-Gunpowder conversion rate.</li>
     <li><strong>Hexolite vs Hexolite Quartz</strong> — recipes call for "Hexolite" while the world node is "Hexolite Quartz". Almost certainly a smelt or crush step, but I did not confirm the conversion.</li>
-    <li><strong>Plasteel recipe</strong> — needed for both Lightweight Plasteel and Hexolite Armor.</li>
   </ul>
 
 </div>

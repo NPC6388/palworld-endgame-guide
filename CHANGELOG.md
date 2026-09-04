@@ -4,6 +4,49 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - In-game screenshots: Computer chain confirmed, per-job passive claim corrected
+
+Player-supplied screenshots of the crafting UI and two passive tooltips. Highest-confidence source
+in the guide so far.
+
+### Corrected - the headline on `passives.html` was wrong
+The page claimed **"there are no per-job passives"**. Screenshots show **Farmhand (Farming's Work
+Suitability +1)** and **Ranch Master (+2)**. Per-job passives do exist - they are just confined to
+Farming, which is also the only job with a natural cap of **4** instead of 8. The claim now reads:
+work-*speed* passives are universal; Farming is the one job with suitability passives.
+
+The generalisation was drawn from an absence of evidence about the other eleven jobs, which is
+exactly the reasoning error this guide warns about elsewhere.
+
+- New ranch stacking ladder: **Farming 4 -> 6** (Ranch Master) **-> 7** (Farmhand) **-> 8** (Applied
+  Ranching Handbook, 300 Dog Coin) **-> 9** (Cinnamoth work aura, +1 to every *other* Pal at base)
+  **-> 10** (condensation).
+- Documented **work auras** properly: 12 Pals, one per job, each granting +1 of that suitability to
+  all other Pals at the base. Cinnamoth for Farming, Ribbuny for Handiwork.
+- Ranch template is now **Ranch Master + Farmhand + two work-speed passives**.
+- Templates go from three back to **four**: general worker, ranch worker, combat, mount.
+
+### Confirmed - the AI Core chain is complete
+- **Computer** = `2 Circuit Board + 3 Plasteel + 2 Bio Battery + 2 Carbon Fiber`, **workload 2,500**.
+  Closes the last gap in the chain.
+- **AI Core** = `5 Computer + 10 Soralite Ingot + 2 Thermal Core + 1 Ancient Civ Core`,
+  **workload 50,000** - matching what the guide had already sourced.
+- Added **Circuit Board** (`2 Pure Quartz + 1 Polymer`), **Plasteel** (`5 Crude Oil + 5 Paldium +
+  10 Ore`, Electric Furnace only) and **Crude Oil**. Ledger 45 -> **49 materials**.
+- The Beam Launcher worked example now unpacks two tiers deeper: 50 Computers means **150 Plasteel**,
+  which means **1,500 Ore** and 750 Crude Oil. That is the number that surprises - it is why a
+  serious ore base still earns its keep at Lv80.
+
+### Removed - bad workload figures
+The datamined "700,000 for a Soralite Ingot" and "1,000,000 for a Paloxite Ingot" **cannot be right**:
+an AI Core consumes ten Soralite Ingots and is itself only 50,000. Both figures are deleted rather
+than left to mislead, with a note explaining why.
+
+### Dropped
+The Teafant Spring yield conflict, at the player's request - not a route they use.
+
+---
+
 ## 2026-09-04 - Ranch work-speed question resolved
 
 Player confirmation from live 1.0.3 play: **work speed increases ranch Pal output**, not just the

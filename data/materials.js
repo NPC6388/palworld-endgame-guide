@@ -157,7 +157,7 @@ const MATERIALS = [
     name: "Soralite Ingot <span class=\"new\">1.0</span>",
     tags: ["craft", "cannot-buy", "base-ok", "new-10"],
     buy: { status: "no", detail: "No vendor row." },
-    base: { status: "yes", detail: "<strong>Craft only: 2 Soralite + 2 Pure Quartz.</strong> Ancient Furnace, Tech 66 (3 ATP). <strong>700,000 work.</strong> Feeds 59 recipes including AI Cores and Ancient Armor." },
+    base: { status: "yes", detail: "<strong>Craft only: 2 Soralite + 2 Pure Quartz.</strong> Ancient Furnace, Tech 66 (3 ATP). Feeds 59 recipes including AI Cores and Ancient Armor — an AI Core alone eats <strong>10</strong>." },
     world: "—",
     party: "None at base — but the Soralite input is a Sunreach Isles field trip. See the Soralite row.",
     conf: "High"
@@ -166,7 +166,7 @@ const MATERIALS = [
     name: "Paloxite Ingot <span class=\"new\">1.0</span>",
     tags: ["craft", "cannot-buy", "base-ok", "new-10"],
     buy: { status: "no", detail: "No vendor row. The top-tier alloy." },
-    base: { status: "yes", detail: "<strong>Craft only: 1 Soralite + 2 Paloxite + 1 World Tree Holy Water.</strong> Tech 74 (4 ATP). <strong>1,000,000 work</strong> — the single biggest craft in the game. 22 recipes: Beam Launcher, Plasma Rifle, Ancient Armor, saddles." },
+    base: { status: "yes", detail: "<strong>Craft only: 1 Soralite + 2 Paloxite + 1 World Tree Holy Water.</strong> Ancient Furnace, Tech 74 (4 ATP). The top-tier alloy — 22 recipes: Beam Launcher, Plasma Rifle, Ancient Armor, saddles." },
     world: "—",
     party: "None at base — but every input is a World Tree or Sunreach field trip.",
     conf: "High"
@@ -421,10 +421,46 @@ const MATERIALS = [
     conf: "High"
   },
   {
+    name: "Circuit Board",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft: 2 Pure Quartz + 1 Polymer</strong> (Tech 35, Production Assembly Line). Quartz base at <code>-212, 249</code> plus the Polymer loop &mdash; <strong>fully automatable</strong>." },
+    world: "&mdash;",
+    party: "None. Feeds Computers and the Electric Furnace.",
+    conf: "High"
+  },
+  {
+    name: "Crude Oil",
+    tags: ["cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Oil Extractor</strong> on an oil field. The Sakurajima plateau <code>-646, 270</code> has two, plus coal and sulfur nearby. 1.0.3 cut extractor build costs and raised extraction speed." },
+    world: "Oil rigs.",
+    party: "None. Set the extractors and forget them.",
+    conf: "High"
+  },
+  {
+    name: "Plasteel",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row." },
+    base: { status: "yes", detail: "<strong>Craft: 5 Crude Oil + 5 Paldium Fragment + 10 Ore</strong> (Tech 50). Needs an <strong>Electric Furnace</strong> or Gigantic Furnace &mdash; a standard furnace will not do it. <strong>Ore-hungry: 10 per unit.</strong>" },
+    world: "&mdash;",
+    party: "None &mdash; but this is the recipe that keeps a serious ore base worth running at Lv80.",
+    conf: "High"
+  },
+  {
+    name: "Computer",
+    tags: ["craft", "cannot-buy", "base-ok"],
+    buy: { status: "no", detail: "No vendor row. Five needed per AI Core." },
+    base: { status: "yes", detail: "<strong>Craft: 2 Circuit Board + 3 Plasteel + 2 Bio Battery + 2 Carbon Fiber</strong> (Tech 50). <strong>Workload 2,500.</strong> Every input is automatable, so this whole tier runs itself once the lines exist. <span class=\"conf\">Confirmed in-game.</span>" },
+    world: "&mdash;",
+    party: "None.",
+    conf: "High"
+  },
+  {
     name: "AI Core",
     tags: ["craft", "cannot-buy", "ancient"],
     buy: { status: "no", detail: "No vendor row. <strong>The real endgame bottleneck</strong> — every Lv67+ weapon needs 3–10." },
-    base: { status: "partial", detail: "<strong>Craft: 5 Computer + 10 Soralite Ingot + 2 Thermal Core + 1 Ancient Civilization Core</strong> (Tech 67, Advanced Workshop)." },
+    base: { status: "partial", detail: "<strong>Craft: 5 Computer + 10 Soralite Ingot + 2 Thermal Core + 1 Ancient Civilization Core</strong> (Tech 67, Advanced Workshop). <strong>Workload 50,000.</strong> <span class=\"conf\">Confirmed in-game.</span>" },
     world: "You are not just paying this recipe — you are paying the whole chain beneath it. Ancient Civilization Cores come from raids and expeditions; Soralite from Sunreach; Hexolite from Feybreak.",
     party: "See the <a href=\"endgame-demand.html\">worked example</a> — 10 AI Cores for one Beam Launcher costs 40 Hexolite, 160 Coal and 10 Ancient Civilization Cores before you touch the weapon recipe itself.",
     conf: "High"

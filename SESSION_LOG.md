@@ -4,6 +4,67 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - Screenshots beat every source I had
+
+User supplied four in-game screenshots: the Computer and AI Core crafting panels, and the Farmhand
+and Ranch Master passive tooltips. Read them with the Read tool - it renders images directly, so
+this is a fast, high-confidence input channel. **Ask for screenshots earlier next time.**
+
+### The correction that stings
+
+I had published, as the headline of `passives.html`: *"There are no per-job passives. Nothing boosts
+Handiwork specifically, or Kindling specifically."*
+
+The tooltips show **Farmhand: Farming's Work Suitability +1** and **Ranch Master: +2**. So per-job
+passives exist. They are confined to Farming - which, checking back, is also the only job with a
+natural cap of **4** rather than 8, so it is the one job that needs them. That detail was already in
+my own research notes from the work-suitability pass; I had it and did not connect it.
+
+**The error was reasoning from absence.** Sources described work-speed passives as universal and
+never mentioned per-job ones, so I asserted none existed. A search afterwards confirms Farmhand and
+Ranch Master are the *only* two - so the shape of the claim was nearly right and the absolute
+phrasing was what made it wrong. "None exist" needed to be "none found for the other jobs".
+
+### What the screenshots also settled
+
+- **Computer** = 2 Circuit Board + 3 Plasteel + 2 Bio Battery + 2 Carbon Fiber, workload 2,500. Last
+  gap in the AI Core chain, open since the demand-side pass.
+- **AI Core** = 5 Computer + 10 Soralite Ingot + 2 Thermal Core + 1 Ancient Civ Core, workload
+  50,000 - matches what I had sourced, so that source is vindicated.
+- **The datamined workload figures were garbage.** I had published 700,000 for a Soralite Ingot and
+  1,000,000 for a Paloxite Ingot. An AI Core eats ten Soralite Ingots and is only 50,000 workload,
+  so the ingot cannot be 700,000. Deleted both with an explanatory note. Good reminder that a
+  datamine field of unknown units should not have been published as a number at all.
+
+### Incidental observation worth remembering
+
+The screenshots show the user's stock levels: Carbon Fiber 28,034 - Soralite Ingot 43,916 - Plasteel
+14,148 - Computer 12,305 - Thermal Core 8,317 - Bio Battery 4,167 - AI Core 2,185 - Circuit Board
+1,369 - **Ancient Civilization Core 45**.
+
+Everything is in the thousands except ACC at 45. They already hold 2,185 AI Cores so they are not
+blocked, but ACC is plainly the tightest line in their economy. Do not re-litigate the earlier
+bottleneck discussion on this basis - they run expeditions continuously and told me cores accrue
+fine - but it is a useful sanity check on what "scarce" means for this player.
+
+### Standing pattern, updated
+
+Six corrections now, all from live play. The reliable ones I keep getting wrong are **absolute
+claims** ("no per-job passives", "different Pals stack", "the bottleneck is X"). The data underneath
+has generally been fine. **Prefer "no source I found mentions X" over "X does not exist".**
+
+### Still open
+- **Plasma Rifle** cost conflict (80 vs 100 Paloxite Ingot) - the last real recipe conflict.
+- **Katress / Blazehowl Noct element label** (Neutral per Game8, Fire per the Holy Water guide; the
+  pairing with Starryon Primo is the trustworthy part).
+- A few **Rainbow passive** effects still unpublished (Babysitter, Lavish Hospitality, Heavily Armored).
+- The **Paloxite Reddit links** - still not on disk; that content remains guide-site sourced.
+- Teafant Spring yield: **dropped at the user's request**, not a route they use.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (cont.) - Ranch work-speed confirmed
 
 **User:** *"work speed does increase output of ranch pals"* - live 1.0.3 play.
