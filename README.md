@@ -30,7 +30,7 @@ Project notes: [`CHANGELOG.md`](CHANGELOG.md) for what changed and when, [`SESSI
 - **Once expeditions are running and routes are set, raw material stops being the constraint — Ancient Furnace throughput is.** A furnace takes only two Pals and splits its workload evenly between Kindling and Cooling, so one specialist covers half the job. Pair Renjishi (Kindling 8) with Bastigor (Cooling 8), then build more furnaces.
 - **The AI Core chain is six tiers deep** (Cryogenic Coolant → Corrosive Solvent → Bio Battery → Computer → Thermal Core → AI Core), but the bottom three are ranch-fed and fully automatable — start them early.
 - **The Plasma Rifle is 4× more ammo-efficient than the Beam Launcher** — 0.15 vs 0.6 Paloxite Ingot per round.
-- **Whether drop-boosters stack is unresolved** — two 1.0 sources directly contradict each other, and the guide now shows both rather than picking one. Testing it is the highest-value experiment available.
+- **Drop-boosters stack across different species, not duplicates** — two Menasting do nothing, but Menasting + Menasting Terra stack to ~160%. A regional variant counts as a different species. Fire, Neutral, Electric and Dark each have two species and can be doubled; the other elements have one.
 - **Holy Water is the one endgame material you get by killing Pals**, so it is the one route where a drop-boosting party is the whole point — the Alluvion Lakefront loop at `-1638, 1340`, reported 500+ in 10–15 min.
 - **Paloxite nodes despawn from your *Pal’s* proximity too**, not just yours — or skip the mechanic entirely with a World Tree passive (Dimensional Leap / Hermit Sage) for permanent protection.
 

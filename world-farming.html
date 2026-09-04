@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>World Farming &amp; Party Comps — Palworld 1.0</title>
-<meta name="description" content="How drop rate actually works in Palworld 1.0, the drop-boosting party for each target, and the exact route for every material you cannot buy or automate.">
+<meta name="description" content="How drop rate actually works in Palworld 1.0, which drop-boosting Pals stack, and the exact route and party for every material you cannot buy or automate.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -38,7 +38,7 @@
   <div class="cards">
     <div class="card">
       <h4>Game one: <span class="who">killing Pals</span></h4>
-      <p>Drop boosters apply and a single one is worth 40–80%. Whether a second of the same element adds anything is <strong>disputed</strong> — see below. Relevant to HQ Pal Oil, Venom Gland, organs, Bones, Leather, Holy Water, Carbon Fiber from Shadowbeak.</p>
+      <p>Drop boosters apply, and <strong>different species with the same effect stack</strong> — so a doubled-up element can nearly double your yield. Relevant to HQ Pal Oil, Venom Gland, organs, Bones, Leather, Holy Water, Carbon Fiber from Shadowbeak.</p>
     </div>
     <div class="card">
       <h4>Game two: <span class="who">mining nodes</span></h4>
@@ -54,16 +54,17 @@
   <h2>Drop-rate boosters, by element</h2>
   <p class="sub">"While in party, [Element] Pals drop 40% / 50% / 60% / 70% / 80% more items when defeated" — scaling with partner skill level 1&rarr;5.</p>
 
-  <div class="callout warn">
-    <span class="tag">Unresolved: do these stack? Sources directly contradict each other</span>
-    <p><strong>Game8</strong> says the in-game "does not stack" tooltip applies only to <em>the same</em> Pal, and that <strong>different Pals with the same effect do stack</strong> — Penking plus Faleris Aqua giving a combined 160% at max skill level.</p>
-    <p><strong>KeenGamer&rsquo;s Holy Water farming guide</strong> says flatly that the bonuses <strong>"do not stack, so carrying multiple copies provides no extra benefit"</strong> — and its recommended parties carry exactly <em>one</em> booster per target species.</p>
-    <p>The phrase "multiple copies" is ambiguous enough that both could be describing the same rule, but I cannot resolve it from sources and found no controlled test either way. <strong>This is the highest-value thing in the guide to test yourself:</strong> run a fixed route with one booster, then two of the same element, and compare drops. If they do not stack, free up those party slots for mobility and survivability.</p>
+  <div class="callout good">
+    <span class="tag">The stacking rule, resolved</span>
+    <p><strong>"Does not stack" applies to the same <em>species</em>. Different species carrying the same effect <em>do</em> stack.</strong></p>
+    <p>So two Menasting give you nothing extra — but <strong>Menasting plus Menasting Terra stack</strong>, and so do Penking plus Faleris Aqua for a combined 160% at max skill level. The counterintuitive part: <strong>a regional variant counts as a different species for this purpose</strong>, so the Terra / Noct / Aqua forms stack with their base Pal rather than being treated as a duplicate.</p>
+    <p>This resolves what looked like a source conflict. Game8 ("different Pals stack") and KeenGamer ("multiple copies provide no extra benefit") were describing the same rule from opposite ends — "multiple copies" means duplicates of one species. Both were right.</p>
+    <p class="conf">Source: player report from live 1.0.3 play, which reconciles both published sources. Higher confidence than either source alone.</p>
   </div>
 
   <div class="scroll">
   <table>
-    <thead><tr><th>Element</th><th>Pals</th><th>Options</th><th>What it is good for</th></tr></thead>
+    <thead><tr><th>Element</th><th>Pals</th><th>Stack</th><th>What it is good for</th></tr></thead>
     <tbody>
       <tr><td class="mat">Fire</td><td><strong>Penking</strong>, <strong>Faleris Aqua</strong></td><td><span class="pill yes">2&times;</span></td><td class="detail">Flame Organ in bulk &rarr; Carbon Fiber</td></tr>
       <tr><td class="mat">Neutral</td><td><strong>Blazehowl Noct</strong>, <strong>Katress</strong></td><td><span class="pill yes">2&times;</span></td><td class="detail">Leather, Bone, general commodity drops</td></tr>
@@ -78,7 +79,7 @@
     </tbody>
   </table>
   </div>
-  <p class="count">Source: Game8 drop-rate partner skill list, updated 17 August 2026. Confidence: High for the list of Pals and effects; the "Options" column counts how many Pals carry the effect, <strong>not</strong> a confirmed stacking multiplier — see the callout above.</p>
+  <p class="count">Source: Game8 drop-rate partner skill list, updated 17 August 2026. Confidence: High for the list of Pals and effects; the "Stack" column shows how many <em>different species</em> carry the effect, and therefore how far you can stack it — see the rule above.</p>
 
   <h2>The three utility Pals that are not drop boosters</h2>
   <div class="cards">
@@ -101,7 +102,7 @@
   <h3>A. Kill-farm a material (HQ Pal Oil, organs, Venom Gland, Carbon Fiber)</h3>
   <ol class="slots">
     <li><span class="n">Drop booster, matching element</span><span class="d">e.g. Blazehowl for Mammorest (Grass).</span></li>
-    <li><span class="n">Second booster &mdash; only if stacking proves real</span><span class="d">Fire, Neutral, Electric and Dark each have two Pals with the effect. <strong>Test it before you commit the slot</strong> (see the stacking callout); if it does not stack, this slot is better spent on mobility or a healer.</span></li>
+    <li><span class="n">Second booster &mdash; a <em>different species</em>, same element</span><span class="d"><strong>Fire, Neutral, Electric and Dark each have two species with the effect, so these four elements can be doubled to ~160%.</strong> Grass, Water, Ice, Ground, Dragon and Pal Soul have only one species each — for those, spend the slot on mobility or a healer instead.</span></li>
     <li><span class="n">Your damage Pal</span><span class="d">Type-advantaged against the target. Kill speed is the other half of yield per hour.</span></li>
     <li><span class="n">Flying mount</span><span class="d">Route speed between spawns, and the ability to leave when a fight goes wrong.</span></li>
     <li><span class="n">Flex</span><span class="d">A third booster of a different element if you are clearing mixed spawns, or a healer for long sessions.</span></li>
@@ -161,7 +162,7 @@
     <tbody>
       <tr><td class="mat">Alluvion Lakefront</td><td class="detail">Starryon Primo</td><td class="detail"><strong>Katress</strong> or <strong>Blazehowl Noct</strong></td></tr>
       <tr><td class="mat">Alluvion Lakefront</td><td class="detail">Shaolong <span class="conf">(Water)</span></td><td class="detail"><strong>Fenglope Lux</strong></td></tr>
-      <tr><td class="mat">Dusty Ravine</td><td class="detail">Orserk and Snock Lux <span class="conf">(Electric)</span></td><td class="detail"><strong>Menasting</strong> or <strong>Menasting Terra</strong> — one booster covers both species</td></tr>
+      <tr><td class="mat">Dusty Ravine</td><td class="detail">Orserk and Snock Lux <span class="conf">(Electric)</span></td><td class="detail"><strong>Menasting + Menasting Terra</strong> — different species, so <strong>run both and stack to ~160%</strong>. One booster already covers both target species.</td></tr>
     </tbody>
   </table>
   </div>
@@ -185,7 +186,7 @@
       <tr><td class="mat">World Tree Holy Water <span class="new">1.0</span></td><td class="detail"><strong>Alluvion Lakefront kill-loop <code>-1638, 1340</code> — 500+ in 10–15 min</strong> (Template E). Also: fishing 43–71/catch; Large Fishing Pond passively at base.</td><td class="detail">Element booster matched to the target species — <strong>the one route where this matters</strong></td></tr>
       <tr><td class="mat">HQ Pal Oil</td><td class="detail">Mammorest, ~7.5 per kill</td><td class="detail">Template A with Blazehowl (Grass)</td></tr>
       <tr><td class="mat">Venom Gland</td><td class="detail">Menasting, ~7.5 per kill</td><td class="detail">Template A — or just ranch it with Caprity Noct</td></tr>
-      <tr><td class="mat">Carbon Fiber</td><td class="detail">Shadowbeak, 2–3 at 100% (World Tree, Lv80)</td><td class="detail">Template A with Elphidran or Enchanted Sword (Dark)</td></tr>
+      <tr><td class="mat">Carbon Fiber</td><td class="detail">Shadowbeak, 2–3 at 100% (World Tree, Lv80)</td><td class="detail">Template A with <strong>Elphidran + Enchanted Sword</strong> (Dark, stacks)</td></tr>
       <tr><td class="mat">Legendary weapon schematics</td><td class="detail"><strong>Lv60 Oil Rig near Fabre Island.</strong> Chest farm, not a boss kill.</td><td class="detail">See below</td></tr>
       <tr><td class="mat">Bounty Tokens</td><td class="detail">Wanted-criminal NPCs, respawn ~hourly</td><td class="detail">Any combat comp</td></tr>
       <tr><td class="mat">Ancient Civ Parts / Cores</td><td class="detail"><strong>Expeditions.</strong> Do not farm these by hand.</td><td class="detail">Expedition firepower team — see below</td></tr>

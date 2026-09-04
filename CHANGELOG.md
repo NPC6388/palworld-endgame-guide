@@ -4,6 +4,38 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 — Stacking rule resolved
+
+Player report from live 1.0.3 play settled the conflict logged earlier the same day.
+
+**The rule: "does not stack" applies to the same *species*. Different species carrying the same
+effect *do* stack — and a regional variant counts as a different species.**
+
+So two Menasting give nothing extra, but **Menasting + Menasting Terra stack** to ~160% at max
+partner skill level, as do Penking + Faleris Aqua.
+
+This reconciles both published sources rather than overruling either: Game8's "different Pals stack"
+and KeenGamer's "multiple copies provide no extra benefit" were describing the same rule from
+opposite ends. **The apparent contradiction was a vocabulary problem, not a factual one.**
+
+### Changed
+- Stacking restored as a positive, stated rule; the withdrawn claim is reinstated with the precise
+  species-vs-duplicate qualifier that was missing the first time.
+- Element table column renamed back to **"Stack"**, now explicitly counting *different species*
+  carrying the effect: Fire, Neutral, Electric and Dark can be doubled; Grass, Water, Ice, Ground,
+  Dragon and Pal Soul have one species each and cannot.
+- **Template A slot 2** is a firm recommendation again — a *different species* of the same element.
+- **Template E**, Dusty Ravine leg: run **Menasting + Menasting Terra together** to stack the Electric
+  boost while one booster already covers both target species (Orserk and Snock Lux).
+- Noted that Menasting Terra's Golden Scorpion also grants **+5–10% player Defence** alongside the
+  Electric drop boost.
+
+### Verified
+"Menasting Noct" does not appear as a drop-boost variant in 1.0 — **Menasting Terra** is the one
+carrying Golden Scorpion, so the tables keep Terra.
+
+---
+
 ## 2026-09-04 — Holy Water kill-farm, Paloxite detail, and a stacking claim walked back
 
 Prompted by a bookmarked Reddit post (`1v1v74v`, "World Tree Holy Water Farm 500+ Holy

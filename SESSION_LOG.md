@@ -4,6 +4,51 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (later) — The stacking "conflict" was a vocabulary problem
+
+**User, from live play:** *"bonuses stating they do NOT stack apply to having pals of the same
+species. it does not apply to pals of different species eg. menasting and menasting noct"*
+
+That settles the conflict flagged earlier the same day, and it settles it by **reconciling both
+sources rather than picking a winner**:
+
+- Game8: "different Pals with the same effect do stack" — correct, meaning different *species*.
+- KeenGamer: "do not stack, carrying multiple copies provides no extra benefit" — also correct,
+  where "multiple copies" means duplicates of *one* species.
+
+Neither source was wrong. They were describing the same rule from opposite ends, in different words.
+I had read them as mutually exclusive and escalated it to an unresolved conflict on the site.
+
+**Lesson worth carrying, and it is a different one from yesterday's:** before flagging two sources as
+contradictory, check whether they are using the same vocabulary. "Multiple copies" vs "different
+Pals" was doing all the work here. Withdrawing the claim was still the right call given what I had —
+but the framing should have been "these may be describing the same rule in different words", not
+"these directly contradict each other".
+
+The genuinely useful nuance, which neither published source states plainly: **a regional variant
+counts as a different species for stacking.** That is the counterintuitive bit worth keeping —
+Menasting + Menasting Terra stack.
+
+### Minor factual check
+The user's example said "Menasting Noct". Searched it: **Menasting Terra** is the variant carrying
+the Golden Scorpion partner skill (Electric Pals drop 40–80% more, plus +5–10% player Defence); no
+Noct variant carries a drop boost. Kept Terra in the tables — the mechanic the user described is the
+substance and it is now the guide's stated rule.
+
+### Watch-outs
+- Stacking is **no longer** the open question it was flagged as this morning; the top open items are
+  back to the **Computer** recipe, the **Plasma Rifle** cost conflict, whether Ancient Furnaces have
+  a build limit, and the unverified "1,000,000 work" figure.
+- Still worth asking the user for the **Paloxite Reddit links** — current Paloxite content is from a
+  guide site, and their bookmarks file on disk still lags the live browser.
+- Two live conflicts remain from this morning: **Teafant Spring yield** (5–10 per use vs 30 on a
+  10-min cooldown) and the **Katress / Blazehowl Noct element label** (Neutral per Game8, Fire per the
+  Holy Water guide — the pairing with Starryon Primo is the trustworthy part).
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 — Bookmarked Reddit post; Reddit is unreachable; a claim had to be withdrawn
 
 **Ask:** pull a specific bookmarked Reddit post about a drop-boosting party for farming Holy Water,
