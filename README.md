@@ -19,6 +19,8 @@ A level-80 endgame reference for **Palworld 1.0.3** (solo world, default setting
 | `endgame-demand.html` | What consumes your materials — every Lv67-80 weapon and ammo recipe, the armour ladder, the AI Core chain, cakes, spheres, Ultra raid loot, the Lv80 stat spread |
 | `sources.html` | Every source, a confidence ledger, and an honest list of what is unverified |
 
+Project notes: [`CHANGELOG.md`](CHANGELOG.md) for what changed and when, [`SESSION_LOG.md`](SESSION_LOG.md) for handoff notes and open watch-outs.
+
 ## The headline answers
 
 - At Lv80, **gold buys consumables, ammo, meds, bait, ranch commodities, skill fruits, hat schematics and live Pals — nothing else.** Every ore, ingot, alloy, ancient material, World Tree resource and raid drop is farm-only.
@@ -47,6 +49,8 @@ assets/style.css         theme-aware, no build step
 assets/app.js            ledger filtering + headline counts
 data/materials.js        the ledger data — edit this to update the table
 research/                raw research write-ups with inline citations
+CHANGELOG.md             what changed, newest at the top
+SESSION_LOG.md           handoff notes and unresolved watch-outs
 ```
 
 No build step, no dependencies. `data/materials.js` is a plain `<script>` rather than fetched JSON, so the site also works opened straight from the filesystem.
