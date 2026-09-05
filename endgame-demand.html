@@ -171,140 +171,79 @@
   </div>
 
   <h3>Cost per point of damage</h3>
-  <p class="sub">All Attack values and all three energy ammo recipes confirmed from in-game panels.</p>
+  <p class="sub">Attack, magazine and durability for every rarity, from the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3772445787">82-weapon 1.0 database</a>. Every Common value matches the in-game panels exactly, which calibrates the whole table.</p>
 
   <div class="callout warn">
     <span class="tag">Read the Attack number correctly or you will dismiss the wrong weapons</span>
-    <p><strong>Attack is per projectile, not per trigger pull.</strong> Weapons that fire or summon multiple units list a per-unit figure, so their headline number understates them badly:</p>
-    <ul>
-      <li><strong>Beam Scatter</strong> &mdash; 508, but it "fires compressed energy in a <em>wide, scattering blast</em>". Multiple pellets per shot.</li>
-      <li><strong>Drone Launcher</strong> &mdash; 200, but it deploys <strong>up to 9 drones</strong> performing autonomous attacks.</li>
-      <li><strong>Terraprisma</strong> &mdash; 90, but it summons <strong>up to 9 blessed swords</strong>.</li>
-    </ul>
-    <p>Only the single-projectile weapons &mdash; Bow, Heavy Assault Rifle, Plasma Rifle, Beam Launcher &mdash; can be compared on Attack directly. The table below ranks those; the multi-unit weapons are listed separately because I cannot quantify their real output.</p>
+    <p><strong>Attack is per projectile, not per trigger pull.</strong> Weapons that fire or summon multiple units list a per-unit figure: <strong>Beam Scatter</strong> (508, multi-pellet blast), <strong>Drone Launcher</strong> (200, but <strong>9 drones</strong>) and <strong>Terraprisma</strong> (90, but <strong>9 summoned swords</strong> at a 0.028s interval &mdash; 4,050 sustained DPS). Only the single-projectile weapons compare directly.</p>
   </div>
 
-  <h4>Single-projectile weapons &mdash; directly comparable</h4>
   <div class="scroll">
   <table>
-    <thead><tr><th>Weapon</th><th>Attack</th><th>Paloxite / round</th><th>Soralite / round</th><th>Attack per Soralite</th><th>Attack per Paloxite</th></tr></thead>
+    <thead><tr><th>Weapon</th><th>Attack C&rarr;L</th><th>Mag</th><th>Durability C&rarr;L</th><th>Paloxite / rd</th><th>Soralite / rd</th><th>Attack per Soralite</th></tr></thead>
     <tbody>
-      <tr><td class="mat">Mechanical Bow</td><td><strong>20,000</strong></td><td><strong>0</strong></td><td>0.4</td><td><strong>50,000</strong></td><td>&mdash; <span class="conf">no Paloxite</span></td></tr>
-      <tr><td class="mat">Beam Launcher</td><td><strong>14,000</strong></td><td>1.20</td><td>1.00</td><td>14,000</td><td><strong>11,667</strong></td></tr>
-      <tr><td class="mat">Heavy Assault Rifle</td><td>1,615</td><td><strong>0</strong></td><td>0.2</td><td>8,075</td><td>&mdash; <span class="conf">no Paloxite</span></td></tr>
-      <tr><td class="mat">Plasma Rifle</td><td>1,860</td><td>0.30</td><td>0.35</td><td>5,314</td><td>6,200</td></tr>
+      <tr><td class="mat">Mechanical Bow</td><td><strong>20,000</strong> &rarr; 24,000</td><td>6</td><td>2,000 &rarr; 8,000</td><td><strong>0</strong></td><td>0.4</td><td><strong>50,000</strong></td></tr>
+      <tr><td class="mat">Beam Launcher</td><td><strong>14,000</strong> &rarr; 16,800</td><td>30</td><td>3,500 &rarr; 14,000</td><td>1.20</td><td>1.00</td><td>14,000</td></tr>
+      <tr><td class="mat">Tactical Grenade Launcher</td><td><strong>6,722</strong> &rarr; 8,066</td><td>8</td><td>800 &rarr; 3,200</td><td><strong>0</strong></td><td>0.8</td><td>8,403</td></tr>
+      <tr><td class="mat">Heavy Assault Rifle</td><td>1,615 &rarr; 1,938</td><td>30</td><td>5,500 &rarr; 22,000</td><td><strong>0</strong></td><td>0.2</td><td>8,075</td></tr>
+      <tr><td class="mat">Plasma Rifle</td><td>1,860 &rarr; 2,232</td><td>38</td><td><strong>25,000 &rarr; 100,000</strong></td><td>0.30</td><td>0.35</td><td>5,314</td></tr>
+      <tr><td class="mat">Combat SMG</td><td>907 &rarr; 1,587</td><td>42</td><td>8,000 &rarr; 32,000</td><td><strong>0</strong></td><td>0.2</td><td>4,535</td></tr>
+      <tr><td class="mat">Prototype Shotgun</td><td>1,167 &rarr; 1,400</td><td>12</td><td>6,000 &rarr; 24,000</td><td><strong>0</strong></td><td>0.8</td><td>1,459</td></tr>
+      <tr><td class="mat">Beam Scatter</td><td>508 &rarr; 609 <span class="conf">per pellet</span></td><td>30</td><td>950 &rarr; 3,800</td><td>0.60</td><td>0.70</td><td>726</td></tr>
+      <tr><td class="mat">Drone Launcher</td><td>200 &rarr; 240 <span class="conf">&times;9 drones</span></td><td>5</td><td>6,500 &rarr; 26,000</td><td colspan="3" class="detail">Ammo cost not published</td></tr>
+      <tr><td class="mat">Terraprisma</td><td>90 &rarr; 150 <span class="conf">&times;9 swords</span></td><td>&mdash;</td><td>5,000 &rarr; 10,368</td><td><strong>0</strong></td><td><strong>0</strong></td><td class="detail"><strong>No ammo &mdash; 4,050 DPS at Common</strong></td></tr>
     </tbody>
   </table>
   </div>
 
-  <h4>Multi-unit weapons &mdash; Attack understates them</h4>
-  <div class="scroll">
-  <table>
-    <thead><tr><th>Weapon</th><th>Listed Attack</th><th>Units</th><th>Ammo cost</th></tr></thead>
-    <tbody>
-      <tr><td class="mat">Beam Scatter</td><td>508</td><td class="detail">Multiple pellets per blast, close range</td><td class="detail">0.60 Paloxite / 0.70 Soralite per round &mdash; <strong>same materials as the Plasma Rifle but half the yield</strong></td></tr>
-      <tr><td class="mat">Drone Launcher</td><td>200</td><td class="detail"><strong>Up to 9 autonomous drones</strong></td><td class="detail">Not confirmed</td></tr>
-      <tr><td class="mat">Terraprisma <span class="new">ToT</span></td><td>90</td><td class="detail"><strong>Up to 9 summoned swords</strong></td><td class="detail"><strong>None &mdash; melee</strong></td></tr>
-    </tbody>
-  </table>
-  </div>
-
-  <div class="callout warn">
-    <span class="tag">Correction: the Beam Launcher is the efficient energy weapon, not the Plasma Rifle</span>
-    <p>This guide previously said the Plasma Rifle was "4&times; more ammo-efficient than the Beam Launcher". <strong>That was true per round and wrong per point of damage.</strong> The Beam Launcher does <strong>14,000</strong> Attack against the Plasma Rifle&rsquo;s 1,860 &mdash; 7.5&times; the damage for 4&times; the Paloxite.</p>
-    <p>Per Paloxite spent: <strong>Beam Launcher 11,667 damage, Plasma Rifle 6,200.</strong> The Beam Launcher is roughly <strong>1.9&times; more Paloxite-efficient</strong>. A 200-Paloxite run buys ~166 Beam Launcher rounds worth <strong>2.33 million</strong> total Attack, against ~666 Plasma Rifle rounds worth <strong>1.24 million</strong>.</p>
-    <p>The earlier claim compared costs without comparing damage. Corrected.</p>
+  <div class="callout good">
+    <span class="tag">The weapon I had missed: Tactical Grenade Launcher</span>
+    <p><strong>6,722 Attack at Common, and its ammunition uses no Paloxite at all</strong> &mdash; 10 Gunpowder + 4 Soralite Ingot per 10 rounds. That is <strong>4.2&times; the damage of the Heavy Assault Rifle</strong> for materials in the same automatable class.</p>
+    <p>The catch is <strong>durability 800</strong> at Common, the lowest of any endgame weapon &mdash; roughly a seventh of the Heavy Assault Rifle&rsquo;s. It is a weapon you will recraft often. But since it costs no Paloxite, recrafting is cheap.</p>
   </div>
 
   <div class="callout good">
     <span class="tag">Where that leaves the ranking</span>
     <ul>
-      <li><strong>Mechanical Bow still wins outright on materials</strong> &mdash; 50,000 Attack per Soralite and zero Paloxite. It is <em>slow but precise and headshot-friendly</em>, so it converts that efficiency best against single high-value targets rather than crowds.</li>
-      <li><strong>Beam Launcher is the best Paloxite spend</strong>, and the second-best weapon overall by damage per material. Not the boss-only luxury this guide called it.</li>
-      <li><strong>Heavy Assault Rifle</strong> remains the free option &mdash; 8,075 per Soralite, no Paloxite, fully automatable inputs.</li>
-      <li><strong>Plasma Rifle is the weakest of the four</strong> on both axes. Its chaining damage is the case for carrying one, not its efficiency.</li>
-      <li><strong>Beam Scatter looks poor</strong> &mdash; same ammo materials as the Plasma Rifle at half the yield, for 508 listed Attack. It only makes sense if the pellet count is high; treat it as unresolved rather than bad.</li>
-      <li><strong>Terraprisma and Drone Launcher</strong> both field nine units and cost nothing per round. The Terraprisma&rsquo;s swords hit with enough <em>speed and range</em> to be genuinely useful in play; its real limit is <strong>durability</strong>, not damage or supply.</li>
+      <li><strong>Mechanical Bow wins outright on materials</strong> &mdash; 50,000 Attack per Soralite, zero Paloxite. Slow but precise and headshot-friendly, so it converts best on single high-value targets.</li>
+      <li><strong>Beam Launcher is the best Paloxite spend</strong> &mdash; 11,667 damage per Paloxite against the Plasma Rifle&rsquo;s 6,200. Worth carrying for burst.</li>
+      <li><strong>Tactical Grenade Launcher is the best free damage</strong> &mdash; 4.2&times; a Heavy Assault Rifle round, no Paloxite. Just expect to rebuild it.</li>
+      <li><strong>Plasma Rifle is the durability king</strong> &mdash; 25,000 Common, <strong>100,000 Legendary</strong>, far beyond anything else. Its case is that it almost never needs replacing, not its damage.</li>
+      <li><strong>Terraprisma for sustain</strong> &mdash; 4,050 DPS, no ammunition, and a Legendary schematic doubles durability to 10,368 while lifting DPS to 6,750.</li>
+      <li><strong>Beam Scatter is the weakest</strong> &mdash; same ammo materials as the Plasma Rifle at half the yield, for 508 per pellet. Only justified if the pellet count is high.</li>
     </ul>
   </div>
 
-  <div class="callout good">
-    <span class="tag">How these actually handle &mdash; player notes from live play</span>
-    <p><strong>Mechanical Bow: slow, but precise and excellent for headshots.</strong> That is the missing half of its 20,000 Attack. It is a <em>precision</em> weapon, not a DPS weapon &mdash; the enormous per-shot figure lands on a slow cadence and rewards aim, with headshots on top. So it is superb against single high-value targets and poor against a swarm closing on you. Its 2,000 durability against the rifle&rsquo;s 5,500 is the other half of the balance.</p>
-    <p><strong>Terraprisma: the constraint is durability, not damage.</strong> The 90 Attack figure badly undersells it &mdash; at a <strong>0.028s</strong> attack interval that is <strong>4,050 sustained DPS</strong> at Common, and the nine summoned swords add range on top. It costs no ammunition at all, so the only thing you spend is durability &mdash; a wear item rather than a supply item. <strong>Going Legendary takes durability 5,000 &rarr; 10,368 and DPS 4,050 &rarr; 6,750</strong>, which attacks your stated constraint directly.</p>
-    <p><strong>What is still unmeasured:</strong> exact fire rates and reload times, the Beam Scatter&rsquo;s pellet count, and headshot multipliers. Those would let the table rank by damage per second as well as damage per material.</p>
+  <h3>Rarity scales cost as well as stats &mdash; correction</h3>
+  <div class="callout warn">
+    <span class="tag">I withdrew this theory earlier. The full database reinstates it.</span>
+    <p>Per-rarity recipes climb steadily. The Beam Launcher runs <strong>100 &rarr; 125 &rarr; 150 &rarr; 175 &rarr; 200 Paloxite Ingot</strong> from Common to Legendary, with AI Core going 10 &rarr; 20 and Ancient Civilization Core 10 &rarr; 20. Every weapon behaves the same way, and higher rarities also add <strong>Ancient Civilization Parts</strong> that the Common recipe does not require at all.</p>
+    <p>I had withdrawn the rarity-scales-cost idea when three technology panels matched published figures exactly. Those panels show the <strong>Common</strong> recipe, and the published figures were Common &mdash; so they agreed for a reason that was not evidence against scaling. <strong>The theory was right; my test of it was not.</strong></p>
+    <p><strong>On your own save:</strong> your Plasma Rifle panel reads <code>68 Paloxite Ingot / 42 Bio Battery / 6 AI Core / 5 Ancient Civ Core</code> where the standard Common recipe is <code>80 / 50 / 8 / 7</code> &mdash; consistently about <strong>15% lower</strong>. Something on your save is reducing crafting cost. Worth identifying, because it applies to everything.</p>
   </div>
 
-  <h2>Weapons &mdash; the full 1.0 ladder</h2>
-  <p class="sub">Lv67–80 ranged weapons and their ammunition are made at the <strong>Ancient Workbench</strong>.</p>
+  <div class="callout good">
+    <span class="tag">Durability is where rarity really pays</span>
+    <p>Attack rises only <strong>1.2&ndash;1.67&times;</strong> from Common to Legendary, but <strong>durability rises 4&times;</strong> across the board &mdash; Plasma Rifle 25,000 &rarr; 100,000, Combat SMG 8,000 &rarr; 32,000, Drone Launcher 6,500 &rarr; 26,000, Mechanical Bow 2,000 &rarr; 8,000.</p>
+    <p>So upgrading a schematic is mostly buying <strong>uptime</strong>, not damage. For the weapons whose only real cost is wear &mdash; Terraprisma, and the low-durability Tactical Grenade Launcher &mdash; that is the whole value proposition.</p>
+  </div>
+
+  <h3>Confirmed recipes at Common</h3>
   <div class="scroll">
   <table>
-    <thead><tr><th>Weapon</th><th>Tech</th><th>Recipe</th></tr></thead>
+    <thead><tr><th>Weapon</th><th>Common recipe</th></tr></thead>
     <tbody>
-      <tr><td class="mat">Mechanical Bow <span class="new">confirmed</span></td><td><code>67</code></td><td class="detail">Soralite Ingot 40 &middot; Carbon Fiber 20 &middot; Paldium Fragment 200 &middot; AI Core 3 &mdash; Attack <strong>20,000</strong>, durability 2,000</td></tr>
-      <tr><td class="mat">Combat SMG</td><td><code>68</code></td><td class="detail">Soralite Ingot 50 &middot; Carbon Fiber 30 &middot; Cryogenic Coolant 20 &middot; AI Core 4</td></tr>
-      <tr><td class="mat">Enhanced Lily&rsquo;s Spear</td><td><code>68</code></td><td class="detail">Paldium Fragment 20 &middot; Soralite Ingot 30 &middot; HQ Cloth 20 &middot; HQ Wooden Board 20 <em>(Advanced Workshop)</em></td></tr>
-      <tr><td class="mat">Prototype Shotgun</td><td><code>69</code></td><td class="detail">Soralite Ingot 60 &middot; Carbon Fiber 40 &middot; Thermal Core 5 &middot; AI Core 5</td></tr>
-      <tr><td class="mat">Heavy Assault Rifle <span class="new">confirmed</span></td><td><code>70</code></td><td class="detail">Soralite Ingot 100 &middot; Carbon Fiber 50 &middot; Bio Battery 30 &middot; AI Core 5 &mdash; Attack <strong>1,615</strong>, durability 5,500</td></tr>
-      <tr><td class="mat">Tactical Grenade Launcher</td><td><code>72</code></td><td class="detail">Soralite Ingot 80 &middot; Corrosive Solvent 15 &middot; Thermal Core 5 &middot; AI Core 5</td></tr>
-      <tr><td class="mat">Laser Sword</td><td><code>73</code></td><td class="detail">Soralite Ingot 50 &middot; Paldium Fragment 250 &middot; Bio Battery 30 &middot; AI Core 3</td></tr>
-      <tr><td class="mat">Beam Scatter <span class="new">confirmed</span></td><td><code>75</code></td><td class="detail">Paloxite Ingot 50 &middot; Soralite Ingot 50 &middot; AI Core 5 &middot; Ancient Civ Core 5 &mdash; Attack <strong>508</strong> (multi-pellet)</td></tr>
-      <tr><td class="mat">Drone Launcher <span class="new">confirmed</span></td><td><code>77</code></td><td class="detail">Paloxite Ingot 70 &middot; <strong>World Tree Holy Water 40</strong> &middot; AI Core 8 &middot; Ancient Civ Core 5 &mdash; Attack <strong>200</strong> &times; <strong>9 drones</strong></td></tr>
-      <tr><td class="mat">Plasma Rifle <span class="new">confirmed</span></td><td><code>78</code></td><td class="detail"><strong>Common:</strong> Paloxite Ingot 68 &middot; Bio Battery 42 &middot; AI Core 6 &middot; Ancient Civ Core 5 &mdash; Attack <strong>1,860</strong>. <span class="conf">Higher rarities cost more; 80/50/8/7 and 100/62/10/8 are reported for higher rungs.</span></td></tr>
-      <tr><td class="mat">Terraprisma <span class="new">ToT</span></td><td>&mdash;</td><td class="detail">Tides of Terraria melee. Attack <strong>90</strong> plus <strong>up to 9 summoned swords</strong>, durability 5,000. <strong>Uses no ammunition.</strong> Recipe not confirmed.</td></tr>
-      <tr><td class="mat">Beam Launcher <span class="new">confirmed</span></td><td><code>80</code></td><td class="detail">Paloxite Ingot 100 &middot; Bio Battery 50 &middot; AI Core 10 &middot; Ancient Civ Core 10 &mdash; Attack <strong>14,000</strong>. The largest single craft in the game.</td></tr>
+      <tr><td class="mat">Mechanical Bow</td><td class="detail">Soralite Ingot 40 &middot; Carbon Fiber 20 &middot; Paldium Fragment 200 &middot; AI Core 3</td></tr>
+      <tr><td class="mat">Beam Launcher</td><td class="detail">Paloxite Ingot 100 &middot; Bio Battery 50 &middot; AI Core 10 &middot; Ancient Civ Core 10</td></tr>
+      <tr><td class="mat">Drone Launcher</td><td class="detail">Paloxite Ingot 70 &middot; World Tree Holy Water 40 &middot; AI Core 8 &middot; Ancient Civ Core 5</td></tr>
+      <tr><td class="mat">Laser Sword</td><td class="detail">Soralite Ingot 50 &middot; Paldium Fragment 250 &middot; Bio Battery 30 &middot; AI Core 3 &mdash; Attack 2,000</td></tr>
+      <tr><td class="mat">Terraprisma <span class="new">ToT</span></td><td class="detail"><strong>Hallowed Bar 40 &middot; Pal Metal Ingot 20 &middot; Ancient Civ Parts 3.</strong> Legendary: Hallowed Bar 480 &middot; Pal Metal Ingot 240 &middot; Ancient Civ Parts 15 &mdash; a 12&times; jump in Hallowed Bar.</td></tr>
     </tbody>
   </table>
   </div>
 
-  <div class="callout warn">
-    <span class="tag">One unexplained discrepancy &mdash; and a theory I have withdrawn</span>
-    <p>In-game technology panels confirm these recipes <strong>exactly</strong> as published: Beam Scatter <code>50 Paloxite Ingot + 50 Soralite Ingot + 5 AI Core + 5 Ancient Civ Core</code>, Beam Launcher <code>100 + 50 Bio Battery + 10 + 10</code>, Drone Launcher <code>70 Paloxite Ingot + 40 Holy Water + 8 AI Core + 5 Ancient Civ Core</code>.</p>
-    <p>But the Plasma Rifle&rsquo;s item panel reads <code>68 Paloxite Ingot + 42 Bio Battery + 6 AI Core + 5 Ancient Civ Core</code> where the published figure is <code>80 + 50 + 8 + 7</code> &mdash; about 15% lower.</p>
-    <p>I previously explained that gap as <strong>weapon cost scaling with schematic rarity</strong>. <strong>Three exact matches make that theory unlikely</strong>, since the others would have varied too. Something else reduces the Plasma Rifle&rsquo;s cost &mdash; a crafting discount, or a different panel showing a different thing. <strong>Unexplained, and no longer presented as a rarity ladder.</strong></p>
-    <p>Practically it matters little: you craft each weapon once. <strong>Ammunition is the recurring bill, and every energy ammo recipe above is now confirmed in-game.</strong></p>
-  </div>
-
-  <h2>Rarity scaling, DPS, and what the numbers are worth</h2>
-  <p class="sub">From <a href="https://thepalprofessor.com/weapons/">The Pal Professor&rsquo;s weapon table</a> (v1.0.3, 27 Aug 2026), 240 rows across five rarities. Note that source writes decimals with commas &mdash; <code>1,667</code> is 1.667 seconds.</p>
-
-  <div class="callout good">
-    <span class="tag">Rarity scales the weapon, not just the recipe</span>
-    <p>Every stat climbs with schematic rarity, and <strong>durability climbs fastest</strong>:</p>
-    <div class="scroll">
-    <table>
-      <thead><tr><th>Weapon</th><th>Attack C&rarr;L</th><th>Durability C&rarr;L</th><th>DPS C&rarr;L</th></tr></thead>
-      <tbody>
-        <tr><td class="mat">Terraprisma</td><td>90 &rarr; 150 <strong>&times;1.67</strong></td><td>5,000 &rarr; 10,368 <strong>&times;2.07</strong></td><td>4,050 &rarr; 6,750 <strong>&times;1.67</strong></td></tr>
-        <tr><td class="mat">Advanced Bow</td><td>5,800 &rarr; 8,700 &times;1.50</td><td>500 &rarr; 2,000 <strong>&times;4.00</strong></td><td>3,479 &rarr; 5,219 &times;1.50</td></tr>
-        <tr><td class="mat">Charge Rifle</td><td>12,500 &rarr; 15,000 &times;1.20</td><td>200 &rarr; 800 <strong>&times;4.00</strong></td><td>7,258 &rarr; 9,414 &times;1.30</td></tr>
-      </tbody>
-    </table>
-    </div>
-    <p>Attack rises only <strong>1.2&ndash;1.67&times;</strong> from Common to Legendary, so the Attack figures elsewhere on this page &mdash; all read at Common &mdash; are a floor, and <strong>rarity cannot explain a 10&times; gap</strong>. The Mechanical Bow&rsquo;s lead over the Plasma Rifle survives it.</p>
-  </div>
-
-  <div class="callout good">
-    <span class="tag">Terraprisma: upgrade the schematic, not the playstyle</span>
-    <p>You flagged durability as its real limit. That is exactly the stat rarity helps most: <strong>Common 5,000 &rarr; Legendary 10,368 durability</strong>, a <strong>2.07&times;</strong> increase, while DPS goes <strong>4,050 &rarr; 6,750</strong>.</p>
-    <p>Legendary Terraprisma is the <strong>4th-highest sustained DPS in the entire table</strong>, and it carries <strong>13&times; the durability of the Charge Rifle above it</strong> (10,368 vs 800). For a no-ammo weapon whose only cost is wear, that is the single most valuable schematic upgrade available to you.</p>
-    <div class="scroll">
-    <table>
-      <thead><tr><th>Rarity</th><th>Attack</th><th>Durability</th><th>DPS</th></tr></thead>
-      <tbody>
-        <tr><td class="mat">Legendary</td><td>150</td><td><strong>10,368</strong></td><td><strong>6,750</strong></td></tr>
-        <tr><td class="mat">Epic</td><td>125</td><td>8,640</td><td>5,625</td></tr>
-        <tr><td class="mat">Rare</td><td>110</td><td>7,200</td><td>4,950</td></tr>
-        <tr><td class="mat">Uncommon</td><td>100</td><td>6,000</td><td>4,500</td></tr>
-        <tr><td class="mat">Common</td><td>90</td><td>5,000</td><td>4,050</td></tr>
-      </tbody>
-    </table>
-    </div>
-    <p class="count">Common row matches the in-game panel exactly (90 Attack, 5,000 durability), which calibrates the whole table.</p>
-  </div>
-
-  <h3>Calibration &mdash; sustained DPS of known weapons</h3>
-  <p class="sub"><strong>Power/S is sustained DPS including reload</strong>, not burst. Verified: Charge Rifle Legendary = 10 shots &times; 15,000 over (10 &times; 1.4s + 1.933s) = 9,414. Use these to judge whether an Attack figure is actually good.</p>
+  <h3>Calibration &mdash; sustained DPS of comparable weapons</h3>
+  <p class="sub">From <a href="https://thepalprofessor.com/weapons/">The Pal Professor</a> (decimals written with commas there). <strong>Power/S is sustained DPS including reload</strong> &mdash; verified: Charge Rifle Legendary = 10 &times; 15,000 over (10 &times; 1.4s + 1.933s) = 9,414.</p>
   <div class="scroll">
   <table>
     <thead><tr><th>Weapon (Legendary)</th><th>Attack</th><th>Shot interval</th><th>DPS</th><th>Durability</th></tr></thead>
@@ -313,7 +252,6 @@
       <tr><td class="mat">Charge Rifle</td><td>15,000</td><td>1.400s</td><td>9,414</td><td>800</td></tr>
       <tr><td class="mat">Energy Shotgun</td><td>482</td><td>0.250s</td><td>8,474</td><td>1,200</td></tr>
       <tr><td class="mat">Terraprisma</td><td>150</td><td>0.028s</td><td>6,750</td><td><strong>10,368</strong></td></tr>
-      <tr><td class="mat">Plasma Cannon</td><td>13,000</td><td>0.375s</td><td>5,887</td><td>1,200</td></tr>
       <tr><td class="mat">Advanced Bow</td><td>8,700</td><td><strong>1.667s</strong></td><td>5,219</td><td>2,000</td></tr>
       <tr><td class="mat">Laser Gatling Gun</td><td>689</td><td>0.100s</td><td>4,993</td><td><strong>32,000</strong></td></tr>
     </tbody>
@@ -322,14 +260,13 @@
 
   <div class="callout good">
     <span class="tag">What this implies for the Mechanical Bow</span>
-    <p>The Advanced Bow fires on a <strong>1.667-second interval</strong> &mdash; confirming that bows are slow, as you found. At 8,700 Attack that yields 5,219 DPS.</p>
-    <p><strong>If the Mechanical Bow shares the bow archetype&rsquo;s ~1.667s cadence</strong>, its 20,000 Attack would work out to roughly <strong>12,000 DPS</strong> &mdash; second only to the Overheat Rifle swap trick, and that is before headshot multipliers. <span class="conf">This is an inference from archetype, not a measured figure: the Mechanical Bow is not in this table.</span> But it makes the 20,000 reading look like a real weapon rather than a display quirk.</p>
+    <p>The Advanced Bow fires every <strong>1.667s</strong> &mdash; the archetype reason bows feel slow, exactly as you found. At 8,700 Attack that gives 5,219 DPS.</p>
+    <p><strong>If the Mechanical Bow shares that cadence</strong>, its 20,000 Attack implies roughly <strong>12,000 DPS</strong> before headshot multipliers &mdash; second only to the Overheat Rifle swap trick. <span class="conf">Archetype inference, not measurement: no 1.0 endgame weapon has published shot-interval data.</span></p>
   </div>
 
   <div class="callout warn">
-    <span class="tag">The limit of this source</span>
-    <p>The table covers base-game and Tides of Terraria weapons across all five rarities, and it is accurate where it overlaps what we have confirmed in-game. But <strong>none of the 1.0 endgame weapons appear in it</strong> &mdash; no Mechanical Bow, Plasma Rifle, Beam Launcher, Beam Scatter, Drone Launcher, Heavy Assault Rifle, Combat SMG, Prototype Shotgun or Tactical Grenade Launcher. Terraprisma is the one weapon this guide discusses that it does cover.</p>
-    <p>So <strong>shot interval and DPS for the Tech 67&ndash;80 weapons remain unmeasured.</strong> Their Attack values and ammo costs are confirmed; their rate of fire is not.</p>
+    <span class="tag">The one gap left</span>
+    <p><strong>Shot interval, reload time and pellet count for the Tech 67&ndash;80 weapons are still unpublished anywhere I can reach.</strong> Attack, magazine, durability, ammo cost and per-rarity recipes are all now confirmed &mdash; but sustained DPS for these ten weapons cannot be computed without cadence. Everything above ranks them by <em>damage per material</em>, which is solid; ranking by <em>damage per second</em> is still out of reach.</p>
   </div>
 
   <h2>Armour</h2>

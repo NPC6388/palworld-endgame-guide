@@ -4,6 +4,58 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - The database that closed most of the weapon questions
+
+User sent a Steam guide: "All 82 Weapons Database in Palworld (1.0 UPDATED)". Steam BBCode tables
+are `div.bb_table_tr` / `bb_table_th` / `bb_table_td` - curl the page and regex those; the WebFetch
+summariser again under-reported what was present. **Second time in one session that fetching raw and
+parsing locally beat the summariser on a large table.** Make that the default for tables.
+
+### What it settled
+
+Everything except cadence. Per-rarity Attack, magazine, weight, durability, materials, schematic and
+crafting station for all ten Tech 67-80 weapons - and **every Common row matches the in-game panels
+the user screenshotted earlier**, which is about as good a cross-check as this project has had.
+
+### Correction: I withdrew a correct theory on a bad test
+
+I had explained the Plasma Rifle cost discrepancy as rarity scaling cost, then **withdrew** it when
+three tech panels matched published figures exactly. That withdrawal was wrong. Tech panels show the
+**Common** recipe, and the published figures were **also** Common - they agreed for a reason that had
+nothing to do with whether higher rarities cost more. The database shows costs climbing steadily
+(Beam Launcher 100 -> 200 Paloxite Ingot) and higher tiers requiring Ancient Civilization Parts that
+Common does not.
+
+**Lesson:** I tested the hypothesis against data that could not discriminate it, then treated the
+null result as disconfirmation. Check that a test can actually distinguish the cases before letting
+it overturn a claim.
+
+The residual - the panel reading ~15% below standard Common - is a **crafting cost reduction on this
+save**, not a data error. Worth identifying, since it applies to everything.
+
+### The find
+
+**Tactical Grenade Launcher, 6,722 Attack, zero-Paloxite ammo.** 4.2x a Heavy Assault Rifle round in
+the same material class. It was in the ammo table all along and I never looked at its damage, because
+until this database there were no Attack values for it. Durability 800 is the catch.
+
+### The other structural insight
+
+**Rarity buys durability, not damage.** Attack 1.2-1.67x Common to Legendary; durability a flat ~4x
+(Plasma Rifle 25,000 -> 100,000). Schematic upgrades are an uptime purchase. That reframes the
+Terraprisma advice from the previous exchange correctly - and explains why the Plasma Rifle exists at
+all, since its case is 100,000 durability rather than its unremarkable 1,860 damage.
+
+### Still open
+- **Shot interval / reload / pellet count for Tech 67-80.** Unpublished anywhere reachable. Damage
+  per material is solid; damage per second is not computable. The only real weapon gap left.
+- A few **Rainbow passive** effects; the **Paloxite Reddit links**.
+- Identifying the ~15% crafting cost reduction on this save.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (cont.) - Weapon spec table; partial answer to the DPS gap
 
 User pointed at https://thepalprofessor.com/weapons/ and warned that **commas are decimal

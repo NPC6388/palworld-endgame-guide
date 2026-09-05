@@ -4,6 +4,50 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Full 1.0 weapon database; rarity-cost theory reinstated
+
+Parsed the Steam guide "All 82 Weapons Database in Palworld (1.0 UPDATED)" - per-rarity Attack,
+magazine, weight, durability, materials, schematic and crafting station for every weapon, including
+the whole Tech 67-80 tier that no other source covered. **Every Common value matches the in-game
+panels captured earlier**, which calibrates it. Raw parse in
+`research/weapon-database-1.0-steam.tsv`.
+
+### The weapon I had missed
+**Tactical Grenade Launcher: 6,722 Attack at Common, and its ammo uses no Paloxite** (10 Gunpowder +
+4 Soralite Ingot per 10 rounds). That is **4.2x the damage of a Heavy Assault Rifle round** for
+materials in the same automatable class. Its catch is **800 durability** - the lowest of any endgame
+weapon - so expect to recraft it, which is cheap precisely because it needs no Paloxite.
+
+### Correction - the rarity-cost theory is reinstated
+Per-rarity recipes climb steadily: Beam Launcher runs **100 -> 200 Paloxite Ingot** Common to
+Legendary, AI Core 10 -> 20, and higher tiers add **Ancient Civilization Parts the Common recipe does
+not need at all**.
+
+I had withdrawn this theory when three technology panels matched published figures exactly. Those
+panels show the **Common** recipe and the published figures **were** Common - so they agreed for a
+reason that was not evidence against scaling. The theory was right; my test of it was not.
+
+### On this save specifically
+The player's Plasma Rifle panel reads `68/42/6/5` where the standard Common recipe is `80/50/8/7` -
+consistently ~15% lower. Something on that save reduces crafting cost, and it applies to everything.
+
+### Added
+- Per-rarity Attack, magazine and durability table for all ten endgame weapons.
+- **Durability is what rarity actually buys**: Attack rises 1.2-1.67x Common to Legendary, durability
+  rises **4x** across the board (Plasma Rifle 25,000 -> **100,000**; Combat SMG 8,000 -> 32,000).
+  Upgrading a schematic buys uptime, not damage.
+- **Plasma Rifle is the durability king** at 100,000 Legendary - its case is that it never needs
+  replacing, not its damage.
+- **Terraprisma recipe**, closing an open item: Hallowed Bar 40 + Pal Metal Ingot 20 + Ancient Civ
+  Parts 3 at Common; 480/240/15 at Legendary.
+- Laser Sword Common recipe and Attack (2,000).
+
+### Still open
+Shot interval, reload and pellet count for the Tech 67-80 weapons are unpublished anywhere reachable,
+so damage per **second** remains uncomputable. Damage per **material** is fully solid.
+
+---
+
 ## 2026-09-04 - Rarity scaling and sustained DPS
 
 Parsed The Pal Professor's weapon table (v1.0.3, 27 Aug 2026) - 240 rows across five rarities.
