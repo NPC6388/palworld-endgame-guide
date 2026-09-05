@@ -1,0 +1,240 @@
+Weapon	Rarity	MagazineSize	AttackValue	Weight	Durability	ShotInterval	Reload Time	Power/S (DPS)
+Advanced Bow	Legendary	1	8700	25	2000	1,667		5219,0
+Advanced Bow	Epic	1	7830	25	1500	1,667		4697,1
+Advanced Bow	Rare	1	7250	25	1000	1,667		4349,1
+Advanced Bow	Uncommon	1	6670	25	750	1,667		4001,2
+Advanced Bow	Common	1	5800	25	500	1,667		3479,3
+Assault Rifle	Legendary	30	560	15	6000	0,088	2,533	3253,7
+Assault Rifle	Epic	28	512	15	5000	0,088	2,533	2874,1
+Assault Rifle	Rare	26	448	15	4000	0,088	2,533	2420,3
+Assault Rifle	Uncommon	24	400	15	3000	0,088	2,533	2070,2
+Assault Rifle	Common	20	320	15	3000	0,088	2,533	1493,0
+Bat	Common	1	50	3	150	0,333		150,2
+Beam Sword	Common	1	2000	10	500	2,000		1000,0
+Beegarde’s Spear	Common	1	150	15	400	0,733		204,5
+Charge Rifle	Legendary	10	15000	20	800	1,400	1,933	9414,2
+Charge Rifle	Epic	9	14375	20	600	1,400	1,933	8901,9
+Charge Rifle	Rare	8	13750	20	400	1,400	1,933	8375,6
+Charge Rifle	Uncommon	7	13125	20	300	1,400	1,933	7830,3
+Charge Rifle	Common	6	12500	20	200	1,400	1,933	7258,1
+Compound Bow	Legendary	1	1650	17	1600	1,667		990,0
+Compound Bow	Epic	1	1485	17	1200	1,667		891,0
+Compound Bow	Rare	1	1375	17	800	1,667		825,0
+Compound Bow	Uncommon	1	1265	17	600	1,667		759,0
+Compound Bow	Common	1	1100	17	400	1,667		660,0
+Crossbow	Legendary	1	490	13	1400	0,100	2,000	233,3
+Crossbow	Epic	1	448	13	1200	0,100	2,000	213,3
+Crossbow	Rare	1	406	13	1000	0,100	2,000	193,3
+Crossbow	Uncommon	1	364	13	800	0,100	2,000	173,3
+Crossbow	Common	1	280	13	300	0,100	2,000	133,3
+Dark Grenade	Common	1	750	0,1		0,667	0,000	1125,0
+Double-Barreled Shotgun	Legendary	2	399	24	800	0,600	2,333	2032,6
+Double-Barreled Shotgun	Epic	2	361	24	600	0,600	2,333	1839,1
+Double-Barreled Shotgun	Rare	2	323	24	500	0,600	2,333	1645,5
+Double-Barreled Shotgun	Uncommon	2	285	24	400	0,600	2,333	1451,9
+Double-Barreled Shotgun	Common	2	190	24	200	0,600	2,333	967,9
+Dragon Grenade	Common	1	750	0,1		0,667	0,000	1125,0
+Elizabee’s Staff	Common	1	150	20	300	0,733		204,5
+Energy Shotgun	Legendary	14	482	20	1200	0,250	3,667	8474,2
+Energy Shotgun	Epic	13	462	20	900	0,250	3,667	7815,0
+Energy Shotgun	Rare	12	442	20	600	0,250	3,667	7160,4
+Energy Shotgun	Uncommon	11	422	20	450	0,250	3,667	6510,9
+Energy Shotgun	Common	10	402	20	300	0,250	3,667	5867,0
+Excalibur	Legendary	2	540	10	2400	0,333		3243,2
+Excalibur	Epic	2	468	10	1800	0,333		2810,8
+Excalibur	Rare	2	432	10	1200	0,333		2594,6
+Excalibur	Uncommon	2	396	10	900	0,333		2378,4
+Excalibur	Common	2	360	10	600	0,333		2162,2
+Fire Arrow Crossbow	Legendary	1	490	13	1400	0,100	2,000	233,3
+Fire Arrow Crossbow	Epic	1	448	13	1200	0,100	2,000	213,3
+Fire Arrow Crossbow	Rare	1	406	13	1000	0,100	2,000	193,3
+Fire Arrow Crossbow	Uncommon	1	364	13	800	0,100	2,000	173,3
+Fire Arrow Crossbow	Common	1	280	13	300	0,100	2,000	133,3
+Fire Bow	Common	1	65	6	150	1,667		39,0
+Flamethrower	Legendary	100	954	45	24000	0,250	3,333	3367,1
+Flamethrower	Epic	100	858	45	18000	0,250	3,333	3028,2
+Flamethrower	Rare	100	795	45	12000	0,250	3,333	2805,9
+Flamethrower	Uncommon	100	731	45	9000	0,250	3,333	2580,0
+Frag Grenade	Common	1	750	0,1		0,667	0,000	1125,0
+Frag Grenade Mk2	Common	1	4000	0,1		0,667	0,000	6000,0
+FragGrenade_Water	Common	1	525	10	500	2,000		262,5
+Gatling Gun	Legendary	100	562	50	24000	0,100	3,800	4072,5
+Gatling Gun	Epic	100	506	50	18000	0,100	3,800	3666,7
+Gatling Gun	Rare	100	468	50	12000	0,100	3,800	3391,3
+Gatling Gun	Uncommon	100	431	50	9000	0,100	3,800	3123,2
+Gatling Gun	Common	100	375	50	6000	0,100	3,800	2717,4
+Grass Grenade	Common	1	750	0,1		0,667	0,000	1125,0
+Grenade Launcher	Legendary	5	4500	30	2400	0,500	2,500	4500,0
+Grenade Launcher	Epic	5	4050	30	1800	0,500	2,500	4050,0
+Grenade Launcher	Rare	5	3750	30	1200	0,500	2,500	3750,0
+Grenade Launcher	Uncommon	5	3450	30	900	0,500	2,500	3450,0
+Grenade Launcher	Common	5	3000	30	600	0,500	2,500	3000,0
+Ground Grenade	Common	1	750	0,1		0,667	0,000	1125,0
+Guided Missile Launcher	Legendary	1	8850	30	1200	0,100	3,333	2577,7
+Guided Missile Launcher	Epic	1	7965	30	900	0,100	3,333	2319,9
+Guided Missile Launcher	Rare	1	7375	30	600	0,100	3,333	2148,1
+Guided Missile Launcher	Uncommon	1	6785	30	450	0,100	3,333	1976,2
+Guided Missile Launcher	Common	1	5900	30	300	0,100	3,333	1718,4
+Handgun	Legendary	16	625	8	2400	0,300	1,833	1507,5
+Handgun	Epic	14	562	8	2000	0,300	1,833	1304,1
+Handgun	Rare	12	500	8	1600	0,300	1,833	1104,3
+Handgun	Uncommon	10	437	8	1200	0,300	1,833	904,1
+Handgun	Common	8	250	8	400	0,300	1,833	472,4
+Hand-Held Torch	Common	1	10	5	100	0,330		30,3
+Ice Grenade	Common	1	750	0,1		0,667	0,000	1125,0
+Incendiary Grenade	Common	1	750	0,1		0,667	0,000	1125,0
+Laser Gatling Gun	Legendary	100	689	50	32000	0,100	3,800	4992,8
+Laser Gatling Gun	Epic	100	636	50	24000	0,100	3,800	4608,7
+Laser Gatling Gun	Rare	100	609	50	16000	0,100	3,800	4413,0
+Laser Gatling Gun	Uncommon	100	583	50	12000	0,100	3,800	4224,6
+Laser Gatling Gun	Common	100	530	50	8000	0,100	3,800	3840,6
+Laser Rifle	Legendary	30	1875	18	12000	0,380	1,833	4250,6
+Laser Rifle	Epic	30	1687	18	9000	0,380	1,833	3824,4
+Laser Rifle	Rare	30	1562	18	6000	0,380	1,833	3541,1
+Laser Rifle	Uncommon	30	1437	18	4500	0,380	1,833	3257,7
+Laser Rifle	Common	30	1250	18	3000	0,380	1,833	2833,8
+Legendary Meowmere	Legendary	1	222	22	22222	0,11	0,100	1998,0
+Lily’s Spear	Common	1	450	10	500	0,733		613,6
+Makeshift Assault Rifle	Legendary	23	297	15	6000	0,125	3,567	1059,3
+Makeshift Assault Rifle	Epic	21	255	15	4500	0,125	3,567	864,0
+Makeshift Assault Rifle	Rare	19	229	15	3000	0,125	3,567	731,6
+Makeshift Assault Rifle	Uncommon	17	204	15	2250	0,125	3,567	608,8
+Makeshift Assault Rifle	Common	15	170	15	1500	0,125	3,567	468,2
+Makeshift Handgun	Legendary	6	800	10	1500	0,600	2,433	795,6
+Makeshift Handgun	Epic	6	720	10	1200	0,600	2,433	716,0
+Makeshift Handgun	Rare	6	640	10	900	0,600	2,433	636,5
+Makeshift Handgun	Uncommon	6	560	10	600	0,600	2,433	556,9
+Makeshift Handgun	Common	6	320	10	300	0,600	2,433	318,2
+Makeshift Shotgun	Legendary	1	376	24	800	0,100	3,000	1091,6
+Makeshift Shotgun	Epic	1	322	24	600	0,100	3,000	934,8
+Makeshift Shotgun	Rare	1	290	24	400	0,100	3,000	841,9
+Makeshift Shotgun	Uncommon	1	258	24	300	0,100	3,000	749,0
+Makeshift Shotgun	Common	1	215	24	200	0,100	3,000	624,2
+Makeshift SMG	Legendary	32	175	15	4000	0,070	4,033	892,7
+Makeshift SMG	Epic	30	150	15	3000	0,070	4,033	733,7
+Makeshift SMG	Rare	28	135	15	2000	0,070	4,033	630,7
+Makeshift SMG	Uncommon	26	120	15	1500	0,070	4,033	533,0
+Makeshift SMG	Common	24	100	15	1000	0,070	4,033	420,1
+Meat Cleaver	Common	1	25	10	300	0,330		75,8
+Meowmere	Common	1	200	22	2222	0,217		923,1
+Metal Axe	Common	1	30	15	250	0,333		90,1
+Metal Pickaxe	Common	1	30	15	250	0,333		90,1
+Metal Spear	Uncommon	1	80	15	250	0,733		109,1
+Meteor Launcher	Legendary	1	10500	30	450	0,100	6,000	1721,3
+Meteor Launcher	Common	1	2000	30	300	0,100	6,000	327,9
+Multi Guided Missile Launcher	Legendary	4	8850	30	1200	0,375	5,556	5017,3
+Multi Guided Missile Launcher	Epic	4	7965	30	900	0,375	5,556	4515,6
+Multi Guided Missile Launcher	Rare	4	7375	30	600	0,375	5,556	4181,1
+Multi Guided Missile Launcher	Uncommon	4	6785	30	450	0,375	5,556	3846,6
+Multi Guided Missile Launcher	Common	4	5900	30	300	0,375	5,556	3344,9
+Multi Guided Missile Launcher (Swap)	Legendary	4	8850	30	1200	0,375	5,000	5446,2
+Multi Guided Missile Launcher (Swap)	Epic	4	7965	30	900	0,375	5,000	4901,5
+Multi Guided Missile Launcher (Swap)	Rare	4	7375	30	600	0,375	5,000	4538,5
+Multi Guided Missile Launcher (Swap)	Uncommon	4	6785	30	450	0,375	5,000	4175,4
+Multi Guided Missile Launcher (Swap)	Common	4	5900	30	300	0,375	5,000	3630,8
+Musket	Legendary	1	2000	20	800	0,100	5,967	329,7
+Musket	Epic	1	1800	20	600	0,100	5,967	296,7
+Musket	Rare	1	1600	20	500	0,100	5,967	263,7
+Musket	Uncommon	1	1400	20	400	0,100	5,967	230,8
+Musket	Common	1	1000	20	200	0,100	5,967	164,8
+Nightglow	Legendary	1	100	5	6000	0,050		2000,0
+Nightglow	Epic	1	80	5	5000	0,050		1600,0
+Nightglow	Rare	1	70	5	4000	0,050		1400,0
+Nightglow	Uncommon	1	60	5	3000	0,050		1200,0
+Nightglow	Common	1	50	5	3000	0,050		1000,0
+Old Bow	Legendary	1	247	6	700	1,667		148,2
+Old Bow	Epic	1	208	6	600	1,667		124,8
+Old Bow	Rare	1	169	6	500	1,667		101,4
+Old Bow	Uncommon	1	130	6	400	1,667		78,0
+Old Bow	Common	1	65	6	150	1,667		39,0
+Old Revolver	Legendary	6	1500	8	1600	0,600	3,667	1238,5
+Old Revolver	Epic	6	1350	8	1200	0,600	3,667	1114,7
+Old Revolver	Rare	6	1200	8	800	0,600	3,667	990,8
+Old Revolver	Uncommon	6	1050	8	600	0,600	3,667	867,0
+Old Revolver	Common	6	600	8	400	0,600	3,667	495,4
+Overheat Rifle	Legendary	30	1470	15	6000	0,088	4,033	6618,3
+Overheat Rifle	Epic	30	1408	15	5000	0,088	4,033	6339,2
+Overheat Rifle	Rare	30	1347	15	4000	0,088	4,033	6064,5
+Overheat Rifle	Uncommon	30	1286	15	3000	0,088	4,033	5789,9
+Overheat Rifle	Common	30	1225	15	3000	0,088	4,033	5515,3
+Overheat Rifle (Swap)	Legendary	30	1470	15	6000	0,088	0,100	16153,8
+Overheat Rifle (Swap)	Epic	30	1408	15	5000	0,088	0,100	15472,5
+Overheat Rifle (Swap)	Rare	30	1347	15	4000	0,088	0,100	14802,2
+Overheat Rifle (Swap)	Uncommon	30	1286	15	3000	0,088	0,100	14131,9
+Overheat Rifle (Swap)	Common	30	1225	15	3000	0,088	0,100	13461,5
+Pal Metal Axe	Common	1	120	25	400	0,333		360,4
+Pal Metal Pickaxe	Common	1	120	25	400	0,333		360,4
+Flamethrower	Common	100	636	45	6000	0,250	3,333	2244,7
+Plasma Cannon	Legendary	2	13000	50	1200	0,375	3,667	5886,8
+Plasma Cannon	Epic	2	12000	50	900	0,375	3,667	5434,0
+Plasma Cannon	Rare	2	11500	50	600	0,375	3,667	5207,5
+Plasma Cannon	Uncommon	2	11000	50	450	0,375	3,667	4981,1
+Plasma Cannon	Common	2	10000	30	300	0,375	3,667	4528,3
+Poison Arrow Crossbow	Legendary	1	490	13	1400	0,100	2,000	233,3
+Poison Arrow Crossbow	Epic	1	448	13	1200	0,100	2,000	213,3
+Poison Arrow Crossbow	Rare	1	406	13	1000	0,100	2,000	193,3
+Poison Arrow Crossbow	Uncommon	1	364	13	800	0,100	2,000	173,3
+Poison Arrow Crossbow	Common	1	280	13	300	0,100	2,000	133,3
+Poison Bow	Common	1	65	6	150	1,667		39,0
+Pump-Action Shotgun	Legendary	12	385	20	800	0,600	1,852	2762,4
+Pump-Action Shotgun	Epic	11	352	20	700	0,600	1,852	2497,7
+Pump-Action Shotgun	Rare	10	308	20	600	0,600	1,852	2156,8
+Pump-Action Shotgun	Uncommon	9	275	20	500	0,600	1,852	1895,4
+Pump-Action Shotgun	Common	8	220	20	150	0,600	1,852	1487
+Refined Metal Axe	Common	1	60	20	300	0,333		180,2
+Refined Metal Pickaxe	Common	1	60	20	300	0,333		180,2
+Refined Metal Spear	Rare	1	310	20	300	0,733		422,7
+Rocket Launcher	Legendary	1	14000	30	1400	0,100	6,000	2295,1
+Rocket Launcher	Epic	1	13000	30	1200	0,100	6,000	2131,1
+Rocket Launcher	Rare	1	12000	30	1000	0,100	6,000	1967,2
+Rocket Launcher	Uncommon	1	11000	30	800	0,100	6,000	1803,3
+Rocket Launcher	Common	1	10000	30	300	0,100	6,000	1639,3
+Rocket Launcher (Swap)	Legendary	1	14000	30	1400	0,100	4,500	3043,5
+Rocket Launcher (Swap)	Epic	1	13000	30	1200	0,100	4,500	2826,1
+Rocket Launcher (Swap)	Rare	1	12000	30	1000	0,100	4,500	2608,7
+Rocket Launcher (Swap)	Uncommon	1	11000	30	800	0,100	4,500	2391,3
+Rocket Launcher (Swap)	Common	1	10000	30	300	0,100	4,500	2173,9
+Semi-Auto Rifle	Legendary	12	1610	20	4000	0,250	3,567	2942,1
+Semi-Auto Rifle	Epic	11	1495	20	3000	0,250	3,567	2603,4
+Semi-Auto Rifle	Rare	10	1380	20	2000	0,250	3,567	2274,7
+Semi-Auto Rifle	Uncommon	9	1265	20	1500	0,250	3,567	1957,3
+Semi-Auto Rifle	Common	8	1150	20	1000	0,250	3,567	1652,7
+Semi-Auto Shotgun	Legendary	14	282	20	1200	0,250	2,833	2885,6
+Semi-Auto Shotgun	Epic	13	253	20	900	0,250	2,833	2453,8
+Semi-Auto Shotgun	Rare	12	234	20	600	0,250	2,833	2139,2
+Semi-Auto Shotgun	Uncommon	11	214	20	450	0,250	2,833	1832,1
+Semi-Auto Shotgun	Common	10	195	20	300	0,250	2,833	1551,2
+Shock Grenade	Common	1	750	0,1		0,667	0,000	1125,0
+Single-Shot Rifle	Legendary	1	2310	20	4000	0,100	2,273	973,6
+Single-Shot Rifle	Epic	1	2090	20	3000	0,100	2,273	880,8
+Single-Shot Rifle	Rare	1	1870	20	2500	0,100	2,273	788,1
+Single-Shot Rifle	Uncommon	1	1650	20	2000	0,100	2,273	695,4
+Single-Shot Rifle	Common	1	1100	20	1000	0,100	2,273	463,6
+SMG	Legendary	32	227	15	8000	0,055	2,000	1931,9
+SMG	Epic	30	195	15	6000	0,055	2,000	1602,7
+SMG	Rare	28	175	15	4000	0,055	2,000	1384,2
+SMG	Uncommon	26	156	15	3000	0,055	2,000	1182,5
+SMG	Common	24	130	15	2000	0,055	2,000	939,8
+Stone Axe	Common	1	20	10	150	0,333		60,1
+Stone Pickaxe	Common	1	20	10	150	0,333		60,1
+Stone Spear	Common	1	35	10	200	0,733		47,7
+Stun Baton	Common	1	10	10	300	0,333		30,0
+Sword	Common	1	525	10	500	0,330		1590,9
+Terra Blade	Legendary	2	637	10	3028	0,333		3825,8
+Terra Blade	Epic	2	552	10	2271	0,333		3315,3
+Terra Blade	Rare	2	510	10	1514	0,333		3063,1
+Terra Blade	Uncommon	2	467	10	1135	0,333		2804,8
+Terra Blade	Common	2	425	10	757	0,333		2552,6
+Terraprisma	Legendary	1	150	5	10368	0,028		6750,0
+Terraprisma	Epic	1	125	5	8640	0,028		5625,0
+Terraprisma	Rare	1	110	5	7200	0,028		4950,0
+Terraprisma	Uncommon	1	100	5	6000	0,028		4500,0
+Terraprisma	Common	1	90	5	5000	0,028		4050,0
+Three Shot Bow	Common	1	40	8	250	1,667		72,0
+Vortex Beater	Legendary	1	450	15	6000			5550,0
+Vortex Beater	Epic	1	390	15	5000			4810,0
+Vortex Beater	Rare	1	360	15	4000			4440,0
+Vortex Beater	Uncommon	1	330	15	3000			4070,0
+Vortex Beater	Common	1	300	15	3000	0,100		3700,0
+Water Grenade	Common	1	750	0,1		0,667	0,000	1125,0
+Wooden Club	Common	1	25	5	150	0,333		75,1

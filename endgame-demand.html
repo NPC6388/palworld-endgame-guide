@@ -165,7 +165,7 @@
       <li><strong>Mechanical Bow for single targets.</strong> 20,000 Attack, 0.4 Soralite per round, no Paloxite, Tech 67. Slow but precise, and it rewards headshots &mdash; the pick for alphas and picking off high-value spawns, not for a crowd.</li>
       <li><strong>Beam Launcher when you need burst.</strong> 14,000 Attack and the best damage per Paloxite in the game &mdash; not the extravagance this guide first called it.</li>
       <li><strong>Heavy Assault Rifle or Combat SMG for volume fire.</strong> Zero Paloxite and fully automatable inputs.</li>
-      <li><strong>Terraprisma for sustained farming.</strong> No ammunition at all, and the nine swords hit fast and at range. You spend durability instead of materials.</li>
+      <li><strong>Terraprisma for sustained farming.</strong> 4,050 DPS at Common and no ammunition at all. You spend durability instead of materials &mdash; and a <strong>Legendary schematic doubles that durability to 10,368 while lifting DPS to 6,750</strong>.</li>
       <li><strong>Plasma Rifle only for its chaining.</strong> On raw efficiency it is the weakest of the four comparable weapons.</li>
     </ul>
   </div>
@@ -231,7 +231,7 @@
   <div class="callout good">
     <span class="tag">How these actually handle &mdash; player notes from live play</span>
     <p><strong>Mechanical Bow: slow, but precise and excellent for headshots.</strong> That is the missing half of its 20,000 Attack. It is a <em>precision</em> weapon, not a DPS weapon &mdash; the enormous per-shot figure lands on a slow cadence and rewards aim, with headshots on top. So it is superb against single high-value targets and poor against a swarm closing on you. Its 2,000 durability against the rifle&rsquo;s 5,500 is the other half of the balance.</p>
-    <p><strong>Terraprisma: the constraint is durability, not damage.</strong> The 90 Attack figure badly undersells it &mdash; the nine summoned swords attack with real <strong>speed and range</strong>, which makes the damage genuinely useful in practice. It costs no ammunition at all, so the only thing you spend is the 5,000 durability. That makes it a wear item rather than a supply item, which is a much easier problem at Lv80.</p>
+    <p><strong>Terraprisma: the constraint is durability, not damage.</strong> The 90 Attack figure badly undersells it &mdash; at a <strong>0.028s</strong> attack interval that is <strong>4,050 sustained DPS</strong> at Common, and the nine summoned swords add range on top. It costs no ammunition at all, so the only thing you spend is durability &mdash; a wear item rather than a supply item. <strong>Going Legendary takes durability 5,000 &rarr; 10,368 and DPS 4,050 &rarr; 6,750</strong>, which attacks your stated constraint directly.</p>
     <p><strong>What is still unmeasured:</strong> exact fire rates and reload times, the Beam Scatter&rsquo;s pellet count, and headshot multipliers. Those would let the table rank by damage per second as well as damage per material.</p>
   </div>
 
@@ -263,6 +263,73 @@
     <p>But the Plasma Rifle&rsquo;s item panel reads <code>68 Paloxite Ingot + 42 Bio Battery + 6 AI Core + 5 Ancient Civ Core</code> where the published figure is <code>80 + 50 + 8 + 7</code> &mdash; about 15% lower.</p>
     <p>I previously explained that gap as <strong>weapon cost scaling with schematic rarity</strong>. <strong>Three exact matches make that theory unlikely</strong>, since the others would have varied too. Something else reduces the Plasma Rifle&rsquo;s cost &mdash; a crafting discount, or a different panel showing a different thing. <strong>Unexplained, and no longer presented as a rarity ladder.</strong></p>
     <p>Practically it matters little: you craft each weapon once. <strong>Ammunition is the recurring bill, and every energy ammo recipe above is now confirmed in-game.</strong></p>
+  </div>
+
+  <h2>Rarity scaling, DPS, and what the numbers are worth</h2>
+  <p class="sub">From <a href="https://thepalprofessor.com/weapons/">The Pal Professor&rsquo;s weapon table</a> (v1.0.3, 27 Aug 2026), 240 rows across five rarities. Note that source writes decimals with commas &mdash; <code>1,667</code> is 1.667 seconds.</p>
+
+  <div class="callout good">
+    <span class="tag">Rarity scales the weapon, not just the recipe</span>
+    <p>Every stat climbs with schematic rarity, and <strong>durability climbs fastest</strong>:</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Weapon</th><th>Attack C&rarr;L</th><th>Durability C&rarr;L</th><th>DPS C&rarr;L</th></tr></thead>
+      <tbody>
+        <tr><td class="mat">Terraprisma</td><td>90 &rarr; 150 <strong>&times;1.67</strong></td><td>5,000 &rarr; 10,368 <strong>&times;2.07</strong></td><td>4,050 &rarr; 6,750 <strong>&times;1.67</strong></td></tr>
+        <tr><td class="mat">Advanced Bow</td><td>5,800 &rarr; 8,700 &times;1.50</td><td>500 &rarr; 2,000 <strong>&times;4.00</strong></td><td>3,479 &rarr; 5,219 &times;1.50</td></tr>
+        <tr><td class="mat">Charge Rifle</td><td>12,500 &rarr; 15,000 &times;1.20</td><td>200 &rarr; 800 <strong>&times;4.00</strong></td><td>7,258 &rarr; 9,414 &times;1.30</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Attack rises only <strong>1.2&ndash;1.67&times;</strong> from Common to Legendary, so the Attack figures elsewhere on this page &mdash; all read at Common &mdash; are a floor, and <strong>rarity cannot explain a 10&times; gap</strong>. The Mechanical Bow&rsquo;s lead over the Plasma Rifle survives it.</p>
+  </div>
+
+  <div class="callout good">
+    <span class="tag">Terraprisma: upgrade the schematic, not the playstyle</span>
+    <p>You flagged durability as its real limit. That is exactly the stat rarity helps most: <strong>Common 5,000 &rarr; Legendary 10,368 durability</strong>, a <strong>2.07&times;</strong> increase, while DPS goes <strong>4,050 &rarr; 6,750</strong>.</p>
+    <p>Legendary Terraprisma is the <strong>4th-highest sustained DPS in the entire table</strong>, and it carries <strong>13&times; the durability of the Charge Rifle above it</strong> (10,368 vs 800). For a no-ammo weapon whose only cost is wear, that is the single most valuable schematic upgrade available to you.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Rarity</th><th>Attack</th><th>Durability</th><th>DPS</th></tr></thead>
+      <tbody>
+        <tr><td class="mat">Legendary</td><td>150</td><td><strong>10,368</strong></td><td><strong>6,750</strong></td></tr>
+        <tr><td class="mat">Epic</td><td>125</td><td>8,640</td><td>5,625</td></tr>
+        <tr><td class="mat">Rare</td><td>110</td><td>7,200</td><td>4,950</td></tr>
+        <tr><td class="mat">Uncommon</td><td>100</td><td>6,000</td><td>4,500</td></tr>
+        <tr><td class="mat">Common</td><td>90</td><td>5,000</td><td>4,050</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="count">Common row matches the in-game panel exactly (90 Attack, 5,000 durability), which calibrates the whole table.</p>
+  </div>
+
+  <h3>Calibration &mdash; sustained DPS of known weapons</h3>
+  <p class="sub"><strong>Power/S is sustained DPS including reload</strong>, not burst. Verified: Charge Rifle Legendary = 10 shots &times; 15,000 over (10 &times; 1.4s + 1.933s) = 9,414. Use these to judge whether an Attack figure is actually good.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Weapon (Legendary)</th><th>Attack</th><th>Shot interval</th><th>DPS</th><th>Durability</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Overheat Rifle (Swap)</td><td>1,470</td><td>0.088s</td><td><strong>16,154</strong></td><td>6,000</td></tr>
+      <tr><td class="mat">Charge Rifle</td><td>15,000</td><td>1.400s</td><td>9,414</td><td>800</td></tr>
+      <tr><td class="mat">Energy Shotgun</td><td>482</td><td>0.250s</td><td>8,474</td><td>1,200</td></tr>
+      <tr><td class="mat">Terraprisma</td><td>150</td><td>0.028s</td><td>6,750</td><td><strong>10,368</strong></td></tr>
+      <tr><td class="mat">Plasma Cannon</td><td>13,000</td><td>0.375s</td><td>5,887</td><td>1,200</td></tr>
+      <tr><td class="mat">Advanced Bow</td><td>8,700</td><td><strong>1.667s</strong></td><td>5,219</td><td>2,000</td></tr>
+      <tr><td class="mat">Laser Gatling Gun</td><td>689</td><td>0.100s</td><td>4,993</td><td><strong>32,000</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="callout good">
+    <span class="tag">What this implies for the Mechanical Bow</span>
+    <p>The Advanced Bow fires on a <strong>1.667-second interval</strong> &mdash; confirming that bows are slow, as you found. At 8,700 Attack that yields 5,219 DPS.</p>
+    <p><strong>If the Mechanical Bow shares the bow archetype&rsquo;s ~1.667s cadence</strong>, its 20,000 Attack would work out to roughly <strong>12,000 DPS</strong> &mdash; second only to the Overheat Rifle swap trick, and that is before headshot multipliers. <span class="conf">This is an inference from archetype, not a measured figure: the Mechanical Bow is not in this table.</span> But it makes the 20,000 reading look like a real weapon rather than a display quirk.</p>
+  </div>
+
+  <div class="callout warn">
+    <span class="tag">The limit of this source</span>
+    <p>The table covers base-game and Tides of Terraria weapons across all five rarities, and it is accurate where it overlaps what we have confirmed in-game. But <strong>none of the 1.0 endgame weapons appear in it</strong> &mdash; no Mechanical Bow, Plasma Rifle, Beam Launcher, Beam Scatter, Drone Launcher, Heavy Assault Rifle, Combat SMG, Prototype Shotgun or Tactical Grenade Launcher. Terraprisma is the one weapon this guide discusses that it does cover.</p>
+    <p>So <strong>shot interval and DPS for the Tech 67&ndash;80 weapons remain unmeasured.</strong> Their Attack values and ammo costs are confirmed; their rate of fire is not.</p>
   </div>
 
   <h2>Armour</h2>

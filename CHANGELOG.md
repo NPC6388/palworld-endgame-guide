@@ -4,6 +4,36 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Rarity scaling and sustained DPS
+
+Parsed The Pal Professor's weapon table (v1.0.3, 27 Aug 2026) - 240 rows across five rarities.
+That source writes decimals with commas, so `1,667` is 1.667 seconds; the raw parse is saved to
+`research/weapon-stats-thepalprofessor.tsv`.
+
+### Added
+- **Rarity scales the weapon, not just the recipe.** Common -> Legendary: Attack **x1.2-1.67**,
+  DPS **x1.3-1.67**, and durability **x2-4**. Because Attack moves so little, the Common-rarity
+  figures elsewhere in this guide are a floor, and **rarity cannot explain the Mechanical Bow's
+  10x lead** over the Plasma Rifle.
+- **Terraprisma full rarity ladder.** Its Common row (90 Attack, 5,000 durability) matches the
+  in-game panel exactly, which calibrates the whole table. **Legendary: 10,368 durability and
+  6,750 DPS** - 4th-highest sustained DPS in the table, with 13x the durability of the Charge
+  Rifle above it. For a weapon whose only cost is wear, that is the highest-value schematic
+  upgrade available.
+- **Calibration table** of known sustained DPS. Power/S includes reload, verified against the
+  Charge Rifle: 10 shots x 15,000 over (10 x 1.4 + 1.933)s = 9,414.
+- **Bow cadence confirmed.** The Advanced Bow fires every **1.667s**, which is the archetype
+  reason bows feel slow. If the Mechanical Bow shares that cadence, its 20,000 Attack implies
+  roughly **12,000 DPS** before headshots - flagged clearly as archetype inference, not measurement.
+
+### Limit of the source
+**None of the 1.0 endgame weapons are in it** - no Mechanical Bow, Plasma Rifle, Beam Launcher,
+Beam Scatter, Drone Launcher, Heavy Assault Rifle, Combat SMG, Prototype Shotgun or Tactical
+Grenade Launcher. Terraprisma is the only weapon this guide discusses that it covers. Shot interval
+and DPS for the Tech 67-80 tier remain unmeasured.
+
+---
+
 ## 2026-09-04 - Energy weapon Attack values; two corrections
 
 Six in-game panels: the three energy ammo recipes and the Beam Scatter, Beam Launcher and Drone

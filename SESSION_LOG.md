@@ -4,6 +4,53 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - Weapon spec table; partial answer to the DPS gap
+
+User pointed at https://thepalprofessor.com/weapons/ and warned that **commas are decimal
+separators**. WebFetch's summarizer truncated the table and wrongly reported the endgame weapons as
+absent-but-for-different-reasons; **curl + a regex parse of the raw HTML** got all 240 rows cleanly.
+Worth remembering: for a large table, fetch raw and parse locally rather than trusting the
+summarizer. Parse saved to `research/weapon-stats-thepalprofessor.tsv`.
+
+### What it gave
+
+- **Rarity scaling, confirmed across five tiers.** Attack x1.2-1.67, DPS x1.3-1.67, durability
+  **x2-4** from Common to Legendary. This is a genuinely useful rule and it also **retires a worry**:
+  since Attack barely moves with rarity, my Common-read figures are a floor and the Bow's 10x lead
+  over the Plasma Rifle cannot be a rarity artefact.
+- **Terraprisma, fully.** Common row matches the in-game screenshot exactly (90 Attack, 5,000
+  durability), which calibrates the source. Legendary is 10,368 durability / 6,750 DPS - 4th-best
+  sustained DPS in the whole table with 13x the durability of the Charge Rifle above it.
+  **This directly answers the user's "Terraprisma is limited by durability"**: the fix is a
+  Legendary schematic, which roughly doubles durability and lifts DPS 67%.
+- **Bow cadence: 1.667s.** Confirms "slow" as an archetype property. Lets me offer a bounded
+  inference for the Mechanical Bow (~12,000 DPS at 20,000 Attack on that cadence), clearly labelled
+  as inference.
+- **Power/S is sustained DPS including reload** - verified arithmetically against the Charge Rifle
+  row, so the column can be trusted.
+
+### The gap it does NOT close
+
+**No 1.0 endgame weapon is in the table.** Terraprisma is the only weapon this guide discusses that
+appears. So shot interval and DPS for Tech 67-80 are still unmeasured - Attack and ammo cost are
+confirmed, rate of fire is not. Said so plainly on the page rather than stretching the source.
+
+### Note on a small internal inconsistency
+Terraprisma's listed DPS (4,050 at Common) does not equal Attack / ShotInterval (90 / 0.028 =
+3,214), whereas the Advanced Bow and Charge Rifle rows reconcile exactly. Either the interval is
+rounded in display or something else is folded in. Cited their DPS as published and did not
+recompute it.
+
+### Still open
+- **Shot interval / DPS for the Tech 67-80 weapons** - the main remaining gap.
+- **Terraprisma recipe**; **Drone Launcher ammo cost**.
+- Whether rarity scales crafting **cost** as well as stats (the unexplained Plasma Rifle 68/42/6/5).
+- A few **Rainbow passive** effects; the **Paloxite Reddit links**.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (cont.) - Two of my own claims overturned in one exchange
 
 Six screenshots plus two mid-turn gameplay notes. Both corrections were mine to make.
