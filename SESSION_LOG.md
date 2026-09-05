@@ -4,6 +4,59 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - Mounted play exposed a system I had never looked at
+
+User: "assume I'm doing the damage while mounted, so the 5th pal having passives to boost my damage
+is useful."
+
+That one sentence invalidated a claim I had shipped an hour earlier and opened a mechanic the guide
+had no coverage of at all.
+
+### The correction
+
+I had written, confidently, that drop boosters "never deploy, so their passives are irrelevant". It
+reads as sound reasoning - a Pal on the bench does not fight, so its combat passives do nothing. But
+there is a whole class of passives that buffs the **player** from the bench:
+
+- **Vanguard: +10% player Attack, stacking additively across the party.** Five of them is +50%.
+- And **Vanguard is a Bounty Officer implant at 15 tokens** - 75 tokens buys the whole party's worth
+  with no breeding at all.
+
+So the "their passives don't matter" advice was actively costing the user the cheapest damage
+upgrade in the build.
+
+**Lesson:** I reasoned from a model of how passives work rather than checking the passive list. The
+model was reasonable and wrong. This is the fourth correction this session that came from asserting a
+general rule instead of checking the specific case - and notably, the original research brief for
+this project *had* a bookmarked video called "Player Booster Pals Tested" that I never opened,
+because the agent assigned to it died on the rate limit and I never went back for it.
+
+### The system
+
+Player-buffing partner skills, per star: **Solenne +30/40/50/60/80% player Attack** (conditional on
+all party species being unique - trivially met), **Robinquill +10-35% bow damage**, Gobfin/Gobfin
+Ignis +20% each and stackable, Xenogard energy weapons, Croajiro +50% airborne, Dupin below 50% HP.
+
+Also: **mounted partner skills change the player's attack type to the mount's element** and add
++5-20% Attack. Both targets here are Electric, so a **Ground-element mount** stacks a type advantage
+onto the slot that was already carrying Dimensional Leap for Paloxite immunity. Nice convergence.
+
+### Revised priority
+
+Condense **Solenne before the Menastings**: same 48-Pal cost, but player Attack applies to every
+fight in the game whereas the Electric drop bonus only applies to this one route.
+
+### Still open
+- Shot interval / reload for Tech 67-80 weapons.
+- Whether Vanguard's additive stacking is right - single source, though the effect itself is well
+  documented. Worth testing since the build leans on it.
+- A few Rainbow passive effects; the Paloxite Reddit links; the ~15% crafting cost reduction on this
+  save.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (cont.) - World Tree team page
 
 Ask: breed a team to maximise drops while farming the World Tree for Holy Water and Paloxite. Weight

@@ -4,6 +4,42 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Player damage: correction and a whole missing system
+
+The player farms from the saddle, which makes slot 5 a player-buff slot rather than a combat-Pal
+slot. Chasing that surfaced a mechanic the guide had ignored entirely.
+
+### Correction - party-bench passives are not irrelevant
+This page previously said drop boosters "never deploy, so their passives are irrelevant". **Wrong.**
+A class of passives buffs the *player* from the party bench regardless of what the carrier is doing.
+
+- **Vanguard: +10% player Attack**, stacking **additively** across every party Pal carrying it -
+  **five Vanguards is +50% player Attack**.
+- And it is a **Bounty Officer implant at 15 tokens**, so the whole party is +50% Attack for
+  **75 tokens and no breeding**. Cheapest upgrade in the build.
+- **Stronghold Strategist** (player defence) sits on the same shelf.
+
+### Added - player-buffing partner skills, with per-star values
+- **Solenne - Untainted Maiden: +30/40/50/60/80% player Attack** if all party Pals are different
+  species. Biggest single-slot buff in the game; the condition is trivially met here. **Now slot 5.**
+- **Robinquill - Grounded Archer: +10 to 35% bow damage** - a real contender given the Mechanical
+  Bow's headshot playstyle. Trading a Menasting for it swaps 1.44x drops for ~35% kill speed, which
+  is roughly even.
+- Gobfin / Gobfin Ignis (+20% each, two species so they stack), Xenogard (energy weapons), Croajiro
+  (+50% airborne), Dupin (below 50% HP) all catalogued with verdicts.
+
+### Added - mounted mechanics
+A mounted partner skill **changes your attack type to the mount's element** and adds
+**+5/7/10/14/20% Attack**. Both targets are Electric, so **ride a Ground-element mount**: Dimensional
+Leap is a bred passive rather than a species, so one slot delivers Paloxite immunity, traversal
+speed, the mounted Attack bonus and a type advantage.
+
+### Revised condensation priority
+**Condense Solenne before the Menastings.** Same 48-Pal cost, but +30% to +80% player Attack pays off
+in every fight in the game, where the Menastings only ever help against Electric Pals.
+
+---
+
 ## 2026-09-04 - New page: World Tree farming team
 
 A focused build page for farming Holy Water and Paloxite together, with the breeding and
