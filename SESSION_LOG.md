@@ -27,7 +27,7 @@ scarcity, check the count before building on it - and prefer the player's firsth
 any written source, which has now been right five or six times running.
 
 ### Still open
-- Whether that map is filtered to Paloxite specifically (asked; unconfirmed).
+- ~~Whether the map is Paloxite-specific~~ — **confirmed 5 Sep: it is.**
 - Shot interval / reload for Tech 67-80 weapons; the repair cost formula.
 - A few Rainbow passive effects; the ~15% crafting cost reduction on this save.
 
@@ -113,6 +113,7 @@ constraint entirely. **When given a mechanic, search its implications rather tha
 sentence.**
 
 ### Still open
+- ~~Whether the map is Paloxite-specific~~ — **confirmed 5 Sep: it is.**
 - Shot interval / reload for Tech 67-80 weapons - the last real weapon gap.
 - Repair *cost* formula (materials or gold, and how much).
 - A few Rainbow passive effects; the Paloxite Reddit links; the ~15% crafting cost reduction on this
@@ -165,6 +166,7 @@ Condense **Solenne before the Menastings**: same 48-Pal cost, but player Attack 
 fight in the game whereas the Electric drop bonus only applies to this one route.
 
 ### Still open
+- ~~Whether the map is Paloxite-specific~~ — **confirmed 5 Sep: it is.**
 - Shot interval / reload for Tech 67-80 weapons.
 - Whether Vanguard's additive stacking is right - single source, though the effect itself is well
   documented. Worth testing since the build leans on it.
@@ -215,6 +217,7 @@ Also flagged: do not farm Paloxite carrying a Beam Launcher, whose ammo costs 1.
 The Tactical Grenade Launcher does 6,722 Attack on zero-Paloxite ammo.
 
 ### Still open
+- ~~Whether the map is Paloxite-specific~~ — **confirmed 5 Sep: it is.**
 - Shot interval / reload for Tech 67-80 weapons (damage per second still uncomputable).
 - A few Rainbow passive effects; the Paloxite Reddit links.
 - The ~15% crafting cost reduction on this save.
