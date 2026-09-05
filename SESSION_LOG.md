@@ -4,6 +4,54 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - World Tree team page
+
+Ask: breed a team to maximise drops while farming the World Tree for Holy Water and Paloxite. Weight
+is irrelevant - everything set to weightless.
+
+### Two mechanics confirmed before writing
+- **Partner skill level = condensation + 1.** Lv1 at ☆0 through Lv5 at ☆4, and the drop bonus scales
+  with it exactly (40/50/60/70/80%). This is what makes condensation the whole project.
+- **Dandilord's partner skill is Mist Stalwart** - Poison immunity for player and party, **nullifies
+  the World Tree toxic gas**, and adds Poison 2 to attacks. Does not stack. Better than the vague
+  "toxic gas immunity" the guide previously carried.
+
+### The route insight
+
+Dusty Ravine wins because of **element coverage per slot**, which is not obvious until you line the
+droppers up: Orserk and Snock Lux are *both Electric*, so one Menasting pair covers both, whereas
+Alluvion needs Neutral (Starryon Primo) plus Water (Shaolong) - three slots for two species. And
+Dusty Ravine has a Paloxite cluster on the fast-travel point. One loop, both resources, two booster
+slots.
+
+### The finding worth remembering
+
+**Boosters never deploy, so their passives do nothing.** The user asked for a breeding plan; the
+honest answer is that only two of the five Pals need bred passives at all. The rest is catching
+volume for the condenser. That turns a daunting request into a small one.
+
+Also the shortcut: **two boosters at ☆0 = +80% = one booster at ☆4.** Catching both Menastings
+matches a 48-Pal grind instantly, so the advice is "go now, condense later" rather than "grind first".
+
+### Where I pushed back rather than just building what was asked
+
+The team optimises **Holy Water**, but a Paloxite Ingot needs **2 Paloxite : 1 Holy Water**, and Holy
+Water has many sources (fishing, passive Large Fishing Pond, alphas, expeditions) while Paloxite has
+exactly one. **Paloxite is the binding constraint and no Pal affects mining.** Said so at the top of
+the page: build the team, but spend route time on nodes.
+
+Also flagged: do not farm Paloxite carrying a Beam Launcher, whose ammo costs 1.2 Paloxite a round.
+The Tactical Grenade Launcher does 6,722 Attack on zero-Paloxite ammo.
+
+### Still open
+- Shot interval / reload for Tech 67-80 weapons (damage per second still uncomputable).
+- A few Rainbow passive effects; the Paloxite Reddit links.
+- The ~15% crafting cost reduction on this save.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (cont.) - The database that closed most of the weapon questions
 
 User sent a Steam guide: "All 82 Weapons Database in Palworld (1.0 UPDATED)". Steam BBCode tables

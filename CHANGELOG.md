@@ -4,6 +4,44 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - New page: World Tree farming team
+
+A focused build page for farming Holy Water and Paloxite together, with the breeding and
+condensation plan behind it. Linked in the nav on every page.
+
+### Route
+**Dusty Ravine `-1560, 1510`** is the only spot that pays both ways. Its Holy Water droppers -
+**Orserk and Snock Lux - are both Electric**, so a single booster pair covers both species, and the
+tightest Paloxite cluster sits on the fast-travel point. Alluvion Lakefront has a higher raw Holy
+Water rate but needs three booster slots (Neutral + Water) and has no Paloxite.
+
+### The party
+Menasting + Menasting Terra (Electric boosters, different species so they stack) - **Dandilord**
+(Mist Stalwart: nullifies World Tree toxic gas outright, plus Poison immunity and Poison 2 on your
+attacks; does not stack) - a **mount carrying Dimensional Leap** (+50% move *and* permanent immunity
+to the Paloxite despawn aura) - a combat Pal. **Lunaris is dropped** because this player runs
+weightless, which frees that slot for damage.
+
+### The finding that shrinks the work
+**Drop boosters work from the party and never deploy, so their passives are irrelevant.** Only
+*condensation* scales them. The breeding programme is therefore **two Pals - the mount and the combat
+Pal - not five**.
+
+Partner skill runs **Lv1 at ☆0 to Lv5 at ☆4**, scaling the bonus 40% -> 80%. Notably **two boosters
+at ☆0 give +80%, exactly what one booster at ☆4 gives** - so catching both Menastings matches a
+48-Pal condensation project instantly. Condense afterwards for the last +80%.
+
+### Honest framing kept up front
+Drop boosters do nothing for Paloxite, and a Paloxite Ingot needs **2 Paloxite to 1 Holy Water**.
+Holy Water has many sources including passive base generation; Paloxite has exactly one. **Paloxite
+is the real bottleneck and no Pal can help with it** - so the team makes the Holy Water half free
+while you are there, but route time belongs on nodes.
+
+Also noted: bring the **Tactical Grenade Launcher**, whose ammo costs no Paloxite - do not farm
+Paloxite with a Beam Launcher.
+
+---
+
 ## 2026-09-04 - Full 1.0 weapon database; rarity-cost theory reinstated
 
 Parsed the Steam guide "All 82 Weapons Database in Palworld (1.0 UPDATED)" - per-rarity Attack,

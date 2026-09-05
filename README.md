@@ -17,6 +17,7 @@ A level-80 endgame reference for **Palworld 1.0.3** (solo world, default setting
 | `base-production.html` | The 1.0 work-suitability rework, all 29 ranch Pals, craft chains, node-base coordinates |
 | `passives.html` | Passive stacks by role — work, combat, mount — plus World Tree and Rainbow passives and how to get them |
 | `world-farming.html` | Drop-rate mechanics, stacking, party templates, per-material routes, expeditions |
+| `world-tree-team.html` | The Holy Water + Paloxite farming party, and the breeding/condensing plan behind it |
 | `endgame-demand.html` | What consumes your materials — every Lv67-80 weapon and ammo recipe, the armour ladder, the AI Core chain, cakes, spheres, Ultra raid loot, the Lv80 stat spread |
 | `sources.html` | Every source, a confidence ledger, and an honest list of what is unverified |
 
@@ -36,6 +37,8 @@ Project notes: [`CHANGELOG.md`](CHANGELOG.md) for what changed and when, [`SESSI
 - **The Mechanical Bow does 20,000 Attack** — over 10× the Plasma Rifle (1,860) and Heavy Assault Rifle (1,615) — at 0.4 Soralite per round and zero Paloxite. It is slow but precise and headshot-friendly, so it converts that efficiency best against single high-value targets.
 - **A Legendary Terraprisma is the best no-ammo option** — durability 5,000 → 10,368 and DPS 4,050 → 6,750 over Common, and 4th-highest sustained DPS in the game with 13× the durability of the weapon above it.
 - **The Tactical Grenade Launcher is the best free damage** — 6,722 Attack with zero-Paloxite ammo, 4.2× a Heavy Assault Rifle round. Its catch is 800 durability, the lowest in the tier.
+- **For World Tree farming, run Dusty Ravine** — its Holy Water droppers (Orserk, Snock Lux) are both Electric, so one booster pair covers both, and the tightest Paloxite cluster sits on the fast-travel point.
+- **Drop boosters need condensing, not passives.** They work from the party and never fight, so their passives are irrelevant; partner skill level (☆0→☆4) doubles the bonus from 40% to 80%.
 - **The ammo dividing line is Paloxite.** Everything up to Tech 72 costs zero Paloxite and zero Holy Water — Charcoal, Sulfur, Soralite and Quartz only, all automatable or a 12-minute loop. Tech 75+ burns Paloxite, so a 200-Paloxite World Tree run is ~665 Plasma Rifle rounds but only ~165 Beam Launcher rounds.
 - **Drop-boosters stack across different species, not duplicates** — two Menasting do nothing, but Menasting + Menasting Terra stack to ~160%. A regional variant counts as a different species. Fire, Neutral, Electric and Dark each have two species and can be doubled; the other elements have one.
 - **Holy Water is the one endgame material you get by killing Pals**, so it is the one route where a drop-boosting party is the whole point — the Alluvion Lakefront loop at `-1638, 1340`, reported 500+ in 10–15 min.
