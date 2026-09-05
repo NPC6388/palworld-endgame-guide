@@ -198,64 +198,164 @@
   </ul>
 
   <h2 id="route">The Paloxite route</h2>
-  <p class="sub">All three clusters plotted from their in-game coordinates, with the order that minimises travel.</p>
+  <p class="sub">Every Paloxite node in the region, with a single farming circuit computed over them.</p>
 
   <figure class="routemap">
-    <svg viewBox="0 0 700 520" role="img" aria-label="Route map of the three World Tree Paloxite clusters: start at Dusty Ravine with three nodes, fly west to Remnant Riverside with three nodes plus extras, then south-west to Gilded City Ruins with six nodes in two trios. An optional dashed leg runs south-east to Alluvion Lakefront for the Holy Water kill loop.">
-      <defs>
-        <marker id="rmArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-          <path d="M 0 0 L 10 5 L 0 10 z" class="rm-arrow"/>
-        </marker>
-        <marker id="rmArrowAlt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-          <path d="M 0 0 L 10 5 L 0 10 z" class="rm-arrowalt"/>
-        </marker>
-      </defs>
-
-      <!-- optional Holy Water leg, drawn first so it sits under the main route -->
-      <path class="rm-optional" d="M 120 236 C 220 380, 320 430, 400 442" marker-end="url(#rmArrowAlt)"/>
-      <text class="rm-steplabel" x="238" y="392">optional &mdash; Holy Water loop</text>
-
-      <!-- main mining route -->
-      <polyline class="rm-route" points="570,150 300,104 120,236" marker-end="url(#rmArrow)"/>
-
-      <!-- 1. Dusty Ravine -->
-      <circle class="rm-node" cx="570" cy="150" r="30"/>
-      <text class="rm-count" x="570" y="158">3</text>
-      <text class="rm-name" x="570" y="204">Dusty Ravine</text>
-      <text class="rm-coord" x="570" y="223">-1560, 1510</text>
-      <text class="rm-step" x="570" y="100">START</text>
-
-      <!-- 2. Remnant Riverside -->
-      <circle class="rm-node" cx="300" cy="104" r="30"/>
-      <text class="rm-count" x="300" y="112">3</text>
-      <text class="rm-name" x="300" y="158">Remnant Riverside</text>
-      <text class="rm-coord" x="300" y="177">-1710, 1535</text>
-      <text class="rm-step" x="300" y="54">2</text>
-
-      <!-- 3. Gilded City Ruins -->
-      <circle class="rm-node" cx="120" cy="236" r="34"/>
-      <text class="rm-count" x="120" y="245">6</text>
-      <text class="rm-name" x="120" y="294">Gilded City Ruins</text>
-      <text class="rm-coord" x="120" y="313">-1800, 1465</text>
-      <text class="rm-step" x="120" y="186">3</text>
-
-      <!-- Alluvion Lakefront -->
-      <circle class="rm-alt" cx="400" cy="442" r="26"/>
-      <text class="rm-altcount" x="400" y="448">HW</text>
-      <text class="rm-name" x="400" y="492">Alluvion Lakefront</text>
-      <text class="rm-coord" x="400" y="511">-1638, 1340</text>
-
-      <!-- edge labels -->
-      <text class="rm-steplabel" x="432" y="112">3 tight nodes at the fast-travel point</text>
-      <text class="rm-steplabel" x="196" y="182">+ scattered extras on the exit paths</text>
-      <text class="rm-steplabel" x="120" y="336">two trios, run as one sweep</text>
+    <div class="pm-wrap">
+      <img src="assets/paloxite-map.png" alt="World Tree region map with Paloxite nodes marked and a farming circuit drawn over them">
+    <svg class="pm-overlay" viewBox="0 0 846 721" role="img" aria-label="Paloxite farming circuit overlaid on the World Tree map: a single closed loop visiting 61 of 76 nodes, with 15 outlying nodes marked as skipped.">
+      <path class="pm-route" d="M 121.0 84.1 L 125.1 84.6 L 130.3 85.6 L 136.3 87.0 L 143.0 88.8 L 150.2 90.9 L 157.7 93.1 L 165.5 95.5 L 173.2 97.9 L 180.7 100.3 L 187.8 102.5 L 194.5 104.5 L 200.4 106.2 L 205.4 107.6 L 209.4 108.5 L 212.2 109.0 L 214.1 109.2 L 215.0 109.2 L 215.3 108.9 L 215.1 108.5 L 214.5 107.9 L 213.7 107.2 L 212.9 106.5 L 212.2 105.7 L 211.7 104.9 L 211.7 104.1 L 212.3 103.4 L 213.6 102.8 L 215.9 102.4 L 219.2 101.9 L 223.3 101.2 L 228.2 100.2 L 233.7 99.2 L 239.6 98.2 L 245.8 97.2 L 252.1 96.2 L 258.4 95.5 L 264.5 95.0 L 270.3 94.8 L 275.5 95.0 L 280.2 95.6 L 284.0 96.7 L 286.8 98.4 L 288.7 100.8 L 289.8 103.7 L 290.3 107.3 L 290.2 111.3 L 289.7 115.7 L 288.7 120.4 L 287.6 125.3 L 286.2 130.3 L 284.9 135.4 L 283.5 140.5 L 282.3 145.5 L 281.4 150.2 L 280.8 154.7 L 280.6 158.8 L 280.8 162.7 L 281.2 166.8 L 281.8 170.8 L 282.5 174.8 L 283.3 178.8 L 284.2 182.8 L 285.1 186.6 L 286.0 190.3 L 286.9 193.8 L 287.7 197.1 L 288.4 200.2 L 289.0 203.0 L 289.4 205.5 L 289.6 207.7 L 289.7 209.4 L 289.6 210.7 L 289.5 211.6 L 289.3 212.1 L 289.0 212.4 L 288.7 212.4 L 288.3 212.4 L 287.8 212.3 L 287.2 212.2 L 286.6 212.2 L 285.9 212.3 L 285.1 212.7 L 284.3 213.3 L 283.4 214.3 L 282.4 215.6 L 281.2 217.2 L 279.8 219.0 L 278.3 221.0 L 276.7 223.1 L 275.1 225.2 L 273.4 227.5 L 271.8 229.7 L 270.2 231.9 L 268.7 234.0 L 267.3 236.0 L 266.0 237.8 L 264.9 239.4 L 264.0 240.8 L 263.1 241.9 L 262.0 242.7 L 260.8 243.3 L 259.6 243.7 L 258.3 244.0 L 257.2 244.2 L 256.3 244.4 L 255.7 244.6 L 255.4 244.9 L 255.5 245.3 L 256.2 245.8 L 257.4 246.5 L 259.3 247.5 L 261.9 248.8 L 265.5 250.5 L 270.0 252.7 L 275.3 255.2 L 281.4 258.1 L 288.0 261.1 L 295.0 264.2 L 302.2 267.3 L 309.6 270.4 L 317.0 273.2 L 324.2 275.8 L 331.1 277.9 L 337.5 279.6 L 343.4 280.8 L 348.5 281.3 L 353.0 281.2 L 357.0 280.7 L 360.7 279.9 L 364.1 278.6 L 367.3 277.1 L 370.3 275.2 L 373.1 273.0 L 375.8 270.7 L 378.5 268.0 L 381.3 265.2 L 384.1 262.3 L 387.0 259.2 L 390.2 256.0 L 393.6 252.7 L 397.3 249.1 L 401.3 244.9 L 405.5 240.2 L 409.8 235.3 L 414.3 230.0 L 418.7 224.6 L 423.1 219.2 L 427.5 213.8 L 431.6 208.6 L 435.6 203.6 L 439.2 199.1 L 442.5 194.9 L 445.4 191.4 L 447.8 188.5 L 449.6 186.3 L 450.9 184.6 L 451.7 183.4 L 452.2 182.7 L 452.3 182.2 L 452.2 182.1 L 452.0 182.1 L 451.7 182.3 L 451.5 182.6 L 451.4 182.8 L 451.5 183.0 L 451.9 183.0 L 452.6 182.9 L 453.9 182.4 L 455.6 181.7 L 457.5 180.9 L 459.7 180.0 L 462.0 179.1 L 464.6 178.1 L 467.3 177.1 L 470.1 176.0 L 473.0 175.1 L 475.9 174.1 L 478.9 173.3 L 481.8 172.5 L 484.8 171.9 L 487.6 171.4 L 490.3 171.1 L 493.0 171.0 L 495.9 171.0 L 498.8 171.3 L 501.8 171.6 L 504.9 172.0 L 507.9 172.6 L 510.9 173.1 L 513.8 173.7 L 516.7 174.3 L 519.4 174.9 L 521.9 175.4 L 524.3 175.8 L 526.4 176.1 L 528.3 176.3 L 529.9 176.4 L 531.4 176.5 L 532.7 176.5 L 533.9 176.5 L 534.9 176.5 L 535.7 176.4 L 536.4 176.3 L 537.1 176.1 L 537.6 175.9 L 538.0 175.7 L 538.4 175.4 L 538.7 175.1 L 538.9 174.7 L 539.1 174.3 L 539.2 173.8 L 539.2 173.3 L 539.1 172.7 L 538.9 172.0 L 538.5 171.3 L 538.2 170.5 L 537.7 169.7 L 537.2 168.9 L 536.6 168.1 L 535.9 167.2 L 535.3 166.4 L 534.6 165.5 L 533.8 164.7 L 533.1 163.9 L 532.3 163.1 L 531.6 162.3 L 530.7 161.5 L 529.9 160.7 L 529.0 159.9 L 528.0 159.1 L 527.0 158.2 L 526.0 157.4 L 524.9 156.5 L 523.7 155.6 L 522.5 154.8 L 521.2 153.9 L 519.9 152.9 L 518.5 152.0 L 516.9 151.1 L 514.9 150.1 L 512.7 149.2 L 510.3 148.2 L 507.9 147.2 L 505.3 146.3 L 502.9 145.3 L 500.5 144.2 L 498.3 143.2 L 496.5 142.1 L 494.9 141.0 L 493.8 139.8 L 493.2 138.6 L 493.1 137.3 L 493.6 136.0 L 494.6 134.5 L 496.0 133.0 L 497.9 131.5 L 500.0 129.9 L 502.4 128.3 L 505.1 126.6 L 507.9 125.0 L 510.8 123.3 L 513.8 121.7 L 516.9 120.1 L 519.8 118.6 L 522.7 117.0 L 525.5 115.6 L 528.3 114.2 L 531.2 112.7 L 534.4 111.2 L 537.6 109.7 L 540.9 108.2 L 544.2 106.8 L 547.6 105.4 L 550.9 104.0 L 554.1 102.7 L 557.2 101.5 L 560.2 100.4 L 563.0 99.4 L 565.5 98.5 L 567.8 97.8 L 569.8 97.2 L 571.7 96.8 L 573.4 96.5 L 574.9 96.3 L 576.3 96.2 L 577.6 96.2 L 578.8 96.2 L 579.8 96.3 L 580.9 96.5 L 581.8 96.7 L 582.7 96.9 L 583.7 97.1 L 584.6 97.2 L 585.5 97.4 L 586.5 97.5 L 587.4 97.5 L 588.4 97.5 L 589.4 97.4 L 590.4 97.3 L 591.3 97.3 L 592.1 97.3 L 592.8 97.5 L 593.4 97.7 L 593.9 98.1 L 594.3 98.7 L 594.4 99.5 L 594.4 100.5 L 594.2 101.8 L 593.7 103.4 L 592.9 105.5 L 591.9 107.8 L 590.7 110.4 L 589.3 113.1 L 587.7 116.1 L 586.1 119.1 L 584.5 122.1 L 582.8 125.1 L 581.2 128.0 L 579.7 130.8 L 578.3 133.4 L 577.1 135.8 L 576.1 137.8 L 575.2 139.6 L 574.3 141.3 L 573.5 142.8 L 572.6 144.2 L 571.8 145.6 L 571.1 146.8 L 570.5 147.9 L 569.9 149.0 L 569.5 149.9 L 569.1 150.8 L 568.9 151.7 L 568.9 152.5 L 569.0 153.3 L 569.3 154.0 L 569.8 154.7 L 570.6 155.3 L 571.5 155.8 L 572.6 156.3 L 573.9 156.7 L 575.2 157.0 L 576.7 157.3 L 578.2 157.5 L 579.8 157.7 L 581.3 157.8 L 582.8 157.9 L 584.3 157.9 L 585.6 157.9 L 586.9 157.9 L 588.1 157.8 L 589.4 157.5 L 590.7 157.1 L 592.1 156.7 L 593.4 156.2 L 594.8 155.6 L 596.1 155.0 L 597.3 154.5 L 598.5 153.9 L 599.6 153.5 L 600.5 153.1 L 601.4 152.9 L 602.1 152.8 L 602.6 152.9 L 603.0 153.2 L 603.2 153.5 L 603.4 154.1 L 603.4 154.7 L 603.3 155.4 L 603.1 156.1 L 602.9 157.0 L 602.5 157.8 L 602.1 158.7 L 601.6 159.6 L 601.0 160.5 L 600.4 161.4 L 599.7 162.2 L 599.0 163.0 L 598.2 163.7 L 597.2 164.2 L 596.1 164.7 L 594.9 165.1 L 593.6 165.5 L 592.3 165.9 L 590.9 166.3 L 589.5 166.8 L 588.1 167.5 L 586.7 168.3 L 585.4 169.3 L 584.1 170.4 L 582.8 171.9 L 581.7 173.6 L 580.5 175.7 L 579.2 178.3 L 577.8 181.3 L 576.4 184.5 L 574.9 188.0 L 573.5 191.6 L 572.1 195.2 L 570.9 198.8 L 569.9 202.4 L 569.1 205.7 L 568.5 208.7 L 568.3 211.4 L 568.4 213.7 L 568.9 215.4 L 569.9 216.7 L 571.3 217.6 L 573.0 218.2 L 575.1 218.6 L 577.5 218.7 L 580.1 218.6 L 582.9 218.3 L 585.7 217.9 L 588.7 217.3 L 591.6 216.8 L 594.5 216.1 L 597.3 215.5 L 599.9 214.9 L 602.3 214.4 L 604.6 213.9 L 607.0 213.2 L 609.3 212.5 L 611.7 211.6 L 614.1 210.7 L 616.5 209.8 L 618.8 208.8 L 621.1 207.8 L 623.3 206.7 L 625.5 205.7 L 627.6 204.8 L 629.6 203.8 L 631.5 202.9 L 633.3 202.1 L 635.1 201.2 L 636.9 199.9 L 638.7 198.5 L 640.4 196.9 L 642.2 195.3 L 643.8 193.8 L 645.4 192.4 L 646.8 191.1 L 648.0 190.2 L 649.1 189.6 L 649.9 189.5 L 650.5 189.9 L 650.9 190.9 L 650.9 192.6 L 650.3 195.0 L 649.0 197.8 L 647.1 201.2 L 644.7 205.1 L 642.0 209.3 L 639.2 214.0 L 636.3 218.9 L 633.7 224.2 L 631.3 229.8 L 629.4 235.5 L 628.1 241.5 L 627.6 247.6 L 628.0 253.8 L 629.5 260.1 L 632.2 266.8 L 636.1 274.1 L 640.9 281.9 L 646.5 290.2 L 652.8 298.8 L 659.5 307.5 L 666.5 316.3 L 673.6 325.0 L 680.7 333.5 L 687.5 341.8 L 693.9 349.6 L 699.8 356.8 L 704.9 363.5 L 709.1 369.3 L 712.6 374.5 L 715.9 379.1 L 718.9 383.4 L 721.5 387.2 L 723.9 390.7 L 726.0 393.8 L 727.9 396.7 L 729.4 399.3 L 730.6 401.7 L 731.6 403.9 L 732.2 405.9 L 732.6 407.9 L 732.6 409.8 L 732.4 411.6 L 731.8 413.3 L 730.8 414.6 L 729.5 415.6 L 727.8 416.3 L 725.8 416.9 L 723.5 417.3 L 720.9 417.6 L 718.2 417.9 L 715.2 418.1 L 712.0 418.4 L 708.7 418.8 L 705.3 419.2 L 701.8 419.9 L 698.2 420.8 L 694.3 421.9 L 690.0 423.1 L 685.3 424.5 L 680.2 425.9 L 675.0 427.4 L 669.6 429.0 L 664.1 430.5 L 658.7 432.1 L 653.4 433.6 L 648.2 435.1 L 643.4 436.5 L 638.9 437.8 L 634.8 439.0 L 631.3 440.1 L 628.2 441.0 L 625.5 441.9 L 623.1 442.8 L 621.0 443.6 L 619.2 444.3 L 617.5 444.9 L 616.0 445.5 L 614.7 446.1 L 613.4 446.6 L 612.2 447.0 L 611.0 447.4 L 609.8 447.7 L 608.5 447.9 L 607.2 448.1 L 606.1 448.1 L 605.4 447.9 L 605.1 447.4 L 605.0 446.8 L 605.1 446.1 L 605.2 445.4 L 605.1 444.7 L 604.8 444.0 L 604.2 443.4 L 603.2 443.1 L 601.5 442.9 L 599.2 443.0 L 596.1 443.5 L 592.0 444.3 L 586.8 445.5 L 580.4 447.1 L 573.1 449.0 L 564.9 451.1 L 556.1 453.5 L 546.9 456.0 L 537.5 458.7 L 527.9 461.4 L 518.5 464.2 L 509.4 466.9 L 500.8 469.6 L 492.9 472.3 L 485.8 474.7 L 479.8 477.0 L 474.8 479.2 L 470.5 481.4 L 466.9 483.6 L 463.8 485.8 L 461.2 488.0 L 458.9 490.2 L 456.9 492.3 L 454.9 494.4 L 453.0 496.4 L 450.9 498.3 L 448.7 500.2 L 446.2 501.9 L 443.2 503.5 L 439.7 505.0 L 435.7 506.4 L 431.2 507.8 L 426.4 509.2 L 421.4 510.5 L 416.1 511.7 L 410.8 512.8 L 405.4 513.9 L 400.1 514.8 L 394.9 515.5 L 389.9 516.1 L 385.3 516.5 L 381.0 516.8 L 377.1 516.7 L 373.8 516.5 L 371.0 515.8 L 368.7 514.4 L 366.8 512.6 L 365.2 510.4 L 363.9 507.9 L 362.8 505.3 L 361.9 502.7 L 361.0 500.2 L 360.2 497.9 L 359.5 496.0 L 358.6 494.6 L 357.6 493.8 L 356.4 493.8 L 355.0 494.6 L 353.8 496.5 L 353.1 499.3 L 352.8 503.1 L 352.7 507.6 L 352.7 512.6 L 352.6 517.9 L 352.3 523.4 L 351.6 528.9 L 350.3 534.2 L 348.3 539.2 L 345.4 543.7 L 341.5 547.4 L 336.4 550.3 L 329.9 552.2 L 321.6 553.2 L 311.2 553.6 L 299.1 553.5 L 285.7 552.9 L 271.3 551.9 L 256.2 550.5 L 240.8 548.7 L 225.4 546.7 L 210.5 544.3 L 196.2 541.8 L 183.0 539.2 L 171.3 536.4 L 161.3 533.5 L 153.4 530.6 L 147.6 527.4 L 143.3 523.7 L 140.5 519.6 L 138.8 515.2 L 138.2 510.5 L 138.3 505.6 L 138.9 500.7 L 139.9 495.7 L 141.1 490.9 L 142.2 486.3 L 143.1 481.9 L 143.5 477.9 L 143.2 474.3 L 142.0 471.3 L 140.0 468.9 L 137.5 466.9 L 134.6 465.4 L 131.3 464.3 L 127.9 463.4 L 124.4 462.7 L 120.9 462.1 L 117.5 461.6 L 114.4 461.0 L 111.6 460.2 L 109.2 459.2 L 107.5 458.0 L 106.3 456.3 L 106.0 454.2 L 106.5 451.5 L 107.7 448.2 L 109.6 444.4 L 112.0 440.3 L 114.8 435.9 L 118.0 431.4 L 121.5 426.9 L 125.1 422.5 L 128.7 418.4 L 132.3 414.5 L 135.8 411.1 L 139.0 408.3 L 141.9 406.2 L 144.3 404.8 L 146.4 404.3 L 148.2 404.7 L 149.9 405.8 L 151.5 407.5 L 152.9 409.6 L 154.3 412.1 L 155.7 414.8 L 157.0 417.5 L 158.4 420.2 L 159.9 422.7 L 161.4 425.0 L 163.1 426.8 L 165.0 428.0 L 167.1 428.6 L 169.4 428.6 L 172.0 428.1 L 174.7 427.3 L 177.6 426.2 L 180.6 424.8 L 183.6 423.2 L 186.7 421.5 L 189.8 419.7 L 192.8 417.9 L 195.8 416.1 L 198.6 414.4 L 201.3 412.9 L 203.7 411.5 L 206.0 410.4 L 208.1 409.5 L 210.3 408.7 L 212.4 408.1 L 214.5 407.4 L 216.6 406.9 L 218.5 406.4 L 220.3 405.9 L 221.9 405.5 L 223.3 405.0 L 224.5 404.5 L 225.5 404.0 L 226.2 403.4 L 226.6 402.7 L 226.6 402.0 L 226.3 401.3 L 225.8 400.6 L 225.1 400.0 L 224.1 399.4 L 222.8 398.8 L 221.4 398.2 L 219.7 397.5 L 217.8 396.7 L 215.7 395.7 L 213.4 394.6 L 210.8 393.3 L 208.1 391.8 L 205.1 390.1 L 202.0 388.0 L 198.5 385.6 L 194.6 382.8 L 190.2 379.7 L 185.5 376.4 L 180.6 372.8 L 175.5 369.1 L 170.3 365.3 L 165.0 361.4 L 159.7 357.5 L 154.5 353.7 L 149.5 350.0 L 144.7 346.4 L 140.2 343.1 L 136.0 340.0 L 132.0 337.1 L 128.0 334.1 L 124.1 331.3 L 120.2 328.4 L 116.4 325.6 L 112.7 322.9 L 109.1 320.3 L 105.8 317.8 L 102.6 315.4 L 99.7 313.2 L 97.0 311.0 L 94.7 309.1 L 92.7 307.3 L 91.0 305.7 L 89.6 304.4 L 88.5 303.4 L 87.6 302.6 L 87.0 302.1 L 86.5 301.7 L 86.4 301.5 L 86.5 301.3 L 86.8 301.2 L 87.4 301.0 L 88.3 300.8 L 89.5 300.4 L 90.9 299.9 L 92.7 299.1 L 94.7 298.1 L 97.3 297.0 L 100.6 296.0 L 104.5 295.0 L 108.9 294.1 L 113.6 293.1 L 118.6 291.9 L 123.7 290.7 L 128.8 289.2 L 133.7 287.4 L 138.3 285.3 L 142.6 282.8 L 146.3 280.0 L 149.4 276.6 L 151.7 272.7 L 153.3 268.1 L 154.5 262.6 L 155.1 256.4 L 155.5 249.7 L 155.4 242.5 L 155.1 235.0 L 154.5 227.4 L 153.7 219.7 L 152.7 212.2 L 151.7 204.9 L 150.5 198.1 L 149.4 191.7 L 148.3 186.0 L 147.2 181.1 L 146.0 176.9 L 144.6 173.1 L 142.9 169.6 L 141.0 166.6 L 138.9 163.8 L 136.8 161.4 L 134.7 159.2 L 132.6 157.2 L 130.5 155.4 L 128.7 153.7 L 127.0 152.2 L 125.5 150.7 L 124.4 149.3 L 123.6 147.9 L 123.2 146.7 L 123.3 145.8 L 123.6 145.3 L 124.2 145.0 L 125.0 144.9 L 126.0 144.9 L 127.0 144.9 L 128.0 145.0 L 129.0 144.9 L 129.9 144.7 L 130.5 144.3 L 131.0 143.7 L 131.1 142.7 L 130.8 141.3 L 130.1 139.5 L 129.1 137.3 L 127.7 134.8 L 126.1 132.1 L 124.2 129.2 L 122.3 126.1 L 120.3 122.9 L 118.4 119.7 L 116.5 116.5 L 114.7 113.5 L 113.1 110.5 L 111.8 107.7 L 110.9 105.2 L 110.3 103.0 L 109.9 101.0 L 109.5 98.9 L 109.1 96.9 L 108.8 94.9 L 108.6 93.0 L 108.6 91.3 L 108.8 89.6 L 109.3 88.2 L 110.2 86.9 L 111.4 85.8 L 113.0 84.9 L 115.1 84.4 L 117.8 84.1 L 121.0 84.1 Z"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(204.9,107.5) rotate(15.1)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(282.9,176.9) rotate(78.6)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(337.0,279.5) rotate(14.9)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(464.4,178.1) rotate(-21.3)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(522.2,117.3) rotate(-27.5)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(603.1,153.4) rotate(57.5)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(649.1,197.6) rotate(114.7)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(691.4,346.4) rotate(50.5)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(641.1,437.2) rotate(163.7)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(477.3,478.1) rotate(156.5)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(352.4,522.4) rotate(93.4)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(197.1,542.0) rotate(-170.0)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(114.8,436.0) rotate(-56.9)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(201.3,387.5) rotate(-145.3)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(115.7,292.6) rotate(-12.7)"/>
+      <polygon class="pm-arrow" points="0,-5 11,0 0,5" transform="translate(124.9,149.9) rotate(-128.7)"/>
+      <circle class="pm-skip" cx="114.9" cy="690.5" r="7"/>
+      <circle class="pm-skip" cx="267.8" cy="361.0" r="7"/>
+      <circle class="pm-skip" cx="324.1" cy="451.5" r="7"/>
+      <circle class="pm-skip" cx="779.2" cy="419.8" r="7"/>
+      <circle class="pm-skip" cx="223.9" cy="39.0" r="7"/>
+      <circle class="pm-skip" cx="507.4" cy="88.1" r="7"/>
+      <circle class="pm-skip" cx="429.6" cy="425.5" r="7"/>
+      <circle class="pm-skip" cx="467.8" cy="292.8" r="7"/>
+      <circle class="pm-skip" cx="497.7" cy="296.9" r="7"/>
+      <circle class="pm-skip" cx="495.0" cy="343.1" r="7"/>
+      <circle class="pm-skip" cx="606.2" cy="337.4" r="7"/>
+      <circle class="pm-skip" cx="623.0" cy="376.0" r="7"/>
+      <circle class="pm-skip" cx="272.2" cy="604.0" r="7"/>
+      <circle class="pm-skip" cx="441.2" cy="160.2" r="7"/>
+      <circle class="pm-skip" cx="321.1" cy="115.3" r="7"/>
+      <circle class="pm-node" cx="121.0" cy="84.1" r="5.5"/>
+      <circle class="pm-node" cx="209.4" cy="108.5" r="5.5"/>
+      <circle class="pm-node" cx="215.9" cy="102.4" r="5.5"/>
+      <circle class="pm-node" cx="286.8" cy="98.4" r="5.5"/>
+      <circle class="pm-node" cx="280.6" cy="158.8" r="5.5"/>
+      <circle class="pm-node" cx="289.6" cy="207.7" r="5.5"/>
+      <circle class="pm-node" cx="283.4" cy="214.3" r="5.5"/>
+      <circle class="pm-node" cx="264.0" cy="240.8" r="5.5"/>
+      <circle class="pm-node" cx="261.9" cy="248.8" r="5.5"/>
+      <circle class="pm-node" cx="348.5" cy="281.3" r="5.5"/>
+      <circle class="pm-node" cx="393.6" cy="252.7" r="5.5"/>
+      <circle class="pm-node" cx="447.8" cy="188.5" r="5.5"/>
+      <circle class="pm-node" cx="453.9" cy="182.4" r="5.5"/>
+      <circle class="pm-node" cx="490.3" cy="171.1" r="5.5"/>
+      <circle class="pm-node" cx="528.3" cy="176.3" r="5.5"/>
+      <circle class="pm-node" cx="539.1" cy="174.3" r="5.5"/>
+      <circle class="pm-node" cx="533.1" cy="163.9" r="5.5"/>
+      <circle class="pm-node" cx="518.5" cy="152.0" r="5.5"/>
+      <circle class="pm-node" cx="493.1" cy="137.3" r="5.5"/>
+      <circle class="pm-node" cx="525.5" cy="115.6" r="5.5"/>
+      <circle class="pm-node" cx="567.8" cy="97.8" r="5.5"/>
+      <circle class="pm-node" cx="585.5" cy="97.4" r="5.5"/>
+      <circle class="pm-node" cx="594.2" cy="101.8" r="5.5"/>
+      <circle class="pm-node" cx="576.1" cy="137.8" r="5.5"/>
+      <circle class="pm-node" cx="569.3" cy="154.0" r="5.5"/>
+      <circle class="pm-node" cx="586.9" cy="157.9" r="5.5"/>
+      <circle class="pm-node" cx="602.6" cy="152.9" r="5.5"/>
+      <circle class="pm-node" cx="599.0" cy="163.0" r="5.5"/>
+      <circle class="pm-node" cx="581.7" cy="173.6" r="5.5"/>
+      <circle class="pm-node" cx="568.9" cy="215.4" r="5.5"/>
+      <circle class="pm-node" cx="602.3" cy="214.4" r="5.5"/>
+      <circle class="pm-node" cx="633.3" cy="202.1" r="5.5"/>
+      <circle class="pm-node" cx="650.9" cy="192.6" r="5.5"/>
+      <circle class="pm-node" cx="629.5" cy="260.1" r="5.5"/>
+      <circle class="pm-node" cx="709.1" cy="369.3" r="5.5"/>
+      <circle class="pm-node" cx="732.4" cy="411.6" r="5.5"/>
+      <circle class="pm-node" cx="698.2" cy="420.8" r="5.5"/>
+      <circle class="pm-node" cx="631.3" cy="440.1" r="5.5"/>
+      <circle class="pm-node" cx="607.2" cy="448.1" r="5.5"/>
+      <circle class="pm-node" cx="592.0" cy="444.3" r="5.5"/>
+      <circle class="pm-node" cx="479.8" cy="477.0" r="5.5"/>
+      <circle class="pm-node" cx="439.7" cy="505.0" r="5.5"/>
+      <circle class="pm-node" cx="373.8" cy="516.5" r="5.5"/>
+      <circle class="pm-node" cx="355.0" cy="494.6" r="5.5"/>
+      <circle class="pm-node" cx="329.9" cy="552.2" r="5.5"/>
+      <circle class="pm-node" cx="153.4" cy="530.6" r="5.5"/>
+      <circle class="pm-node" cx="142.0" cy="471.3" r="5.5"/>
+      <circle class="pm-node" cx="106.0" cy="454.2" r="5.5"/>
+      <circle class="pm-node" cx="144.3" cy="404.8" r="5.5"/>
+      <circle class="pm-node" cx="167.1" cy="428.6" r="5.5"/>
+      <circle class="pm-node" cx="206.0" cy="410.4" r="5.5"/>
+      <circle class="pm-node" cx="226.6" cy="402.0" r="5.5"/>
+      <circle class="pm-node" cx="202.0" cy="388.0" r="5.5"/>
+      <circle class="pm-node" cx="136.0" cy="340.0" r="5.5"/>
+      <circle class="pm-node" cx="91.0" cy="305.7" r="5.5"/>
+      <circle class="pm-node" cx="94.7" cy="298.1" r="5.5"/>
+      <circle class="pm-node" cx="151.7" cy="272.7" r="5.5"/>
+      <circle class="pm-node" cx="147.2" cy="181.1" r="5.5"/>
+      <circle class="pm-node" cx="123.6" cy="147.9" r="5.5"/>
+      <circle class="pm-node" cx="130.8" cy="141.3" r="5.5"/>
+      <circle class="pm-node" cx="110.3" cy="103.0" r="5.5"/>
+      <circle class="pm-start" cx="121.0" cy="84.1" r="11"/>
+      <text class="pm-startlabel" x="121.0" y="67.1">START</text>
     </svg>
-    <figcaption><strong>Relative positions from in-game coordinates</strong> — a schematic, not a scale map. Numbers in the circles are Paloxite nodes per cluster; <strong>12 nodes per full lap</strong>. Run <strong>Dusty Ravine first</strong> — its three sit right on the fast-travel point, so you are mining within seconds of landing — then sweep west. <strong>Finish at Gilded City Ruins</strong>, the biggest cluster, so the most time has passed before you loop back to the first. The dashed leg to Alluvion Lakefront is the Holy Water kill loop, worth taking only if you need Holy Water more than Paloxite.</figcaption>
+    </div>
+    <div class="pm-legend">
+      <span><i class="pm-swatch" style="background:#ffd60a"></i> 61 nodes on the circuit</span>
+      <span><i class="pm-swatch" style="border:2px solid #ff5c5c"></i> 15 skipped &mdash; isolated stragglers</span>
+      <span><i class="pm-swatch" style="border:2px solid #00ffe6"></i> suggested entry point</span>
+    </div>
+    <figcaption><strong>61 of 76 nodes (80%) for 71% of the full-sweep distance.</strong>
+    Node positions detected from the map screenshot; the circuit is a 2-opt optimised tour with the
+    highest-detour nodes dropped until 80% remain. Run it as a loop &mdash; by the time you come back
+    round, the first nodes are near their 30-minute respawn.</figcaption>
   </figure>
 
   <div class="callout good">
+    <span class="tag">What the 20% you are skipping actually costs</span>
+    <p>The dropped nodes are not clustered in one corner &mdash; they are <strong>isolated stragglers</strong>. Their median distance to the nearest other node is <strong>46px against 22px</strong> for the ones on the circuit, so each costs roughly double the travel to reach and returns the same single node.</p>
+    <p>The efficiency curve is <strong>remarkably flat between about 70% and 85% coverage</strong>, so there is no sharp optimum to hit &mdash; anywhere in that band is within a couple of percent of best. Your instinct of ~80% sits right in it.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Nodes visited</th><th>Coverage</th><th>Travel</th><th>Travel per node</th></tr></thead>
+      <tbody>
+        <tr><td class="mat">76</td><td>100%</td><td>100%</td><td>49.9</td></tr>
+        <tr><td class="mat">72</td><td>95%</td><td><strong>87%</strong></td><td>46.0</td></tr>
+        <tr><td class="mat">66</td><td>87%</td><td>79%</td><td>45.4</td></tr>
+        <tr><td class="mat">63</td><td>83%</td><td>73%</td><td><strong>43.9</strong></td></tr>
+        <tr><td class="mat">61</td><td><strong>80%</strong></td><td><strong>71%</strong></td><td>44.1</td></tr>
+        <tr><td class="mat">54</td><td>71%</td><td>62%</td><td><strong>43.4</strong></td></tr>
+        <tr><td class="mat">48</td><td>63%</td><td>56%</td><td>44.6</td></tr>
+        <tr><td class="mat">42</td><td>55%</td><td>52%</td><td>46.7</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>The single best cut is the first four nodes.</strong> Dropping 76&rarr;72 sheds <strong>13% of the travel for 5% of the nodes</strong> &mdash; nothing else on the curve pays that well. Below about 63% coverage it stops paying at all: you start losing nodes faster than you save distance.</p>
+  </div>
+
+  <div class="callout warn">
+    <span class="tag">Read this before you trust the drawing</span>
+    <p>Node positions were <strong>detected from your screenshot by colour</strong>, not read from game data. Detection found <strong>76 markers</strong>; a few in the dense volcano cluster were overlapping icons split apart by area, so that count could be off by two or three either way. The route shape is unaffected &mdash; it passes through every cluster regardless &mdash; but do not treat 76 as an exact node census.</p>
+    <p>The circuit is also a <strong>straight-line flight path</strong>. It takes no account of cliffs, the World Tree canopy, or anywhere you cannot fly directly, so treat it as the order to visit rather than the literal line to follow.</p>
+  </div>
+
+  <h3>The three named clusters</h3>
+  <p class="sub">Guides single these out, and they are the fast-travel anchors worth knowing by name &mdash; but as the map shows, they are a small share of what is actually out there.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Cluster</th><th>Coords</th><th>Nodes</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Dusty Ravine</td><td><code>-1560, 1510</code></td><td>3</td><td class="detail">Tight, right on the fast-travel point &mdash; the quickest start</td></tr>
+      <tr><td class="mat">Remnant Riverside</td><td><code>-1710, 1535</code></td><td>3 +</td><td class="detail">Scattered extras along the exit paths</td></tr>
+      <tr><td class="mat">Gilded City Ruins</td><td><code>-1800, 1465</code></td><td>6</td><td class="detail">Two trios, close enough to sweep as one</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="callout good">
     <span class="tag">Live map</span>
-    <p>For the surrounding terrain and everything else in the region, <a href="https://palworld.th.gl/maps/The%20World%20Tree">palworld.th.gl&rsquo;s World Tree map</a> is interactive and filterable — drop the three coordinates above into it to see the approach routes.</p>
+    <p><a href="https://palworld.th.gl/maps/The%20World%20Tree">palworld.th.gl&rsquo;s World Tree map</a> is interactive and filterable &mdash; use it to hover individual markers for exact coordinates and to check the terrain around each leg.</p>
   </div>
 
   <h2>The loop</h2>
