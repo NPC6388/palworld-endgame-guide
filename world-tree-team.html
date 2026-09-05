@@ -197,11 +197,72 @@
     <li><strong>Ammo:</strong> the <a href="endgame-demand.html">Tactical Grenade Launcher</a> is the best choice here — 6,722 Attack and its ammunition costs <strong>no Paloxite</strong>, so you are not spending the resource you came to collect. Do not farm Paloxite with a Beam Launcher.</li>
   </ul>
 
+  <h2 id="route">The Paloxite route</h2>
+  <p class="sub">All three clusters plotted from their in-game coordinates, with the order that minimises travel.</p>
+
+  <figure class="routemap">
+    <svg viewBox="0 0 700 520" role="img" aria-label="Route map of the three World Tree Paloxite clusters: start at Dusty Ravine with three nodes, fly west to Remnant Riverside with three nodes plus extras, then south-west to Gilded City Ruins with six nodes in two trios. An optional dashed leg runs south-east to Alluvion Lakefront for the Holy Water kill loop.">
+      <defs>
+        <marker id="rmArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" class="rm-arrow"/>
+        </marker>
+        <marker id="rmArrowAlt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" class="rm-arrowalt"/>
+        </marker>
+      </defs>
+
+      <!-- optional Holy Water leg, drawn first so it sits under the main route -->
+      <path class="rm-optional" d="M 120 236 C 220 380, 320 430, 400 442" marker-end="url(#rmArrowAlt)"/>
+      <text class="rm-steplabel" x="238" y="392">optional &mdash; Holy Water loop</text>
+
+      <!-- main mining route -->
+      <polyline class="rm-route" points="570,150 300,104 120,236" marker-end="url(#rmArrow)"/>
+
+      <!-- 1. Dusty Ravine -->
+      <circle class="rm-node" cx="570" cy="150" r="30"/>
+      <text class="rm-count" x="570" y="158">3</text>
+      <text class="rm-name" x="570" y="204">Dusty Ravine</text>
+      <text class="rm-coord" x="570" y="223">-1560, 1510</text>
+      <text class="rm-step" x="570" y="100">START</text>
+
+      <!-- 2. Remnant Riverside -->
+      <circle class="rm-node" cx="300" cy="104" r="30"/>
+      <text class="rm-count" x="300" y="112">3</text>
+      <text class="rm-name" x="300" y="158">Remnant Riverside</text>
+      <text class="rm-coord" x="300" y="177">-1710, 1535</text>
+      <text class="rm-step" x="300" y="54">2</text>
+
+      <!-- 3. Gilded City Ruins -->
+      <circle class="rm-node" cx="120" cy="236" r="34"/>
+      <text class="rm-count" x="120" y="245">6</text>
+      <text class="rm-name" x="120" y="294">Gilded City Ruins</text>
+      <text class="rm-coord" x="120" y="313">-1800, 1465</text>
+      <text class="rm-step" x="120" y="186">3</text>
+
+      <!-- Alluvion Lakefront -->
+      <circle class="rm-alt" cx="400" cy="442" r="26"/>
+      <text class="rm-altcount" x="400" y="448">HW</text>
+      <text class="rm-name" x="400" y="492">Alluvion Lakefront</text>
+      <text class="rm-coord" x="400" y="511">-1638, 1340</text>
+
+      <!-- edge labels -->
+      <text class="rm-steplabel" x="432" y="112">3 tight nodes at the fast-travel point</text>
+      <text class="rm-steplabel" x="196" y="182">+ scattered extras on the exit paths</text>
+      <text class="rm-steplabel" x="120" y="336">two trios, run as one sweep</text>
+    </svg>
+    <figcaption><strong>Relative positions from in-game coordinates</strong> — a schematic, not a scale map. Numbers in the circles are Paloxite nodes per cluster; <strong>12 nodes per full lap</strong>. Run <strong>Dusty Ravine first</strong> — its three sit right on the fast-travel point, so you are mining within seconds of landing — then sweep west. <strong>Finish at Gilded City Ruins</strong>, the biggest cluster, so the most time has passed before you loop back to the first. The dashed leg to Alluvion Lakefront is the Holy Water kill loop, worth taking only if you need Holy Water more than Paloxite.</figcaption>
+  </figure>
+
+  <div class="callout good">
+    <span class="tag">Live map</span>
+    <p>For the surrounding terrain and everything else in the region, <a href="https://palworld.th.gl/maps/The%20World%20Tree">palworld.th.gl&rsquo;s World Tree map</a> is interactive and filterable — drop the three coordinates above into it to see the approach routes.</p>
+  </div>
+
   <h2>The loop</h2>
   <ol class="slots">
     <li><span class="n">Fast-travel to Dusty Ravine <code>-1560, 1510</code></span><span class="d">Three tight Paloxite nodes right at the point. Mine them first, before anything aggros.</span></li>
     <li><span class="n">Clear the Orserk and Snock Lux spawns</span><span class="d">Both Electric, both boosted by your Menasting pair. 1&ndash;3 Holy Water each at a 50% rate.</span></li>
-    <li><span class="n">Run the other two clusters</span><span class="d"><code>-1710, 1535</code> Remnant Riverside (3 nodes plus scattered extras on the exit paths) and <code>-1800, 1465</code> Gilded City Ruins (<strong>6 nodes</strong>, two trios close enough to chain).</span></li>
+    <li><span class="n">Run the other two clusters</span><span class="d"><code>-1710, 1535</code> Remnant Riverside (3 nodes plus scattered extras on the exit paths), then <code>-1800, 1465</code> Gilded City Ruins (<strong>6 nodes</strong>, two trios close enough to chain). See <a href="#route">the route map</a> — <strong>12 nodes a lap</strong>.</span></li>
     <li><span class="n">Capture rather than kill, five times per species</span><span class="d">The capture bonus completes at <strong>5 catches</strong> in 1.0, and pays Technology Points plus a permanent stat bonus on future catches of that species. Do it once, then go back to killing.</span></li>
     <li><span class="n">Fast-travel out and back to reset</span><span class="d">Then let the Large Fishing Pond top up your Holy Water at base while you are away.</span></li>
   </ol>

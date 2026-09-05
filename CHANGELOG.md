@@ -4,6 +4,22 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Paloxite route map
+
+Added a hand-authored inline SVG to the World Tree team page plotting all three Paloxite clusters
+from their in-game coordinates, with node counts and a suggested run order.
+
+**Dusty Ravine (3) -> Remnant Riverside (3+) -> Gilded City Ruins (6)** - twelve nodes a lap. Start
+at Dusty Ravine because its three sit on the fast-travel point, so you are mining within seconds of
+landing; finish at Gilded City Ruins so the most time has passed before you loop back to the first.
+A dashed optional leg runs to Alluvion Lakefront for the Holy Water kill loop.
+
+Theme-aware via CSS custom properties rather than baked colours, with `role="img"` and an aria-label
+matching the caption. The interactive map at palworld.th.gl is linked for surrounding terrain - its
+node data is client-side only, so the coordinates come from the guides already cited.
+
+---
+
 ## 2026-09-04 - Stacking generalised, durability understood, Drone Launcher corrected
 
 Three player corrections, each of which propagated further than expected.
