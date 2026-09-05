@@ -4,6 +4,38 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Attack values land, and they reverse the ammo conclusion
+
+Three in-game screenshots at **Common** rarity supply the missing damage figures, turning the ammo
+cost table into a genuine efficiency table.
+
+| Weapon | Attack | Paloxite/round | Soralite/round | Attack per Soralite | Durability |
+|---|---|---|---|---|---|
+| Mechanical Bow | **20,000** | 0 | 0.4 | **50,000** | 2,000 |
+| Heavy Assault Rifle | 1,615 | 0 | 0.2 | 8,075 | 5,500 |
+| Plasma Rifle | 1,860 | 0.30 | 0.35 | 5,314 | - |
+| Terraprisma | 90 + 9 summons | 0 | **0** | no ammo | 5,000 |
+
+### What changed
+- **The Mechanical Bow is the standout weapon in the guide.** 20,000 Attack is over **ten times** the
+  Plasma Rifle and Heavy Assault Rifle, at 0.4 Soralite per round and **zero Paloxite**. Cheapest
+  ammo and highest per-shot damage simultaneously, unlocking earliest at Tech 67.
+- **The Plasma Rifle's damage advantage is negligible** - 1,860 against the Heavy Assault Rifle's
+  1,615 is a 15% edge, for the privilege of being the only one that costs Paloxite and Holy Water.
+  On materials the Paloxite energy weapons now look like a poor trade.
+- **Terraprisma added** (Tides of Terraria). 90 Attack but summons up to nine blessed swords, and as
+  a melee weapon it consumes **no ammunition at all** - a category of its own for sustained farming.
+- Practical loadout rewritten around all three.
+
+### Caveats kept prominent
+Attack is **per-shot damage, not DPS**. No confirmed fire rate, projectile count or reload data, and
+the Bow's 2,000 durability against the rifle's 5,500 hints at a balancing cost. The Plasma Rifle's
+chaining damage may not be captured by a single-target figure. The *material* conclusion holds
+regardless - roughly 10x the damage per round at zero Paloxite survives even a several-fold fire-rate
+difference - but a 10x outlier is flagged for sanity-checking against real kill speed.
+
+---
+
 ## 2026-09-04 - Weapon costs scale with rarity; Katress confirmed Neutral
 
 Three more in-game screenshots. Both remaining source conflicts resolved, and one of them was not a

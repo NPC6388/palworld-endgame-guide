@@ -4,6 +4,53 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - Attack values arrive; the recommendation flips
+
+Asked for Attack figures for the Tech 70-80 weapons at the end of the last exchange; got three
+screenshots. This is the payoff of the whole ammo-economics thread.
+
+**Mechanical Bow: Attack 20,000.** Heavy Assault Rifle: 1,615. Plasma Rifle (from earlier): 1,860.
+Terraprisma: 90 plus nine summoned swords, melee, no ammo.
+
+So the Bow is a **10x outlier** on per-shot damage while also being among the cheapest ammo in the
+game (0.4 Soralite, no Paloxite, no gunpowder). It is simultaneously the cheapest and the hardest
+hitting, and it unlocks earliest. That inverts the loadout advice I shipped an hour ago, which had
+the Heavy Assault Rifle as the sweeper and the Plasma Rifle as the efficient energy option.
+
+The other half of the finding: **the Plasma Rifle's 1,860 barely beats the Heavy Assault Rifle's
+1,615.** A 15% damage edge, and it is the only one of the two that costs Paloxite and Holy Water.
+The Paloxite energy tier looks materially bad once damage is in the table.
+
+### Where I deliberately did not over-claim
+
+Attack is per-shot, not DPS. I have no fire rate, projectile count or reload data, and a bow firing
+once every couple of seconds against a rifle emptying twenty rounds is not comparable on Attack
+alone. Two signals suggest the Bow is balanced elsewhere: **durability 2,000 vs the rifle's 5,500**,
+and a lower ammo yield per craft (10 vs 20). The Plasma Rifle's description also mentions chaining
+to multiple enemies, which a single-target figure misses.
+
+So the page states the material conclusion firmly (it survives a several-fold fire-rate gap) while
+telling the reader to sanity-check a 10x outlier against real kill speed. That felt like the right
+line: the arithmetic is solid, the gameplay implication is not fully determined by it.
+
+### Terraprisma
+
+Worth having in the guide as the zero-recurring-cost option. Tides of Terraria melee, 90 Attack but
+nine summoned swords doing the actual work, 5,000 durability, no ammunition. For anyone
+ammo-constrained rather than time-constrained it is in its own category. Recipe not confirmed - worth
+a screenshot if it comes up.
+
+### Still open
+- **Fire rate / DPS** for the Tech 67-80 weapons - the one thing that would close the Bow question
+  properly.
+- **Terraprisma recipe.**
+- A few **Rainbow passive** effects (Babysitter, Lavish Hospitality, Heavily Armored).
+- The **Paloxite Reddit links** - still not on disk.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (cont.) - Both remaining conflicts closed; one was never a conflict
 
 Three more screenshots: the Common Plasma Rifle panel, a Blazehowl Noct name bar, and the Katress
