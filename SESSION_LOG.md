@@ -4,6 +4,57 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - Three corrections that unified a lot of loose ends
+
+User gave three facts: (1) everything stacks unless stated, and "does not stack" means same-species
+only; (2) the Drone Launcher is the Terraprisma's upgrade; (3) weapons at zero durability are
+repaired, not replaced.
+
+### Each one propagated further than it looked
+
+**(1)** I had this rule but only for drop boosters. Generalised it to every passive and partner skill,
+which retroactively justifies layering Solenne + Robinquill + five Vanguards.
+
+**(2)** Chasing the upgrade relationship turned up that **the Drone Launcher uses no ammunition at
+all** - it and the Nightglow are the only ranged weapons that need none. My ammo table had said "not
+published". For a player farming Paloxite who refuses to spend Paloxite on ammo, that is a
+significant option I had left blank.
+
+**(3)** Searching the repair mechanic surfaced two things I did not go looking for:
+- **Durability is 1 per attack regardless of damage.** That single fact explains everything the user
+  had observed: the Bow gets 20,000 damage per point and never runs dry; the Terraprisma at a 0.028s
+  interval across nine swords burns its bar fast. Their "Terraprisma is limited by durability" was the
+  visible symptom of this mechanic.
+- **Tetroise Primo** - partner skill reduces durability loss on all weapons and armour by
+  **80/84/88/92/100%**. At ☆4 that is total wear immunity, and it covers the Plasma Multicutter while
+  mining. This straightforwardly *solves* the constraint the user named two exchanges ago.
+
+### What I changed in the build
+
+Restructured the World Tree party into two fixed slots plus three that are a genuine trade, with the
+weapon choosing the trade. Added the honest caveat that **Solenne only pays if kills are
+damage-limited** - with a 20,000 Bow and headshots against Lv70-80 targets they may already be
+one-shotting, in which case that slot should be Menasting Terra. Total yield is drops-per-kill times
+kills-per-hour; which term you optimise depends on which one you are short of.
+
+### Pattern worth noting
+
+That is now five corrections in a row where the user supplied a mechanic and the *consequences* were
+bigger than the fact. The durability one especially: a single sentence about repair costs led to a
+mechanic (1/attack) that reframed the whole weapon comparison and to a Pal that removes the
+constraint entirely. **When given a mechanic, search its implications rather than just patching the
+sentence.**
+
+### Still open
+- Shot interval / reload for Tech 67-80 weapons - the last real weapon gap.
+- Repair *cost* formula (materials or gold, and how much).
+- A few Rainbow passive effects; the Paloxite Reddit links; the ~15% crafting cost reduction on this
+  save.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (cont.) - Mounted play exposed a system I had never looked at
 
 User: "assume I'm doing the damage while mounted, so the 5th pal having passives to boost my damage

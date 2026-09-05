@@ -39,6 +39,8 @@ Project notes: [`CHANGELOG.md`](CHANGELOG.md) for what changed and when, [`SESSI
 - **The Tactical Grenade Launcher is the best free damage** — 6,722 Attack with zero-Paloxite ammo, 4.2× a Heavy Assault Rifle round. Its catch is 800 durability, the lowest in the tier.
 - **For World Tree farming, run Dusty Ravine** — its Holy Water droppers (Orserk, Snock Lux) are both Electric, so one booster pair covers both, and the tightest Paloxite cluster sits on the fast-travel point.
 - **Drop boosters need condensing** — partner skill level (☆0→☆4) doubles the bonus from 40% to 80%.
+- **Everything stacks unless it says otherwise** — and "does not stack" means it will not stack with *another of the same species*, not that it conflicts with other Pals.
+- **Durability is spent 1 per attack regardless of damage**, and weapons are *repaired*, not replaced. So durability efficiency is damage-per-hit — the Mechanical Bow gets 20,000 per point, the Drone Launcher 200 across nine constantly-attacking drones. **Tetroise Primo** removes wear entirely at ☆4.
 - **Party-bench passives buff the player.** `Vanguard` is +10% player Attack and stacks additively across every Pal carrying it — and it is a Bounty Officer implant at 15 tokens, so five of them is +50% player Attack for 75 tokens and no breeding.
 - **Solenne gives +80% player Attack** if every Pal in the party is a different species — the biggest single-slot damage buff in the game.
 - **The ammo dividing line is Paloxite.** Everything up to Tech 72 costs zero Paloxite and zero Holy Water — Charcoal, Sulfur, Soralite and Quartz only, all automatable or a 12-minute loop. Tech 75+ burns Paloxite, so a 200-Paloxite World Tree run is ~665 Plasma Rifle rounds but only ~165 Beam Launcher rounds.

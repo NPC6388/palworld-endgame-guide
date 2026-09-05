@@ -4,6 +4,55 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Stacking generalised, durability understood, Drone Launcher corrected
+
+Three player corrections, each of which propagated further than expected.
+
+### The stacking rule is general
+**Unless a passive or partner skill says otherwise, it stacks. And where the text does say "does not
+stack", that means it will not stack with another of the same species** - it still combines freely
+with different Pals carrying different effects.
+
+This guide had the rule but only for drop boosters. It is now stated as a general principle on the
+passives and farming pages, which makes layering Solenne (+80% player Attack) with Robinquill (+35%
+bow) and a Vanguard passive on every party member explicitly correct.
+
+### Durability is spent per hit, not per damage
+**A weapon loses 1 durability per attack regardless of how hard it lands**, so durability efficiency
+is simply damage-per-hit:
+
+- **Mechanical Bow: 20,000 damage per durability point** - best in the game by an order of magnitude.
+- **Tactical Grenade Launcher: 6,722** - so its alarming 800 durability is ~800 heavy hits, fine.
+- **Drone Launcher and Terraprisma: 200 and 90 per hit from nine constantly-attacking units** - they
+  burn durability faster than anything else.
+
+**And weapons are repaired, not replaced.** Hitting zero costs a repair rather than the full recipe.
+That removes the "expect to rebuild it" framing this guide had applied to the Grenade Launcher and
+Terraprisma.
+
+**The fix:** **Tetroise Primo**'s partner skill *Stone-Chaser Archelon* cuts durability loss on all
+weapons and armour by **80/84/88/92/100%** - total wear immunity at ☆4, and it covers the Plasma
+Multicutter while mining too.
+
+### Drone Launcher corrected
+It is **the Terraprisma's upgrade** - same nine-unit playstyle, 200 Attack against 90, and 26,000
+durability at Legendary against 10,368. And it **uses no ammunition at all**: it and the Nightglow are
+the only ranged weapons in the game that need none. The ammo table previously said "not published".
+
+### World Tree team restructured
+Two slots are fixed (Dandilord, Ground mount with Dimensional Leap) and the other three are a real
+trade, now presented as two loadouts:
+
+- **Bow / Grenade Launcher:** Menasting x2 + Solenne. +160% drops, +80% Attack, durability irrelevant.
+- **Drone Launcher:** Menasting + Solenne + Tetroise Primo. +80% drops, but **nothing in the loadout
+  consumes materials at all**.
+
+Added the caveat that Solenne only pays if kills are damage-limited - against Lv70-80 targets with a
+20,000-Attack Bow and headshots you may already be one-shotting, in which case that slot belongs to
+Menasting Terra.
+
+---
+
 ## 2026-09-04 - Player damage: correction and a whole missing system
 
 The player farms from the saddle, which makes slot 5 a player-buff slot rather than a combat-Pal
