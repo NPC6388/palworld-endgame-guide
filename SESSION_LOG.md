@@ -4,6 +4,37 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-05 - The node map invalidated a bottleneck claim
+
+User: *"there are far more nodes than the reddit posts mention, i've been to many of them."*
+
+That confirms the 76-node detection is real rather than a screenshot artefact, and it kills a claim I
+had built a whole page around: **"Paloxite is your real bottleneck, and no Pal can help with it."**
+
+The reasoning had been sound given the inputs - Holy Water has many sources, Paloxite has one, so
+Paloxite binds. The inputs were wrong. Guides name three clusters (~12 nodes); reality is ~76. With
+61 on a single circuit, Paloxite is plentiful and the constraint reverts to **Ancient Furnace
+throughput capped by base worker slots**, which is what the rest of the guide already said.
+
+### Second time, same mistake
+
+The Sunreach Soralite route went the same way: published as one 5-node cluster at `-300,-1400`,
+actually a five-stop loop of 30-40 nodes yielding 1,200-1,600 ore. Both times a written guide named a
+few convenient spots near fast-travel points and I read the list as an inventory.
+
+**Rule to carry: a guide's named locations are a sample, not a census.** Where a claim depends on
+scarcity, check the count before building on it - and prefer the player's firsthand experience over
+any written source, which has now been right five or six times running.
+
+### Still open
+- Whether that map is filtered to Paloxite specifically (asked; unconfirmed).
+- Shot interval / reload for Tech 67-80 weapons; the repair cost formula.
+- A few Rainbow passive effects; the ~15% crafting cost reduction on this save.
+
+**Status: shipped.**
+
+---
+
 ## ▶ PICK UP NEXT SESSION
 
 **The Paloxite route map wants real node coordinates.**

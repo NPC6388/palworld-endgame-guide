@@ -4,6 +4,30 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-05 - Correction: Paloxite is plentiful, not the bottleneck
+
+Player confirmation that the map's node count reflects reality - they have visited many of them.
+
+This guide had claimed **"Paloxite is your real bottleneck, and no Pal can help with it"**, reasoning
+that Holy Water has many sources while Paloxite came only from three named clusters. Published guides
+name three clusters totalling about **twelve** nodes; the region actually holds about **seventy-six**,
+and one circuit visits 61.
+
+So Paloxite is plentiful, neither half of the Paloxite Ingot recipe is scarce, and the constraint
+returns to where the rest of the guide already had it: **Ancient Furnace throughput, capped by base
+worker slots**. You gather ore faster than two Pals per furnace can smelt it.
+
+**What still holds:** drop boosters do nothing for mining, so on this trip they remain pure Holy Water
+value; and the 2 Paloxite : 1 Holy Water ratio is unchanged.
+
+### The pattern, now twice
+Written guides name a few convenient spots near fast-travel points, and reading that as an inventory
+rather than a sample has now produced a wrong conclusion twice - here, and with the Sunreach Soralite
+route, published as a single 5-node cluster but actually a five-stop loop of 30 to 40 nodes. Noted on
+the page and in the correction log.
+
+---
+
 ## 2026-09-04 - Paloxite route map
 
 Added a hand-authored inline SVG to the World Tree team page plotting all three Paloxite clusters

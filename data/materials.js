@@ -53,9 +53,9 @@ const MATERIALS = [
   {
     name: "Paloxite <span class=\"new\">1.0</span>",
     tags: ["ore", "cannot-buy", "must-leave", "new-10"],
-    buy: { status: "no", detail: "No vendor row. The rarest mining resource in 1.0." },
+    buy: { status: "no", detail: "No vendor row. Often called the rarest mining resource in 1.0 \u2014 but see the note on node counts: it is far more plentiful than published guides suggest." },
     base: { status: "no", detail: "Cannot be node-farmed at a base — World Tree region only." },
-    world: "<strong>World Tree region exclusively.</strong> Three clusters: <code>-1560, 1510</code> Dusty Ravine (3 tight nodes by the FT point — best single stop) &middot; <code>-1710, 1535</code> Remnant Riverside (3 + scattered extras on the exit paths) &middot; <code>-1800, 1465</code> Gilded City Ruins (<strong>6</strong>, two trios close enough to run as one route).",
+    world: "<strong>World Tree region exclusively \u2014 but plentiful within it.</strong> Published guides name three clusters (<code>-1560, 1510</code> Dusty Ravine, <code>-1710, 1535</code> Remnant Riverside, <code>-1800, 1465</code> Gilded City Ruins, ~12 nodes); the region actually holds <strong>~76</strong>, confirmed in play. See the <a href=\"world-tree-team.html#route\">route map</a> \u2014 one circuit visits 61.",
     party: "<strong>Crystals despawn on proximity without the Holy Water buff — and your <em>Pal’s</em> proximity triggers it too</strong>, so a Pal running ahead can wipe the node. Window is <strong>30–60s</strong>. Better: a Pal with a <strong>World Tree passive (Dimensional Leap or Hermit Sage)</strong> gives <strong>permanent</strong> protection instead. Plasma Multicutter mandatory (and doubles yield). Bring <strong>Dandilord</strong> for toxic gas and <strong>Lunaris</strong> for weight.",
     conf: "High"
   },
