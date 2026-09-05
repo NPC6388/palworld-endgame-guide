@@ -4,6 +4,56 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## 2026-09-04 (cont.) - Two of my own claims overturned in one exchange
+
+Six screenshots plus two mid-turn gameplay notes. Both corrections were mine to make.
+
+### 1. I compared cost without comparing damage
+
+I shipped "the Plasma Rifle is 4x more ammo-efficient than the Beam Launcher" and repeated it in the
+README. It is true **per round** and false **per point of damage**: Beam Launcher 14,000 Attack vs
+Plasma Rifle 1,860, so 7.5x damage for 4x the Paloxite - **1.9x more efficient, not 4x less**.
+
+The error is embarrassing precisely because the whole point of the ammo section was cost-efficiency.
+I built a cost table, called it an efficiency table, and drew an efficiency conclusion from it before
+I had the damage column. **A cost ranking is not an efficiency ranking until the output side is in.**
+
+### 2. The rarity theory was over-fitted to one data point
+
+I explained the Plasma Rifle's 68/42/6/5 (vs a published 80/50/8/7) as weapon cost scaling with
+schematic rarity, and rewrote the weapons table caveat around it. Three new tech panels match their
+published recipes **exactly** - so if rarity scaled cost, they would have varied too. The theory is
+withdrawn and the discrepancy is logged as unexplained.
+
+One data point, one confident mechanism. Should have been "unexplained" from the start.
+
+### The interpretive rule that rescues three weapons
+
+**Attack is per projectile, not per trigger pull.** Beam Scatter 508 is per pellet in a scattering
+blast; Drone Launcher 200 is per drone with nine deployed; Terraprisma 90 is per sword with nine
+summoned. Their headline numbers look terrible and are not comparable to single-projectile weapons.
+The efficiency table is now split in two so nobody dismisses them on the raw figure.
+
+### Player handling notes - these closed my open caveats
+
+- **Bow: slow but precise, excellent for headshots.** That is exactly the missing half of the 20,000
+  figure I had flagged as needing a sanity check. It is a precision weapon; the efficiency is real
+  but converts best on single high-value targets.
+- **Terraprisma: limited by durability, damage surprisingly useful due to speed and range.** So the
+  nine swords do land, and the constraint is the 5,000 durability rather than damage or supply. A
+  wear item, not a supply item.
+
+### Still open
+- **Fire rates, reload times, pellet counts, headshot multipliers** - the remaining gap between a
+  damage-per-material table and a damage-per-second one.
+- **Terraprisma recipe**; **Drone Launcher ammo cost**.
+- The unexplained **Plasma Rifle cost discrepancy**.
+- A few **Rainbow passive** effects; the **Paloxite Reddit links**.
+
+**Status: shipped.** See commit below; site live and verified.
+
+---
+
 ## 2026-09-04 (cont.) - Attack values arrive; the recommendation flips
 
 Asked for Attack figures for the Tech 70-80 weapons at the end of the last exchange; got three

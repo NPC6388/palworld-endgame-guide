@@ -4,6 +4,42 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-04 - Energy weapon Attack values; two corrections
+
+Six in-game panels: the three energy ammo recipes and the Beam Scatter, Beam Launcher and Drone
+Launcher weapons. Plus player handling notes from live play.
+
+### Correction 1 - the Beam Launcher is the efficient energy weapon, not the Plasma Rifle
+This guide said the Plasma Rifle was "4x more ammo-efficient than the Beam Launcher". **True per
+round, wrong per point of damage.** The Beam Launcher does **14,000** Attack against the Plasma
+Rifle's 1,860 - 7.5x the damage for 4x the Paloxite.
+
+Per Paloxite: **Beam Launcher 11,667 damage, Plasma Rifle 6,200**. The Beam Launcher is ~1.9x more
+Paloxite-efficient. A 200-Paloxite run buys 2.33M total Attack as Beam Launcher rounds against
+1.24M as Plasma Rifle rounds. The earlier claim compared cost without comparing damage.
+
+### Correction 2 - the schematic-rarity theory is withdrawn
+Three tech panels match published recipes **exactly** (Beam Scatter 50/50/5/5, Beam Launcher
+100/50/10/10, Drone Launcher 70/40/8/5). If cost scaled with rarity these would have varied too. The
+Plasma Rifle's 68/42/6/5 against a published 80/50/8/7 is now **unexplained** rather than attributed
+to a rarity ladder.
+
+### Added - how to read an Attack figure
+**Attack is per projectile, not per trigger pull.** Beam Scatter (508, multi-pellet), Drone Launcher
+(200, nine drones) and Terraprisma (90, nine swords) all list per-unit damage. Only single-projectile
+weapons are directly comparable, so the efficiency table is now split into two.
+
+### Added - handling notes from live play
+- **Mechanical Bow is slow but precise and excellent for headshots.** It is a precision weapon, not a
+  DPS weapon - best against single high-value targets, weak against crowds.
+- **Terraprisma is limited by durability, not damage.** The nine swords hit with enough speed and
+  range to be genuinely useful; with no ammo cost it is a wear item rather than a supply item.
+
+### Confirmed
+All three energy ammo recipes match the published figures exactly, which vindicates the ammo table.
+
+---
+
 ## 2026-09-04 - Attack values land, and they reverse the ammo conclusion
 
 Three in-game screenshots at **Common** rarity supply the missing damage figures, turning the ammo
