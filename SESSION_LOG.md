@@ -13,7 +13,19 @@ is a **schematic of relative positions rather than a scale map**. That was the b
 coordinates come from written guides, and `palworld.th.gl` renders its markers client-side, so there
 is no per-node data in the page to scrape.
 
-**Ask the user for exact node coordinates marked in-game.** With those, the map can become:
+**Do NOT re-attempt scraping palworld.th.gl — investigated 2026-09-05 and it is a dead end.** The
+page ships 9,333 spawn coordinates across 335 species plus a 1,487-entry name dictionary, but they
+are base-game *Pal spawn* points for Paldeck tooltips, not node markers, and the World Tree species
+(Starryon Primo, Shaolong, Snock Lux) are absent. Paloxite appears only as a marker *type*
+(`BP_MapObject_DamagableRock0021_C` → `paloxite`); the placements load at runtime from an endpoint
+that returned 404 on twelve plausible paths across `cdn.th.gl`, `static.th.gl`, `a.th.gl` and the
+site's own `/api/`, and none of twelve sampled JS chunks carried it. GitHub SDK dumps have the
+blueprint class but not world placements — those are in `.umap` level files. There is also a
+transform problem: th.gl uses Unreal world units (±1,000,000) against the guide's in-game display
+coords (±2,000), so a calibration point would be needed even with raw numbers.
+
+**So ask the user for the coordinates instead** — either read off the th.gl map by hovering the
+markers, or marked in-game. With those, the map can become:
 - individual node markers instead of cluster circles,
 - geographically accurate rather than schematic,
 - an actual mining path through each cluster rather than a cluster-to-cluster line.
