@@ -4,6 +4,30 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## ▶ PICK UP NEXT SESSION
+
+**The Paloxite route map wants real node coordinates.**
+
+`world-tree-team.html#route` currently plots the **three clusters**, not the individual nodes, and it
+is a **schematic of relative positions rather than a scale map**. That was the best available: the
+coordinates come from written guides, and `palworld.th.gl` renders its markers client-side, so there
+is no per-node data in the page to scrape.
+
+**Ask the user for exact node coordinates marked in-game.** With those, the map can become:
+- individual node markers instead of cluster circles,
+- geographically accurate rather than schematic,
+- an actual mining path through each cluster rather than a cluster-to-cluster line.
+
+The SVG is hand-authored inline in `world-tree-team.html` with styles in `assets/style.css`
+(`.rm-*` classes, theme-aware via CSS custom properties) — extending it is straightforward.
+
+**Also still open** (detail in the entries below): shot interval / reload for the Tech 67–80 weapons;
+the weapon repair cost formula; three Rainbow passive effects; the Paloxite Reddit links the user
+mentioned that were never on disk; and identifying the ~15% crafting cost reduction active on their
+save.
+
+---
+
 ## 2026-09-04 (cont.) - Three corrections that unified a lot of loose ends
 
 User gave three facts: (1) everything stacks unless stated, and "does not stack" means same-species
