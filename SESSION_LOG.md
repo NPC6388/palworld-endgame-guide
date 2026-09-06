@@ -10,6 +10,10 @@ Running handoff notes for resuming work. Newest session at the top.
 a Paloxite-filtered map screenshot, 76 nodes were detected from it, and `world-tree-team.html#route`
 now carries a real 61-node circuit. Derivation is archived in `research/paloxite-route/`.
 
+**Highest-value open question on the whole site: does Paloxite count as "ore" for Turtacle's weight
+reduction?** If yes, a max-condensed Turtacle makes a Paloxite haul weightless and removes the run's
+real constraint. One lap answers it.
+
 **Relic route is unsettled and worth ten minutes of timing:** Wistella (recommended here) against the
 Orserk + Snock Lux comp the player was shown, against Game8's Grizzbolt/Mossanda Lux. Three sources,
 three answers. Also open: whether world-object relics (junk piles, chests) despawn like resource nodes,
@@ -47,6 +51,53 @@ below.
 written guide. Six or seven corrections this project, every one of them theirs, several overturning
 conclusions built on published sources. **Ask them before treating a mechanic as unresolved, and
 prefer their firsthand account over a guide site.**
+
+---
+
+## 2026-09-06 (cont. 4) — The mask frees a slot in both parties
+
+**Player has built the Corrosive Mist Mask**, so Dandilord is not needed. This guide had him listed as
+one of two slots "the World Tree demands" — wrong on a save with the mask, and corrected in five
+places. The mask is a Legendary accessory from Toxin Filtering Membrane granting outright Toxic Gas
+immunity for **no party slot**; the only thing lost with Dandilord is the Poison 2 rider.
+
+**Worth noting for anyone else reading:** the item is the **Corrosive Mist Mask**. The separately-named
+"Gas Mask" is unobtainable developer leftovers with no recipe, drop or vendor.
+
+**Both parties therefore get a fifth slot back, and it goes to different things.** Wrote up the two
+finalised parties at `world-farming.html#two-parties`.
+
+**Relics (Wistella) — Eidrolon · Elphidran · Enchanted Sword · Nitemary · flex.** The finding that
+settles the "what maximises AoE kill speed" question: **no party slot speeds up the killing.** Partner
+skills buff the *player*, boost drops, or carry utility — essentially none buff a Pal's damage. So on a
+route where the mount kills, clear speed comes entirely from the mount's own passives, condensation and
+talents, and Solenne plus every bench Vanguard is dead weight. The spare slots should buy **yield**:
+Nitemary for the Pal Souls this route already produces in bulk, and a Dragon or Fire body for the free
++6% via Resentful Pterosaur (Elphidran is already a Dragon, so one tick comes free — but do not build
+around it, since maxing it would mean dropping the Dark boosters).
+
+**Paloxite — the freed slot goes to carry capacity, not more drops.** The tempting move is Cryolinx to
+push Orserk to +240% Holy Water. Wrong lever: **a Paloxite Ingot is 2 Paloxite + 1 Holy Water**, so ore
+is the half you are short of, and boosters do nothing for ore. The binding constraint on a 61-node lap
+is how much you can carry before going home.
+
+**Carry-weight gap closed** (open since 3 Sep, and the earlier Lunaris-only answer was incomplete):
+
+- **Turtacle — ore weight −80% → −100%.** At max condensation the haul becomes *weightless*, which
+  removes the constraint rather than raising it. **First choice, conditional.**
+- **Lunaris +300 → +600** capacity, **Cattiva +100 → +200**, both unconditional and stacking.
+- **Fuddler** (stone), **Gumoss** (wood −40 → −60%, logging +30 → +50%).
+
+**New highest-value open question: does Paloxite count as "ore" for Turtacle?** No source says. It
+decides the fifth slot outright, and one lap answers it. Flagged on the page and in the ledger.
+
+Also promoted Turtacle to a condense-worthy Pal on the team page — the ore reduction scales with
+condensation and the last 20 points are exactly what makes a haul weightless, so it is the one
+carry-weight Pal where the 48-Pal project pays.
+
+Ledger: 4 rows added, 1 superseded. Files: `world-farming.html` (new `#two-parties` section, gas
+warning and carry-weight answer rewritten), `world-tree-team.html` (Dandilord corrected in five
+places), `passives.html`, `sources.html`.
 
 ---
 
