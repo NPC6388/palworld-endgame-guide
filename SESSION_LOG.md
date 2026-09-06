@@ -15,6 +15,12 @@ carry-capacity or weight-reduction Pal (Lunaris, Cattiva, Turtacle, Fuddler, Gum
 inventory space as a constraint on a route. Everything else is default. Stated at the top of
 `sources.html`.
 
+**Screenshot two tooltips and a loadout may change:** are **Immortality** and **Heavily Armored** dual
+("Pal and Player") the way Idiosyncratic turned out to be? Published tier lists drop that prefix
+systematically, which already caused one wrong call. **If Immortality is +15% player Attack it beats
+Vanguard on the bench.** Treat every effect string on the site not taken from an in-game tooltip as
+possibly understating its reach.
+
 **The one measurement that settles a live question:** time a fixed pack count with Solenne in the fifth
 slot, then with Cryolinx. **Solenne wins only if she cuts clear time by more than 24%** (Cryolinx is
 1.31x drops on Orserk). The same number gives the player-vs-Pal damage split, since Solenne only
@@ -57,6 +63,48 @@ below.
 written guide. Six or seven corrections this project, every one of them theirs, several overturning
 conclusions built on published sources. **Ask them before treating a mechanic as unresolved, and
 prefer their firsthand account over a guide site.**
+
+---
+
+## 2026-09-06 (cont. 8) — Idiosyncratic is dual, and the tier lists have been lying by omission
+
+Player sent the in-game tooltip. It reads **"Pal and Player Auto Health Regeneration Rate +50%
+Defense +25% Immune to Poison Damage Immune to Burn Damage"** — with the party icon on the regen row.
+Only the **immunities** are carrier-only. The two numbers reach the player.
+
+**So their original loadout was right and my correction was wrong.** I had just told them Idiosyncratic
+was "completely inert on a bench Pal" and swapped it for Wellness Watcher. Reverted.
+
+**The root cause is worth more than the fix.** I did not read the effect off a tooltip — I read it off
+this guide's own Rainbow table, which renders it "Defence +25%, auto regen +50%, Poison and Burn
+immunity". That string came from published tier lists, and **every one of them drops the "Pal and
+Player" prefix.** So the site has been carrying a systematically truncated version of the passive data
+and I reasoned confidently on top of it.
+
+Logged three ledger rows: the confirmation, a general downgrade on all effect strings not sourced from
+a tooltip, and a new **open item — are Immortality and Heavily Armored dual too?** Same shape of
+source, same omission. **If Immortality's +15% Attack is dual, it beats Vanguard's +10% on the bench**
+and the whole loadout changes again. One screenshot each settles it.
+
+**Idiosyncratic turns out to be the best player-Defence passive in the game: +25% per slot, two and a
+half times Stronghold Strategist**, plus +50% regen which is what actually keeps you upright between
+packs.
+
+**Bench loadout, both parties: Mine Foreman · Vanguard · Idiosyncratic · Stronghold Strategist.**
++100% mining, +40% player Attack, **+140% player Defence**, +200% player HP regen. Cost 120 Bounty
+Tokens plus four Glistening-relic pulls.
+
+**Nice structural consequence:** Idiosyncratic is the only bench passive that cannot be bought, and it
+comes from Glistening relics — so **the relic party is what upgrades the Paloxite party**. That gives
+the two-party split a build order it did not have before: relics first.
+
+What survives from the retracted callout: the rule itself ("on the bench, only what reaches the player
+does anything"), and that Diamond Body, Demon God, Legend and the World Tree attack passives really are
+dead there. Also that Idiosyncratic is still **not gas cover** — that part was right, since the
+immunities are the carrier-only half.
+
+Files: `world-tree-team.html`, `passives.html`, `world-farming.html`, `sources.html` (3 rows + a new
+"worth correcting if you have read it elsewhere" entry).
 
 ---
 
