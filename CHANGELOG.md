@@ -4,6 +4,45 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-06 (cont. 6) — Mounted damage is always a mix, so the answer is a threshold
+
+**Player: damage while mounted is always some combination of player and Pal, with the split set by
+their own clear-speed testing.** That retires the "pure mount-kill route" assumption I built the relic
+party on, where I called Solenne and the bench Vanguards "dead weight on a route where you never fire a
+shot". **There is no such route.**
+
+**The reframing is better than what it replaced.** I had presented the two pipelines as a dilemma —
+"killing with both means funding both". They are not fungible, so it is barely a dilemma at all:
+
+- The **sixteen bench passive slots** can *only* buy player damage. There is nothing Pal-side to put
+  in them.
+- The **mount's four passive slots** can *only* buy Pal damage.
+- Neither pool trades against the other, so **you max both and no choice is involved** in the great
+  majority of the investment.
+- They compete in exactly **one** place: the five party slots, where Solenne sits against a booster.
+
+**And that one decision has a computable threshold**, which is the genuinely useful thing to come out
+of this. On the Paloxite run: Cryolinx multiplies Orserk drops by **1.31x** (+160% to +240%); Solenne
+multiplies kills per hour by whatever she cuts off clear time. So **Solenne wins only if she cuts clear
+time by more than ~24%**, since 1/(1-0.24) = 1.31. Two timed laps settle it — and the same number
+reveals the player-versus-Pal damage split, because Solenne can only amplify the player's half.
+
+**On the relic run the bar is much lower**, because Dark has only two boosters and +160% is already the
+ceiling — there is no third booster to compete with. Solenne is up against Nitemary (a different
+resource) or a Dragon body worth +6%. So **Solenne goes into the relic party**, replacing the
+Dragon/Fire flex I had recommended.
+
+Relic party is now **Eidrolon · Elphidran · Enchanted Sword · Solenne · Nitemary**.
+
+Also corrected the "do not run one party for both jobs" callout, which claimed the relic party carries
+zero player-side buffs. The two parties actually share more than I said: **the sixteen bench passive
+slots are identical on both**, so half the setup work is done once.
+
+Files: `world-farming.html` (new `#split` threshold block), `world-tree-team.html` (pipeline callout
+rewritten, one-shotting caveat pointed at the threshold).
+
+---
+
 ## 2026-09-06 (cont. 5) — Weight is disabled on this save
 
 **Player runs with weight off — everything is weightless.** This invalidates the carry-capacity
