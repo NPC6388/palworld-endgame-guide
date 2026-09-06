@@ -37,6 +37,7 @@ Project notes: [`CHANGELOG.md`](CHANGELOG.md) for what changed and when, [`SESSI
 - **The Mechanical Bow does 20,000 Attack** — over 10× the Plasma Rifle (1,860) and Heavy Assault Rifle (1,615) — at 0.4 Soralite per round and zero Paloxite. It is slow but precise and headshot-friendly, so it converts that efficiency best against single high-value targets.
 - **A Legendary Terraprisma is the best no-ammo option** — durability 5,000 → 10,368 and DPS 4,050 → 6,750 over Common, and 4th-highest sustained DPS in the game with 13× the durability of the weapon above it.
 - **The Tactical Grenade Launcher is the best free damage** — 6,722 Attack with zero-Paloxite ammo, 4.2× a Heavy Assault Rifle round. Its catch is 800 durability, the lowest in the tier.
+- **Every World Tree passive grants Paloxite immunity** — it is a property of the tier, not of Dimensional Leap specifically, so pick whichever suits the Pal and take the immunity free.
 - **Paloxite is plentiful, not scarce.** Guides name three clusters (~12 nodes); the region holds **~76**, confirmed in play — see the route map, one circuit visits 61. The endgame constraint is furnace throughput, not ore.
 - **For World Tree farming, run Dusty Ravine** — its Holy Water droppers (Orserk, Snock Lux) are both Electric, so one booster pair covers both, and the tightest Paloxite cluster sits on the fast-travel point.
 - **Drop boosters need condensing** — partner skill level (☆0→☆4) doubles the bonus from 40% to 80%.

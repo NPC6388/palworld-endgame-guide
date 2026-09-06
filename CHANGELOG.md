@@ -4,6 +4,28 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-05 - Correction: the Paloxite immunity belongs to the whole World Tree tier
+
+Two player corrections.
+
+**Every World Tree passive grants World Tree resource protection**, not just Dimensional Leap and
+Hermit Sage as this guide claimed. Resources stop despawning on approach for any Pal carrying one,
+and no skill description mentions it. So it is not a constraint on the build at all - **pick the
+passive that suits the Pal's job and the immunity comes free**.
+
+Added a selection table for a mount you shoot from: **World Tree Seedbed** (hunger -50% slower) is
+usually the pick for a long circuit, since Dimensional Leap makes hunger *worse*. The Attack-swing
+passives are wasted on a mount that is not the one dealing damage.
+
+**Eidrolon Ignis** is now covered directly, since it is the mount in use. Dragon/Fire with a
+**2,750 riding sprint** rivalling Jetragon - and on a 61-node circuit traversal is most of the run.
+Mounted, your attacks take its element, so **Dragon is advantaged into Orserk** (Dragon/Electric) and
+neutral into Snock Lux, trading some damage on half the targets for speed across the whole lap. Its
+partner skill *Resentful Pterosaur* scales with other Dragon or Fire Pals in the party, of which a
+drop-booster comp has none - ride it for the speed, not the skill.
+
+---
+
 ## 2026-09-05 - Correction: Paloxite is plentiful, not the bottleneck
 
 Player confirmation that the map's node count reflects reality - they have visited many of them.
