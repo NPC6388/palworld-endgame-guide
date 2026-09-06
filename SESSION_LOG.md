@@ -10,6 +10,13 @@ Running handoff notes for resuming work. Newest session at the top.
 a Paloxite-filtered map screenshot, 76 nodes were detected from it, and `world-tree-team.html#route`
 now carries a real 61-node circuit. Derivation is archived in `research/paloxite-route/`.
 
+**Relic route is unsettled and worth ten minutes of timing:** Wistella (recommended here) against the
+Orserk + Snock Lux comp the player was shown, against Game8's Grizzbolt/Mossanda Lux. Three sources,
+three answers. Also open: whether world-object relics (junk piles, chests) despawn like resource nodes,
+which decides if a relic-only mount still wants a World Tree passive.
+
+**Base Eidrolon is Dragon/Dark** - resolved 6 Sep, was open since 3 Sep.
+
 **Worth a sweep next session:** the stat-fruit miss (the site listed Life/Power/Stout Fruit for days
 without ever saying they are the IV item) is the second time in one day that an already-documented
 shelf item turned out to solve a problem the guide called hard. **Check the rest of `merchants.html`
@@ -32,8 +39,6 @@ Mine Foreman actually stack across party members** the way Vanguard does? The wh
    everything they build; worth identifying.
 4. **Three Rainbow passive effects** still unpublished: Babysitter, Lavish Hospitality,
    Heavily Armored.
-5. **Base Eidrolon's typing** — Eidrolon Ignis is Dragon/Fire and confirmed, but the base form was
-   not checked, and mounted attacks take the mount's element.
 
 **Do not re-attempt scraping palworld.th.gl** — investigated 5 Sep, dead end. Details in the entry
 below.
@@ -42,6 +47,60 @@ below.
 written guide. Six or seven corrections this project, every one of them theirs, several overturning
 conclusions built on published sources. **Ask them before treating a mechanic as unresolved, and
 prefer their firsthand account over a guide site.**
+
+---
+
+## 2026-09-06 (cont. 3) — Relic farming, and the booster ceiling was wrong
+
+Player is building a relic-farm team and shared a community infographic (SiNKiLLeR, "verified v1.0.2")
+for an Orserk + Snock Lux party. Two things came out of it, one of which corrects this guide.
+
+**(1) The +160% booster ceiling only ever applied to single-typed targets.** The booster keys off the
+*target's* element, and **a dual-typed Pal is boosted by either of its elements**. Orserk is
+Dragon/Electric, so Menasting + Menasting Terra + Cryolinx all apply — **+240%**. This site had been
+quoting +160% as the cap throughout. Added to `world-farming.html` and caveated on the booster table.
+Medium confidence: consistent with the species/skill-ID rule already established here, but the only
+source is the infographic.
+
+**(2) The infographic's route is probably not the best one for relics, and the reason is arithmetic
+the infographic does not do.** +160% is 2.6x drops; +240% is 3.4x. So the third booster is worth
+**+31% per kill, not +80%** — and on a two-species route you spend *two* slots (Cryolinx and Vaelet)
+to get it, each idle on half your kills. The infographic even states this itself ("Vaelet does not
+apply to Orserk", "Cryolinx does not apply to Snock Lux") without drawing the conclusion: **one of the
+five slots is dead on every kill.**
+
+Against that, the **Wistella route** (Gilded City Ruins Watchtower, -1862, 1377) targets a single
+**Dark** species in tight groups on a short loop, drops **all five relic tiers**, and takes Elphidran +
+Enchanted Sword for +160% with **zero dead slots and two genuinely free ones**. Reported yield 706
+relics in ~20 min. Recommended it, with the caveat that **Game8's own relic guide names different
+routes entirely** (Grizzbolt/Mossanda Lux) — route choice is genuinely unsettled, so told the player to
+time both rather than presenting it as decided.
+
+**(3) The gas gap.** Any five-Pal relic comp that is mount + four boosters has **no answer to the World
+Tree toxic mist**. Only Dandilord's Mist Stalwart nullifies it *for the player* — Idiosyncratic's
+Poison immunity is a Pal passive and protects the carrier only. The player's proposed mount build had
+Idiosyncratic in it, which is the kind of thing that looks like it covers the gas and does not.
+
+**(4) Resolved: base Eidrolon is Dragon/Dark** (Ignis is Dragon/Fire). Open since 3 Sep. Both share the
+Dragon half, and **Dragon is super-effective into Dark**, so Eidrolon is type-advantaged against every
+target on the Wistella route — a genuinely good pairing with the player's mount choice.
+
+**On their proposed mount build (Dimensional Leap, Legend, Diamond Body, Idiosyncratic):** three of
+four slots are defensive — +75% Defence against only +20% Attack — on a Pal whose stated job is fast
+AoE clears. Two specific notes given:
+
+- **The despawn immunity does nothing on a pure kill-farm.** It stops resource *nodes* despawning;
+  relics from defeated Pals are unaffected. So Dimensional Leap is bought for its +50% movement alone,
+  and the World Tree slot is not forced — which reopens **Twin-Edged Holy Blade (+50% Atk)**.
+  Flagged as unconfirmed whether world-object relics (junk piles, chests) despawn like nodes do.
+- **Route shape flips the build.** The Paloxite circuit is 61 nodes and travel-dominated, so movement
+  won slots there. A relic route is a short loop against tight packs, so **clear speed is nearly the
+  whole yield term**. Recommended Serenity + Demon God + Twin-Edged Holy Blade + Diamond Body.
+  **Diamond Body is the one pick of theirs to keep** — flinch/knockback immunity means AoE casts are
+  never interrupted mid-pack, which is worth more here than on any other route.
+
+Ledger: 4 rows. Files: `world-farming.html` (new `#relics` section), `passives.html` (Glistening source
+corrected in two places), `sources.html`.
 
 ---
 
