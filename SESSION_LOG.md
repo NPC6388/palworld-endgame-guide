@@ -10,6 +10,13 @@ Running handoff notes for resuming work. Newest session at the top.
 a Paloxite-filtered map screenshot, 76 nodes were detected from it, and `world-tree-team.html#route`
 now carries a real 61-node circuit. Derivation is archived in `research/paloxite-route/`.
 
+**New this session, and the cheapest to answer:** does the World Tree **despawn immunity** reach from
+an *undeployed* party Pal, or must the carrier be deployed? One lap answers it, and it decides whether
+the mount keeps a World Tree slot or frees it for Eternal Engine.
+
+**Also worth one check in-game:** whether **Mine Foreman** and **Logging Foreman** appear on the Bounty
+Officer / Arena implant shelves, and whether Mine Foreman stacks across party members like Vanguard.
+
 **Open, in rough order of value:**
 
 1. **Shot interval / reload / pellet count for the Tech 67–80 weapons.** The last real weapon gap.
@@ -32,6 +39,57 @@ below.
 written guide. Six or seven corrections this project, every one of them theirs, several overturning
 conclusions built on published sources. **Ask them before treating a mechanic as unresolved, and
 prefer their firsthand account over a guide site.**
+
+---
+
+## 2026-09-06 — The Ancient Relic Recycler breaks the "you must breed it" assumption
+
+Player pointed at a Reddit thread on the **Ancient Relic Recycler** and said they had already pulled
+**multiple World Tree passives** from it. Reddit is still unreachable from here, so the mechanic was
+rebuilt from palpedia + Game8 + palworld.gg and checked against their report.
+
+**Correction (theirs, again — that is seven or eight now).** The guide said a World Tree passive was
+"the one thing you genuinely have to breed". Wrong. The Recycler (Tech 74) makes **Disposable
+Implants**, installed at the **Pal Surgery Table** (Tech 38):
+
+- **Common pool, any relic grade — 16 items at 6.25% each.** *All seven World Tree passives are in
+  it*: Demon's Hand, Twin-Edged Holy Blade, God of Destruction, Sanctified Meat Shield, Dimensional
+  Leap, World Tree's Bounty, Hermit Sage. Plus Swift, Demon God, Diamond Body, Remarkable
+  Craftsmanship, Eternal Engine, King of the Waves, Vampiric, Mastery of Fasting, Heart of the
+  Immovable King.
+- **Glistening-only pool — 5 items at 20% each.** The **Rainbow tier**: Immortality, Heavily Armored,
+  Babysitter, Skymarcher, Idiosyncratic. So "mutated eggs are the only source of Rainbow passives"
+  was also wrong. Hard-mode expeditions are the Glistening source.
+- **Reconciling the rate conflict:** both pools sum to exactly 100%, so those are *within-pool*
+  shares. Game8's absolute figures top out near 3.9%, implying roughly one relic in five rolls an
+  implant at all. Neither source states the roll chance directly — logged as Medium.
+
+**The second half of the question: the three empty slots on the WTF team.** The page only ever
+specified Vanguard. The useful framing turned out to be that a **bench Pal's own stats are inert** —
+only passives whose text says *Player* do anything — and there are exactly **eight** of those in the
+game against **16 slots** across the four bench Pals. So the pool is smaller than the slot count and
+the build is just "take the best four, four times".
+
+**Mine Foreman (+25% player Mining Efficiency) is the miss.** Everything on that page optimised
+*kills*, but Paloxite does not come from kills — it comes from swinging a Multicutter at 61 nodes.
+Mine Foreman is the only passive in the game that touches that half of the route. Four copies = +100%.
+Game8 (20 Aug 2026) is explicit that it is the player's tool speed, not base work. **Cross-party
+stacking is inferred from the Vanguard class, not measured — the largest untested number in the build.**
+
+Recommended sixteen: Mine Foreman + Vanguard + Stronghold Strategist on all four, then one World Tree
+implant (Solenne) and Wellness Watcher elsewhere. Twelve of those are Bounty Officer implants at 15.
+
+**New open question, and it is cheap to answer in one lap:** does the World Tree despawn immunity
+reach from an **undeployed** party Pal? If yes, park it on Solenne and the mount's fourth slot frees
+up for **Eternal Engine** (+75% mounted stamina), which matters on a 61-node circuit. If no, keep it
+on the mount.
+
+**Naming:** two datamine sources call the hunger passive **World Tree's Bounty**; this guide had
+*World Tree Seedbed*. Adopted Bounty, kept the old name visible. Effect identical.
+
+Files: `world-tree-team.html` (new `#slots` section + recycler correction), `passives.html` (new
+§3b player-buff passives, recycler in the acquisition list, Rainbow correction), `merchants.html`,
+`sources.html` (7 ledger rows).
 
 ---
 
