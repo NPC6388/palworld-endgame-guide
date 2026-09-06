@@ -4,6 +4,44 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-06 (cont. 7) — Logging Foreman comes out; Idiosyncratic never belonged on the bench
+
+Player's proposed bench loadout: **Mine Foreman, Idiosyncratic, Vanguard, Stronghold Strategist**, and
+no Logging Foreman because wood is not scarce.
+
+**They are right about Logging Foreman, and the confirming fact is one this guide already had:** the
+Recycler drops **Mythical Wood at 100% from every relic tier**. So a relic route is already a wood
+route, before expeditions and kills are counted. I had recommended Logging Foreman on the reasoning
+that it was free and +25% — **which is not a reason, it is two properties.** The test that put Mine
+Foreman in the party is whether the thing being multiplied is something you are short of. Paloxite is;
+Mythical Wood is not. Free and large loses to useful and small.
+
+**Idiosyncratic is the one to correct.** Def +25%, regen +50%, Poison and Burn immunity — all
+**Pal-side**, and therefore **completely inert on a bench Pal**. A Pal that never deploys is never hit,
+never regenerates and is never poisoned. The Poison immunity in particular reads like gas cover and is
+not: it protects the carrier, not the player. It belongs on the mount, which is the only Pal on either
+party that is actually out — and the gas is already answered by the Corrosive Mist Mask regardless.
+
+**This is the third form of the same trap in one day**, so it is now named explicitly in a callout on
+both `world-tree-team.html` and `passives.html`: *on the bench, if the text does not say Player, it
+does nothing.* Earlier instances were the drop-booster passives ("their passives are irrelevant" — which
+was wrong in the other direction) and talents/IVs on bench Pals.
+
+**Fourth seat goes to Wellness Watcher** (&minus;5% player stamina, &minus;20% across four). It is a weak
+field once Logging Foreman is out — Motivational Leader is base crafting, Healing Coach and Reload
+Master are rounding errors — but mining swings do cost player stamina, so it is worth a little rather
+than nothing.
+
+**Bench loadout, both parties: Mine Foreman · Vanguard · Stronghold Strategist · Wellness Watcher.**
+Party total +100% mining, +40% player Attack, +40% player Defence, &minus;20% stamina drain, for **180
+Bounty Tokens** (Mine Foreman is free; the other twelve installs are 15 each). Identical on both
+parties, so it is set up once.
+
+Files: `world-tree-team.html` (two new callouts, table and totals rewritten), `passives.html` (inert
+Pal-side passive warning), `merchants.html`, `world-farming.html`.
+
+---
+
 ## 2026-09-06 (cont. 6) — Mounted damage is always a mix, so the answer is a threshold
 
 **Player: damage while mounted is always some combination of player and Pal, with the split set by
