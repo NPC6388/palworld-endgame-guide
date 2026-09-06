@@ -10,12 +10,10 @@ Running handoff notes for resuming work. Newest session at the top.
 a Paloxite-filtered map screenshot, 76 nodes were detected from it, and `world-tree-team.html#route`
 now carries a real 61-node circuit. Derivation is archived in `research/paloxite-route/`.
 
-**New this session, and the cheapest to answer:** does the World Tree **despawn immunity** reach from
-an *undeployed* party Pal, or must the carrier be deployed? One lap answers it, and it decides whether
-the mount keeps a World Tree slot or frees it for Eternal Engine.
-
-**Also worth one check in-game:** whether **Mine Foreman** and **Logging Foreman** appear on the Bounty
-Officer / Arena implant shelves, and whether Mine Foreman stacks across party members like Vanguard.
+**All three questions raised earlier on 6 Sep are answered** (deployed-only immunity, free Foreman
+passives, World Tree's Bounty) and folded into the site. The one thing left from that work: **does
+Mine Foreman actually stack across party members** the way Vanguard does? The whole bench build assumes
++100% mining from four copies. It is the largest untested number on the site.
 
 **Open, in rough order of value:**
 
@@ -39,6 +37,57 @@ below.
 written guide. Six or seven corrections this project, every one of them theirs, several overturning
 conclusions built on published sources. **Ask them before treating a mechanic as unresolved, and
 prefer their firsthand account over a guide site.**
+
+---
+
+## 2026-09-06 (cont.) — Three player answers, and the mount build settles
+
+All three open questions from earlier today answered from live play. All three went against what the
+sources implied, which is the usual pattern here.
+
+**(1) The despawn immunity requires the *deployed* Pal.** A benched party Pal does not project it.
+This is the opposite of the convenient answer, and it *improves* the page rather than complicating it:
+the mount spends one slot on the World Tree tier no matter what, so the question stops being "which
+World Tree passive suits a mount" and becomes "which one is not a dead slot". Only **Dimensional Leap**
+answers that.
+
+**That reverses this guide's own advice from 5 Sep**, which said World Tree's Bounty beats Dimensional
+Leap on a long lap because Leap worsens hunger. The reasoning was locally sound and still wrong,
+because it priced the slot as free. Once the slot is committed, the comparison is +50% movement against
+a hunger modifier — and **hunger is bounded and answerable by carrying food, while movement is not
+recoverable.** Worth remembering as an error shape: I compared the two *effects* without noticing the
+slot was not optional.
+
+**(2) Mine Foreman and Logging Foreman are default Surgery Table options — free.** No token, no relic,
+no breeding. Sources called them "implants" and could not agree on a shelf; none said "free". So the
+two largest player-side numbers in the game cost nothing.
+
+That resizes the bench build cleanly. Eight passives reach you from the bench, four are clearly the
+biggest, and four Pals x four slots is sixteen — **four copies each of Mine Foreman, Logging Foreman,
+Vanguard and Stronghold Strategist fills every slot exactly.** +100% mining, +100% logging, +40% player
+Attack, +40% player Defence, for **120 Bounty Tokens total** since half the installs are free. Wellness
+Watcher, Motivational Leader, Healing Coach and Reload Master are all cut — a -5% and a +4% cannot beat
+a +25% for a seat.
+
+**(3) It is World Tree's Bounty**, not Seedbed. Guide corrected, old name kept visible.
+
+**The mount (player's build, endorsed): Dimensional Leap · Swift · Legend · Eternal Engine.**
++100% movement and +75% flight time. Checked Eidrolon Ignis while writing it up: it is a **flying**
+mount, 2,750 sprint / **400 base stamina**, and flight drains stamina continuously rather than in
+sprint bursts — so Eternal Engine over a further +20% move is the right call on a 61-node lap.
+
+**Also caught a math error while rewriting that card.** The mount was described as "roughly +120%
+movement" for a stack of *World Tree passive + Swift + Legend + Runner*, which is +70%. The +120%
+was left over from an earlier version whose first slot was Dimensional Leap. Fixed.
+
+**One addition to the player's build worth flagging:** **Legend** is Atk/Def/Move +20%, and the first
+two are dead weight on a mount you only shoot from — so **Runner** (+20% move, Arena, 50 tickets) is an
+exact substitute for the part being used. Swap it and the whole mount needs no breeding: Dimensional
+Leap, Swift and Eternal Engine are all in the Recycler's common pool, Runner is an Arena implant.
+Keep Legend if already owned; do not start a project for it.
+
+Files: `world-tree-team.html`, `passives.html`, `merchants.html`, `sources.html` (4 ledger rows,
+three now Resolved).
 
 ---
 
