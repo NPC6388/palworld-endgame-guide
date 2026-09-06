@@ -10,9 +10,10 @@ Running handoff notes for resuming work. Newest session at the top.
 a Paloxite-filtered map screenshot, 76 nodes were detected from it, and `world-tree-team.html#route`
 now carries a real 61-node circuit. Derivation is archived in `research/paloxite-route/`.
 
-**Highest-value open question on the whole site: does Paloxite count as "ore" for Turtacle's weight
-reduction?** If yes, a max-condensed Turtacle makes a Paloxite haul weightless and removes the run's
-real constraint. One lap answers it.
+**World settings: weight is DISABLED on this save.** Everything is weightless. Never recommend a
+carry-capacity or weight-reduction Pal (Lunaris, Cattiva, Turtacle, Fuddler, Gumoss), and never treat
+inventory space as a constraint on a route. Everything else is default. Stated at the top of
+`sources.html`.
 
 **Relic route is unsettled and worth ten minutes of timing:** Wistella (recommended here) against the
 Orserk + Snock Lux comp the player was shown, against Game8's Grizzbolt/Mossanda Lux. Three sources,
@@ -51,6 +52,43 @@ below.
 written guide. Six or seven corrections this project, every one of them theirs, several overturning
 conclusions built on published sources. **Ask them before treating a mechanic as unresolved, and
 prefer their firsthand account over a guide site.**
+
+---
+
+## 2026-09-06 (cont. 5) — Weight is disabled on this save
+
+**Player runs with weight off — everything is weightless.** This invalidates the carry-capacity
+recommendation made an entry ago, and with it the "highest-value open question" I had just flagged
+(whether Paloxite counts as "ore" for Turtacle). Both retracted within the hour.
+
+**The mistake worth recording:** I had the player's settings noted as "default", took that literally,
+and reasoned my way to a confident recommendation on top of it — including promoting Turtacle to a
+condense-worthy Pal, a 48-Pal project. Worse, `world-tree-team.html` line 378 has said *"irrelevant on
+your settings anyway"* about item weight since an earlier session, so **the guide already contained the
+fact that contradicted the recommendation.** I did not check it. Second time today that this site
+already held the answer to something I researched from scratch — the stat-fruit miss was the first.
+
+**Added a settings block to the top of `sources.html`** stating the world configuration explicitly, so
+the exception is visible rather than buried in a memory note. Kept the carry-weight reference table,
+which is correct on default settings, but marked every recommendation built on it as default-only.
+
+**The Paloxite fifth slot now goes to Cryolinx.** Orserk is Dragon/Electric, so a Dragon booster stacks
+on top of both Menastings and takes Orserk to **+240%** Holy Water. With capacity no longer competing
+for the slot, it is the only candidate that multiplies a resource rather than nudging kill speed — and
+on a lap where mining and travel dominate the clock, kill speed is not what that slot is short of.
+
+**Noted the floor that makes this an easy call:** every party slot is also four passive slots, so
+whatever Pal sits there still carries Mine Foreman, Logging Foreman, Vanguard and Stronghold
+Strategist. The slot is never wasted; only the partner skill is ever in question.
+
+**The one thing that would flip it:** if laps finish with *surplus* Holy Water, Cryolinx is boosting the
+wrong half — an ingot is 2 Paloxite + 1 Holy Water, so ore is the half in demand. Nitemary for Pal
+Souls would be the swap. That needs a lap's observation, not a source.
+
+Ledger: the Turtacle row is now "Moot here" rather than Open. Files: `world-farming.html`,
+`world-tree-team.html`, `sources.html`. Memory corrected: the play-context note said plain "default
+settings" and now records the weight exception with an explicit instruction never to recommend a
+capacity Pal.
 
 ---
 
