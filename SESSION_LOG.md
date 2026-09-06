@@ -15,11 +15,10 @@ carry-capacity or weight-reduction Pal (Lunaris, Cattiva, Turtacle, Fuddler, Gum
 inventory space as a constraint on a route. Everything else is default. Stated at the top of
 `sources.html`.
 
-**Screenshot two tooltips and a loadout may change:** are **Immortality** and **Heavily Armored** dual
-("Pal and Player") the way Idiosyncratic turned out to be? Published tier lists drop that prefix
-systematically, which already caused one wrong call. **If Immortality is +15% player Attack it beats
-Vanguard on the bench.** Treat every effect string on the site not taken from an in-game tooltip as
-possibly understating its reach.
+**Passive effect strings on this site are unverified unless they came from an in-game tooltip.** Three
+checked so far, three wrong in the published tier lists: a dropped "and Player" (Idiosyncratic), a
+wrong effect class (Heavily Armored), a 20x understated number (Immortality). **Ask the player for a
+screenshot before building on any passive number.** Still unpublished: Babysitter, Lavish Hospitality.
 
 **The one measurement that settles a live question:** time a fixed pack count with Solenne in the fifth
 slot, then with Cryolinx. **Solenne wins only if she cuts clear time by more than 24%** (Cryolinx is
@@ -53,8 +52,9 @@ Mine Foreman actually stack across party members** the way Vanguard does? The wh
 3. **The ~15% crafting cost reduction on this save.** Their Plasma Rifle panel reads `68/42/6/5`
    against a standard Common `80/50/8/7`. Something is discounting crafting and it applies to
    everything they build; worth identifying.
-4. **Three Rainbow passive effects** still unpublished: Babysitter, Lavish Hospitality,
-   Heavily Armored.
+4. **Two Rainbow passive effects** still unpublished: Babysitter and Lavish Hospitality.
+   *Heavily Armored resolved 6 Sep* — it is Immune to Explosion Damage, a categorical immunity, so
+   there was never a percentage to find.
 
 **Do not re-attempt scraping palworld.th.gl** — investigated 5 Sep, dead end. Details in the entry
 below.
@@ -63,6 +63,46 @@ below.
 written guide. Six or seven corrections this project, every one of them theirs, several overturning
 conclusions built on published sources. **Ask them before treating a mechanic as unresolved, and
 prefer their firsthand account over a guide site.**
+
+---
+
+## 2026-09-06 (cont. 9) — Both follow-up tooltips checked; the bench loadout is settled
+
+Player supplied the Immortality and Heavily Armored tooltips, closing the question I opened an entry
+ago. **The answer is no on both** — my speculation that Immortality might beat Vanguard on the bench
+was wrong.
+
+- **Immortality** — *"Absorbs 100% of damage dealt and restores Health. **Pal** Auto Health
+  Regeneration Rate +100%. Attack +15%."* The regen is explicitly Pal-scoped and the Attack line
+  carries no *Player*, so it is **Pal-only**. Mount and combat-Pal passive, not a bench one.
+- **Heavily Armored** — *"Immune to Explosion Damage."* That is the entire effect, Pal-only.
+
+**So Idiosyncratic is the only dual passive in the Rainbow tier**, and the bench loadout is final:
+**Mine Foreman · Vanguard · Idiosyncratic · Stronghold Strategist.**
+
+**The scoping convention is now established across three tooltips** and is worth relying on: the game
+writes ***Pal***, ***Player***, or ***Pal and Player***, and **an unqualified stat on a passive means
+the Pal**. That is what makes the bench rule applicable at all — but only against real tooltips.
+
+**Two more errors in this guide's Rainbow data, both from the same root:**
+
+1. **Heavily Armored was listed as "Defence — exact figure unpublished."** It is defensive, as the
+   player pointed out, but it is a **categorical immunity, not a Defence stat** — so the guide was
+   hunting a percentage that does not exist. That is one of the three long-standing
+   "unpublished Rainbow effect" gaps closed by realising the question was malformed.
+2. **Immortality's lifesteal is "absorbs 100% of damage dealt", not "+5%"** as every tier list
+   renders it. Logged as a Conflict rather than silently taking the tooltip, because a 20x gap is
+   large enough to want a second look before building around it. If it is literal, a fighting mount
+   with Immortality barely needs healing at all.
+
+**Three tooltips checked, three discrepancies with published tier lists** — a dropped "and Player", a
+wrong effect class, and a 20x understated number. The ledger row on passive effect strings is now
+downgraded from "may understate reach" to **"treat as unverified unless it came from a tooltip"**. The
+tier lists are not reliably paraphrasing, and this guide inherited that wholesale.
+
+Remaining unpublished Rainbow effects: **Babysitter** and **Lavish Hospitality** only.
+
+Files: `passives.html`, `world-tree-team.html`, `sources.html` (4 rows added, 1 rewritten).
 
 ---
 

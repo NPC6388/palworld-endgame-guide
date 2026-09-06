@@ -4,6 +4,46 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-06 (cont. 9) — Both follow-up tooltips checked; the bench loadout is settled
+
+Player supplied the Immortality and Heavily Armored tooltips, closing the question I opened an entry
+ago. **The answer is no on both** — my speculation that Immortality might beat Vanguard on the bench
+was wrong.
+
+- **Immortality** — *"Absorbs 100% of damage dealt and restores Health. **Pal** Auto Health
+  Regeneration Rate +100%. Attack +15%."* The regen is explicitly Pal-scoped and the Attack line
+  carries no *Player*, so it is **Pal-only**. Mount and combat-Pal passive, not a bench one.
+- **Heavily Armored** — *"Immune to Explosion Damage."* That is the entire effect, Pal-only.
+
+**So Idiosyncratic is the only dual passive in the Rainbow tier**, and the bench loadout is final:
+**Mine Foreman · Vanguard · Idiosyncratic · Stronghold Strategist.**
+
+**The scoping convention is now established across three tooltips** and is worth relying on: the game
+writes ***Pal***, ***Player***, or ***Pal and Player***, and **an unqualified stat on a passive means
+the Pal**. That is what makes the bench rule applicable at all — but only against real tooltips.
+
+**Two more errors in this guide's Rainbow data, both from the same root:**
+
+1. **Heavily Armored was listed as "Defence — exact figure unpublished."** It is defensive, as the
+   player pointed out, but it is a **categorical immunity, not a Defence stat** — so the guide was
+   hunting a percentage that does not exist. That is one of the three long-standing
+   "unpublished Rainbow effect" gaps closed by realising the question was malformed.
+2. **Immortality's lifesteal is "absorbs 100% of damage dealt", not "+5%"** as every tier list
+   renders it. Logged as a Conflict rather than silently taking the tooltip, because a 20x gap is
+   large enough to want a second look before building around it. If it is literal, a fighting mount
+   with Immortality barely needs healing at all.
+
+**Three tooltips checked, three discrepancies with published tier lists** — a dropped "and Player", a
+wrong effect class, and a 20x understated number. The ledger row on passive effect strings is now
+downgraded from "may understate reach" to **"treat as unverified unless it came from a tooltip"**. The
+tier lists are not reliably paraphrasing, and this guide inherited that wholesale.
+
+Remaining unpublished Rainbow effects: **Babysitter** and **Lavish Hospitality** only.
+
+Files: `passives.html`, `world-tree-team.html`, `sources.html` (4 rows added, 1 rewritten).
+
+---
+
 ## 2026-09-06 (cont. 8) — Idiosyncratic is dual, and the tier lists have been lying by omission
 
 Player sent the in-game tooltip. It reads **"Pal and Player Auto Health Regeneration Rate +50%
