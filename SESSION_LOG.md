@@ -10,6 +10,11 @@ Running handoff notes for resuming work. Newest session at the top.
 a Paloxite-filtered map screenshot, 76 nodes were detected from it, and `world-tree-team.html#route`
 now carries a real 61-node circuit. Derivation is archived in `research/paloxite-route/`.
 
+**Worth a sweep next session:** the stat-fruit miss (the site listed Life/Power/Stout Fruit for days
+without ever saying they are the IV item) is the second time in one day that an already-documented
+shelf item turned out to solve a problem the guide called hard. **Check the rest of `merchants.html`
+for entries listed without their purpose attached.**
+
 **All three questions raised earlier on 6 Sep are answered** (deployed-only immunity, free Foreman
 passives, World Tree's Bounty) and folded into the site. The one thing left from that work: **does
 Mine Foreman actually stack across party members** the way Vanguard does? The whole bench build assumes
@@ -37,6 +42,80 @@ below.
 written guide. Six or seven corrections this project, every one of them theirs, several overturning
 conclusions built on published sources. **Ask them before treating a mechanic as unresolved, and
 prefer their firsthand account over a guide site.**
+
+---
+
+## 2026-09-06 (cont. 2) — The mount fights, and max IVs turn out to be a purchase
+
+**Correction from the player: the mount is not a firing platform.** They use its abilities to kill, so
+its own Attack is live. This page had been written around "you are dealing the damage, so the mount is
+a platform rather than a fighter", and that framing was load-bearing for several verdicts — all now
+rewritten.
+
+**The structural point that came out of it, and it should have been said much earlier:** there are
+**two damage pipelines and they do not feed each other.** Vanguard and Solenne buff *Player* Attack —
+the gun. Demon God, Legend and the World Tree attack passives buff the *Pal's* Attack — the mount's
+abilities. The sixteen bench slots are entirely player-side and cannot be repurposed, so the mount's
+own four slots are the only place mount damage can come from. That makes them worth more than the page
+assumed.
+
+**Two things I got wrong earlier today and have retracted on the page:**
+
+1. **"Swap Legend for Runner."** That rested on Legend's Attack and Defence being dead weight on a
+   platform mount. With the mount fighting, Legend's +20% Attack is live and Runner is the weaker pick.
+2. **Eternal Engine.** I argued flight drains stamina continuously, so it earns a slot. True in general,
+   but **this route lands at 61 nodes** and stamina regenerates on the ground — the legs between
+   clusters are short. The slot is better spent on damage. Left the build on the page as the
+   "maximum speed" option with the symptom that would justify it (gliding down mid-flight).
+
+**Recommended mount is now Dimensional Leap · Serenity · Demon God · Swift** (+80% move, +40% Atk,
+−30% cooldown). **Serenity is the pick most easily missed**: if abilities are doing the killing, uptime
+is the limiter, and −30% cooldown is roughly **+43% ability uptime** — a bigger multiplier than any
+single attack passive, plus +10% Attack. Arena implant, 50 tickets.
+
+Dimensional Leap stays over Twin-Edged Holy Blade (+50% Atk) despite the mount now wanting damage,
+because the **slot pool is asymmetric**: outside the World Tree tier you can buy attack at up to +30% a
+slot plus cooldown reduction, while movement outside the tier caps at Swift's +30%. Spend the forced
+slot on the stat you cannot buy elsewhere.
+
+**Player also confirmed hunger is a non-issue — they wear a feedbag.** So Dimensional Leap's hunger
+penalty is *zero* on this save, not merely "bounded". World Tree's Bounty drops to a no.
+
+---
+
+**New section: talents (IVs).** Requested; sits at `passives.html#ivs` with cross-links from both
+condensation discussions (`world-tree-team.html`, `base-production.html`) and from the fruit row on
+`merchants.html`.
+
+**The headline is that maxing IVs is a purchase.** Life / Power / Stout Fruit each add **+10 talent**
+to HP / Attack / Defence, cap 100, and the Bounty Officer sells them at **25 tokens**. So ten fruits
+finish any stat from zero, and the common guide claim that IVs are "the one layer you cannot buy or
+grind after the fact" is false in 1.0.
+
+**Embarrassing detail worth recording: this guide already listed the fruit.** `merchants.html` has had
+Life/Power/Stout at 25 tokens since the first build, filed under "stat fruit", and nothing ever said
+what they were for. Exactly the same shape as the Recycler miss earlier today — the solved problem was
+sitting on a shelf already documented on the site. **Worth a sweep: what else is listed here without
+its purpose attached?**
+
+**The one genuinely non-obvious bit,** and no guide states it: a fruit is a flat +10 and the cap is
+100, so the bill is **⌈(100 − talent) ÷ 10⌉** fruits. **A Pal at 71 and a Pal at 79 cost exactly the
+same to finish.** Breeding 71 → 79 is worth nothing; 71 → 81 saves one fruit, or 25 tokens. That prices
+the whole breeding decision: keep hatching only while you expect to cross a ten-boundary, at 25 tokens
+a crossing.
+
+**Inheritance** (Game8, 107-egg test, 24 Aug 2026): at least one of the three talents is always
+inherited from a parent; the rest are ~30% from a given parent and ~40% a fresh 0–100 roll. Cakes:
+Mushroom improves the talent roll, Extravagant Vegetable adds talent points and ~3% mutation and needs
+no Honey, Vegetable doubles eggs, Special is passives only. Read talents with **Ability Glasses**
+(Level 34), green at 70+.
+
+**And the thing that saves the player tokens: talents do nothing for the four bench Pals.** Their HP,
+Attack and Defence never apply. Do not feed them fruit — that is 750 tokens per Pal saved, and it goes
+to implants instead. On that team only the mount's talents matter.
+
+Ledger: 4 new rows. Pal Soul cap logged as **Open** — the +3%/level figure is consistent but the
+level-20 / +60% cap traces to patch 0.4.11.0, which is early-access era and not verified for 1.0.
 
 ---
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Passives by Role — Palworld 1.0</title>
-<meta name="description" content="The passive skill stacks that matter in Palworld 1.0 — work, combat, mount and ranch — plus World Tree and Rainbow passives and how to get them onto the Pal you want.">
+<meta name="description" content="The passive skill stacks that matter in Palworld 1.0, how to max a Pal&rsquo;s talents (IVs) — work, combat, mount and ranch — plus World Tree and Rainbow passives and how to get them onto the Pal you want.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -261,6 +261,87 @@
     <span class="tag">The efficient order</span>
     <p><strong>Artisan is an implant at 15 Bounty Tokens.</strong> So is the whole work-passive-adjacent set. Do not breed for anything you can buy — spend bounty tokens on Artisan, breed for <strong>Demon&rsquo;s Hand</strong> and <strong>Remarkable Craftsmanship</strong> (which you cannot buy), and use the Pal Reverser to fill the last slot.</p>
   </div>
+
+  <h2 id="ivs">7. Talents (IVs) &mdash; and why maxing them is a purchase, not a breeding project</h2>
+  <p class="sub">Three hidden values per Pal &mdash; <strong>HP, Attack, Defence</strong> &mdash; each on a <strong>0&ndash;100</strong> scale worth up to <strong>+30%</strong> of that stat. They are applied <em>before</em> passive bonuses, and they are locked at the moment a Pal is caught or hatched.</p>
+
+  <div class="answer">
+    <h2>Buy the fruit. Breed only to lower the bill.</h2>
+    <p class="big">Guides routinely call IVs &ldquo;the one layer you cannot buy or grind after the fact&rdquo;. <strong>In 1.0 that is false.</strong> <em>Life</em>, <em>Power</em> and <em>Stout Fruit</em> each add <strong>+10 talent</strong> to HP, Attack and Defence respectively, and the cap is 100 &mdash; so <strong>ten fruits finish any stat from zero</strong>. The Bounty Officer sells all three at <strong>25 tokens</strong>.</p>
+  </div>
+
+  <div class="callout good">
+    <span class="tag">This guide already listed the fruit and missed what it was for</span>
+    <p><a href="merchants.html">The merchants page</a> has had Life / Power / Stout Fruit at 25 Bounty Tokens since the first build, filed under &ldquo;stat fruit&rdquo;. What was never said is that <strong>those are the IV item</strong>. Same shape as the Recycler: the expensive-looking problem was already solved by something sitting on a shelf.</p>
+  </div>
+
+  <h3>What it costs to finish a stat</h3>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Talent now</th><th>Fruit to reach 100</th><th>Per stat</th><th>All three stats</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">0&ndash;10</td><td>10</td><td><code>250</code> tokens</td><td><code>750</code> tokens</td></tr>
+      <tr><td class="mat">41&ndash;50</td><td>5</td><td><code>125</code></td><td><code>375</code></td></tr>
+      <tr><td class="mat">61&ndash;70</td><td>3</td><td><code>75</code></td><td><code>225</code></td></tr>
+      <tr><td class="mat">81&ndash;90</td><td>1</td><td><code>25</code></td><td><code>75</code></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="callout warn">
+    <span class="tag">The non-obvious bit: only crossing a multiple of ten saves you anything</span>
+    <p>A fruit is a flat <strong>+10</strong> and the cap is <strong>100</strong>, so what you actually pay is <strong>&lceil;(100 &minus; talent) &divide; 10&rceil;</strong> fruits. <strong>A Pal at 71 and a Pal at 79 cost exactly the same to finish</strong> &mdash; three fruits either way, with the overshoot clipped against the cap.</p>
+    <p>So breeding a 71 up to a 79 is worth <em>nothing</em>. Breeding it to 81 saves one fruit, or 25 tokens. That single fact decides when to stop hatching: <strong>keep breeding only while you expect to cross a ten-boundary, and price each crossing at 25 tokens.</strong> Very few breeding sessions are worth 25 tokens an hour. <span class="conf">Assumes overshoot is clipped at 100 rather than refused &mdash; either way the fruit count is identical.</span></p>
+  </div>
+
+  <h3>How inheritance actually works</h3>
+  <p class="sub">Worth knowing mainly so you can judge how far breeding will realistically get you.</p>
+  <ul>
+    <li><strong>At least one of the three talents is always inherited from a parent</strong> &mdash; which stat, and from which parent, is random. Game8 established this over a 107-egg test.</li>
+    <li>Each remaining talent is roughly <strong>30% from a given parent</strong> and <strong>40% a fresh random roll</strong> across the full 0&ndash;100 range.</li>
+    <li>So a child can inherit all three from its parents, and <strong>good parents ratchet</strong> &mdash; you cannot go backwards if you always breed your best and keep the winner.</li>
+    <li><strong>Alpha and Legendary Pals tend to roll higher talents</strong>, which makes a field boss a better starting parent than a wild catch.</li>
+  </ul>
+
+  <div class="callout good">
+    <span class="tag">Which cake &mdash; and it is not the one you use for passives</span>
+    <ul>
+      <li><strong>Mushroom Cake</strong> (Tech 30) &mdash; improves the offspring&rsquo;s talent roll. This is the IV cake, and it is cheap: Flour, two kinds of Mushroom, Egg and Honey.</li>
+      <li><strong>Extravagant Vegetable Cake</strong> (Tech 60) &mdash; adds talent points <em>and</em> raises the mutation chance to roughly 3%. <strong>Needs no Honey at all</strong>, which is usually the binding constraint.</li>
+      <li><strong>Vegetable Cake</strong> &mdash; two eggs per bake. Straight throughput against quality; take it while you are still far from a ten-boundary.</li>
+      <li><strong>Special Cake</strong> (Tech 74) &mdash; passive inheritance, <em>not</em> talents. Different job, different session.</li>
+    </ul>
+    <p>Full recipes are on the <a href="endgame-demand.html">demand page</a>. One base with nine ranch slots and a wheat plantation supplies all five.</p>
+  </div>
+
+  <h3>Reading them</h3>
+  <p><strong>Ability Glasses</strong>, unlocked at <strong>Level 34</strong>, show HP / Attack / Defence talents directly on wild and owned Pals, with <strong>70 and above highlighted green</strong>. Without them you can recover the values by entering species, level and the stats shown on the Pal Condensation screen into a community IV calculator &mdash; but at Lv80 the glasses are free and instant, so wear them while you catch.</p>
+
+  <div class="callout warn">
+    <span class="tag">Where this is <em>not</em> worth spending anything</span>
+    <p><strong>Talents do nothing for a Pal that never deploys.</strong> The four bench Pals on the <a href="world-tree-team.html#slots">World Tree team</a> &mdash; Solenne, both Menastings, Dandilord &mdash; contribute only partner skills and player-side passives, and their own HP, Attack and Defence are inert. <strong>Do not feed them fruit.</strong> Those tokens buy Vanguard and Stronghold Strategist implants at 15 instead.</p>
+    <p>On that team the <strong>mount is the only Pal whose own stats matter</strong> &mdash; and it matters more than this guide first assumed, because it kills with its own abilities. Combat Pals and raid tanks are the other place fruit earns its price.</p>
+  </div>
+
+  <h3>Where talents sit in the stack</h3>
+  <p class="sub">Four independent multipliers, and every one of them can be fixed after the fact.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Layer</th><th>Worth</th><th>Fixable later?</th></tr></thead>
+    <tbody>
+      <tr><td class="mat">Talents (IVs)</td><td>up to <strong>+30%</strong> per stat</td><td class="detail"><span class="pill yes">Yes</span> Fruit, 25 tokens per +10</td></tr>
+      <tr><td class="mat">Passives</td><td>varies &mdash; the largest single layer</td><td class="detail"><span class="pill yes">Yes</span> Implants and the <a href="#acquire">Recycler</a></td></tr>
+      <tr><td class="mat">Condensation</td><td><strong>+20%</strong> base stats at &starf;4, plus partner skill Lv1&rarr;5</td><td class="detail"><span class="pill yes">Yes</span> 48 Pals, or Starfruit</td></tr>
+      <tr><td class="mat">Pal Souls</td><td>+3% per level to one stat</td><td class="detail"><span class="pill yes">Yes</span> Statue of Power <span class="conf">1.0 cap unverified</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="answer">
+    <h2>The order that actually saves time</h2>
+    <p class="big"><strong>Breed for passives, not for talents.</strong> Passives are what a hatch decides and you cannot cheaply undo; talents are a receipt you settle afterwards. Hatch until the passives are right, read the talents with Ability Glasses, then <strong>buy the difference in fruit</strong> &mdash; and go back to the breeding pen only if a stat sits below about 60, where the bill runs past four fruit for that stat alone.</p>
+  </div>
+
 
 </div>
 </main>
