@@ -28,7 +28,7 @@ drop-booster comp has none - ride it for the speed, not the skill.
 
 ## 2026-09-05 - Correction: Paloxite is plentiful, not the bottleneck
 
-Player confirmation that the map's node count reflects reality - they have visited many of them.
+Player confirmation that the map's node count reflects reality - they have visited many of them, and that **the map is filtered to Paloxite specifically**, so every detected marker is a Paloxite node.
 
 This guide had claimed **"Paloxite is your real bottleneck, and no Pal can help with it"**, reasoning
 that Holy Water has many sources while Paloxite came only from three named clusters. Published guides
@@ -47,6 +47,37 @@ Written guides name a few convenient spots near fast-travel points, and reading 
 rather than a sample has now produced a wrong conclusion twice - here, and with the Sunreach Soralite
 route, published as a single 5-node cluster but actually a five-stop loop of 30 to 40 nodes. Noted on
 the page and in the correction log.
+
+---
+
+## 2026-09-05 - The real node map, and a computed 61-node circuit
+
+Replaced the three-cluster schematic with the player's own Paloxite-filtered map plus a route
+computed over it.
+
+**Method** (archived in `research/paloxite-route/` so it can be rerun):
+1. Detected **76 Paloxite markers** from the screenshot by colour, splitting overlapping icons in the
+   dense volcano cluster by area.
+2. Nearest-neighbour tour refined with 2-opt, then greedily dropped the highest-detour nodes until
+   80% remained, re-optimising as it went.
+3. Emitted a Catmull-Rom smoothed SVG overlay with evenly spaced direction arrows, scaled with the
+   image so both stay aligned.
+
+**Result: 61 of 76 nodes for 71% of the full-sweep distance.**
+
+### Two findings from the analysis
+- **The skipped 20% are isolated stragglers, not a corner of the map.** Median distance to their
+  nearest neighbour is **46px against 22px** for nodes on the circuit, so each costs roughly double
+  the travel and returns the same single node. My first read from the preview - that they were
+  interior nodes - was wrong; they are only 5% closer to centre, which is noise.
+- **The efficiency curve is flat between about 70% and 85% coverage**, so there is no sharp optimum
+  to hit. The one genuinely sharp win is the first four nodes dropped, which shed **13% of travel for
+  5% of nodes**. Below ~63% coverage it stops paying entirely. Published the full trade-off table so
+  the target can be moved on evidence.
+
+### Limits stated on the page
+Detection is colour-based rather than game data, so the count may be off by two or three; the route
+shape does not depend on it. The circuit is a straight-line flight path and ignores terrain.
 
 ---
 

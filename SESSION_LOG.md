@@ -4,6 +4,71 @@ Running handoff notes for resuming work. Newest session at the top.
 
 ---
 
+## ▶ PICK UP NEXT SESSION
+
+**Nothing is blocked.** The route map question that was flagged here is resolved — the player supplied
+a Paloxite-filtered map screenshot, 76 nodes were detected from it, and `world-tree-team.html#route`
+now carries a real 61-node circuit. Derivation is archived in `research/paloxite-route/`.
+
+**Open, in rough order of value:**
+
+1. **Shot interval / reload / pellet count for the Tech 67–80 weapons.** The last real weapon gap.
+   Attack, magazine, durability, ammo cost and per-rarity recipes are all confirmed; cadence is not,
+   so damage *per second* stays uncomputable while damage *per material* is solid. No source
+   publishes it — likely needs in-game measurement.
+2. **The weapon repair cost formula** — materials or gold, and how much.
+3. **The ~15% crafting cost reduction on this save.** Their Plasma Rifle panel reads `68/42/6/5`
+   against a standard Common `80/50/8/7`. Something is discounting crafting and it applies to
+   everything they build; worth identifying.
+4. **Three Rainbow passive effects** still unpublished: Babysitter, Lavish Hospitality,
+   Heavily Armored.
+5. **Base Eidrolon's typing** — Eidrolon Ignis is Dragon/Fire and confirmed, but the base form was
+   not checked, and mounted attacks take the mount's element.
+
+**Do not re-attempt scraping palworld.th.gl** — investigated 5 Sep, dead end. Details in the entry
+below.
+
+**Working method that has paid off repeatedly:** the player is a far more reliable source than any
+written guide. Six or seven corrections this project, every one of them theirs, several overturning
+conclusions built on published sources. **Ask them before treating a mechanic as unresolved, and
+prefer their firsthand account over a guide site.**
+
+---
+
+## 2026-09-05 (cont.) — The Paloxite immunity belongs to the whole World Tree tier
+
+Two corrections, both from the player.
+
+**(1) Any World Tree passive grants the Paloxite immunity**, not just Dimensional Leap and Hermit
+Sage as this guide had it. World Tree resources stop despawning on approach for a Pal carrying any
+skill in that tier, and no description mentions it. So it is not a build constraint at all — pick the
+passive that suits the Pal's job and take the immunity free.
+
+**The error shape is worth carrying:** I had two examples that granted the protection and inferred
+that those two were special, rather than asking what they had in common. That is the second
+generalise-from-a-sample mistake in two days — the Paloxite node count was the first.
+
+**(2) The mount is Eidrolon or Eidrolon Ignis**, so Dimensional Leap is the wrong pick anyway.
+Rebuilt the mount advice around what a mount actually needs when the *player* deals the damage:
+
+- **World Tree Seedbed** (hunger −50% slower) is usually right for a 61-node lap. Notably
+  **Dimensional Leap makes hunger *worse***, which works directly against a long circuit — probably
+  why it felt wrong to them.
+- The Attack-swing passives (Twin-Edged Holy Blade, God of Destruction, Sanctified Meat Shield) are
+  wasted on a mount that is not the one attacking.
+
+**Eidrolon Ignis specifics, now on the page:** Dragon/Fire, **2,750 riding sprint** rivalling
+Jetragon — which on a 61-node circuit is the real justification, since traversal dominates. Mounted
+attacks take its element, so **Dragon is advantaged into Orserk** (Dragon/Electric) and neutral into
+Snock Lux, trading damage on half the targets for speed across the lap. Its partner skill
+*Resentful Pterosaur* scales with other Dragon/Fire party members, of which a drop-booster comp has
+none, so it contributes ~nothing here.
+
+**Also confirmed this session:** the node map is **filtered to Paloxite specifically**, so the 76
+count and everything downstream of it stands unqualified.
+
+---
+
 ## 2026-09-05 - The node map invalidated a bottleneck claim
 
 User: *"there are far more nodes than the reddit posts mention, i've been to many of them."*
@@ -32,42 +97,6 @@ any written source, which has now been right five or six times running.
 - A few Rainbow passive effects; the ~15% crafting cost reduction on this save.
 
 **Status: shipped.**
-
----
-
-## ▶ PICK UP NEXT SESSION
-
-**The Paloxite route map wants real node coordinates.**
-
-`world-tree-team.html#route` currently plots the **three clusters**, not the individual nodes, and it
-is a **schematic of relative positions rather than a scale map**. That was the best available: the
-coordinates come from written guides, and `palworld.th.gl` renders its markers client-side, so there
-is no per-node data in the page to scrape.
-
-**Do NOT re-attempt scraping palworld.th.gl — investigated 2026-09-05 and it is a dead end.** The
-page ships 9,333 spawn coordinates across 335 species plus a 1,487-entry name dictionary, but they
-are base-game *Pal spawn* points for Paldeck tooltips, not node markers, and the World Tree species
-(Starryon Primo, Shaolong, Snock Lux) are absent. Paloxite appears only as a marker *type*
-(`BP_MapObject_DamagableRock0021_C` → `paloxite`); the placements load at runtime from an endpoint
-that returned 404 on twelve plausible paths across `cdn.th.gl`, `static.th.gl`, `a.th.gl` and the
-site's own `/api/`, and none of twelve sampled JS chunks carried it. GitHub SDK dumps have the
-blueprint class but not world placements — those are in `.umap` level files. There is also a
-transform problem: th.gl uses Unreal world units (±1,000,000) against the guide's in-game display
-coords (±2,000), so a calibration point would be needed even with raw numbers.
-
-**So ask the user for the coordinates instead** — either read off the th.gl map by hovering the
-markers, or marked in-game. With those, the map can become:
-- individual node markers instead of cluster circles,
-- geographically accurate rather than schematic,
-- an actual mining path through each cluster rather than a cluster-to-cluster line.
-
-The SVG is hand-authored inline in `world-tree-team.html` with styles in `assets/style.css`
-(`.rm-*` classes, theme-aware via CSS custom properties) — extending it is straightforward.
-
-**Also still open** (detail in the entries below): shot interval / reload for the Tech 67–80 weapons;
-the weapon repair cost formula; three Rainbow passive effects; the Paloxite Reddit links the user
-mentioned that were never on disk; and identifying the ~15% crafting cost reduction active on their
-save.
 
 ---
 
