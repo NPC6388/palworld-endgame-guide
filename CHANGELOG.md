@@ -4,6 +4,39 @@ Notable changes to the guide. Newest at the top.
 
 ---
 
+## 2026-09-06 (cont. 10) — palpedia's implant guide: full corroboration, and one thing I had wrong
+
+Player pointed at `palpedia.com/guides/implants`. It corroborates **every** pool split this guide had
+arrived at piecemeal — Idiosyncratic, Immortality and Heavily Armored Glistening-only; Demon God,
+Diamond Body and Dimensional Leap from any grade; Vanguard, Stronghold Strategist and Wellness Watcher
+at 15 Bounty Tokens; Serenity at 50 Battle Tickets. Good confirmation of a chain assembled from three
+separate sources across the day.
+
+**And it corrects one thing: the Foreman passives are not free.** They are Surgery Table defaults —
+no implant item — but each install costs **50,000 gold**. I had heard "available by default with the
+surgery table" and rendered it "free" in five places without asking what the *operation* cost.
+
+**More broadly: every surgery charges 10,000–50,000 gold**, implants included. So the bench loadout's
+real bill is 120 Bounty Tokens, four Glistening pulls, *and* several hundred thousand gold across
+sixteen installs.
+
+**Which is good news, and the guide now says so.** At Lv80 gold buys consumables, ammo, bait, ranch
+commodities and essentially nothing else — this site's own index page makes that point. Surgery is the
+best sink gold has. A cost that lands entirely on the one currency you are not short of is not really a
+cost.
+
+**Worth noting what this source cannot do.** palpedia lists names, sources and prices but **no effect
+text**, so it is no help at all with the tooltip-scoping problem from the previous entries. The
+scoping data still has exactly one reliable source: in-game screenshots. That asymmetry is now recorded
+against the source in the ledger, so a future session does not reach for palpedia expecting effects.
+
+Added as a primary source. Ledger: the "free on the Surgery Table" row rewritten, two new rows (surgery
+gold cost; implant sources corroborated).
+
+Files: `passives.html`, `world-tree-team.html`, `merchants.html`, `sources.html`.
+
+---
+
 ## 2026-09-06 (cont. 9) — Both follow-up tooltips checked; the bench loadout is settled
 
 Player supplied the Immortality and Heavily Armored tooltips, closing the question I opened an entry
